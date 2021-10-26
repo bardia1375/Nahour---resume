@@ -1,0 +1,28 @@
+.CartOfFeachers {
+  border: 1px solid red;
+  margin-right: 32px;
+  border-radius: 7px;
+  height: 434px;
+  max-width: 344px;
+  /* overflow: hidden; */
+  position: relative;
+}
+.icons {
+  /* background:url("../../nahoorHomePage/pic2.png") center center/cover no-repeat; */
+}
+.cartTitle {
+  color: #6b006d;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 2.5rem;
+  text-align: center;
+  position: absolute;
+}
+.cartDescription {
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

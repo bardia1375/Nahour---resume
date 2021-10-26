@@ -1,0 +1,23 @@
+.feacherOfNahor{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.Card{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    margin-top: 107px;
+    border: 1px solid red;
+}
+.CartOfFeachers{
+    
+}
+.text{
+    margin-top:162px ;
+    font-size:3em;
+    color:#6B006D;
+    font-weight:bold;
+}
