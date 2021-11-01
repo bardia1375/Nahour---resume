@@ -11,10 +11,10 @@ const CartOfFeachers = (props) => {
           className="feacherOfImg"
           src="nahoor home page/pic3.svg"
           width="100%"
-          height="80%"
+          height="auto"
         />
-        {/* <h2 className="cardTitle">{props.title}</h2>
-        <p className="cardDescription">{props.Description}</p> */}
+        <h2 className="cardTitle">{props.title}</h2>
+        <p className="cardDescription">{props.Description}</p>
       </div>
     </div>
   );

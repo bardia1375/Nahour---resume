@@ -1,0 +1,34 @@
+.Satisfaction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+.Satisfaction-container p {
+  font-family: IRAN Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 24px;
+  text-align: center;
+  margin: 30px 48px;
+}
+.Satisfaction-name {
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  margin-top: 10px !important;
+}
+.Satisfaction-container h3 {
+  font-size: 0.75rem;
+  font-weight: 100;
+  margin-top: 4px !important;
+}
+.Satisfaction-titleJob{
+  margin-bottom: 20px;
+}

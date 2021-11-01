@@ -1,0 +1,23 @@
+.Customizable-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+}
+.Customizable-main h2 {
+  color: #6b006d;
+  font-family: B Yekan+;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.Customizable-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  width: 80%;
+}

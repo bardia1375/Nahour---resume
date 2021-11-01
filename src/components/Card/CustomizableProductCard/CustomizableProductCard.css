@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0px;
+    /* font-family: IRANSans; */
+  }
+  .Customizable-title {
+    transform: translateY(-60px);
+    color: #6b006d;
+    font-family: IRAN Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 46px;
+  }
+  
+  .Customizable-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 424px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 100px;
+    margin-right: 32px;
+  }
+  .Customizable-container:hover{
+    background-color:#FFD18D;
+  }
+  .Customizable-container:hover  .Customizable-products{
+    background-color:#fff
+  }
+  .Customizable-container h4 {
+    /* width: 100%; */
+    /* height: 43px; */
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.015em;
+  }
+  .Customizable-products {
+    display: flex;
+    flex-direction: column;
+  }
+  .Customizable-products {
+    background-color: #f5f5f5;
+    transform: translateY(-40px);
+    width: 100%;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .Customizable-products h4 {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+  
+    font-size: 14px;
+    letter-spacing: 0.015em;
+  }
+  .Customizable-img {
+    transform: translateY(-100px);
+  }
+  .Customizable-container button {
+    outline: none;
+  
+    align-items: center;
+    background: #6b006d;
+    border: 1px solid #fff;
+    font-size: 1em;
+    line-height: 1;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 40px;
+    min-width: 100px;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    border:none;
+  }
+  .Customizable-button:hover {
+    background-color: #ff9900;
+    color: #000000;
+  }
+  .Customizable-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

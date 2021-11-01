@@ -1,5 +1,7 @@
 .Applicationmain {
   background-color: #f5f5f5;
+  margin-top:150px;
+  scroll-behavior: smooth;
 }
 .Applicationcontainer {
   display: flex;
@@ -7,19 +9,30 @@
   /* به هیچ عنوان */
   /* margin-right: 224px;
   margin-left: 224px; */
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 50px;
-  /* border: 1px solid red; */
 }
 .Applicationcontent {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 100px;
+}
+.Application-title{
+  color: #6b006d;
+  font-family: B Yekan+;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 24px;
 }
 .ApplicationParagraph {
   font-family: IRAN Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 2em;
+  font-size: 1.65em;
   line-height: 47px;
   text-align: right;
 }
@@ -43,11 +56,11 @@
   text-decoration: none;
   height: 50px;
   min-width: 115px;
-  width: 178px;
+  width: 10vw;
   cursor: pointer;
-  margin-bottom: 88px;
   transition: all 0.3s linear;
   margin-left: 16px;
+  margin-bottom: 20px;
 }
 .ApplicationButton1:hover {
   background-color: #ff9900;
@@ -68,9 +81,33 @@
   font-size: 10px;
   line-height: 20px;
 }
-.ApplicationImage {
-  /* width:50%;
- height:5%; */
+.Application-imageMain{
+width: 50%;
+}
+.ApplicationImage1 {
+transform: translate(-80px,0px);
 
-  /* background: url("../../../nahoorHomePage/iPhone\ 12\ Pro\ 6.1_\ Mockup-2.png") no-repeat center center/contain; */
+}
+.ApplicationImage2 {
+  transform: translate(100px,0px);
+
+  
+  }
+@media only screen and (max-width: 600px) {
+  .ApplicationButton{
+   
+   width:100px;
+   display: flex;
+   flex-direction: column;
+   
+  }
+.ApplicationButton1{
+  margin-bottom:0px;
+
+}
+.Applicationcontainer{
+  display: flex;
+  flex-direction: column;
+}
+
 }

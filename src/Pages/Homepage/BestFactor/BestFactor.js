@@ -1,5 +1,7 @@
-import { green, red } from "@mui/material/colors";
-import React, { Component } from "react";
+import React, { useState } from "react";
+import "./BestFactor.css";
+import BestfactorCard from "../../../components/Card/BestfactorCard/BestfactorCard";
+
 import Slider from "react-slick";
 
 function SampleNextArrow(props) {
@@ -7,7 +9,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style,backgroundColor:"red", display: "block", background: "red" }}
+      style={{ ...style, display: "block", background: "red" }}
       onClick={onClick}
     />
   );
@@ -24,39 +26,70 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default class BestFactor extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
-      rtl:true,
-      arrows:true
-    };
-    return (
-      <div>
-        <h2>Custom Arrows</h2>
-        <Slider {...settings}>
-          <div>
-            <h3 style={{background: "blue" , height: "100px" , marginRight:"32px"}} >1</h3>
-          </div>
-          <div>
-            <h3 style={{background: "red" , height: "100px"}}>2</h3>
-          </div>
-          <div>
-            <h3 style={{background: "blue" , height: "100px"}}>3</h3>
-          </div>
-          <div>
-            <h3 style={{background: "red" , height: "100px"}}>4</h3>
-          </div>
-          <div>
-            <h3 style={{background: "green" , height: "100px",marginRight:"32px"}}>5</h3>
-          </div>
+const BestFactor = () => {
+  const [cards, setCards] = useState([
+    {
+      product: "محصولات:شیر-ماست ...",
+      factor: "کارخانه میهن",
+      largPic: "./nahoor home page/میهن.png",
+      shortPic: "./nahoor home page/Mihan LOGO.png",
+    },
+    {
+      product: "asdas",
+      factor: "dfsd",
+      largPic: "./nahoor home page/میهن.png",
+      shortPic: "./nahoor home page/Mihan LOGO.png",
+    },
+    {
+      product: "asdas",
+      factor: "dfsd",
+      largPic: "./nahoor home page/میهن.png",
+      shortPic: "./nahoor home page/Mihan LOGO.png",
+    },
+    {
+      product: "asdas",
+      factor: "dfsd",
+      largPic: "./nahoor home page/میهن.png",
+      shortPic: "./nahoor home page/Mihan LOGO.png",
+    },
+  ]);
+  const slider = React.useRef(null);
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
+  return (
+    <div className="Bestfactor-main">
+      <div className="Bestfactor-slick">
+
+        <h2>برترین کارخانه هایی که با ناهور کار میکنند</h2>
+        <Slider className="Bestfactor-slider" ref={slider} {...settings}>
+          {cards.map((card) => {
+            return (
+              <div>
+                <BestfactorCard
+                  largPic={card.largPic}
+                  shortPic={card.shortPic}
+                  product={card.product}
+                  factor={card.factor}
+                />
+              </div>
+            );
+          })}
         </Slider>
+        {/* <button
+          className="arrow-customize"
+          onClick={() => slider?.current?.slickPrev()}
+        >
+          Prev
+        </button> */}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+export default BestFactor;

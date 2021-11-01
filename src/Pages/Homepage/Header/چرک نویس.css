@@ -1,0 +1,56 @@
+/* * {
+    box-sizing: border-box;
+  }
+  
+  .HeaderContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+    background: url("../../../nahoorHomePage/BG.png") center center/cover
+      no-repeat;
+  }
+  .HeaderItems{
+      margin-right: 50px;
+  }
+  .HeaderMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .HeaderMainRight {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  
+  .HeaderMainTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .HeaderMainTitle2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+  
+  }
+  .HeaderMainExplain {
+    font-family: IRAN Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 24px;
+    text-align: right;
+  }
+  .HeaderMainLeft {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+   */

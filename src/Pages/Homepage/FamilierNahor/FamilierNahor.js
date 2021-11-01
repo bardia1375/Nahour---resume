@@ -5,7 +5,11 @@ const FamilierNahor = () => {
     <div className="mainFamilier">
       <div className="containerFamilier">
         <div className="mapFamilier">
-          <img width="100%" height="100%" src="./nahoor home page/Iran-Afghnistan.png" />
+          <img
+            className="mapFamilier-img"
+            height="auto"
+            src="./nahoor home page/Iran-Afghnistan.png"
+          />
         </div>
         <div className="contentFamilier">
           <h2 className="textFamilierH2">آشنایی بیشتر با ناهور</h2>
@@ -23,11 +27,13 @@ const FamilierNahor = () => {
             استفاده قرار گیرد.
           </p>
           <button className="buttonFamilier">
-            <span className="textFamilier">بیشتر بخوانید </span>
-            <img
-              width="10px"
-              src="Icons/arrow.png"
-            />
+            <span className="textFamilier">بیشتر بخوانید</span>{" "}
+            <span
+              class="material-icons"
+              style={{ transform: "rotate(180deg)" }}
+            >
+              chevron_right
+            </span>
           </button>
         </div>
       </div>

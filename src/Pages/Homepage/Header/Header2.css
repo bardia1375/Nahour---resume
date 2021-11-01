@@ -1,0 +1,128 @@
+.HeaderContainer {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  color: #fff;
+  font-size: 16px;
+  background: url("../../../nahoorHomePage/header.png") center center/cover
+    no-repeat;
+}
+.HeaderContainer {
+  /* border: 1px solid red; */
+  padding-right: 30px;
+}
+.HeaderItems {
+  display: flex;
+  flex-direction: column;
+}
+.HeaderMain {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+}
+.HeaderNav {
+}
+.HeaderMainTitle {
+  /* font-family: B Yekan +; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 10px;
+}
+.HeaderMainTitle2 {
+  /* font-family: B Yekan +; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 30px;
+
+  /* identical to box height */
+}
+.HeaderMainExplain {
+  font-family: IRAN Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 24px;
+  text-align: right;
+  margin-top: 30px;
+}
+.HeaderMainRight {
+  width: 50%;
+  min-width: 400px;
+}
+.HeaderMainLeft {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0px;
+  object-fit: contain;
+}
+.HeaderMainLeft1 {
+  width: 200px;
+  height: auto;
+  transform: translate(-70px, -10px);
+}
+
+.HeaderMainLeft2 {
+  width: 210px;
+  height: auto;
+  transform: translate(10vw, 12vh);
+}
+.button {
+  margin-top: 56px;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: none;
+  border: 1px solid #fff;
+  font-size: 1em;
+  line-height: 1;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  min-width: 100px;
+  width: 219px;
+  cursor: pointer;
+  margin-bottom: 88px;
+  transition: all 0.3s linear;
+}
+.button:hover {
+  background-color: #ff9900;
+  color: #000000;
+  border: none;
+}
+.header-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: 85vh;
+}
+.header-bottombutoonimg {
+  position: absolute;
+  bottom: 0px;
+}
+.header-bottombutoon {
+  position: absolute;
+  bottom: 40px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(165.01deg, #6b006d 10.56%, #ff9900 168.42%);
+  box-shadow: 0px 4px 25px rgba(107, 0, 109, 0.6);
+  border:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .HeaderContainer {
+    width: 100vw;
+  }
+}
