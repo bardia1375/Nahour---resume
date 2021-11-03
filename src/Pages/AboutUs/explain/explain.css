@@ -1,0 +1,18 @@
+.explain-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background: url("../../../img/AboutUs/BG\ under\ about.png") center center/cover no-repeat;
+    height: 24vh;
+    margin-top: 150px;
+}
+.explain-properties h2{
+    font-size:1.5rem;
+    text-align: center;
+}
+.explain-properties h3{
+    font-size:1rem;
+    margin-top:24px;
+
+}

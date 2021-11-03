@@ -1,0 +1,127 @@
+.Founders-container {
+  margin-top: -100px;
+}
+.Founders-main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+/* .Founders-content{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.Founders-imgtext{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+}
+.Founders-textImg{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Founders-left{
+    display:flex;
+    flex-direction: column; text-align: center;
+}
+.Founders-name{
+    font-size:0.8rem;
+}
+.Founders-job{
+    font-size:0.8rem; 
+} */
+/* .Founders-img {
+  position: relative;
+  width: 24%;
+  height:40%;
+  background: transparent;
+  border-radius: 7px;
+}
+.Founders-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  background: rgba(0, 0, 0, 0.5);
+  
+
+ 
+} */
+.Founders-img {
+  background: url("../../../img/AboutUs/image2.png") center center/contain
+    no-repeat;
+  width: 190px;
+  height: 40vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+}
+.Founders-img2 {
+  color: antiquewhite;
+  position: relative;
+  background-color: transparent;
+  transform: translateY(105px);
+  width: 100%;
+  height: 20%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.Founders-img2::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  backdrop-filter: blur(1px);
+  filter: blur(5px);
+}
+.Founders-img2-name {
+  font-size: 1rem;
+  font-family: IRAN Sans;
+  font-style: normal;
+  font-weight: bold;
+  margin-right: 16px;
+  margin-bottom: 4px;
+}
+.Founders-img2-job {
+  font-size: 0.8rem;
+  margin-right: 16px;
+  margin-bottom: 12px;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+}
+.Founders-img2-in {
+  margin-left: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 400px) {
+  .Founders-img{
+    width: 150px;
+    height: 30vh;
+  }
+  .Founders-img2{
+    transform: translateY(88px);
+
+  }
+
+}

@@ -1,0 +1,33 @@
+  .nahorJobPositions-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+     align-content: space-around;
+      margin-right: 10vw;
+      margin-top: 50px;
+  }
+  .buttonPosition {
+    margin-top:16px;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6b006d;
+    border: none;
+    font-size: 1em;
+    line-height: 1;
+    border-radius: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    height: 40px;
+    min-width: 100px;
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    padding:0 10px
+  }
+  .buttonPosition:hover {
+    background-color: #ff9900;
+    color: #000000;
+  }

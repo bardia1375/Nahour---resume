@@ -1,5 +1,4 @@
 import React from "react";
-import Tiltle from "../../../components/Title/Tiltle";
 import "./Application.css";
 const Application = () => {
 

@@ -1,0 +1,15 @@
+.Commiunication-main{  
+    margin-top:20px;
+}
+.Commiunication-container{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    width:50%
+}
+.email:focus{
+    border: 1px solid blue !important;
+}
