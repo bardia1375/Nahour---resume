@@ -1,0 +1,13 @@
+.shareBlog-scroll {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translateY(250px);
+}
+.shareBlog-scroll img{
+    background: #ECECEC;
+    border-radius: 50px;
+    cursor: pointer;
+   
+    margin: 4px 0px;
+}

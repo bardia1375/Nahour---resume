@@ -16,7 +16,7 @@ const AboutUs = () => {
       <GoalsOfNahour />
       <FoundersofNahor />
       <CallOfNahor />
-      {/* <CommiunicationForm /> */}
+      <div style={{padding:"0 23vw"}}><CommiunicationForm /></div>
       <NahorJobPositions />
     </div>
   );

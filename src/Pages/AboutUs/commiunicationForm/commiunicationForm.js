@@ -1,157 +1,212 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import { useFormik, FormikProvider, Form, useField } from "formik";
-// import "./comminucationForm.css";
-// import * as Yup from "yup";
-
-// const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-// const CommiunicationForm = ({ label, helpText, ...props }) => {
-//   const [field, meta] = useField(props);
-
-//   // Show inline feedback if EITHER
-//   // - the input is focused AND value is longer than 2 characters
-//   // - or, the has been visited (touched === true)
-//   const [didFocus, setDidFocus] = React.useState(false);
-//   const handleFocus = () => setDidFocus(true);
-//   const showFeedback =
-//     (!!didFocus && field.value.trim().length > 2) || meta.touched;
-
-//   return (
-//     <div
-//       className={`form-control ${
-//         showFeedback ? (meta.error ? "invalid" : "valid") : ""
-//       }`}
-//     >
-//       <div className="flex items-center space-between">
-//         <label htmlFor={props.id}>{label}</label>{" "}
-//         {showFeedback ? (
-//           <div
-//             id={`${props.id}-feedback`}
-//             aria-live="polite"
-//             className="feedback text-sm"
-//           >
-//             {meta.error ? meta.error : "✓"}
-//           </div>
-//         ) : null}
-//       </div>
-//       <input
-//         {...props}
-//         {...field}
-//         aria-describedby={`${props.id}-feedback ${props.id}-help`}
-//         onFocus={handleFocus}
-//       />
-//       <div className="text-xs" id={`${props.id}-help`} tabIndex="-1">
-//         {helpText}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export const Example = () => {
-//   const formik = useFormik({
-//     initialValues: {
-//       username: "",
-//     },
-//     onSubmit: async (values) => {
-//       await sleep(500);
-//       alert(JSON.stringify(values, null, 2));
-//     },
-//     validationSchema: Yup.object({
-//       username: Yup.string()
-//         .min(8, "Must be at least 8 characters")
-//         .max(20, "Must be less  than 20 characters")
-//         .required("Username is required")
-//         .matches(
-//           /^[a-zA-Z0-9]+$/,
-//           "Cannot contain special characters or spaces"
-//         ),
-//     }),
-//   });
-//   const lable = [" نام و نام خانوادگی", "شماره تماس ", "آدرس ایمیل"];
-//   return (
-//     <FormikProvider className="bardia"  value={formik}>
-//       <Form>
-//         <CommiunicationForm
-//           label=" نام و نام خانوادگی"
-//           id="username"
-//           name="username"
-//           helpText="Must be 8-20 characters and cannot contain special characters."
-//           type="text"
-//         />
-//         <div>
-//           <button type="submit">Submit</button>
-//         </div>
-//       </Form>
-//       <Form>
-//         <CommiunicationForm
-//           label="شماره تماس"
-//           id="username"
-//           name="username"
-//           helpText="Must be 8-20 characters and cannot contain special characters."
-//           type="text"
-//         />
-//         <div>
-//           <button type="submit">Submit</button>
-//         </div>
-//       </Form>
-//     </FormikProvider>
-//   );
-// };
 import React from "react";
-import { Form, Input, TextArea, Button, Select } from "semantic-ui-react";
-import "semantic-ui-css/semantic.min.css";
-import styles from "./comminucationForm.css";
+import ReactDOM from "react-dom";
+import { Formik, Form, useField } from "formik";
+import * as Yup from "yup";
+const MyTextInput = ({ label, ...props }) => {
+  // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
+  // which we can spread on <input>. We can use field meta to show an error
+  // message if the field is invalid and it has been touched (i.e. visited)
+  const [field, meta] = useField(props);
+  return (
+    <div className="formik-items">
+      <label style={{ fontSize: "0.8rem" }} htmlFor={props.id || props.name}>
+        {label}
+      </label>
 
-const genderOptions = [
-  { key: "m", text: "کارخانه دار", value: "کارخانه دار" },
-  { key: "f", text: "تاجر", value: "تاجر" },
-];
+      <input className="text-input" {...field} {...props} />
+      {meta.touched && meta.error ? (
+        <div className="formik-error">{meta.error}</div>
+      ) : null}
+    </div>
+  );
+};
+const MyTextInput2 = ({ label, ...props }) => {
+  // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
+  // which we can spread on <input>. We can use field meta to show an error
+  // message if the field is invalid and it has been touched (i.e. visited)
+  const [field, meta] = useField(props);
+  return (
+    <div className="formik-main-items" style={{ margin:"0 16px"}}>
+      {meta.touched && meta.error ? (
+        <div className="formik-items">
+          <label
+            className="formik-lable"
+            style={{ fontSize: "0.8rem" }}
+            htmlFor={props.id || props.name}
+          >
+            {label}<span style={{ color: "red"}}> *</span>
+          </label>
+          <input
+            className="text-input"
+            style={{ border: "2px solid red" }}
+            {...field}
+            {...props}
+          />
 
-const CommiunicationForm = () => (
-  <div className="Commiunication-container">
-    <Form className="Commiunication-main">
-      <Form.Group widths="equal">
-        <Form.Field
-          id="form-input-control-first-name"
-          control={Input}
-          label="First name"
-          placeholder="First name"
-        />
-        <Form.Field
-          id="form-input-control-last-name"
-          control={Input}
-          label="Last name"
-          placeholder="Last name"
-        />
-    
-      </Form.Group>
-      <Form.Field
-        className="email"
-        id="form-input-control-error-email"
-        control={Input}
-        label="Email"
-        placeholder="joe@schmoe.com"
-        error={{
-          content: "Please enter a valid email address",
-          pointing: "below",
-        }}
-      />
-      <Form.Field
-      className="text-aria"
-        id="form-textarea-control-opinion"
-        control={TextArea}
-        label="Opinion"
-        placeholder="Opinion"
-      />
-      <Form.Field
-        id="form-button-control-public"
-        control={Button}
-        content="Confirm"
-        label="Label with htmlFor"
-      />
-    </Form>
-  </div>
-);
+          <div className="formik-error">{meta.error}</div>
+        </div>
+      ) : (
+        <div className="formik-items">
+          <label
+            className="formik-lable"
+            style={{ fontSize: "0.8rem" }}
+            htmlFor={props.id || props.name}
+          >
+            {label}<span style={{ color: "red"}}> *</span>
+          </label>
+          <input className="text-input" {...field} {...props} />
+        </div>
+      )}
+    </div>
+  );
+};
+const MyTextArea = ({ children, ...props }) => {
+  // React treats radios and checkbox inputs differently other input types, select, and textarea.
+  // Formik does this too! When you specify `type` to useField(), it will
+  // return the correct bag of props for you -- a `checked` prop will be included
+  // in `field` alongside `name`, `value`, `onChange`, and `onBlur`
+  const [field, meta] = useField({ ...props, type: "text" });
+  return (
+    <div className="formik-textArea" >
+      <label className="formik-lable" for="story">
+        پیام متنی / نظرات شما
+      </label>
+      <textarea
+        className="textareaInput"
+        style={{ borderRadius: "20px", border: "2px solid #C9C9C9" }}
+        type="text"
+        {...field}
+        {...props}
+      >
+        {children}
+      </textarea>
+      {meta.touched && meta.error ? (
+        <div className="formik-error" style={{ textAlign: "right" }}>
+          {meta.error}
+        </div>
+      ) : null}
+    </div>
+  );
+};
 
+const MyTextArea2 = ({ children, ...props }) => {
+  // React treats radios and checkbox inputs differently other input types, select, and textarea.
+  // Formik does this too! When you specify `type` to useField(), it will
+  // return the correct bag of props for you -- a `checked` prop will be included
+  // in `field` alongside `name`, `value`, `onChange`, and `onBlur`
+  const [field, meta] = useField({ ...props, type: "text" });
+  return (
+    <div className="formik-textArea">
+      {meta.touched && meta.error ? (
+        <div className="formik-textArea-false">
+          <div>
+            <label className="formik-lable" for="story">
+              پیام متنی / نظرات شما<span style={{ color: "red" }}> *</span>
+            </label>
+          </div>
+          <div>
+            <textarea
+              className="textareaInput"
+              style={{ borderRadius: "20px", border: "2px solid red" }}
+              type="text"
+              {...field}
+              {...props}
+            >
+              {children}
+            </textarea>
+          </div>
+
+          <div className="formik-error" style={{ textAlign: "right" }}>
+            {meta.error}
+          </div>
+        </div>
+      ) : (
+        <div className="formik-textArea-true">
+          <div>
+            <label className="formik-lable" for="story">
+              پیام متنی / نظرات شما<span style={{ color: "red" }}> *</span>
+            </label>
+          </div>
+          <div>
+            <textarea
+              className="textareaInput"
+              style={{ borderRadius: "20px", border: "2px solid #C9C9C9" }}
+              type="text"
+              {...field}
+              {...props}
+            >
+              {children}
+            </textarea>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+// And now we can use these
+const CommiunicationForm = () => {
+  return (
+    <div className="formik-container">
+      <div>
+        <h2>نظرات</h2>
+      </div>
+      <div className="formik-container-main">
+        <Formik
+          initialValues={{
+            firstName: "",
+            email: "",
+            story: "",
+          }}
+          validationSchema={Yup.object({
+            firstName: Yup.string()
+              .max(25, "شما مجاز به استفاده از حداکثر 15 کاراکتر هستید")
+              .required("لطفا فیلد را کامل کنید"),
+            email: Yup.string()
+              .email("لطفا ایمیل را درست وارد کنید")
+              .required("لطفا فیلد را کامل کنید"),
+            story: Yup.string().required("لطفا فیلد را کامل کنید"),
+          })}
+          onSubmit={(values, { setSubmitting }) => {
+            setTimeout(() => {
+              alert(JSON.stringify(values, null, 2));
+              setSubmitting(false);
+            }, 100);
+          }}
+        >
+          <Form className="formik-main">
+            <div className="formik-top">
+              <MyTextInput2
+                label="نام شما"
+                name="firstName"
+                type="text"
+                placeholder="پریا باب الحوایجی"
+               
+              />
+              <MyTextInput2
+                label="ایمیل"
+                name="email"
+                type="email"
+                placeholder="jane@formik.com"
+              />
+            </div>
+            <div className="formik-bottom">
+              <MyTextArea2
+                placeholder=" پیام مورد نظر خود را برای ما بنویسید :))"
+                id="story"
+                name="story"
+                rows="5"
+                cols="33"
+              ></MyTextArea2>
+            </div>
+            <div className="formikmain-bottom">
+              <button onSubmit className="formik-button" type="submit">
+                ارسال نظر
+              </button>
+            </div>
+          </Form>
+        </Formik>
+      </div>
+    </div>
+  );
+};
 export default CommiunicationForm;

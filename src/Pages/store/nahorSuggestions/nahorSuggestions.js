@@ -6,9 +6,9 @@ function NahorSuggestions() {
     <div className="NahorSuggestions-container">
       <div className="NahorSuggestions-main" style={{ padding: "0 16vw" }}>
         <div className="NahorSuggestions-right">
-          <div className="NahorSuggestions-title">
-            <h2 >پیشنهادات</h2>
-            <h2 style={{ marginTop:"16px"}}>ناهور</h2>
+          <div className="NahorSuggestions-titlefirst">
+            <h2 style={{ fontStretch: "200%"}}>پیشنهادات</h2>
+            <h2 className="NahorSuggestions-titlesecond" style={{ marginTop:"16px"}}>ناهور</h2>
           </div>
           <div style={{ width: "16%"}}>
             <img src="./nahoor home page/store page/image 2.png"  width="100%"/>

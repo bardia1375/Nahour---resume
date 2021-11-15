@@ -17,7 +17,7 @@ function ShareBlogHeader() {
         return (
           <div className="shareBlog-main">
             <div
-              style={{ width: "100%", height: "40vh", backgroundColor: "red" }}
+              style={{ width: "100%", height: "40vh" }}
             >
               <img
                 src={content.img}

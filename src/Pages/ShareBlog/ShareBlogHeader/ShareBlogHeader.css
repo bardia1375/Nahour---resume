@@ -11,6 +11,7 @@
 }
 .shareBlog-content-main-left img {
   background-color: #6b006d;
+  cursor: pointer;
   border-radius: 50%;
   padding: 8px;
   margin: 0 4px;
@@ -31,4 +32,13 @@
 }
 .shareBlog-content-left{
 margin-right: 16px;
+}
+.shareBlog-main h2{
+  margin-top:16px;
+  font-family: IRANSans;
+font-style: normal;
+font-weight: 500;
+font-size: 2rem;
+line-height: 46px;
+text-align: right;
 }

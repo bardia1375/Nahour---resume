@@ -6,19 +6,20 @@ import Footer from "./Pages/Homepage/footer/footer";
 import HomePage from "./Pages/Homepage/HomePage";
 import ShareBlog from "./Pages/ShareBlog/ShareBlog";
 import Store from "./Pages/store/Store";
+import { Shopping } from "./Shopping";
 
 function App() {
   return (
     <div>
       {/* <NavbarSmall/> */}
       {/* <HomePage /> */}
-      {/* <AboutUs/> */}
+      <AboutUs/>
       
      {/* <Blog/>
-     <ShareBlog />
-     <Footer/> */}
-     <Store/>
-     <Footer/> 
+     <ShareBlog /> */}
+     <Footer/>
+   <Shopping/>
+     {/* <Footer/>  */}
     </div>
   );
 }

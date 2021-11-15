@@ -13,20 +13,66 @@ function ShareBlogmain() {
     },
   ];
   return (
-    <div className="ShareBlogmain-container">
-      {sentenses.map((sentense) => {
-        return (
-          <div>
-            <h3>{sentense.subTitle}</h3>
-            <p>{sentense.paragraph1}</p>
-            <div style={{height:"10%"}}>
-              <img src={sentense.img} width="100%" height="auto" alt=""  style={{objectFit:"fill"}}/>
+    <div className="emtehan">
+      <div className="ShareBlogmain-container">
+        {sentenses.map((sentense) => {
+          return (
+            <div>
+              <h3>{sentense.subTitle}</h3>
+              <p>{sentense.paragraph1}</p>
+              <div style={{ width: "100%" }}>
+                <img
+                  src={sentense.img}
+                  width="100%"
+                  height="auto"
+                  alt=""
+                  style={{ objectFit: "fill" }}
+                />
+              </div>
+              <h3>{sentense.subTitle}</h3>
+              <p>{sentense.paragraph2}</p>
             </div>
-            <h3>{sentense.subTitle}</h3>
-            <p>{sentense.paragraph2}</p>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
+
+      <div className="shareBlog-submain-icon">
+        <div style={{ width: "30%" }}>
+          <img
+            src="./nahoor home page/Share Blogs page/Icons/Outline/Brands/Facebook.svg"
+            alt=""
+            width="100%"
+          />
+        </div>
+        <div style={{ width: "30%" }}>
+          <img
+            src="./nahoor home page/Share Blogs page/Icons/Outline/Brands/Linkedin.svg"
+            alt=""
+            width="100%"
+          />
+        </div>
+        <div style={{ width: "30%" }}>
+          <img
+            src="./nahoor home page/Share Blogs page/Icons/Outline/Brands/Twitter.svg"
+            alt=""
+            width="100%"
+          />
+        </div>
+        <div style={{ width: "30%" }}>
+          <img
+            src="./nahoor home page/Share Blogs page/Icons/Outline/Files/Copy.svg"
+            alt=""
+            width="100%"
+          />
+        </div>
+        <div style={{ width: "30%" }}>
+          <img
+            src="./nahoor home page/Share Blogs page/Icons/Outline/Communication/Share.svg"
+            alt=""
+            width="100%"
+          />
+        </div>
+      </div>
     </div>
   );
 }
