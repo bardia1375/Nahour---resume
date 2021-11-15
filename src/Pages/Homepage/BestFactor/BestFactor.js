@@ -17,6 +17,7 @@ function SampleNextArrow(props) {
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
+
   return (
     <div
       className={className}
@@ -27,6 +28,7 @@ function SamplePrevArrow(props) {
 }
 
 const BestFactor = () => {
+  const [currentIndex, setcurrentIndex] = useState(0);
   const [cards, setCards] = useState([
     {
       product: "محصولات:شیر-ماست ...",
@@ -58,15 +60,60 @@ const BestFactor = () => {
     dots: true,
     infinite: true,
     slidesToShow: 3,
-
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    arrows: false,
+    beforeChange: (prev, next) => {
+      setcurrentIndex(next);
+    },
+    appendDots: (dots) => {
+      return (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {dots.map((item, index) => {
+            return (
+              <div style={{ margin: "0 8px" }} key={index}>
+                {item.props.children}
+              </div>
+            );
+          })}
+        </div>
+      );
+    },
+    customPaging: (index) => {
+      return (
+        <div
+          style={
+            index === currentIndex
+              ? {
+                  width: "30px",
+                  height: "10px",
+                  background: "#6B006D",
+                  borderRadius: "50px",
+                }
+              : {
+                  width: "10px",
+                  height: "10px",
+                  background: "#C4C4C4",
+                  borderRadius: "50px",
+                }
+          }
+        >
+          {}
+        </div>
+      );
+    },
   };
+
   return (
     <div className="Bestfactor-main">
       <div className="Bestfactor-slick">
-
         <h2>برترین کارخانه هایی که با ناهور کار میکنند</h2>
         <Slider className="Bestfactor-slider" ref={slider} {...settings}>
           {cards.map((card) => {

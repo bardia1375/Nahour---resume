@@ -1,0 +1,62 @@
+.blogSlideSecondSlider {
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+  background: transparent;
+}
+.blogSlideSecondSlider-img {
+  object-fit: cover;
+  position: relative;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.blogSlideSecondSlider::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  filter: blur(4px);
+  z-index: 1;
+  transform: translateX(50%);
+}
+.app-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  top: 70%;
+  left: 0;
+  right: 0;
+  color: white;
+  z-index: 2;
+  padding-right: 52px;
+  text-align: right;
+}
+.app-paragraph h2 {
+  font-size: 1.5rem;
+}
+.app-paragraph p {
+  font-size: 0.8rem;
+}
+.blogSlideSecond-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 104%;
+  justify-content: flex-end;
+}
+.blogSlideSecond-subDetail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -24px;
+}
+.blogSlideSecond-subDetail p {
+  margin-right: 8px;
+}

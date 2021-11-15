@@ -1,0 +1,28 @@
+.navbarSmall-container {
+  background: linear-gradient(
+    91.49deg,
+    #6b006d 38.27%,
+    #ff9900 181.4%,
+    #f69007 181.4%
+  );
+  height:8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarSmall-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    
+margin-right: 6vw;
+   list-style-type: none;
+}
+.navbarSmall-main li{
+ padding: 0 4vw;
+}
+.navbarSmall-main li a{
+    color: #fff
+}

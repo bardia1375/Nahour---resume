@@ -1,0 +1,73 @@
+.ShareBlogCard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 36px;
+  padding: 12px;
+}
+.ShareBlogCard-container:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 7px;
+}
+.ShareBlogCard-subNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 24px;
+  align-items: center;
+  background: rgba(109, 0, 0, 0.07);
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 12px;
+}
+.ShareBlogCard-subNav h2 {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #6b006d;
+}
+.ShareBlogCard-main {
+  margin-top: 16px;
+}
+.ShareBlogCard-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  margin-top: 16px;
+}
+.ShareBlogCard-right {
+  display: flex;
+  flex-direction: row;
+  
+}
+.ShareBlogCard-right2 {
+
+  margin-right: 16px;
+
+}
+.ShareBlogCard-right2 p {
+  font-size: 0.8rem;
+}
+.ShareBlogCard-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+}
+.ShareBlogCard-left p {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 23px;
+  text-align: right;
+  color: #6b006d;
+}

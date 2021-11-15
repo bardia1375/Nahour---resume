@@ -1,0 +1,28 @@
+.bestProductStore-container {
+  margin-top: 36px;
+}
+.bestProductStore-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+.bestProductStore-cards{
+position: relative;
+
+}
+.bestProductStore-cardsContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.61);
+  color: #fff;
+  position: absolute;
+  top:8%;
+  width: 100%;
+  height: 24%;
+  backdrop-filter: blur(4px);
+}
+.bestProductStore-paragraph::after{
+content: ">";
+margin-right: 16px;
+}

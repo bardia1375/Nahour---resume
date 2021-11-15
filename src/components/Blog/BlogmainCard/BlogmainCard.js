@@ -1,19 +1,23 @@
 import React from "react";
 import "./BlogmainCard.css";
 function BlogmainCard(props) {
+  if (props.loading) {
+    return <h2>Loading...</h2>;
+  }
   return (
     <div className="BlogmainCard-container">
-      <img
-        src={props.Largimg}
-        width="100%"
-        className="BlogmainCard-img"
-        alt=""
-      />
-
-      <div style={{ padding: "0" }}>
+      <div>
+        <img
+          src={props.Largimg}
+          width="100%"
+          className="BlogmainCard-img"
+          alt=""
+        />
+      </div>
+      <div>
         <div className="BlogmainCard-subNav">
           <div>
-            <h2>hello</h2>
+            <h2>صنایع غذایی</h2>
           </div>
           <div>
             <h2>hello</h2>
@@ -25,18 +29,28 @@ function BlogmainCard(props) {
         </div>
         <div className="BlogmainCard-footer">
           <div className="BlogmainCard-right">
-            <img src={props.imgProfile} width="36%" />
+            <div style={{ width: "30%" }}>
+              <img src={props.imgProfile} width="100%" />
+            </div>
             <div className="BlogmainCard-right2">
-              <p>نیما بشیری</p>
-              <p>4 آبان 1400</p>
+              <div>
+                <p>نیما بشیری</p>
+              </div>
+              <div>
+                <p>4 آبان 1400</p>
+              </div>
             </div>
           </div>
           <div className="BlogmainCard-left">
-            <h3>بیشتر بخوانید +</h3>
-            <img
-              src={"./nahoor home page/Blogs page/Icons/Bookmark.svg"}
-              alt=""
-            />
+            <div>
+              <h3>بیشتر بخوانید +</h3>
+            </div>
+            <div>
+              <img
+                src={"./nahoor home page/Blogs page/Icons/Bookmark.svg"}
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>

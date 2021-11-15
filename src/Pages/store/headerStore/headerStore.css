@@ -1,0 +1,47 @@
+.headerstore-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.headerstore-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(100.6deg, #6b006d 46.46%, #ff9900 124.15%);
+  border-radius: 5px;
+  color: white;
+}
+.headerstore-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+.headerstore-right h1 {
+  font-family: B Yekan +;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 45px;
+  text-align: center;
+}
+.headerstore-right p {
+  font-family: IRAN Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: right;
+  margin-top: 24px;
+}
+.headerstore-bottom {
+  /* display: grid; */
+  /* grid-template-columns: 2fr 2fr; */
+
+ 
+  margin-top: 24px;
+  
+}

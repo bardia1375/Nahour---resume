@@ -1,0 +1,18 @@
+.headerSliderBlog-content {
+  position: relative;
+}
+.headerSliderBlog-button {
+  position: absolute;
+  top: 10%;
+  transform: translateX(-100%);
+}
+.headerSliderBlog-button button {
+  background-color: #6b006d;
+  border: none;
+  color: white;
+  padding: 16px 64px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.HeaderBlog-right {
+}

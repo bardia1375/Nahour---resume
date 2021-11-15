@@ -1,0 +1,37 @@
+.groupStore-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+.groupStore-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 24px;
+}
+.groupStore-cards{
+    position: relative;
+}
+.groupStore-cardsImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.groupStore-contentImg {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top:1;
+  color: #fff;
+
+}
+.groupStore-contentImg h3 {
+  font-family: IRAN Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+}

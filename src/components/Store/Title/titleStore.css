@@ -1,0 +1,11 @@
+.titleStore-container {
+  font-family: IRAN Sans;
+  margin-bottom:16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}

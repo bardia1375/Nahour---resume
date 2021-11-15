@@ -4,7 +4,63 @@ const Footer = () => {
   return (
     <div className="Footer">
       <div className="Footer-container">
-        <div className="Footer-icons">icons</div>
+        <div className="Footer-icons">
+          <img
+            src="nahoor home page/Footer/line.png"
+            width="24%"
+            style={{ marginLeft: "32px" }}
+            alt=""
+          />
+          <a>
+            <img
+              src="nahoor home page/Footer/facebook.svg"
+              alt=""
+              style={{ cursor: "pointer" }}
+            />{" "}
+          </a>
+          <a>
+            {" "}
+            <img
+              src="nahoor home page/Footer/google.svg"
+              alt=""
+              style={{
+                objectFit: "contain",
+                cursor: "pointer",
+                marginRight: "16px",
+              }}
+            />
+          </a>
+          <a>
+            {" "}
+            <img
+              src="nahoor home page/Footer/telegram.svg"
+              alt=""
+              style={{
+                objectFit: "contain",
+                cursor: "pointer",
+                marginRight: "16px",
+              }}
+            />{" "}
+          </a>
+          <a>
+            {" "}
+            <img
+              src="nahoor home page/Footer/whatsapp.svg"
+              alt=""
+              style={{
+                objectFit: "contain",
+                cursor: "pointer",
+                marginRight: "16px",
+              }}
+            />{" "}
+          </a>
+          <img
+            src="nahoor home page/Footer/line.png"
+            alt=""
+            width="24%"
+            style={{ marginRight: "32px" }}
+          />
+        </div>
         <div className="Footer-items">
           <div className="Footer-culomn">
             <img
@@ -20,7 +76,10 @@ const Footer = () => {
           </div>
           <div className="Footer-culomn">
             <h3 className="locationlogo">
-              <img src="./nahoor home page/Icons/Location.svg"  style={{marginLeft:"8px"}}/>
+              <img
+                src="./nahoor home page/Icons/Location.svg"
+                style={{ marginLeft: "8px" }}
+              />
               آدرس دفتر :
             </h3>
             <p className="Footer-address">
@@ -30,7 +89,10 @@ const Footer = () => {
           </div>
           <div className="Footer-culomn">
             <h3 className="Footer-phoneH3">
-              <img src="./nahoor home page/Icons/Phone.svg" style={{marginLeft:"8px"}} />
+              <img
+                src="./nahoor home page/Icons/Phone.svg"
+                style={{ marginLeft: "8px" }}
+              />
               تلفن تماس :
             </h3>
             <div className="Footer-phone">
@@ -39,8 +101,11 @@ const Footer = () => {
           </div>
           <div className="Footer-culomn">
             <h3 className="Footer-EnvelopeH3">
-               <img src="./nahoor home page/Icons/Envelope.svg" style={{marginLeft:"8px"}} /> 
-               ایمیل : 
+              <img
+                src="./nahoor home page/Icons/Envelope.svg"
+                style={{ marginLeft: "8px" }}
+              />
+              ایمیل :
             </h3>
             <p>nahoor@info.com</p>
           </div>

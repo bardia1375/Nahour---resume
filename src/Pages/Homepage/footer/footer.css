@@ -29,11 +29,11 @@
 }
 .Footer-culomn p {
   margin-top: 14px;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   line-height: 24px;
 }
 .Footer-culomn h3 {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .Footer-address,
 .Footer-explain {
@@ -73,4 +73,11 @@
 }
 .CopyRight-paragraph {
   font-size: 0.8rem;
+}
+.Footer-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 }

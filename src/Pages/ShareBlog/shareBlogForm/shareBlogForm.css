@@ -1,0 +1,112 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.formik-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+
+}
+.formik-container-main {
+  width: 100%;
+  margin-top: 24px;
+}
+.formik-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.formik-main-items {
+  width: 100%;
+}
+.formik-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  width: 100%;
+}
+.formik-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.formik-mid {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+.formik-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+.text-input {
+  border: 2px solid #c9c9c9;
+  border-radius: 50px;
+  padding: 8px 0;
+}
+.text-input:focus {
+  outline: 2px solid #ff9900;
+  border: none;
+}
+.formik-paragraph {
+  margin-top: 0px;
+}
+.formik-select {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 40%;
+}
+.formik-button {
+  margin-top: 16px;
+  background: #6b006d;
+  border-radius: 50px;
+  padding: 12px 64px;
+  color: #fff;
+}
+.formikmain-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.formik-error {
+  font-size: 0.8rem;
+  color: red;
+}
+.formik-textArea {
+  display: flex;
+  flex-direction: column;
+ 
+  margin: 0 16px;
+}
+.formik-textArea-true {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.textareaInput {
+  width: 100%;
+}
+.textareaInput:focus {
+  outline: 2px solid #ff9900;
+  border: none;
+}
+.formik-lable {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 23px;
+  text-align: right;
+}

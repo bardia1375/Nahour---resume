@@ -62,4 +62,23 @@
   line-height: 23px;
   text-align: right;
   color: #6b006d;
+  background-color: none;
+}
+.BlogmainCard-title {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 1.5rem;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-align: right;
+}
+.BlogmainCard-paragraph {
+  font-family: IRAN Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: right;
 }
