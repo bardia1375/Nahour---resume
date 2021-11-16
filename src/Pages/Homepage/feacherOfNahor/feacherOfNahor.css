@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top:96px;
   /* overflow: hidden; */
   
 }
@@ -17,7 +18,10 @@
 }
 
 .text {
-  margin-top:96px;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+ 
   font-size: 2.25rem;
   color: #6b006d;
   font-weight: bold;

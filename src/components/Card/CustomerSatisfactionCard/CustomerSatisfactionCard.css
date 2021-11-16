@@ -11,9 +11,9 @@
   min-width: 200px;
 }
 .Satisfaction-container p {
-  font-family: IRAN Sans;
+  font-family: IRANSans;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 0.75rem;
   line-height: 24px;
   text-align: center;
@@ -23,11 +23,17 @@
   font-weight: 500 !important;
   font-size: 1rem !important;
   margin-top: 10px !important;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
 }
 .Satisfaction-container h3 {
   font-size: 0.75rem;
   font-weight: 100;
   margin-top: 4px !important;
+    font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
 }
 .Satisfaction-titleJob{
   margin-bottom: 20px;

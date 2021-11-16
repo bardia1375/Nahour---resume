@@ -25,10 +25,10 @@
   border-radius: 7px;
 }
 .headersecond-leftTopTitile h2 {
-  font-family: IRAN Sans;
+  font-family: IRANSans;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .headersecond-leftTopButton button {
   background: #ffd600;
@@ -40,6 +40,10 @@
   font-size: 1rem;
   margin-top: 16px;
   cursor: pointer;
+}
+.headersecond-leftTopButton button:hover{
+  background: #ec0e0e;
+  color:#fff;
 }
 .headersecond-mainCard{
   margin-top:16px;

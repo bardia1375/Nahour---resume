@@ -1,4 +1,6 @@
 import React from "react";
+import ButtonComponent from "../../../components/Button/button";
+import Title from "../../../components/home/title/Title";
 import "./FamilierNahor.css";
 const FamilierNahor = () => {
   return (
@@ -12,7 +14,7 @@ const FamilierNahor = () => {
           />
         </div>
         <div className="contentFamilier">
-          <h2 className="textFamilierH2">آشنایی بیشتر با ناهور</h2>
+        <div style={{marginTop:"50px"}}><Title title=" آشنایی بیشتر با ناهور"/></div>
           <p className="textParagraph">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
@@ -26,7 +28,7 @@ const FamilierNahor = () => {
             اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
             استفاده قرار گیرد.
           </p>
-          <button className="buttonFamilier">
+          {/* <button className="buttonFamilier">
             <span className="textFamilier">بیشتر بخوانید</span>{" "}
             <span
               class="material-icons"
@@ -34,7 +36,8 @@ const FamilierNahor = () => {
             >
               chevron_right
             </span>
-          </button>
+          </button> */}
+          <div style={{ marginBottom:"48px", marginTop:"24px"}}><ButtonComponent title="بیشتر بخوانید"/></div>
         </div>
       </div>
     </div>

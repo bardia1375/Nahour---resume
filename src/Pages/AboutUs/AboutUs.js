@@ -10,7 +10,7 @@ import NahorJobPositions from "./nahorJobPositions/nahorJobPositions";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div >
       <Header />
       <Explain />
       <GoalsOfNahour />

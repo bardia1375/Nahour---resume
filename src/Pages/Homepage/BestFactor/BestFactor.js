@@ -3,6 +3,7 @@ import "./BestFactor.css";
 import BestfactorCard from "../../../components/Card/BestfactorCard/BestfactorCard";
 
 import Slider from "react-slick";
+import Title from "../../../components/home/title/Title";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -114,7 +115,8 @@ const BestFactor = () => {
   return (
     <div className="Bestfactor-main">
       <div className="Bestfactor-slick">
-        <h2>برترین کارخانه هایی که با ناهور کار میکنند</h2>
+        {/* <h2>برترین کارخانه هایی که با ناهور کار میکنند</h2> */}
+        <div><Title title="برترین کارخانه هایی که با ناهور کار میکنند" /></div>   
         <Slider className="Bestfactor-slider" ref={slider} {...settings}>
           {cards.map((card) => {
             return (

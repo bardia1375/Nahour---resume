@@ -1,20 +1,15 @@
 .Customer-slider {
   width: 70%;
-
 }
-.Customer-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top:100px;
-
+.Customer-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
-.Customer-main h2{
-    color: #6b006d;
-    font-family: B Yekan+;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 80px;
+.Customer-main h2 {
+  color: #6b006d;
+  font-size: 2rem;
+  margin-bottom: 80px;
 }

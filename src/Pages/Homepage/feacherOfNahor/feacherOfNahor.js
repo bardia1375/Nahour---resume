@@ -1,5 +1,6 @@
 import React from "react";
 import CartOfFeachers from "../../../components/FeacherOfNahor/CartOfFeachers";
+import Title from "../../../components/home/title/Title";
 import "./feacherOfNahor.css";
 function FeacherOfNahor() {
   const Carts = [
@@ -27,7 +28,8 @@ function FeacherOfNahor() {
 
   return (
     <div className="feacherOfNahor">
-      <div className="text">ویژگی‌های ناهور</div>
+      {/* <div className="text">ویژگی‌های ناهور</div> */}
+      <div><Title title="ویژگی‌های ناهور"/></div>
       <div className="feacherOfCart">
         {Carts.map((Cart) => {
           return (

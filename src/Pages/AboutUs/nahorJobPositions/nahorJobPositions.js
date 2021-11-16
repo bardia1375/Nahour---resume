@@ -1,10 +1,24 @@
+import { margin } from "@mui/system";
 import React from "react";
-import "./nahorJobPositions.css"
+import { Title } from "../../../components/AboutUs/title/Title";
+import "./nahorJobPositions.css";
 const NahorJobPositions = () => {
   return (
     <div className="nahorJobPositions-container">
-      <h2 >موقعیت های شغلی ناهور</h2>
-      <p>
+      <div className="nahorJobPositions-title">
+        <div style={{width:"2%"}}>
+          <img
+            className="nahorJobPositions-img"
+            width="100%"
+            src="./nahoor home page/About Page/behinde.png"
+            alt=""
+          />
+        </div>
+        <div style={{marginRight:"16px"}}>
+          <Title title="بنیان گذاران ناهور" />
+        </div>
+      </div>
+      <p className="nahorJobPositions-paragraph">
         لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
         بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک
         از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه

@@ -26,15 +26,16 @@
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
-  margin-bottom: 24px;
+
 }
 .ApplicationParagraph {
-  font-family: IRAN Sans;
+  font-family: IRANSans;
   font-style: normal;
-  font-weight: normal;
-  font-size: 1.65em;
+  font-weight: 300;
+  font-size: 1.5rem;
   line-height: 47px;
   text-align: right;
+  margin-top: 24px;
 }
 .ApplicationButton {
   display: flex;
@@ -55,8 +56,8 @@
   color: #ffffff;
   text-decoration: none;
   height: 50px;
-  min-width: 115px;
-  width: 10vw;
+  min-width: 125px;
+  width: 8vw;
   cursor: pointer;
   transition: all 0.3s linear;
   margin-left: 16px;

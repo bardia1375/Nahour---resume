@@ -1,4 +1,5 @@
 import React from "react";
+import { Title } from "../../../components/AboutUs/title/Title";
 import "./callOfNahor.css";
 const CallOfNahor = () => {
   const calls = [
@@ -28,7 +29,7 @@ const CallOfNahor = () => {
           src="./nahoor home page/About Page/behinde.png"
           alt=""
         />
-        <h2 className="call-title">تماس مستقیم با ناهور</h2>
+        <div><Title title="تماس مستقیم با ناهور"/></div>
       </div>
 
       <div className="call-content">

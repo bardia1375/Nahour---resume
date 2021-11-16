@@ -1,6 +1,7 @@
+@import url("/src/assets/fonts/fontiran.css");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: BYekan,'BYekan',tahoma Iran-Sans -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -8,6 +9,24 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:IRANSans, Iran-Sans, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family:'IRANSans_LFN';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/src/assets/fonts/Iran-Sans.ttf');
+}
+
+/* فایل اصلی «سی اس اس» که در وب سایت خود استفاده می کنید */
+ 
+ /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+ 
+body {
+    font-family: IRANSans;
+    font-weight: 300;
+}
+ 
+/* سایر دستورات وب سایت */
+/* ... */

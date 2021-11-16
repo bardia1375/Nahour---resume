@@ -1,4 +1,5 @@
 import React  from "react";
+import { Title } from "../../../components/AboutUs/title/Title";
 import "./GoalsOfNahour.css";
 const GoalsOfNahour = () => {
   const cards = [
@@ -38,15 +39,16 @@ const GoalsOfNahour = () => {
           src="./nahoor home page/About Page/behinde.png"
           alt=""
         />
-        <h2 className="call-title">اهداف ناهور</h2>
+        {/* <h2 className="call-title">اهداف ناهور</h2> */}
+        <div><Title title="اهداف ناهور"/></div>
       </div>
      
-      <p className="Goal-paragraph1">
+      <div><p className="Goal-paragraph1">
         لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
         بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک
         از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه
         شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید،
-      </p>
+      </p></div>
       <div className="goal-Rectangle">  </div>
         <div className="Goal-cards">
           {cards.map((card) => {

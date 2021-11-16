@@ -25,14 +25,14 @@
 .HeaderNav {
 }
 .HeaderMainTitle {
-  /* font-family: B Yekan +; */
+  font-family: IRANSans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 50px;
   margin-top: 10px;
 }
 .HeaderMainTitle2 {
-  /* font-family: B Yekan +; */
+  font-family: IRANSans;
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -41,9 +41,9 @@
   /* identical to box height */
 }
 .HeaderMainExplain {
-  font-family: IRAN Sans;
+  font-family: IRANSans;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 11px;
   line-height: 24px;
   text-align: right;

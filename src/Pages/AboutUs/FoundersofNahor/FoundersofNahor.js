@@ -1,4 +1,5 @@
 import React from "react";
+import { Title } from "../../../components/AboutUs/title/Title";
 import "./FoundersofNahor.css";
 const FoundersofNahor = () => {
   const founders = [
@@ -33,7 +34,7 @@ const FoundersofNahor = () => {
           src="./nahoor home page/About Page/behinde.png"
           alt=""
         />
-        <h2 className="call-title">بنیان گذاران ناهور</h2>
+        <div><Title title="بنیان گذاران ناهور"/></div>
       </div>
       <div className="Founders-main">
         {founders.map((founder) => {
@@ -45,8 +46,8 @@ const FoundersofNahor = () => {
                   <p className="Founders-img2-job">{founder.job}</p>
                 </div>
                 <div className="Founders-img2-in">
-                  <p >in</p>
-                  <p >f</p>
+                  <div><p >in</p></div>
+                  <div><p >f</p></div>
                 </div>
               </p>
             </div>

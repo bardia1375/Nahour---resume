@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CustomerSatisfactionCard from "../../../components/Card/CustomerSatisfactionCard/CustomerSatisfactionCard";
 import "./CustomerSatisfaction.css";
 import Slider from "react-slick";
+import Title from "../../../components/home/title/Title";
 
 const CustomerSatisfaction = () => {
   const [currentIndex, setcurrentIndex] = useState(0);
@@ -93,7 +94,8 @@ const CustomerSatisfaction = () => {
  
   return (
     <div className="Customer-main">
-      <h2>رضایت مشتریان ما</h2>
+      {/* <h2>رضایت مشتریان ما</h2> */}
+      <div><Title title="رضایت مشتریان ما"/></div>
       <Slider className="Customer-slider" {...settings}>
         {cards.map((card) => {
           return (

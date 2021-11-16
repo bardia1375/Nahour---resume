@@ -12,11 +12,11 @@ function App() {
   return (
     <div>
       {/* <NavbarSmall/> */}
-      {/* <HomePage /> */}
+      <HomePage />
       <AboutUs/>
       
-     {/* <Blog/>
-     <ShareBlog /> */}
+     <Blog/>
+     <ShareBlog />
      <Footer/>
    <Shopping/>
      {/* <Footer/>  */}

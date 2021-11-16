@@ -7,6 +7,9 @@
       margin-top: 50px;
   }
   .buttonPosition {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
     margin-top:16px;
     outline: none;
     display: flex;
@@ -16,7 +19,7 @@
     background-color: #6b006d;
     border: none;
     font-size: 1em;
-    line-height: 1;
+    line-height: 1.2;
     border-radius: 30px;
     color: #ffffff;
     text-decoration: none;
@@ -31,3 +34,12 @@
     background-color: #ff9900;
     color: #000000;
   }
+.nahorJobPositions-paragraph{
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+}
+.nahorJobPositions-title{
+  display: flex;
+  
+}

@@ -1,22 +1,32 @@
 import React from "react";
-import "./Header.css"
+import "./Header.css";
 const Header = () => {
   return (
     <div className="About-container">
       <div className="About-title">
-      <div className="call-title">
-        <img
-          className="call-imgtitle"
-          width="8%"
-          src="./nahoor home page/About Page/behinde.png"
-          alt=""
-        />
-        <h1 style={{fontWeight: "bold" , fontSize: "2.2rem"}} className="call-title">درباره ماهور</h1>
-      </div>
+        <div className="AboutUs-right">
+          <div style={{ width: "16%" }}>
+            <img
+              className="AboutUs-Logo"
+              width="100%"
+              src="./nahoor home page/About Page/behinde.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h1
+              style={{ fontSize: "2.5rem", fontWeight: "bold" }}
+              className="AboutUsLogo-title"
+            >
+              درباره ناهور
+            </h1>
+          </div>
+        </div>
       </div>
       <div className="About-content">
-       <h2>ما در ناهور چه کاری انجام میدهیم؟ </h2> 
-        <p className="About-paragraph" >لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
+        <h2>ما در ناهور چه کاری انجام میدهیم؟ </h2>
+        <p className="About-paragraph">
+          لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و
           بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح
           گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و
           ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا
@@ -28,9 +38,8 @@ const Header = () => {
           که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را
           ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با
           استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا
-          مرحله طراحی و صفحه‌بندی را به پایان برند."</p>
-      
-      
+          مرحله طراحی و صفحه‌بندی را به پایان برند."
+        </p>
       </div>
     </div>
   );
