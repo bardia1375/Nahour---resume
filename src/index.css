@@ -30,3 +30,10 @@ body {
  
 /* سایر دستورات وب سایت */
 /* ... */
+
+h3{
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 8px;
+}

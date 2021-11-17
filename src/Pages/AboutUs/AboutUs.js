@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Homepage/footer/footer";
 import CallOfNahor from "./callOfNahor/callOfNahor";
 import CallOfNahor1 from "./callOfNahor/callOfNahor";
 import CommiunicationForm from "./commiunicationForm/commiunicationForm";
@@ -11,6 +12,7 @@ import NahorJobPositions from "./nahorJobPositions/nahorJobPositions";
 const AboutUs = () => {
   return (
     <div >
+     
       <Header />
       <Explain />
       <GoalsOfNahour />
@@ -18,6 +20,7 @@ const AboutUs = () => {
       <CallOfNahor />
       <div style={{padding:"0 23vw"}}><CommiunicationForm /></div>
       <NahorJobPositions />
+           <Footer />
     </div>
   );
 };

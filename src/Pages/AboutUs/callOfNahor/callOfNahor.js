@@ -8,7 +8,7 @@ const CallOfNahor = () => {
       src: "nahoor home page/About Page/Solid/Communication/Phone.svg",
     },
     {
-      phone: "021-88255946",
+      phone: "09121111111",
       src: "nahoor home page/About Page/Solid/Communication/Phone.svg",
     },
     {
@@ -29,7 +29,9 @@ const CallOfNahor = () => {
           src="./nahoor home page/About Page/behinde.png"
           alt=""
         />
-        <div><Title title="تماس مستقیم با ناهور"/></div>
+        <div>
+          <Title title="تماس مستقیم با ناهور" />
+        </div>
       </div>
 
       <div className="call-content">
@@ -37,9 +39,13 @@ const CallOfNahor = () => {
           {calls.map((call) => {
             return (
               <div className="call-rightchild">
-                <img className="call-rightimg" src={call.src} width="32%" />
+                <div  className="call-rightimg">
+                  <img  src={call.src} width="100%" />
+                </div>
                 <div>
-                  <p className="call-phneRight">{call.phone}</p>
+                  <a className="call-phoneRight" href="tel:">
+                    {call.phone}
+                  </a>
                 </div>
               </div>
             );

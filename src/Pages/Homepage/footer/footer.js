@@ -1,6 +1,8 @@
 import React from "react";
 import "./footer.css";
 const Footer = () => {
+ 
+ 
   return (
     <div className="Footer">
       <div className="Footer-container">
@@ -112,11 +114,15 @@ const Footer = () => {
         </div>
       </div>
       <div className="CopyRight">
-        <p className="CopyRight-paragraph">
-          کلیه حقوق این سایت متعلق به ناهور و شرکت نرم افزاری پیشگامان داده و
-          فناوری ویرا می ‌باشد.
-        </p>
-        <p className="CopyRight-paragraph">Nahoor.com - 2021 Copyright</p>
+        <div>
+          <p className="CopyRight-paragraph">
+            کلیه حقوق این سایت متعلق به ناهور و شرکت نرم افزاری پیشگامان داده و
+            فناوری ویرا می ‌باشد.
+          </p>
+        </div>
+        <div>
+          <p className="CopyRight-paragraph">Nahoor.com - 2021 Copyright</p>
+        </div>
       </div>
     </div>
   );

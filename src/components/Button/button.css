@@ -20,7 +20,7 @@
   cursor: pointer;
   transition: all 0.3s linear;
   min-width:130px ;
-
+ 
 }
 .ButtonComponent:hover {
   background-color: #ff9900;
@@ -31,5 +31,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 0.8rem;
+  margin-right: 8px;
 
 }

@@ -13,8 +13,8 @@ const CartOfFeachers = (props) => {
           width="100%"
           height="auto"
         />
-        <h2 className="cardTitle">{props.title}</h2>
-        <p className="cardDescription">{props.Description}</p>
+        <div><h2 className="cardTitle">{props.title}</h2></div>
+        <div><p className="cardDescription">{props.Description}</p></div>
       </div>
     </div>
   );

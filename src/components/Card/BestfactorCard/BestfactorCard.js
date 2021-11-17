@@ -21,8 +21,8 @@ const BestfactorCard = (props) => {
         </div>
       </div>
       <div className="lover-container">
-        <p>{props.product}</p>
-        <h3>{props.factor}</h3>
+        <div  className="lover-container2">{props.product}</div>
+        <div className="lover-container1">{props.factor}</div>
       </div>
     </div>
   );

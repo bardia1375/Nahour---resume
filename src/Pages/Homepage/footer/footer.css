@@ -1,3 +1,4 @@
+
 .Footer-container {
   display: flex;
   flex-direction: column;
@@ -7,6 +8,7 @@
   background: linear-gradient(95.32deg, #6b006d 44.23%, #ff9900 136.19%);
   color: #fff;
   min-width: 700px;
+  padding:0 300px;
 }
 .Footer-icons {
   margin-top: 40px;
@@ -14,11 +16,10 @@
 .Footer-items {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
   margin-top: 60px;
   width: 100%;
-  padding: 0 100px;
   margin-bottom: 40px;
 }
 .Footer-culomn {
@@ -62,9 +63,9 @@
 .CopyRight {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding:8px 300px;
   background: linear-gradient(
     95.32deg,
     rgba(107, 0, 109, 0.16) 44.23%,

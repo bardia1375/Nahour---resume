@@ -7,12 +7,13 @@
   margin-bottom: 10px;
   position: relative;
   min-width: 200px;
+  overflow: hidden;
 }
 .upper-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
+  height:75%;
   /* background: url("../../میهن.png"); */
 }
 .image-container {
@@ -21,8 +22,7 @@
   height: 80px;
   border-radius: 50%;
   position: absolute;
-  top: 64%;
-
+  top: 59%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   align-items: center;
@@ -31,21 +31,21 @@
 .lover-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+   padding:35px 20px;
 }
-.lover-container h3 {
+.lover-container1 {
   font-weight: 600;
   font-size: 1rem;
-  margin-top: 30px;
-  margin-right: 20px;
+
   font-family: IRANSans;
   font-style: normal;
   font-weight: 600;
 }
-.lover-container p {
+.lover-container2  {
   font-family: IRANSans;
   font-style: normal;
   font-weight: 200;
   font-size: 1rem;
-  margin-top: 30px;
-  margin-left: 20px;
+
 }

@@ -1,20 +1,23 @@
 .navbar {
-  margin-top: 60px;
+  margin-top: 40px;
   height: 25px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  
   /* padding: 0 36px; */
 }
 .NavbarLogo {
-  width: 100px;
+transform:translateY(-4px);
+cursor: pointer;
 
 }
 .navbarMenu {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  flex: 1;
   padding-right: 30px;
 }
 .NavbarItems {
@@ -29,8 +32,11 @@
   font-weight: 500;
   font-size: 14px;
   position: relative;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
 }
-.NavbarItem::after {
+.NavbarItem::after , .navbarEnglish:after{
   content: "";
   height: 2px;
   background: #fbffff;
@@ -42,14 +48,24 @@
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
   transform: scaleX(0);
 }
-#NavbarItem1::after {
+/* #NavbarItem1::after {
   transform: scaleX(1);
-}
+} */
 .navbarEnglish {
   color: #ffffff;
-  margin-left: 200px;
+  margin-left: 120px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-7PX);
+  cursor: pointer;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
 }
-.NavbarItem:hover::after {
+.NavbarItem:hover::after, .navbarEnglish:hover::after {
   transform: scaleX(1);
+}
+.NavbarItem:hover{
+  color:#fff
 }

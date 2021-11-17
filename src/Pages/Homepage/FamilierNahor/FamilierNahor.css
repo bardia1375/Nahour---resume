@@ -13,7 +13,7 @@
 }
 .mapFamilier {
   width: 50%;
-  transform: translateY(-230px); min-width: 600px;
+  transform: translateY(-218px); min-width: 600px;
   /* background: url("../../../nahoorHomePage/man1.png") center center/cover;
     width: 100%;
     height: 100%; */
@@ -55,7 +55,7 @@ transform: translateY(410px)
 .textParagraph {
 
  margin-top:24px;
-  font-size: 1rem;
+
   line-height: 24px;
   text-align: right;
   width: 80%;

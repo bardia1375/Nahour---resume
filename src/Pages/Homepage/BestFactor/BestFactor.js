@@ -38,20 +38,20 @@ const BestFactor = () => {
       shortPic: "./nahoor home page/Mihan LOGO.png",
     },
     {
-      product: "asdas",
-      factor: "dfsd",
+      product: "محصولات:شیر-ماست ...",
+      factor: "کارخانه میهن",
       largPic: "./nahoor home page/میهن.png",
       shortPic: "./nahoor home page/Mihan LOGO.png",
     },
     {
-      product: "asdas",
-      factor: "dfsd",
+      product: "محصولات:شیر-ماست ...",
+      factor: "کارخانه میهن",
       largPic: "./nahoor home page/میهن.png",
       shortPic: "./nahoor home page/Mihan LOGO.png",
     },
     {
-      product: "asdas",
-      factor: "dfsd",
+      product:"محصولات:شیر-ماست ...",
+      factor: "کارخانه لبنیات و بستنی میهن",
       largPic: "./nahoor home page/میهن.png",
       shortPic: "./nahoor home page/Mihan LOGO.png",
     },
@@ -75,11 +75,13 @@ const BestFactor = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            paddingRight:"6%" 
+
           }}
         >
           {dots.map((item, index) => {
             return (
-              <div style={{ margin: "0 8px" }} key={index}>
+              <div style={{ margin: "0 4px" }} key={index}>
                 {item.props.children}
               </div>
             );
@@ -110,6 +112,35 @@ const BestFactor = () => {
         </div>
       );
     },
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+    
+     
+    ]
   };
 
   return (

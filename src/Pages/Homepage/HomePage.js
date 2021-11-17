@@ -9,7 +9,8 @@ import FeacherOfNahor from "./feacherOfNahor/feacherOfNahor";
 import Footer from "./footer/footer";
 // import Header from "./Header/Header";
 import HeaderSample from "./Header/Header2";
-
+import { RegistrationNahor } from "./registrationNahor/registrationNahor";
+import "./HomePage.css"
 const HomePage = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const HomePage = () => {
       <Application  />
       {/* <CustomizableProduct /> */}
       <CustomerSatisfaction />
+      <RegistrationNahor/>
       <Footer />
     </div>
   );

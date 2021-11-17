@@ -1,15 +1,17 @@
 import React from "react";
 import "./Header.css";
 const Header = () => {
+  const sentenses=[{title:"ما در ناهور چه کاری انجام میدهیم", paragraph:""}]
   return (
+    <>
     <div className="About-container">
       <div className="About-title">
         <div className="AboutUs-right">
-          <div style={{ width: "16%" }}>
+          <div>
             <img
               className="AboutUs-Logo"
               width="100%"
-              src="./nahoor home page/About Page/behinde.png"
+              src="./nahoor home page/About Page/behinde.svg"
               alt=""
             />
           </div>
@@ -38,10 +40,19 @@ const Header = () => {
           که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را
           ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با
           استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا
-          مرحله طراحی و صفحه‌بندی را به پایان برند."
+          مرحله طراحی و صفحه‌بندی را به پایان برند.
+          
+          طراحی یا صفحه بندی شده بعد از اینکه متن در آن قرار گیرد چگونه به نظر
+          می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی
+          که طراحان عموما نویسنده متن نیستند و وظیفه رعایت حق تکثیر متون را
+          ندارند و در همان حال کار آنها به نوعی وابسته به متن می‌باشد آنها با
+          استفاده از محتویات ساختگی، صفحه گرافیکی خود را صفحه‌آرایی می‌کنند تا
+          مرحله طراحی و صفحه‌بندی را به پایان برن"
         </p>
       </div>
     </div>
+    <div style={{width: '25%', minWidth: '500px',  paddingRight: '100px'}}><img src="./nahoor home page/About Page/about nahoor vector.svg" width="100%"/></div>
+</>
   );
 };
 

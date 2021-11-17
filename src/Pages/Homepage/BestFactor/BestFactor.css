@@ -14,15 +14,10 @@
   width: 70%;
   /* border: 1px solid red !important; */
   padding: 20px;
-  min-width: 700px;
+ 
 }
 .Bestfactor-slick h2 {
-  color: #6b006d;
-  font-family: B Yekan +;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2.2rem;
-  line-height: 46px;
+
   margin-bottom: 72px;
 }
 .arrow-customize {

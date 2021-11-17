@@ -1,6 +1,7 @@
 import { margin } from "@mui/system";
 import React from "react";
 import { Title } from "../../../components/AboutUs/title/Title";
+import ButtonComponent from "../../../components/Button/button";
 import "./nahorJobPositions.css";
 const NahorJobPositions = () => {
   return (
@@ -25,12 +26,7 @@ const NahorJobPositions = () => {
         شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی
         نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.
       </p>
-      <button className="buttonPosition">
-        موقعیت های شغلی مناسب شما
-        <span class="material-icons" style={{ transform: "rotate(180deg)" }}>
-          chevron_right
-        </span>
-      </button>
+      <ButtonComponent title="موقعیت های شغلی مناسب شما"/>
     </div>
   );
 };

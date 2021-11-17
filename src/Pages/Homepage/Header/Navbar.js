@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="navbar">
@@ -7,44 +8,37 @@ function Navbar() {
         <ul className="navbarMenu">
           <li className="NavbarLogo">
             <img
+            width="100%"
               className="NavbarLogo"
-              src="./nahoor home page/Nahoor logo.png"
+              src="./nahoor home page/logo.svg"
             />
           </li>
           <li className="NavbarItems">
-            <a className="NavbarItem" id="NavbarItem1" href="#">
+            <Link to="/" className="NavbarItem" id="NavbarItem1" href="#">
               خانه
-            </a>
+            </Link>
           </li>
           <li className="NavbarItems">
-            <a className="NavbarItem" id="NavbarItem" href="#">
+            <Link to="/about" className="NavbarItem" id="NavbarItem" href="#">
               درباره ناهور
-            </a>
+            </Link>
           </li>
           <li className="NavbarItems">
-            <a className="NavbarItem" href="#">
-              تماس با ما
-            </a>
-          </li>
-          <li className="NavbarItems">
-            <a className="NavbarItem" href="#">
+            <Link to="/blogs" className="NavbarItem" id="NavbarItem" href="#">
               بلاگ
-            </a>
+            </Link>
           </li>
           <li className="NavbarItems">
-            <a className="NavbarItem" href="#">
+            <Link to="/store" className="NavbarItem" id="NavbarItem" href="#">
               فروشگاه
-            </a>
-          </li>
-          <li className="NavbarItems">
-            <a className="NavbarItem" href="#">
-              اپلیکیشن ماهور
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="navbarEnglish">
-        <span class="material-icons" style={{transform: "rotate(90deg)"}}>chevron_right</span>
+        <span class="material-icons" style={{ transform: "rotate(90deg)" }}>
+          chevron_right
+        </span>
         EN
       </div>
     </div>

@@ -11,6 +11,10 @@
   min-width: 200px;
 }
 .Satisfaction-container p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
   font-family: IRANSans;
   font-style: normal;
   font-weight: 300;
@@ -18,6 +22,8 @@
   line-height: 24px;
   text-align: center;
   margin: 30px 48px;
+  text-align: center;
+ color: black;
 }
 .Satisfaction-name {
   font-weight: 500 !important;
