@@ -1,4 +1,5 @@
 import React from "react";
+import NavbarStore from "../../components/NavbarStore/NavbarStore";
 import Aboutus from "./aboutus/aboutus";
 import BestProductStore from "./bestProductStore/bestProductStore";
 import GroupStore from "./groupStore/groupStore";
@@ -11,7 +12,6 @@ function Store() {
   const cards = [{ img: "./nahoor home page/store page/poster lebsa.png" }];
   return (
     <div>
-      Navbar
       <div style={{ padding: "0 16vw" }}>
         <HeaderStore />
         <GroupStore />

@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* border: 8px solid black; */
 }
 .headersecond-right {
   width: 65%;
@@ -20,15 +19,17 @@
   justify-content: center;
   align-items: center;
   background: #29ebeb;
-  padding: 32px 16px;
+  padding:20px 16px;
   margin-bottom: 16px;
   border-radius: 7px;
 }
-.headersecond-leftTopTitile h2 {
+
+
+.headersecond-leftTopTitle h3 {
   font-family: IRANSans;
   font-style: normal;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 600;
+ 
 }
 .headersecond-leftTopButton button {
   background: #ffd600;
@@ -46,14 +47,52 @@
   color:#fff;
 }
 .headersecond-mainCard{
-  margin-top:16px;
+  margin-top:8px;
+}
+.headersecond-mainCard {
+  /* display: block; */
+  position: relative;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 10em;
+  line-height: 1.5em;
+  font-style: normal;
+  font-weight: 300;
+  text-align: right;
+}
+.headersecond-mainCard::after {
+  content: "...";
+  position: absolute;
 }
 .headersecond-iconscard img{
   background: #ffd600;
   margin:0 8px;
-  margin-top: 16px;
+  margin-top: 8px;
   padding: 3px;
   border-radius: 7px;
   cursor: pointer;
   object-fit: contain;
 }
+@media only screen and (max-width: 1300px) {
+  .headersecond-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+.headersecond-right{
+  width: 94%;
+}
+.headersecond-left{
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.headersecond-leftTop{
+
+}}

@@ -1,0 +1,146 @@
+
+.navbarContainersdfasd {
+  
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.navbarTopsadfsad {
+  background-color:  #6B006D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarTopLogosdfasdf {
+  display: block;
+  background: url("../../img/store/logo.svg") no-repeat center;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  margin-left: 16px;
+}
+.navbarTopRightsdfasd {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.navbarTopInputasdfa {
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  padding: 8px 45px 8px 14px;
+  width: 70%;
+  margin: 8px 0px;
+ 
+  z-index: 2;
+  z-index: 3;
+}
+.navbarTopLeftsdf {
+  display: flex;
+  align-items: center;
+}
+.navbarTopLeftLogoProfileasdf {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #6B006D;
+  border: none;
+}
+.navbarTopLeftLogoCartsdfasd{
+  padding-right: 8px;
+  border-right: 1px solid #fff;
+}
+.navbarBottomasdf{
+  background: #F8F8F8;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+.navbarBottomMainsdfas{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+/* .NavbarShop-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+
+}
+.NavbarShop-top {
+  background: #6B006D;;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+.NavbarShop-top-right {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  border: 1px solid red;
+  width: 100%;
+}
+.NavbarShop-top-right input {
+  background-color:white;
+  border: 1px solid red;
+  padding: 8px 60%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  background: url("../../search.svg") no-repeat   ;
+  background-position: right center;
+  background-position-x: 350px;
+  z-index: 2;
+
+}
+.NavbarShop-top-right input::placeholder{
+  color:#6B006D
+}
+.NavbarShop-input {
+  position: relative;
+}
+.NavbarShop-input-search {
+  padding: absolute;
+  top: 0;
+  border: 1px solid red;
+}
+
+.NavbarShop-top-left {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  border: 1px solid red;
+  width: 20%;
+}
+.NavbarShop-top-left-profile {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  color: #6b006d;
+  background: #f8f8f8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+.NavbarShop-top-left-cart {
+  display: flex;
+}
+.NavbarShop-bottom {
+  background: #f8f8f8;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+}

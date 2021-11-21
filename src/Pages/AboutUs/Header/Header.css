@@ -1,35 +1,36 @@
-
 .About-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: space-between;
-  font-family:BYekan,'BYekan',tahoma;
-
+  font-family: BYekan, "BYekan", tahoma;
 }
 .About-title {
   display: flex;
-  margin-right:7vw;
-  margin-top:100px;
-  
+  margin-right: 7vw;
+  margin-top: 100px;
+
   /* margin-right: 5vw; */
 }
-.AboutUsLogo-title{
+.AboutUsLogo-title {
   margin-right: 16px;
 }
-.AboutUs-right{
+.AboutUs-right {
   display: flex;
-  
 }
 .About-content {
   display: flex;
   justify-content: space-evenly;
   align-content: flex-start;
-  margin-top: 20px;
-  font-family:BYekan,'BYekan',tahoma;
+  font-family: BYekan, "BYekan", tahoma;
 }
 .About-paragraph {
   width: 50%;
-  font-weight: 600;
-
+  font-weight: 300;
+}
+.About-img-bottom {
+  width: 25%;
+  min-width: 500px;
+  padding-right: 100px;
+  transform: translateY(-70px);
 }

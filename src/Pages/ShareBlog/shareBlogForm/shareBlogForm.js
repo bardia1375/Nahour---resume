@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import { Formik, Form, useField } from "formik";
 import * as Yup from "yup";
 import "./shareBlogForm.css";
+import NavbarSmall from "../../../components/Navbar/Navbar";
+import ButtonComponent from "../../../components/Button/button";
 const MyTextInput = ({ label, ...props }) => {
   // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
   // which we can spread on <input>. We can use field meta to show an error
@@ -174,8 +176,8 @@ const SignupForm = () => {
             }, 100);
           }}
         >
-          <Form className="formik-main">
-            <div className="formik-top">
+          <Form className="formik-shairblog-main">
+            <div className="formik-shareblog-top">
               <MyTextInput2
                 label="نام شما"
                 name="firstName"
@@ -200,9 +202,11 @@ const SignupForm = () => {
               ></MyTextArea2>
             </div>
             <div className="formikmain-bottom">
-              <button onSubmit className="formik-button" type="submit">
-                ارسال نظر
-              </button>
+            <ButtonComponent
+                onSubmit
+                className="formik-button"
+                title="ارسال نظر"
+              />
             </div>
           </Form>
         </Formik>

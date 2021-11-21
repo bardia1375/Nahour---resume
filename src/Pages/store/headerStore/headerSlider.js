@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import "./headerSlider.css"
+import "./headerSlider.css";
 const HeaderSlider = () => {
   const Imgs = [
     { img: "./nahoor home page/store page/poster 2.png" },
@@ -9,6 +9,7 @@ const HeaderSlider = () => {
   ];
   const [currentIndex, setcurrentIndex] = useState(0);
   const settings = {
+    arrows:false,
     dots: true,
     infinite: true,
     speed: 500,
@@ -61,23 +62,22 @@ const HeaderSlider = () => {
     },
   };
   return (
- 
-      <div className="headerSlider-container" style={{ width: "100%" }}>
-      
-        <Slider  style={{ width: "66%", marginLeft:"16px" }} {...settings}>
+    <div className="headerSlider-container" style={{ width: "100%" }}>
+    
+        <Slider style={{ width: "66.6%",marginLeft: "16px" }} {...settings}>
           {Imgs.map((Img) => {
             return (
-              <div style={{ width: "100%", objectFit: "contain" }}>
+              <div style={{ width: "50%", objectFit: "contain" }}>
                 <img src={Img.img} width="100%" />
               </div>
             );
           })}
         </Slider>
-        <div style={{ width: "100%" }}>
-          <img src="./nahoor home page/store page/POSTER1.svg" width="100%" />
-        </div>
+ 
+      <div style={{ width: "100%" }}>
+        <img src="./nahoor home page/store page/POSTER1.svg" width="100%" />
       </div>
-
+    </div>
   );
 };
 

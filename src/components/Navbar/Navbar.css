@@ -1,3 +1,4 @@
+
 .navbarSmall-container {
   background: linear-gradient(
     91.49deg,
@@ -5,24 +6,27 @@
     #ff9900 181.4%,
     #f69007 181.4%
   );
-  height:8vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0 80px;
+  font-family: IRANSans;
+  font-weight: 300;
+  font-size:1rem
 }
 .navbarSmall-main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
-    
-margin-right: 6vw;
-   list-style-type: none;
+    text-decoration: none;
+  list-style-type: none;
 }
 .navbarSmall-main li{
- padding: 0 4vw;
+ padding: 0px 20px;
 }
 .navbarSmall-main li a{
-    color: #fff
+    color: #fff;
+    text-decoration: none;
 }

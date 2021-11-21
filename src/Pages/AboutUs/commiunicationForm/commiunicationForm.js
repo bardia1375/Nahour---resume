@@ -2,6 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Formik, Form, useField } from "formik";
 import * as Yup from "yup";
+import ButtonComponent from "../../../components/Button/button";
+import "./comminucationForm.css";
+import { Title } from "../../../components/AboutUs/title/Title";
+
+
 const MyTextInput = ({ label, ...props }) => {
   // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
   // which we can spread on <input>. We can use field meta to show an error
@@ -26,7 +31,7 @@ const MyTextInput2 = ({ label, ...props }) => {
   // message if the field is invalid and it has been touched (i.e. visited)
   const [field, meta] = useField(props);
   return (
-    <div className="formik-main-items" style={{ margin:"0 16px"}}>
+    <div className="formik-main-items" style={{ margin: "0 16px" }}>
       {meta.touched && meta.error ? (
         <div className="formik-items">
           <label
@@ -34,7 +39,8 @@ const MyTextInput2 = ({ label, ...props }) => {
             style={{ fontSize: "0.8rem" }}
             htmlFor={props.id || props.name}
           >
-            {label}<span style={{ color: "red"}}> *</span>
+            {label}
+            <span style={{ color: "red" }}> *</span>
           </label>
           <input
             className="text-input"
@@ -52,7 +58,8 @@ const MyTextInput2 = ({ label, ...props }) => {
             style={{ fontSize: "0.8rem" }}
             htmlFor={props.id || props.name}
           >
-            {label}<span style={{ color: "red"}}> *</span>
+            {label}
+            <span style={{ color: "red" }}> *</span>
           </label>
           <input className="text-input" {...field} {...props} />
         </div>
@@ -67,7 +74,7 @@ const MyTextArea = ({ children, ...props }) => {
   // in `field` alongside `name`, `value`, `onChange`, and `onBlur`
   const [field, meta] = useField({ ...props, type: "text" });
   return (
-    <div className="formik-textArea" >
+    <div className="formik-textArea">
       <label className="formik-lable" for="story">
         پیام متنی / نظرات شما
       </label>
@@ -100,14 +107,14 @@ const MyTextArea2 = ({ children, ...props }) => {
       {meta.touched && meta.error ? (
         <div className="formik-textArea-false">
           <div>
-            <label className="formik-lable" for="story">
+            <label className="formik-lable" for="story" >
               پیام متنی / نظرات شما<span style={{ color: "red" }}> *</span>
             </label>
           </div>
           <div>
             <textarea
               className="textareaInput"
-              style={{ borderRadius: "20px", border: "2px solid red" }}
+              style={{ borderRadius: "50px", border: "2px solid red" }}
               type="text"
               {...field}
               {...props}
@@ -130,7 +137,7 @@ const MyTextArea2 = ({ children, ...props }) => {
           <div>
             <textarea
               className="textareaInput"
-              style={{ borderRadius: "20px", border: "2px solid #C9C9C9" }}
+              style={{ borderRadius: "50px", border: "2px solid #C9C9C9" }}
               type="text"
               {...field}
               {...props}
@@ -143,12 +150,79 @@ const MyTextArea2 = ({ children, ...props }) => {
     </div>
   );
 };
+
+const MySelect = ({ label, ...props }) => {
+  const [field, meta] = useField(props);
+  return (
+    <div className="formik-select">
+      <div className="formik-select">
+        {meta.touched && meta.error ? (
+          <>
+            <label
+              className="formik-lable"
+              style={{ fontSize: "0.8rem" }}
+              htmlFor={props.id || props.name}
+            >
+              {label}
+              <span style={{ color: "red" }}> *</span>
+            </label>
+            <select
+              style={{
+                border: "2px solid red",
+                padding: "8px 0",
+                borderRadius: "50px",
+                marginTop: "2px",
+              }}
+              {...field}
+              {...props}
+            />{" "}
+            <div className="formik-error">{meta.error}</div>
+          </>
+        ) : (
+          <>
+            <label
+              className="formik-lable"
+              style={{ fontSize: "0.8rem" }}
+              htmlFor={props.id || props.name}
+            >
+              {label}
+              <span style={{ color: "red" }}> *</span>
+            </label>
+            <select
+              style={{
+                padding: "8px 10px",
+                borderRadius: "50px",
+                marginTop: "2px",
+              }}
+              {...field}
+              {...props}
+            />
+          </>
+        )}
+        {/* {meta.touched && meta.error ? (
+        <div className="formik-error">{meta.error}</div>
+      ) : null} */}
+      </div>
+    </div>
+  );
+};
+
 // And now we can use these
 const CommiunicationForm = () => {
   return (
     <div className="formik-container">
       <div>
-        <h2>نظرات</h2>
+      <div className="call-title" style={{width: '30px'}}>
+        <img
+          className="call-imgtitle"
+          width="100%"
+          src="./nahoor home page/About Page/behinde.png"
+          alt=""
+        />
+        <div>
+          <Title title="نظرات" />
+        </div>
+      </div>          
       </div>
       <div className="formik-container-main">
         <Formik
@@ -156,15 +230,23 @@ const CommiunicationForm = () => {
             firstName: "",
             email: "",
             story: "",
+            phone: "",
+            jobType: "",
           }}
           validationSchema={Yup.object({
             firstName: Yup.string()
+              .max(25, "شما مجاز به استفاده از حداکثر 15 کاراکتر هستید")
+              .required("لطفا فیلد را کامل کنید"),
+            phone: Yup.string()
               .max(25, "شما مجاز به استفاده از حداکثر 15 کاراکتر هستید")
               .required("لطفا فیلد را کامل کنید"),
             email: Yup.string()
               .email("لطفا ایمیل را درست وارد کنید")
               .required("لطفا فیلد را کامل کنید"),
             story: Yup.string().required("لطفا فیلد را کامل کنید"),
+            jobType: Yup.string()
+              .oneOf(["designer", "development"], "Invalid Job Type")
+              .required("لطفا فیلد را کامل کنید"),
           })}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
@@ -175,33 +257,51 @@ const CommiunicationForm = () => {
         >
           <Form className="formik-main">
             <div className="formik-top">
-              <MyTextInput2
-                label="نام شما"
+            <div className="formik-top1">
+              <div><MyTextInput2
+                label="نام و نام خانوادگی"
                 name="firstName"
                 type="text"
                 placeholder="پریا باب الحوایجی"
-               
-              />
-              <MyTextInput2
-                label="ایمیل"
+              /></div>
+              <div><MyTextInput2
+                label="آدرس ایمیل"
                 name="email"
                 type="email"
                 placeholder="jane@formik.com"
-              />
+              /></div>
             </div>
+            <div className="formik-top2">
+              <div><MyTextInput2
+                label="شماره تماس"
+                name="phone"
+                type="number"
+                placeholder="021-88882255"
+              /></div>
+              <div style={{width:"100%"}}><MySelect label="نوع فعالیت" name="jobType">
+                <option className="formik-lable" value="">انتخاب کنید</option>
+                <option className="formik-lable" value="designer">تاجر</option>
+                <option className="formik-lable" value="development">کارخانه‌دار</option>
+              </MySelect></div>
+            </div></div>
             <div className="formik-bottom">
-              <MyTextArea2
+             <div><MyTextArea2
                 placeholder=" پیام مورد نظر خود را برای ما بنویسید :))"
                 id="story"
                 name="story"
                 rows="5"
                 cols="33"
               ></MyTextArea2>
-            </div>
-            <div className="formikmain-bottom">
-              <button onSubmit className="formik-button" type="submit">
+            </div></div> 
+            <div className="formikmain-bottom1">
+              <ButtonComponent
+                onSubmit
+                className="formik-button"
+                title="ارسال نظر"
+              />
+              {/* <button onSubmit className="formik-button" type="submit">
                 ارسال نظر
-              </button>
+              </button> */}
             </div>
           </Form>
         </Formik>

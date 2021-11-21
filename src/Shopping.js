@@ -1,12 +1,15 @@
 import React from 'react'
-import { NavbarShop } from './Pages/store/NavbarShop/NavbarShop'
+import { NavbarStore } from './components/NavbarStore/NavbarStore'
+import Footer from './Pages/Homepage/footer/footer'
 import Store from './Pages/store/Store'
 
 export const Shopping = () => {
     return (
         <div>
-            <NavbarShop/>
+            {/* <NavbarStore/> */}
+        
             <Store/>
+            <Footer />
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import ShareBlogCard from "../../../components/ShareBlog/Card/ShareBlogCard";
+import BlogmainCard from "../../../components/Blog/BlogmainCard/BlogmainCard";
 import "./likeShareBlog.css";
 function LikeShareBlog() {
   const Cards = [
@@ -37,28 +37,29 @@ function LikeShareBlog() {
   return (
     <div className="LikeShareBlog-container">
       <div>
-        <h2>شاید از این نوشته ها خوشتان بیاید:))</h2>
+        <h2>شاید از این نوشته ها خوشتان بیاید:)</h2>
       </div>
       <div className="LikeShareBlog-content">
         {Cards.map((Card) => {
           return (
             <div className="LikeShareBlog-cards">
-              <ShareBlogCard
-                Largimg={Card.Largimg}
-                title={Card.title}
-                duration={Card.duration}
-                mainSubeject={Card.mainSubeject}
-                paragraph={Card.paragraph}
-                imgProfile={Card.imgProfile}
-                name={Card.name}
-                date={Card.date}
-              />
+         
+              <BlogmainCard
+              Largimg={Card.Largimg}
+              title={Card.title}
+              duration={Card.duration}
+              mainSubeject={Card.mainSubeject}
+              paragraph={Card.paragraph}
+              imgProfile={Card.imgProfile}
+              name={Card.name}
+              date={Card.date}
+            />
             </div>
           );
         })}
       </div>
     </div>
-  );
+  )
 }
 
 export default LikeShareBlog;

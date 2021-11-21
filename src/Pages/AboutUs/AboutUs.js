@@ -1,4 +1,5 @@
 import React from "react";
+import NavbarSmall from "../../components/Navbar/Navbar";
 import Footer from "../Homepage/footer/footer";
 import CallOfNahor from "./callOfNahor/callOfNahor";
 import CallOfNahor1 from "./callOfNahor/callOfNahor";
@@ -12,7 +13,7 @@ import NahorJobPositions from "./nahorJobPositions/nahorJobPositions";
 const AboutUs = () => {
   return (
     <div >
-     
+     <NavbarSmall/>
       <Header />
       <Explain />
       <GoalsOfNahour />

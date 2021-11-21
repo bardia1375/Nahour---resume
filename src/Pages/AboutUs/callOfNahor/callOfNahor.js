@@ -8,15 +8,15 @@ const CallOfNahor = () => {
       src: "nahoor home page/About Page/Solid/Communication/Phone.svg",
     },
     {
-      phone: "09121111111",
+      cell: "09121111111",
       src: "nahoor home page/About Page/Solid/Communication/Phone.svg",
     },
     {
-      phone: "021-88255946",
+      email: "reza@gmail.com",
       src: "nahoor home page/About Page/Solid/Communication/Phone.svg",
     },
     {
-      phone: "021-88255946",
+      maps: "google map",
       src: "nahoor home page/About Page/Solid/Communication/Phone.svg",
     },
   ];
@@ -38,14 +38,32 @@ const CallOfNahor = () => {
         <div className="call-right">
           {calls.map((call) => {
             return (
-              <div className="call-rightchild">
-                <div  className="call-rightimg">
+              <div className="call-rightchild" >
+                <div  className="call-rightimg" >
                   <img  src={call.src} width="100%" />
                 </div>
+                <div className="call-phoneRightmain">
                 <div>
-                  <a className="call-phoneRight" href="tel:">
+                  <a className="call-phoneRight" href="tel:66519367">
                     {call.phone}
                   </a>
+                </div>
+                <div>
+                  <a className="call-phoneRight" href="tel:66519367">
+                    {call.cell}
+                  </a>
+                </div>
+                <div>
+                  <a className="call-phoneRight" href="tel:66519367">
+                    {call.email}
+                  </a>
+                </div>
+                <div>
+                  <a className="call-phoneRight" href="tel:66519367">
+                    {call.maps}
+                  </a>
+                </div>
+             
                 </div>
               </div>
             );

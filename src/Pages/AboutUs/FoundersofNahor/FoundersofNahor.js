@@ -34,26 +34,27 @@ const FoundersofNahor = () => {
           src="./nahoor home page/About Page/behinde.png"
           alt=""
         />
-        <div><Title title="بنیان گذاران ناهور"/></div>
+        <div>
+          <Title title="بنیان گذاران ناهور" />
+        </div>
       </div>
       <div className="Founders-main">
         {founders.map((founder) => {
           return (
             <div className="Founders-img">
-              <div ><img src={founder.img} width="100%"/>
-              <div className="Founders-box">
-                <div>
-                  <div className="Founders-img2-name">{founder.name}</div>
-                  <div className="Founders-img2-job">{founder.job}</div>
-                </div>
-                <div className="Founders-img2-in">
-                  <div>f</div>
-                  <div>in</div>
+              <div>
+               <div><img src={founder.img} width="100%" /></div>
+                <div className="Founders-box">
+                  <div>
+                    <div className="Founders-img2-name">{founder.name}</div>
+                    <div className="Founders-img2-job">{founder.job}</div>
+                  </div>
+                  <div className="Founders-img2-in">
+                    <div>in</div>
+                    <div>f</div>
+                  </div>
                 </div>
               </div>
-              
-              </div>
-              
             </div>
           );
         })}
@@ -99,12 +100,9 @@ export default FoundersofNahor;
 </div> */
 }
 
-
-
-
-
 ///////////////////////////////////
-{/* <div className="Founders-container">
+{
+  /* <div className="Founders-container">
 <div className="call-title">
   <img
     className="call-imgtitle"
@@ -132,4 +130,5 @@ export default FoundersofNahor;
     );
   })}
 </div>
-</div> */}
+</div> */
+}

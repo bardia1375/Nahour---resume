@@ -24,15 +24,15 @@ export const RegistrationNahor = () => {
               <h3>{component.explain}</h3>
             </div>
             <div >
-              <p >{component.paragraph}</p>
+              <p>{component.paragraph}</p>
             </div>
-            <div><ButtonComponent title="ثبت نام"/></div>
+            <div className="registrationNahorButton"><ButtonComponent title="ثبت نام"/></div>
           </div>
         );
       })}
 
       <div  className="registrationNahorLeft">
-        <img width="100%" src="./nahoor home page/Iran-Afghnistan.svg" />
+        <img width="100%" src="./nahoor home page/partnership.svg" style={{marginRight:"90px", minWidth:"400px"}} />
       </div>
     </div>
   );

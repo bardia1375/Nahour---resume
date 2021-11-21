@@ -14,8 +14,9 @@ function App() {
   return (
     <div>
       <HomePage />
-
-      {/* <Footer /> */}
+      <ShareBlog/>
+      <Shopping/>
+      <Footer />
     </div>
   );
 }

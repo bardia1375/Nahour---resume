@@ -26,7 +26,7 @@
 
 }
 .groupStore-contentImg h3 {
-  font-family: IRAN Sans;
+  font-family: IRANSans;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5rem;
@@ -34,4 +34,8 @@
   display: flex;
   align-items: center;
   text-align: center;
+}
+.groupStore-text{
+  font-family:IRANSans;
+  font-size: 1.2rem;
 }

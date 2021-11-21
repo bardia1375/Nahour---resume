@@ -17,7 +17,7 @@ function ShareBlogHeader() {
         return (
           <div className="shareBlog-main">
             <div
-              style={{ width: "100%", height: "40vh" }}
+              style={{ width: "100%", height: "36vh",marginTop:"36px" }}
             >
               <img
                 src={content.img}
@@ -34,7 +34,7 @@ function ShareBlogHeader() {
                   className="shareBlog-content-right"
                   style={{ width: "30%" }}
                 >
-                  <div style={{ width: "40%" }}>
+                  <div style={{ width: "30%" }}>
                     <img
                       src="./nahoor home page/Ellipse 76.png"
                       width="100%"
@@ -42,11 +42,11 @@ function ShareBlogHeader() {
                     />
                   </div>
                   <div>
-                    <p>{content.name}</p>
+                    <p className="shareBlog-content-name">{content.name}</p>
                   </div>
                 </div>
                 <div className="shareBlog-content-mid">
-                  <div style={{ paddingRight: "8px", width: "24%" }}>
+                  <div style={{ paddingRight: "8px", width: "20%" }}>
                     <img
                       width="100%"
                       src="./nahoor home page/Share Blogs page/Icons/Time/clock.png"
@@ -58,7 +58,7 @@ function ShareBlogHeader() {
                   </div>
                 </div>
                 <div className="shareBlog-content-left">
-                  <div style={{ width: "24%" }}>
+                  <div style={{ width: "20%" }}>
                     <img
                       width="100%"
                       src="./nahoor home page/Share Blogs page/Icons/Business/calender.svg"

@@ -1,8 +1,15 @@
-import { fontWeight } from "@mui/system";
-import React from "react";
+import React,{ useState} from "react";
 import Title from "../../../components/home/title/Title";
 import "./Application.css";
 const Application = () => {
+const [show,setShow]=useState(true)
+
+
+
+const changePicture=(e)=>{
+  setShow(!show)
+}
+
 
   return (
     <div  className="Applicationmain" id="application" behavior="smooth">
@@ -41,21 +48,44 @@ const Application = () => {
             </button>
           </div>
         </div>
-
+        {show?
+        <>
+        <div onClick={(e)=>changePicture(e)} style={{width: "11%"}}>
         <img
-          width="10%"
+          width="100%"
           height="100%"
           className="ApplicationImage1"
           alt=""
-          src="./nahoor home page/iPhone 12 Pro 6.1_ Mockup.png"
-        />
-        <img
-          width="9%"
+          src="./nahoor home page/IphonFirst.png"
+      
+        /></div>
+        <div onClick={(e)=>changePicture(e)} style={{width: "10%" ,marginRight:"80px"}}><img
+          width="100%"
           height="100%"
           alt=""
           className="ApplicationImage2"
-          src="./nahoor home page/iPhone 12 Pro 6.1_ Mockup-2.png"
-        />
+          src="./nahoor home page/IphoneSecond.png"
+        /></div>
+        </>:
+         <>
+         <div onClick={(e)=>changePicture(e)} style={{width: "10%"}}>
+         <img
+           width="100%"
+           height="100%"
+           className="ApplicationImage1"
+           alt=""
+           src="./nahoor home page/iphonefirstonclick.png"
+       
+         /></div>
+         <div onClick={(e)=>changePicture(e)} style={{width: "11%" ,marginRight:"80px"}}><img
+           width="100%"
+           height="100%"
+           alt=""
+           className="ApplicationImage2"
+           src="./nahoor home page/iphoneSecondonClick.png"
+         /></div>
+         </>}
+
       </div>
     </div>
   );

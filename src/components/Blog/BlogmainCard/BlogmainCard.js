@@ -14,43 +14,43 @@ function BlogmainCard(props) {
           alt=""
         />
       </div>
-      <div>
-        <div className="BlogmainCard-subNav">
-          <div>
-            <h2>صنایع غذایی</h2>
-          </div>
-          <div>
-            <h2>hello</h2>
-          </div>
+
+      <div className="BlogmainCard-subNav">
+        <div>
+          <p>{props.title}</p>
         </div>
-        <div className="BlogmainCard-main">
-          <h2 className="BlogmainCard-title">{props.mainSubeject}</h2>
-          <p className="BlogmainCard-paragraph">{props.paragraph}</p>
+        <div>
+          <p>{props.duration}</p>
         </div>
-        <div className="BlogmainCard-footer">
-          <div className="BlogmainCard-right">
-            <div style={{ width: "30%" }}>
-              <img src={props.imgProfile} width="100%" />
-            </div>
-            <div className="BlogmainCard-right2">
-              <div>
-                <p>نیما بشیری</p>
-              </div>
-              <div>
-                <p>4 آبان 1400</p>
-              </div>
-            </div>
+      </div>
+      <div className="BlogmainCard-main">
+        <h3 className="BlogmainCard-title">{props.mainSubeject}</h3>
+        <p className="BlogmainCard-paragraph">{props.paragraph}</p>
+      </div>
+      <div className="BlogmainCard-footer">
+        <div className="BlogmainCard-right">
+          <div style={{ width: "40px" }}>
+            <img src={props.imgProfile} width="100%" />
           </div>
-          <div className="BlogmainCard-left">
+          <div className="BlogmainCard-right2">
             <div>
-              <h3>بیشتر بخوانید +</h3>
+              <h4>{props.name}</h4>
             </div>
             <div>
-              <img
-                src={"./nahoor home page/Blogs page/Icons/Bookmark.svg"}
-                alt=""
-              />
+              <h4>{props.date}</h4>
             </div>
+          </div>
+        </div>
+        <div className="BlogmainCard-left">
+          <div>
+            <p>بیشتر بخوانید +</p>
+          </div>
+          <div style={{ width: "20%" }}>
+            <img
+              src={"./nahoor home page/Blogs page/Icons/Bookmark.svg"}
+              width="100%"
+              alt=""
+            />
           </div>
         </div>
       </div>

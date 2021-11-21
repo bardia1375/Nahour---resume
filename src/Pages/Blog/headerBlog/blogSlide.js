@@ -1,13 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "./blogSlide.css";
 function BlogHeaderSlide() {
+  const [currentIndex, setcurrentIndex] = useState(0);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    beforeChange: (prev, next) => {
+      setcurrentIndex(next);
+    },
+    appendDots: (dots) => {
+      return (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            paddingRight:"5%" 
+          }}
+        >
+          {dots.map((item, index) => {
+            return (
+              <div style={{ padding: "0 4px" }} key={index}>
+                {item.props.children}
+              </div>
+            );
+          })}
+        </div>
+      );
+    },
+    customPaging: (index) => {
+      return (
+        <div
+          style={
+            index === currentIndex
+              ? {
+                  width: "30px",
+                  height: "10px",
+                  background: "#6B006D",
+                  borderRadius: "50px",
+                }
+              : {
+                  width: "10px",
+                  height: "10px",
+                  background: "#C4C4C4",
+                  borderRadius: "50px",
+                }
+          }
+        >
+          {}
+        </div>
+      );
+    },
   };
   return (
     <div style={{ height: "100%" }}>

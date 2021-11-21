@@ -12,9 +12,18 @@
 .registrationNahorContainer{
 
 }
+.registrationNahorRight p{
+    font-weight: 300;
+}
 .registrationNahorRight h3 , p{
     margin-top:16px
 }
 .registrationNahorRightparagraph{
     font-size:2px
+}
+.registrationNahorRightTitle{
+    margin-top:24px
+}
+.registrationNahorButton{
+    margin-bottom: 24px;
 }

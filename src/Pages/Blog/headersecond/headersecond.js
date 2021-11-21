@@ -8,7 +8,7 @@ function Headersecond() {
       largImg: "",
       titleCard: "ناهور بلاگ | برای شما که اهل خواندنید",
       mainCard:
-        "لورم ایپسوم یا طرح‌نما (به انگلیسی: Lorem ipsum) به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.",
+        "لورم ی: Lorem ipsum)اتناتناناتنات به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گر فته می‌شود.",
       shortImg: "./nahoor home page/Blogs page/pink poster.png",
       button: "دنبال کردن",
     },
@@ -20,7 +20,6 @@ function Headersecond() {
         return (
           <div className="headersecond-container">
             <div className="headersecond-right">
-             
               <BlogSlideSecond />
             </div>
 
@@ -28,8 +27,8 @@ function Headersecond() {
 
             <div className="headersecond-left">
               <div className="headersecond-leftTop">
-                <div className="headersecond-leftTopTitile">
-                  <h2>{Header.titleCard}</h2>
+                <div className="headersecond-leftTopTitle">
+                  <h3>{Header.titleCard}</h3>
                 </div>
 
                 <div className="headersecond-leftTopButton">

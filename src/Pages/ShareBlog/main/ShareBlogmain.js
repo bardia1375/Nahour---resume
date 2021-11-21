@@ -18,7 +18,7 @@ function ShareBlogmain() {
         {sentenses.map((sentense) => {
           return (
             <div>
-              <h3>{sentense.subTitle}</h3>
+              <h4>{sentense.subTitle}</h4>
               <p>{sentense.paragraph1}</p>
               <div style={{ width: "100%" }}>
                 <img
@@ -29,7 +29,7 @@ function ShareBlogmain() {
                   style={{ objectFit: "fill" }}
                 />
               </div>
-              <h3>{sentense.subTitle}</h3>
+              <h4>{sentense.subTitle}</h4>
               <p>{sentense.paragraph2}</p>
             </div>
           );

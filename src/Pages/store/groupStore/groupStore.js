@@ -37,7 +37,7 @@ const GroupStore = () => {
                 <img src={card.img} width="100%" />
                 <div className="groupStore-contentImg">
                   <div>
-                    <h3>{card.text}</h3>
+                    <div className="groupStore-text">{card.text}</div>
                   </div>
                   <div style={{ width: "16%", margin:"0 8px" }}>
                     <img src="./nahoor home page/store page/icons/arrow.svg" width="100%" />

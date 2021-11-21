@@ -8,8 +8,8 @@
   padding-bottom: 32px;
 }
 .LikeShareBlog-content {
-  display: flex;
+  display: grid;
   flex-direction: row;
-  justify-content: space-between;
+  grid-template-columns: repeat(3,1fr);
   align-items: center;
 }

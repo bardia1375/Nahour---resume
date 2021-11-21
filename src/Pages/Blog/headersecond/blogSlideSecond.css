@@ -16,7 +16,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 30%;
+  height: 35%;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
   filter: blur(4px);
@@ -38,17 +38,15 @@
   padding-right: 52px;
   text-align: right;
 }
-.app-paragraph h2 {
-  font-size: 1.5rem;
-}
+
 .app-paragraph p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 .blogSlideSecond-detail {
   display: flex;
   flex-direction: row;
+  width:105%;
   align-items: center;
-  width: 104%;
   justify-content: flex-end;
 }
 .blogSlideSecond-subDetail {
