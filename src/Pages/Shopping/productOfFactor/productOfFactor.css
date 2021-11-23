@@ -1,0 +1,116 @@
+.productOfFactor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 4vw;
+  position: relative;
+}
+.ProductOfFactorTitle {
+  display: flex;
+  padding: 8px 16px;
+}
+.ProductOfFactorTitle h1 {
+  font-size: 1rem;
+  margin-left: 8px;
+}
+.productOfFactor-main {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.productOfFactor-sideNavbar {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 24%;
+  max-height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background: #f8f8f8;
+  border-radius: 7px;
+  direction: ltr;
+  margin-left: 48px;
+  top: 0;
+  bottom: 0;
+}
+.ProductOfFactor-body {
+  padding: 8px 16px;
+}
+.ProductOfFactorParagraph p {
+  font-size: 0.8rem;
+  line-height: 22.5px;
+}
+.ProductOfFactorInformation {
+  padding-top: 16px;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.27);
+}
+.ProductOfFactorInformation h3 {
+  font-size: 1rem;
+}
+
+.ProductOfFactorAddress {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.ProductOfFactorAddress img{
+    transform:translateY(-8px);
+}
+.ProductOfFactorAddress p {
+  font-size: 0.8rem;
+  margin-right: 16px;
+  
+}
+.ProductOfFactorPhone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ProductOfFactorPhone p {
+  font-size: 0.8rem;
+  margin-right: 16px;
+}
+.ProductOfFactorEmail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ProductOfFactorEmail p {
+  margin-right: 16px;
+  font-size: 0.8rem;
+}
+.ProductOfFactorSocial {
+  padding-top: 0px;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.27);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.ProductOfFactorSocialTitle{
+    margin-top: 8px;
+    transform:translateY(3px);
+  
+}
+.ProductOfFactorSocial h3 {
+  font-size: 1rem;
+}
+.ProductOfFactorSocialImg {
+  display: flex;
+}
+.ProductOfFactorSocialImg img {
+  padding-right: 16px;
+}
+.productOfFactor-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  /* padding:0 100px; */
+  width: 80%;
+}

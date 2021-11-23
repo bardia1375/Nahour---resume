@@ -1,0 +1,70 @@
+.factorList-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 4vw;
+}
+.factorList-main {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.factorList-sideNavbar {
+  width: 20%;
+}
+.factorList-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  /* padding:0 100px; */
+  width: 80%;
+}
+.factorList-sideNavbar {
+  /* text-align: right; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background: #f8f8f8;
+  height: 655px;
+  border-radius: 7px;
+  direction: ltr;
+  margin-left: 48px;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  /* position: fixed; */
+}
+.factorListMainTitle {
+  background: #ececec;
+  width: 100%;
+  text-align: right;
+}
+.factorList-sideNavbar h2 {
+  font-size: 1.2rem;
+  padding: 16px 24px;
+  width: 100%;
+}
+.factorList-sideNavbar h3 {
+  margin-right: 8px;
+  
+}
+.factorListSideNavbarTitle {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  /* justify-content: flex-end; 
+  /* padding: 0px 24px; */
+}
+.factorListSideNavbarItems {
+  border-top: 1px solid #cfcfcf;
+  text-align: right;
+  margin: 8px 24px;
+
+}
+.factorListSideNavbarItems a{
+    text-decoration: none;
+    
+}

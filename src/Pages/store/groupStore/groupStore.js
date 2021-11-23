@@ -1,6 +1,8 @@
 import React from "react";
 import TitleStore from "../../../components/Store/Title/titleStore";
 import "./groupStore.css";
+import { Link } from "react-router-dom";
+
 const GroupStore = () => {
   const cards = [
     {
@@ -37,7 +39,7 @@ const GroupStore = () => {
                 <img src={card.img} width="100%" />
                 <div className="groupStore-contentImg">
                   <div>
-                    <div className="groupStore-text">{card.text}</div>
+                    <div className="groupStore-text"><Link  to="listFactor">{card.text}</Link></div>
                   </div>
                   <div style={{ width: "16%", margin:"0 8px" }}>
                     <img src="./nahoor home page/store page/icons/arrow.svg" width="100%" />

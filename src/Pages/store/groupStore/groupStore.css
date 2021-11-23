@@ -39,3 +39,7 @@
   font-family:IRANSans;
   font-size: 1.2rem;
 }
+.groupStore-text a{
+  text-decoration: none;
+  color: #fff;
+}

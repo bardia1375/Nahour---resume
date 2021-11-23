@@ -19,7 +19,7 @@ function Store() {
         <BestProductStore />
       </div>
       <NahorSuggestions />
-      <div style={{ marginTop: "36px",padding: "0 16vw" }}>
+      <div style={{ marginTop: "36px",padding: "0 17vw" }}>
         {cards.map((card) => {
           return (
             <div width="100%">

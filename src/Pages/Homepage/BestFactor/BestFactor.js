@@ -5,28 +5,7 @@ import BestfactorCard from "../../../components/Card/BestfactorCard/BestfactorCa
 import Slider from "react-slick";
 import Title from "../../../components/home/title/Title";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
-  );
-}
 
 const BestFactor = () => {
   const [currentIndex, setcurrentIndex] = useState(0);
@@ -56,15 +35,43 @@ const BestFactor = () => {
       shortPic: "./nahoor home page/Mihan LOGO.png",
     },
   ]);
+  const PerviousBtn = (props) => {
+    console.log(props);
+    const { className, onClick } = props;
+    return (
+      <div className={className} onClick={onClick}>
+            <span
+              class="material-icons"
+              style={{ transform: "rotate(180deg)",marginBottom:"8px" }}
+            >
+              chevron_right
+            </span>
+      </div>
+    );
+  };
+  const NextBtn = (props) => {
+    const { className, onClick } = props;
+
+    return (
+      <div className={className} onClick={onClick}>
+            <span
+              class="material-icons"
+              style={{ transform: "rotate(180deg)",marginBottom:"8px" , zIndex:"20"}}
+            >
+              chevron_right
+            </span>
+      </div>
+    );
+  };
   const slider = React.useRef(null);
   const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    arrows: false,
+    prevArrow: <PerviousBtn />,
+    nextArrow: <NextBtn />,
+   
     beforeChange: (prev, next) => {
       setcurrentIndex(next);
     },

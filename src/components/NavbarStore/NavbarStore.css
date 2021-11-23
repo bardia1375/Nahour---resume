@@ -1,17 +1,15 @@
-
-.navbarContainersdfasd {
-  
-  min-width: 1000px;
+.navbarContainerStore {
   margin: 0 auto;
-  padding: 0 24px;
+
 }
-.navbarTopsadfsad {
-  background-color:  #6B006D;
+.navbarTopStore {
+  padding: 0 40px;
+  background-color: #6b006d;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navbarTopLogosdfasdf {
+.navbarTopStoreLogo {
   display: block;
   background: url("../../img/store/logo.svg") no-repeat center;
   width: 50px;
@@ -19,12 +17,12 @@
   background-size: contain;
   margin-left: 16px;
 }
-.navbarTopRightsdfasd {
+.navbarTopStoreRight {
   display: flex;
   align-items: center;
   width: 50%;
 }
-.navbarTopInputasdfa {
+.navbarTopStoreInput {
   background: #fff;
   border: none;
   border-radius: 50px;
@@ -32,15 +30,17 @@
   padding: 8px 45px 8px 14px;
   width: 70%;
   margin: 8px 0px;
- 
-  z-index: 2;
-  z-index: 3;
 }
-.navbarTopLeftsdf {
+.navbarTopStoreInput::placeholder {
+  color: #6b006d;
+  font-family: IRANSans;
+  font-weight: 500;
+}
+.navbarTopStoreLeft {
   display: flex;
   align-items: center;
 }
-.navbarTopLeftLogoProfileasdf {
+.navbarTopStoreLeftLogoProfile {
   display: flex;
   align-items: center;
   background: #f8f8f8;
@@ -53,24 +53,90 @@
   font-size: 13px;
   margin-left: 20px;
   text-decoration: none;
-  color: #6B006D;
+  color: #6b006d;
   border: none;
 }
-.navbarTopLeftLogoCartsdfasd{
+.navbarTopStoreLeftLogoCart {
   padding-right: 8px;
   border-right: 1px solid #fff;
 }
-.navbarBottomasdf{
-  background: #F8F8F8;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-border-radius: 5px;
+.navbarStoreBottom {
+  padding: 0px 24px 0px 24px;
+  background: #f8f8f8;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
-.navbarBottomMainsdfas{
+.navbarStoreBottomMain {
   display: flex;
   flex-direction: row;
   align-items: center;
-} */
-/* .NavbarShop-container {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.navbarStoreBottomMain a {
+  text-decoration: none;
+  color: #000;
+}
+.navbarStoreBottomMainGroup {
+  padding-left: 50px;
+  border-left: 2px solid #6b006d;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: flex;
+  flex-direction: row;
+  display: none;
+  position: absolute;
+  top:140%;
+  background: #F8F8F8;
+  min-width: 500px;
+  overflow: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  border-radius: 0px 0px 7px 7px;
+}
+.navbarStoreBottomMainGroup:hover .dropdown-content  {
+  display: flex;
+
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+}
+.dropdown-content-item {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid gray;
+  padding-right: 8px;
+}
+.dropdown-content-item p{
+  font-family: IRANSans;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+}
+.navbarStoreBottomMain li {
+  margin: 8px 16px;
+}
+.navbarStoreBottomMain img {
+  width: 20px;
+  margin-left: 8px;
+}
+/* 
+ .NavbarShop-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,4 +209,4 @@ border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   width: 100%;
-}
+} */

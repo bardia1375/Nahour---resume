@@ -14,9 +14,9 @@ function App() {
   return (
     <div>
       <HomePage />
-      <ShareBlog/>
+      {/* <ShareBlog/>
       <Shopping/>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

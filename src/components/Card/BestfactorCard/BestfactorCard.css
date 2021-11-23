@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height:75%;
+  height:70%;
   /* background: url("../../میهن.png"); */
 }
 .image-container {
@@ -22,7 +22,7 @@
   height: 80px;
   border-radius: 50%;
   position: absolute;
-  top: 59%;
+  top: 55.5%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-   padding:35px 20px;
+   padding:40px 20px;
 }
 .lover-container1 {
   font-weight: 600;

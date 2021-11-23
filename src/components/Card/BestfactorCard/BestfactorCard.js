@@ -6,7 +6,6 @@ const BestfactorCard = (props) => {
       <div className="upper-container">
         <img
           src={props.largPic}
-       
           height="100%"
           width="100%"
           style={{
@@ -21,9 +20,10 @@ const BestfactorCard = (props) => {
         </div>
       </div>
       <div className="lover-container">
-        <div  className="lover-container2">{props.product}</div>
+        <div className="lover-container2">{props.product}</div>
         <div className="lover-container1">{props.factor}</div>
       </div>
+      
     </div>
   );
 };
