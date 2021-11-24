@@ -9,9 +9,9 @@ import Store from "./Pages/store/Store";
 export const Shopping = () => {
   return (
     <div className="Shopping-Container">
-      <div className="navSticky">
+
         <NavbarStore />
-      </div>
+
       <Routes>
         <Route path="/" element={<Store />} />
         <Route path="listFactor" element={<FactorList />} />

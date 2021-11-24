@@ -16,11 +16,11 @@ export const NavbarStore = () => {
           </div>
           <div className="navbarTopStoreLeft">
             <a href="" className="navbarTopStoreLeftLogoProfile">
-              <img src="./nahoor home page/store page/Profile icon.svg" />
+              <img src="/nahoor home page/store page/Profile icon.svg" />
               ورود به حساب کاربری
             </a>
             <a href="" className="navbarTopStoreLeftLogoCart">
-              <img src="./nahoor home page/store page/Cart.svg" />
+              <img src="/nahoor home page/store page/Cart.svg" />
             </a>
           </div>
         </div>
@@ -37,7 +37,7 @@ export const NavbarStore = () => {
               className="navbarStoreBottomMainGroup"
             >
               <a href="" className="navbarStorePopup" >
-                <img src="./nahoor home page/store page/icons/Icon/24×24/Color/Interface/Menu Burger Horizontal.svg" />
+                <img src="/nahoor home page/store page/icons/Icon/24×24/Color/Interface/Menu Burger Horizontal.svg" />
                 دسته بندی
               </a>
               <div className="dropdown-content">
@@ -80,35 +80,35 @@ export const NavbarStore = () => {
             <li style={{ marginRight: "-4px" }}>
               <a href="">
        
-                <img src="./nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg" />
+                <img src="/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg" />
                 کارخانه ها
               </a>
             </li>
             <li>
               <a href="">
                 {" "}
-                <img src="./nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Discount.svg" />
+                <img src="/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Discount.svg" />
                 تخفیف ها و پیشنهادات
               </a>
             </li>
             <li>
               <a href="">
                 {" "}
-                <img src="./nahoor home page/store page/icons/Icon/24×24/Color/Files/File Document.svg" />
+                <img src="/nahoor home page/store page/icons/Icon/24×24/Color/Files/File Document.svg" />
                 قوانین و مقررات
               </a>
             </li>
             <li>
               <a href="">
                 {" "}
-                <img src="./nahoor home page/store page/icons/Chat/support.svg" />
+                <img src="/nahoor home page/store page/icons/Chat/support.svg" />
                 سوالی دارید؟
               </a>
             </li>
             <li>
               <a href="">
                 {" "}
-                <img src="./nahoor home page/store page/back home.svg" />
+                <img src="/nahoor home page/store page/back home.svg" />
                 بازگشت به خانه
               </a>
             </li>

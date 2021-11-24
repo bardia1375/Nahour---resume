@@ -23,6 +23,7 @@
 .productOfFactor-sideNavbar {
   position: -webkit-sticky;
   position: sticky;
+  top: 10%;
   width: 24%;
   max-height: 610px;
   display: flex;
@@ -33,7 +34,7 @@
   border-radius: 7px;
   direction: ltr;
   margin-left: 48px;
-  top: 0;
+  
   bottom: 0;
 }
 .ProductOfFactor-body {

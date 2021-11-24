@@ -23,6 +23,9 @@
 }
 .factorList-sideNavbar {
   /* text-align: right; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

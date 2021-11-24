@@ -1,13 +1,18 @@
 .navbarContainerStore {
   margin: 0 auto;
-
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .navbarTopStore {
   padding: 0 40px;
   background-color: #6b006d;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .navbarTopStoreLogo {
   display: block;
@@ -95,17 +100,16 @@
   flex-direction: row;
   display: none;
   position: absolute;
-  top:140%;
-  background: #F8F8F8;
+  top: 140%;
+  background: #f8f8f8;
   min-width: 500px;
   overflow: auto;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   z-index: 1;
   border-radius: 0px 0px 7px 7px;
 }
-.navbarStoreBottomMainGroup:hover .dropdown-content  {
+.navbarStoreBottomMainGroup:hover .dropdown-content {
   display: flex;
-
 }
 .dropdown-content a {
   color: black;
@@ -122,11 +126,11 @@
   border-left: 1px solid gray;
   padding-right: 8px;
 }
-.dropdown-content-item p{
+.dropdown-content-item p {
   font-family: IRANSans;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
 }
 .navbarStoreBottomMain li {
   margin: 8px 16px;
