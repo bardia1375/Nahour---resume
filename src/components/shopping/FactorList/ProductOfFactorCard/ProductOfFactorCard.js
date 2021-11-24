@@ -22,7 +22,7 @@ const ProductOfFactorCard = (props) => {
         <div>
           <p>{props.star}</p>
         </div>
-        <img src="./nahoor home page/productOfFactor/Icon Artwork.svg" />
+        <img src="/nahoor home page/productOfFactor/Icon Artwork.svg" />
       </div>
 
       <div className="productOfFactorCard-price">

@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./FactorListCard.css";
 const FactorListCard = (props) => {
   return (
+    <Link to="FactorProduct" style={{textDecoration:"none" , color: "black"}}>
     <div className="FactorListCard">
       <div className="FactorListupperContainer">
         <img
@@ -29,7 +31,7 @@ const FactorListCard = (props) => {
           <div><p className="FactorListLoverLeft2"> * 4.5</p></div>
         </div>
       </div>
-    </div>
+    </div></Link>
   );
 };
 

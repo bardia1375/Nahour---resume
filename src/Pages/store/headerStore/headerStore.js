@@ -27,7 +27,7 @@ const HeaderStore = () => {
           </div>
         </div>
         <div className="headerstore-left">
-          <img src="./nahoor home page/store page/header image.svg" />
+          <img src="/nahoor home page/store page/header image.svg" />
         </div>
       </div>
 

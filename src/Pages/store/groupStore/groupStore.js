@@ -6,23 +6,23 @@ import { Link } from "react-router-dom";
 const GroupStore = () => {
   const cards = [
     {
-      img: "./nahoor home page/store page/sanaye ghazaii.png",
+      img: "/nahoor home page/store page/sanaye ghazaii.png",
       text: "صنایع غذایی",
     },
     {
-      img: "./nahoor home page/store page/sanaye ghazaii.png",
+      img: "/nahoor home page/store page/sanaye ghazaii.png",
       text: "صنایع غذایی",
     },
     {
-      img: "./nahoor home page/store page/sanaye ghazaii.png",
+      img: "/nahoor home page/store page/sanaye ghazaii.png",
       text: "صنایع غذایی",
     },
     {
-      img: "./nahoor home page/store page/sanaye ghazaii.png",
+      img: "/nahoor home page/store page/sanaye ghazaii.png",
       text: "صنایع غذایی",
     },
     {
-      img: "./nahoor home page/store page/sanaye ghazaii.png",
+      img: "/nahoor home page/store page/sanaye ghazaii.png",
       text: "صنایع غذایی",
     },
   ];
@@ -42,7 +42,7 @@ const GroupStore = () => {
                     <div className="groupStore-text"><Link  to="listFactor">{card.text}</Link></div>
                   </div>
                   <div style={{ width: "16%", margin:"0 8px" }}>
-                    <img src="./nahoor home page/store page/icons/arrow.svg" width="100%" />
+                    <img src="/nahoor home page/store page/icons/arrow.svg" width="100%" />
                   </div>
                 </div>
               </div>

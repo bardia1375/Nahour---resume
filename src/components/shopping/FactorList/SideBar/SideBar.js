@@ -15,7 +15,7 @@ let btn_class = isBlack ? "black" : "red";
           <h3>{props.title}</h3>
         </div>
         <div style={{ width: "12%" }}>
-          <img src="./nahoor home page/About Page/behinde.svg " width="100%" />
+          <img src="/nahoor home page/About Page/behinde.svg " width="100%" />
         </div>
       </div>
 

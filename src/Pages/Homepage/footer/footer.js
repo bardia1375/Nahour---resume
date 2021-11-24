@@ -8,14 +8,14 @@ const Footer = () => {
       <div className="Footer-container">
         <div className="Footer-icons">
           <img
-            src="nahoor home page/Footer/line.png"
+            src="/nahoor home page/Footer/line.png"
             width="24%"
             style={{ marginLeft: "32px" }}
             alt=""
           />
           <a>
             <img
-              src="nahoor home page/Footer/facebook.svg"
+              src="/nahoor home page/Footer/facebook.svg"
               alt=""
               style={{ cursor: "pointer" }}
             />{" "}
@@ -23,7 +23,7 @@ const Footer = () => {
           <a>
             {" "}
             <img
-              src="nahoor home page/Footer/google.svg"
+              src="/nahoor home page/Footer/google.svg"
               alt=""
               style={{
                 objectFit: "contain",
@@ -35,7 +35,7 @@ const Footer = () => {
           <a>
             {" "}
             <img
-              src="nahoor home page/Footer/telegram.svg"
+              src="/nahoor home page/Footer/telegram.svg"
               alt=""
               style={{
                 objectFit: "contain",
@@ -47,7 +47,7 @@ const Footer = () => {
           <a>
             {" "}
             <img
-              src="nahoor home page/Footer/whatsapp.svg"
+              src="/nahoor home page/Footer/whatsapp.svg"
               alt=""
               style={{
                 objectFit: "contain",
@@ -57,7 +57,7 @@ const Footer = () => {
             />{" "}
           </a>
           <img
-            src="nahoor home page/Footer/line.png"
+            src="/nahoor home page/Footer/line.png"
             alt=""
             width="24%"
             style={{ marginRight: "32px" }}
@@ -68,7 +68,7 @@ const Footer = () => {
             <img
               className="Footer-img"
               width="25%"
-              src="./nahoor home page/Nahoor logo -2.png"
+              src="/nahoor home page/Nahoor logo -2.png"
               alt=""
             />
             <p className="Footer-explain">
@@ -79,7 +79,7 @@ const Footer = () => {
           <div className="Footer-culomn">
             <h3 className="locationlogo">
               <img
-                src="./nahoor home page/Icons/Location.svg"
+                src="/nahoor home page/Icons/Location.svg"
                 style={{ marginLeft: "8px" }}
               />
               آدرس دفتر :
@@ -92,7 +92,7 @@ const Footer = () => {
           <div className="Footer-culomn">
             <h3 className="Footer-phoneH3">
               <img
-                src="./nahoor home page/Icons/Phone.svg"
+                src="/nahoor home page/Icons/Phone.svg"
                 style={{ marginLeft: "8px" }}
               />
               تلفن تماس :
@@ -104,7 +104,7 @@ const Footer = () => {
           <div className="Footer-culomn">
             <h3 className="Footer-EnvelopeH3">
               <img
-                src="./nahoor home page/Icons/Envelope.svg"
+                src="/nahoor home page/Icons/Envelope.svg"
                 style={{ marginLeft: "8px" }}
               />
               ایمیل :

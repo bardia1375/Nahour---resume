@@ -4,19 +4,19 @@ import "./bestProductStore.css";
 const BestProductStore = () => {
   const cards = [
     {
-      img: "./nahoor home page/store page/Zar makaron poster.png",
+      img: "/nahoor home page/store page/Zar makaron poster.png",
       title: "تولید انواع ماکارونی و پاستا",
-      brandImg: "./nahoor home page/store page/Mahram Logo.png",
+      brandImg: "/nahoor home page/store page/Mahram Logo.png",
     },
     {
-      img: "./nahoor home page/store page/Zar makaron poster.png",
+      img: "/nahoor home page/store page/Zar makaron poster.png",
       title: "تولید انواع ماکارونی و پاستا",
-      brandImg: "./nahoor home page/store page/Mahram Logo.png",
+      brandImg: "/nahoor home page/store page/Mahram Logo.png",
     },
     {
-      img: "./nahoor home page/store page/Zar makaron poster.png",
+      img: "/nahoor home page/store page/Zar makaron poster.png",
       title: "تولید انواع ماکارونی و پاستا",
-      brandImg: "./nahoor home page/store page/Mahram Logo.png",
+      brandImg: "/nahoor home page/store page/Mahram Logo.png",
     },
   ];
   return (
