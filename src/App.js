@@ -13,7 +13,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div>
-      <HomePage />ss
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/blogs" element={<Blog />} />
+        <Route path="/store/*" element={<Shopping />} />
+        <Route path="/listFactor" element={<div>salam</div>} />
+      </Routes>
       {/* <ShareBlog/>
       <Shopping/>
       <Footer /> */}

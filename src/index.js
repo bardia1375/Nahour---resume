@@ -4,19 +4,14 @@ import "./index.css";
 import App from "./App";
 import "./assets/fonts/Iran-Sans.ttf";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Shopping } from "./Shopping";
-import Blog from "./Pages/Blog/Blog";
-import AboutUs from "./Pages/AboutUs/AboutUs";
+// import Blog from "./Pages/Blog/Blog";
+// import AboutUs from "./Pages/AboutUs/AboutUs";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="about" element={<AboutUs />} />
-      <Route path="blogs" element={<Blog />} />
-      <Route path="store" element={<Shopping />} />
-    </Routes>
+    <App />
   </BrowserRouter>,
   document.getElementById("root")
 );
