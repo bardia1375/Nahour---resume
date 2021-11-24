@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { Link } from "react-router-dom";
 import "./NavbarStore.css";
 export const NavbarStore = () => {
 
@@ -42,12 +43,13 @@ export const NavbarStore = () => {
               </a>
               <div className="dropdown-content">
               <div id="myDropdown" className="dropdown-content-item">
-                <p >صنایع غذایی</p>
+                <p>صنایع غذایی</p>
                 <a href="#home">لبنیات</a>
                 <a href="#about">ماکارونی</a>
                 <a href="#contact">سس های خوراکی</a>
                 <a href="#contact">رب گوجه فرنگی</a>
               </div>
+              <div class="vl"></div>
               <div id="myDropdown" className="dropdown-content-item">
                 <p >صنایع غذایی</p>
                 <a href="#home">لبنیات</a>
@@ -55,6 +57,7 @@ export const NavbarStore = () => {
                 <a href="#contact">سس های خوراکی</a>
                 <a href="#contact">رب گوجه فرنگی</a>
               </div>
+              <div class="vl"></div>
               <div id="myDropdown" className="dropdown-content-item">
                 <p >صنایع غذایی</p>
                 <a href="#home">لبنیات</a>
@@ -62,7 +65,8 @@ export const NavbarStore = () => {
                 <a href="#contact">سس های خوراکی</a>
                 <a href="#contact">رب گوجه فرنگی</a>
               </div>
-              <div id="myDropdown" className="dropdown-content-item">
+              <div class="vl"></div>
+              <div id="myDropdown" className="dropdown-content-item1">
                 <p >صنایع غذایی</p>
                 <a href="#home">لبنیات</a>
                 <a href="#about">ماکارونی</a>
@@ -106,11 +110,10 @@ export const NavbarStore = () => {
               </a>
             </li>
             <li>
-              <a href="">
-                {" "}
+              <Link to="/">
                 <img src="/nahoor home page/store page/back home.svg" />
                 بازگشت به خانه
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

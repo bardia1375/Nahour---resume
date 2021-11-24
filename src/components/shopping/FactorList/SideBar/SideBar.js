@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SideBar = (props) => {
   const [textColor, setTextColor] = useState("black");
@@ -21,16 +22,19 @@ let btn_class = isBlack ? "black" : "red";
 
       <div className="factorListSideNavbarItems">
         {props.subTitle.map((subtitl) => {
+          console.log(subtitl)
           return (
             <div>
-              <a href="#">
+              <a href="https://www.google.com">
                 <p className={btn_class} style={{ color: textColor }} onclick={(e) => changeGrope(e)}>
                   {subtitl}
                 </p>
               </a>
+              
             </div>
           );
         })}
+        {/* <Link to="" ><p>صنایع غذایی</p></Link> */}
       </div>
     </>
   );
