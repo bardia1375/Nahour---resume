@@ -66,7 +66,27 @@ function NahorSuggestions() {
     const { className, onClick } = props;
     return (
       <div className={className} onClick={onClick}>
-        <img src="/nahoor home page/store page/icons/arrow.svg" />
+        <div
+          className="backgroun-dmaterial"
+          style={{
+            backgroundColor: "#6B006D",
+            borderRadius: "50%",
+            padding: "4px",
+          }}
+        >
+          <span
+            class="material-icons"
+            style={{
+              backgroundColor: "#fff",
+              zIndex: "100",
+              color: "#6B006D",
+              borderRadius: "50%",
+              padding: "4px",
+            }}
+          >
+            chevron_right
+          </span>
+        </div>
       </div>
     );
   };
@@ -75,7 +95,27 @@ function NahorSuggestions() {
 
     return (
       <div className={className} onClick={onClick}>
-        <img src="/nahoor home page/store page/icons/arrow.svg" />
+        <div
+          className="backgroun-dmaterial"
+          style={{
+            backgroundColor: "#6B006D",
+            borderRadius: "50%",
+            padding: "4px",
+          }}
+        >
+          <span
+            class="material-icons"
+            style={{
+              backgroundColor: "#fff",
+              zIndex: "100",
+              color: "#6B006D",
+              borderRadius: "50%",
+              padding: "4px",
+            }}
+          >
+            chevron_left
+          </span>
+        </div>
       </div>
     );
   };
@@ -111,13 +151,12 @@ function NahorSuggestions() {
             <a href="#">
               <h3>مشاهده همه</h3>
               <span
-              class="material-icons"
-              style={{ transform: "rotate(180deg)",marginBottom:"8px" }}
-            >
-              chevron_right
-            </span>
+                class="material-icons"
+                style={{ transform: "rotate(180deg)", marginBottom: "8px" }}
+              >
+                chevron_right
+              </span>
             </a>
-          
           </div>
         </div>
         <div className="NahorSuggestions-left">

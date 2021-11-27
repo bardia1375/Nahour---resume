@@ -40,12 +40,30 @@ const BestFactor = () => {
     const { className, onClick } = props;
     return (
       <div className={className} onClick={onClick}>
-            <span
-              class="material-icons"
-              style={{ transform: "rotate(180deg)",marginBottom:"8px" }}
-            >
-              chevron_right
-            </span>
+          <div
+          className="backgroun-dmaterial"
+          style={{
+            backgroundColor: "#6B006D",
+            borderRadius: "50%",
+            padding: "4px",
+            marginRight: "-40px"
+          }}
+        >
+          <span
+            class="material-icons"
+            style={{
+              backgroundColor: "#6B006D",
+              zIndex: "100",
+              color: "#fff",
+              borderRadius: "50%",
+              padding: "4px",
+              fontSize:"24px"
+              
+            }}
+          >
+            chevron_right
+          </span>
+        </div>
       </div>
     );
   };
@@ -54,71 +72,43 @@ const BestFactor = () => {
 
     return (
       <div className={className} onClick={onClick}>
-            <span
-              class="material-icons"
-              style={{ transform: "rotate(180deg)",marginBottom:"8px" , zIndex:"20"}}
-            >
-              chevron_right
-            </span>
+            <div
+          className="backgroun-dmaterial"
+          style={{
+            backgroundColor: "#6B006D",
+            borderRadius: "50%",
+            padding: "4px",
+            marginRight: "80px"
+          }}
+        >
+          <span
+            class="material-icons"
+            style={{
+              backgroundColor: "#6B006D",
+              zIndex: "100",
+              color: "#fff",
+              borderRadius: "50%",
+              padding: "4px",
+              fontSize:"24px"
+              
+            }}
+          >
+            chevron_left
+          </span>
+        </div>
       </div>
     );
   };
   const slider = React.useRef(null);
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: <PerviousBtn />,
     nextArrow: <NextBtn />,
    
-    beforeChange: (prev, next) => {
-      setcurrentIndex(next);
-    },
-    appendDots: (dots) => {
-      return (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            paddingRight:"6%" 
-
-          }}
-        >
-          {dots.map((item, index) => {
-            return (
-              <div style={{ margin: "0 4px" }} key={index}>
-                {item.props.children}
-              </div>
-            );
-          })}
-        </div>
-      );
-    },
-    customPaging: (index) => {
-      return (
-        <div
-          style={
-            index === currentIndex
-              ? {
-                  width: "30px",
-                  height: "10px",
-                  background: "#6B006D",
-                  borderRadius: "50px",
-                }
-              : {
-                  width: "10px",
-                  height: "10px",
-                  background: "#C4C4C4",
-                  borderRadius: "50px",
-                }
-          }
-        >
-          {}
-        </div>
-      );
-    },
+    
     responsive: [
       {
         breakpoint: 1024,
