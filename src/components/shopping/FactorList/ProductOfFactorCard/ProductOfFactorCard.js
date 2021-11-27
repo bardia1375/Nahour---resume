@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ButtonComponent from "../../../Button/button";
+import { cartReducer } from "../../../redux/reducer";
+import { cartStore } from "../../../redux/store";
+import { addToCart } from "../../../redux/actions";
 import "./ProductOfFactorCard.css";
 const ProductOfFactorCard = (props) => {
+  const [cards,setcards]=useState(true);
+  const changeButton=(e)=>{
+    setcards(!cards)
+  }
+
+  //redux
+
+  const addToCartHandler = () => {
+    cartStore.dispatch(addToCart(props));
+    console.log(cartStore.getState());
+  };
+
+  useEffect(() => {
+    let unsubscribe = cartStore.subscribe(() => {
+      console.log(cartStore.getState());
+    });
+
+    return unsubscribe();
+  }, []);
+  //end redux
+
   return (
     <div className="productOfFactorCard-container">
       <div className="productOfFactorCard-main">
@@ -34,10 +58,10 @@ const ProductOfFactorCard = (props) => {
           AEF: <span>416,000</span>
         </h3>
       </div>
-      <div>
-        <button type="text" className="productOfFactorCard-Button">
+      <div onClick={(e)=>addToCartHandler(e)}>
+        {cards?<button onClick={(e)=>changeButton(e)} type="text" className="productOfFactorCard-Button">
           افزودن به سبد خرید
-        </button>
+        </button>:<div className="productOfFactorCard-count"><div> تعداد</div><div>افزودن</div></div>}
       </div>
     </div>
   );

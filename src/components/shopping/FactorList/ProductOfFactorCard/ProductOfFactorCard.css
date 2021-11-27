@@ -58,3 +58,9 @@
   padding:8px 0px;
   margin-top: 16px;
 }
+.productOfFactorCard-count{
+  display: flex;
+  justify-content: space-between;
+  padding:8px 0px;
+  margin-top: 16px;
+}
