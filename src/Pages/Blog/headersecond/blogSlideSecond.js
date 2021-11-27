@@ -97,7 +97,7 @@ function BlogSlideSecond() {
     },
   ];
   return (
-    <div style={{}}>
+   
       <Slider {...settings}>
         {explains.map((explain) => {
           return (
@@ -106,7 +106,7 @@ function BlogSlideSecond() {
                 <img
                   className="blogSlideSecondSlider-img"
                   src={explain.img}
-                  width="110.5%"
+                  width="100%"
                   style={{ objectFit: "cover", borderRadius: "7px" }}
                   alt=""
                 />
@@ -160,7 +160,7 @@ function BlogSlideSecond() {
           );
         })}
       </Slider>
-    </div>
+
   );
 }
 
