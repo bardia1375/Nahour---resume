@@ -1,7 +1,11 @@
 import React from "react";
 import ProductOfFactorCard from "../../../components/shopping/FactorList/ProductOfFactorCard/ProductOfFactorCard";
 import "./productOfFactor.css";
-const ProductOfFactor = () => {
+import {useParams} from "react-router-dom";
+const ProductOfFactor = (props) => {
+  const params =useParams()
+  console.log(params.id)
+  console.log(props.match)
   const Title = ["محصولات میهن"];
   const cards = [
     {

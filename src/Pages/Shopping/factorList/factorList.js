@@ -6,6 +6,7 @@ const FactorList = () => {
   const Title = ["لیست کارخانه های لبنیات"];
   const cards = [
     {
+      id:"0",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -15,6 +16,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"1",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -24,6 +26,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"2",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -33,6 +36,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"3",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -42,6 +46,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"4",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -51,6 +56,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"5",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -60,6 +66,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"6",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -69,6 +76,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"7",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -78,6 +86,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"8",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -87,6 +96,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"9",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -96,6 +106,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"10",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -105,6 +116,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"11",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -114,6 +126,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"12",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -123,6 +136,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"13",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -132,6 +146,7 @@ const FactorList = () => {
       imgstar: "",
     },
     {
+      id:"14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
@@ -181,6 +196,7 @@ const FactorList = () => {
             return (
               <div>
                 <FactorListCard
+                id={card.id}
                   largPic={card.largPic}
                   shortPic={card.shortPic}
                   product={card.product}

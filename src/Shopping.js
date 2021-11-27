@@ -9,15 +9,15 @@ import Store from "./Pages/store/Store";
 export const Shopping = () => {
   return (
     <div className="Shopping-Container">
-
-        <NavbarStore />
+      {/* <NavbarStore /> */}
 
       <Routes>
-        <Route path="/" element={<Store />} />
+        <Route path="/" element={<Store />} />{" "}
+        <Route path="/listFactor/:id" element={<ProductOfFactor />} />
         <Route path="listFactor" element={<FactorList />} />
-        <Route path="/listFactor/FactorProduct" element={<ProductOfFactor />} />
+        {/* <Route path="/listFactor/FactorProduct" element={<ProductOfFactor />} /> */}
       </Routes>
-     <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

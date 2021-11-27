@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
+import {  NavLink } from "react-router-dom";
+import "./SideBar.css"
 const SideBar = (props) => {
   const [textColor, setTextColor] = useState("black");
   const [isBlack, setIsBlack] = useState(true);
 
-  const changeGrope = (e) => {
-    setTextColor(!isBlack)
+  const changeGrope = (e,id) => {
+    setTextColor("red")
 }
 let btn_class = isBlack ? "black" : "red";
   return (
@@ -21,15 +21,15 @@ let btn_class = isBlack ? "black" : "red";
       </div>
 
       <div className="factorListSideNavbarItems">
-        {props.subTitle.map((subtitl) => {
+        {props.subTitle.map((subtitl,id) => {
           console.log(subtitl)
           return (
             <div>
-              <a href="https://www.google.com">
-                <p className={btn_class} style={{ color: textColor }} onclick={(e) => changeGrope(e)}>
+              <NavLink className={(navData) => navData.isActive ?"changeHover":''} to="">
+                <p className={btn_class} style={{ color: textColor }} onclick={(e) => changeGrope(e,id)}>
                   {subtitl}
                 </p>
-              </a>
+              </NavLink>
               
             </div>
           );

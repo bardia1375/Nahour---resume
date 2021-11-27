@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./FactorListCard.css";
 const FactorListCard = (props) => {
+  console.log(props.id)
   return (
-    <Link to="FactorProduct" style={{textDecoration:"none" , color: "black"}}>
+    <Link  to={`${props.id}`} style={{textDecoration:"none" , color: "black"}}>
     <div className="FactorListCard">
       <div className="FactorListupperContainer">
         <img
