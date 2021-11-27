@@ -61,7 +61,7 @@ const ProductOfFactorCard = (props) => {
       <div onClick={(e)=>addToCartHandler(e)}>
         {cards?<button onClick={(e)=>changeButton(e)} type="text" className="productOfFactorCard-Button">
           افزودن به سبد خرید
-        </button>:<div className="productOfFactorCard-count"><div> تعداد</div><div>افزودن</div></div>}
+        </button>:<div className="productOfFactorCard-count"> با موفقیت به سبد خرید اضافه شد</div>}
       </div>
     </div>
   );
