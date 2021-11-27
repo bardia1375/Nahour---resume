@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { cartStore } from "../redux/store";
 import "./NavbarStore.css";
 export const NavbarStore = () => {
+  const [state, setState] = useState({ count: 0 });
 
-const [state,setState]=useState({count:0})
-
-useEffect(()=>{
-cartStore.subscribe(()=>{setState({count:cartStore.getState().length})});
-
-})
+  useEffect(() => {
+    cartStore.subscribe(() => {
+      setState({ count: cartStore.getState().length });
+    });
+  });
 
   return (
     <>
@@ -30,7 +30,9 @@ cartStore.subscribe(()=>{setState({count:cartStore.getState().length})});
             </a>
             <a href="" className="navbarTopStoreLeftLogoCart">
               <img src="/nahoor home page/store page/Cart.svg" />
-            { state.count>0 && <span className="countOfProduct">{state.count}</span>}
+              {state.count > 0 && (
+                <span className="countOfProduct">{state.count}</span>
+              )}
             </a>
           </div>
         </div>
@@ -79,34 +81,31 @@ cartStore.subscribe(()=>{setState({count:cartStore.getState().length})});
             </li>
 
             <li style={{ marginRight: "-4px" }}>
-              <a href="">
+              <a href="" className="NavbarStoreItem">
                 <img src="/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg" />
                 کارخانه ها
               </a>
             </li>
             <li>
-              <a href="">
-                {" "}
+              <a href="" className="NavbarStoreItem">
                 <img src="/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Discount.svg" />
                 تخفیف ها و پیشنهادات
               </a>
             </li>
             <li>
-              <a href="">
-                {" "}
+              <a href="" className="NavbarStoreItem">
                 <img src="/nahoor home page/store page/icons/Icon/24×24/Color/Files/File Document.svg" />
                 قوانین و مقررات
               </a>
             </li>
             <li>
-              <a href="">
-                {" "}
-                <img src="/nahoor home page/store page/icons/Chat/support.svg" />
+              <a href="" className="NavbarStoreItem">
+                <img  src="/nahoor home page/store page/icons/Chat/support.svg" />
                 سوالی دارید؟
               </a>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/" className="NavbarStoreItem">
                 <img src="/nahoor home page/store page/back home.svg" />
                 بازگشت به خانه
               </Link>
