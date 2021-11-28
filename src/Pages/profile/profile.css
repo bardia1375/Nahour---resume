@@ -1,0 +1,38 @@
+.profile-container {
+  display: flex;
+  padding: 2vw 4vw;
+  justify-content: space-between;
+
+}
+.profile-sideBar {
+  background: #f8f8f8;
+  border-radius: 7px;
+  width: 20vw;
+  padding: 16px 40px;
+  position: sticky;
+  top: 10%;
+}
+.profile-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-photo h3{
+    margin-top:8px;
+    font-weight: 600;
+}
+.profile-photo img {
+  object-fit: contain;
+}
+.profile-sideBarItem1 {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.profile-sideBarItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 1px solid #c4c4c4;
+}

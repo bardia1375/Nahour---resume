@@ -6,6 +6,7 @@ import FactorList from "./Pages/Shopping/factorList/factorList";
 import { Routes, Route } from "react-router-dom";
 import ProductOfFactor from "./Pages/Shopping/productOfFactor/productOfFactor";
 import Store from "./Pages/store/Store";
+import Profile from "./Pages/profile/profile";
 export const Shopping = () => {
   return (
     <div className="Shopping-Container">
@@ -15,6 +16,7 @@ export const Shopping = () => {
         <Route path="/" element={<Store />} />
         <Route path="/listFactor/:id" element={<ProductOfFactor />} />
         <Route path="listFactor" element={<FactorList />} />
+        <Route path="/profile" element={<Profile />} />
         {/* <Route path="/listFactor/FactorProduct" element={<ProductOfFactor />} /> */}
       </Routes>
       <Footer />

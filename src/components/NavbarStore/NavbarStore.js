@@ -24,10 +24,10 @@ export const NavbarStore = () => {
             />
           </div>
           <div className="navbarTopStoreLeft">
-            <a href="" className="navbarTopStoreLeftLogoProfile">
+            <Link to="/store/profile" className="navbarTopStoreLeftLogoProfile">
               <img src="/nahoor home page/store page/Profile icon.svg" />
               ورود به حساب کاربری
-            </a>
+            </Link>
             <a href="" className="navbarTopStoreLeftLogoCart">
               <img src="/nahoor home page/store page/Cart.svg" />
               {state.count > 0 && (
