@@ -1,7 +1,9 @@
 import React from "react";
 import Support from "./support/support";
-import "./profile.css"
+import "./profile.css";
 import Call from "./call/call";
+import ConditionNahor from "./conditionNahor/ConditionNahor";
+
 const Profile = () => {
   const sideBarItems = [
     {
@@ -35,9 +37,8 @@ const Profile = () => {
               <h3>{sideBarItem.profileName}</h3>
             </div>
 
-
-            <div className="profile-sideBarItem1" >
-              <div style={{ width: "8%" , marginLeft:"8px" }}>
+            <div className="profile-sideBarItem1">
+              <div style={{ width: "8%", marginLeft: "8px" }}>
                 <img
                   src="/nahoor home page/profile/Icons/Icon/non active/اطلاعات کاربر.png"
                   alt=""
@@ -47,11 +48,8 @@ const Profile = () => {
               <p>{sideBarItem.information}</p>
             </div>
 
-           
-
-
             <div className="profile-sideBarItem">
-              <div style={{ width: "8%" , marginLeft:"8px" }}>
+              <div style={{ width: "8%", marginLeft: "8px" }}>
                 <img
                   src="/nahoor home page/profile/Icons/Icon/non active/Group 62.png"
                   alt=""
@@ -61,11 +59,8 @@ const Profile = () => {
               <p>{sideBarItem.order}</p>
             </div>
 
-
-
-
             <div className="profile-sideBarItem">
-              <div style={{ width: "8%" , marginLeft:"8px" }}>
+              <div style={{ width: "8%", marginLeft: "8px" }}>
                 <img
                   src="/nahoor home page/profile/Icons/Icon/non active/تماس با ما.png"
                   alt=""
@@ -75,11 +70,8 @@ const Profile = () => {
               <p>{sideBarItem.call}</p>
             </div>
 
-
-
-
             <div className="profile-sideBarItem">
-              <div style={{ width: "8%" , marginLeft:"8px" }}>
+              <div style={{ width: "8%", marginLeft: "8px" }}>
                 <img
                   src="/nahoor home page/profile/Icons/Icon/non active/about us.png"
                   alt=""
@@ -89,10 +81,8 @@ const Profile = () => {
               <p>{sideBarItem.aboutUs}</p>
             </div>
 
-
- 
             <div className="profile-sideBarItem">
-              <div style={{ width: "8%" , marginLeft:"8px" }}>
+              <div style={{ width: "8%", marginLeft: "8px" }}>
                 <img
                   src="/nahoor home page/profile/Icons/Icon/non active/supprt.png"
                   alt=""
@@ -101,9 +91,9 @@ const Profile = () => {
               </div>
               <p>{sideBarItem.support}</p>
             </div>
-             
+
             <div className="profile-sideBarItem">
-              <div style={{ width: "8%" , marginLeft:"8px" }}>
+              <div style={{ width: "8%", marginLeft: "8px" }}>
                 <img
                   src="/nahoor home page/profile/Icons/Icon/non active/قوانین و مقررات.png"
                   alt=""
@@ -114,7 +104,7 @@ const Profile = () => {
             </div>
 
             <div className="profile-sideBarItem">
-              <div style={{ width: "8%" , marginLeft:"8px" }}>
+              <div style={{ width: "8%", marginLeft: "8px" }}>
                 <img
                   src="/nahoor home page/profile/Icons/Icon/non active/خروج.png"
                   alt=""
@@ -128,10 +118,10 @@ const Profile = () => {
       })}
 
       <div className="profile-components">
-          {/* <Support/> */}
-          <Call/>
-          
-          </div>
+        {/* <Support/> */}
+        {/* <Call/> */}
+          {/* <ConditionNahor/> */}
+      </div>
     </div>
   );
 };
