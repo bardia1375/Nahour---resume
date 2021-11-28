@@ -3,6 +3,7 @@ import Support from "./support/support";
 import "./profile.css";
 import Call from "./call/call";
 import ConditionNahor from "./conditionNahor/ConditionNahor";
+import Information from "./information/information";
 
 const Profile = () => {
   const sideBarItems = [
@@ -121,6 +122,7 @@ const Profile = () => {
         {/* <Support/> */}
         {/* <Call/> */}
           {/* <ConditionNahor/> */}
+          <Information/>
       </div>
     </div>
   );

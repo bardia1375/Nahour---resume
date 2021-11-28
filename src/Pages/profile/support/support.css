@@ -47,9 +47,9 @@
   flex-direction: column;
   width: 100%;
   opacity: 0.5;
-  border: 1px solid #263238;
+  border: 1px solid #5f6d74;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 5px;
   margin-top: 16px;
   padding: 8px;
 }
