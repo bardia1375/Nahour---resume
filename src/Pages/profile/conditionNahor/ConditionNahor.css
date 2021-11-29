@@ -7,7 +7,10 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14);
   border-radius: 5px;
   padding: 50px 4vw;
+  position: relative;
+  margin-top: 150px;
 }
+
 .ConditionNahor-img {
   display: flex;
   flex-direction: column;
@@ -16,11 +19,33 @@
 }
 .ConditionNahor-content {
   font-weight: 300;
-
+  margin-top: 8px;
 }
-.ConditionNahor-item{
-    margin-top:32px;
+.ConditionNahor-item {
+  margin-top: 32px;
 }
-.ConditionNahor-img h2{
-    margin-top: 16px;
+.ConditionNahor-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ConditionNahor-img h2 {
+  margin-top: 16px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: -220px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.ConditionNahor-img img {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: -150px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }

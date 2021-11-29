@@ -16,7 +16,7 @@ const Support = (props) => {
 
   return (
     <div className="support-container">
-      <div className="support-img">
+       <div className="support-img">
         <div>
           <h2>{Title}</h2>
         </div>

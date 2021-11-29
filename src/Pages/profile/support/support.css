@@ -6,6 +6,8 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14);
   border-radius: 5px;
   padding: 50px 15vw;
+  position: relative;
+  margin-top: 150px;
 }
 .support-container img {
   margin: 32px 0;
@@ -16,6 +18,25 @@
   align-items: center;
   justify-content: center;
 }
+.support-img h2{
+  margin-top: 16px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: -220px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.support-img img{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: -150px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
 .support-main {
   display: flex;
   padding: 16px;
@@ -24,7 +45,7 @@
   justify-content: space-between;
   background: #f3f3f3;
   border-radius: 5px;
-  margin-top: 16px;
+  margin-top: 32px;
 }
 .support-items h3,
 .support-direct-contact-items h3 {

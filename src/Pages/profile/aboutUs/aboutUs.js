@@ -1,7 +1,7 @@
 import React from "react";
-import "./ConditionNahor.css";
-const ConditionNahor = () => {
-  const Title = ["قوانین و مقررات"];
+import "./aboutUs.css";
+const AboutUs = () => {
+  const Title = ["درباره ما"];
   const sentenses = [
     {
       title: "ما در ناهور چه کاری انجام میدهیم",
@@ -31,7 +31,7 @@ const ConditionNahor = () => {
           <h2>{Title}</h2>
         </div>
         <div>
-          <img src="/nahoor home page/profile/term.svg" />
+          <img src="/nahoor home page/profile/about us.svg" />
         </div>
       </div>
 
@@ -49,4 +49,4 @@ const ConditionNahor = () => {
   );
 };
 
-export default ConditionNahor;
+export default AboutUs;

@@ -5,6 +5,8 @@ import Call from "./call/call";
 import ConditionNahor from "./conditionNahor/ConditionNahor";
 import Information from "./information/information";
 import EditInformation from "./editInformation/editInformation";
+import { Outlet } from "react-router";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   const sideBarItems = [
@@ -48,7 +50,9 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <p>{sideBarItem.information}</p>
+                <Link to="info" style={{color:"#000" , textDecoration: "none"}}>
+                  <p>{sideBarItem.information}</p>
+                </Link>
               </div>
 
               <div className="profile-sideBarItem">
@@ -59,7 +63,9 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <p>{sideBarItem.order}</p>
+                <Link to="order" style={{color:"#000" , textDecoration: "none"}}>
+                  <p>{sideBarItem.order}</p>
+                </Link>
               </div>
 
               <div className="profile-sideBarItem">
@@ -70,7 +76,9 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <p>{sideBarItem.call}</p>
+                <Link to="call" style={{color:"#000" , textDecoration: "none"}}>
+                  <p>{sideBarItem.call}</p>
+                </Link>
               </div>
 
               <div className="profile-sideBarItem">
@@ -81,7 +89,9 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <p>{sideBarItem.aboutUs}</p>
+                <Link to="aboutUs" style={{color:"#000" , textDecoration: "none"}}>
+                  <p>{sideBarItem.aboutUs}</p>
+                </Link>
               </div>
 
               <div className="profile-sideBarItem">
@@ -92,7 +102,7 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <p>{sideBarItem.support}</p>
+                <Link to="support" style={{color:"#000" , textDecoration: "none"}}><p>{sideBarItem.support}</p></Link>
               </div>
 
               <div className="profile-sideBarItem">
@@ -103,7 +113,7 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <p>{sideBarItem.roll}</p>
+                <Link to="conditions" style={{color:"#000" , textDecoration: "none"}}><p>{sideBarItem.roll}</p></Link>
               </div>
 
               <div className="profile-sideBarItem">
@@ -121,11 +131,8 @@ const Profile = () => {
         })}
       </div>
       <div className="profile-components">
-        {/* <Support/> */}
-        {/* <Call/> */}
-        {/* <ConditionNahor/> */}
-        {/* <Information/> */}
-        <EditInformation />
+        <Outlet />
+
       </div>
     </div>
   );

@@ -155,7 +155,7 @@ const EditInformation = () => {
               />
             </div>
             <div>
-              <Button  onSubmit />
+              {/* <Button  onSubmit /> */}
               <button type="submit" className="editInformation-button" >ثبت</button>
             </div>
             {/* <div className="formikmain-bottom">
