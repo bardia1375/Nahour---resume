@@ -8,7 +8,7 @@ function NavbarSmall() {
         <li>
          <div style={{width: '100%'}}><img
             className="NavbarLogo"
-            src="./nahoor home page/logo.svg"
+            src="/nahoor home page/logo.svg"
             width="100%"
             alt="ناهور"
           /></div>

@@ -38,6 +38,9 @@
   align-items: center;
   justify-content: center;
 }
+.callProfile-items h2 {
+  font-size:1rem
+}
 .callProfile-items img {
   margin-left: 8px;
   transform: translateY(-4px);

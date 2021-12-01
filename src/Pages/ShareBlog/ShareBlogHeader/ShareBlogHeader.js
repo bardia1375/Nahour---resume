@@ -3,7 +3,7 @@ import "./ShareBlogHeader.css";
 function ShareBlogHeader() {
   const contents = [
     {
-      img: "nahoor home page/Blogs page/purple pic.png",
+      img: "/nahoor home page/Blogs page/purple pic.png",
       title: "هر آنچه باید از محصولات اورگانیک بدانید",
       profileImg: "",
       name: "نیما بشیری",
@@ -36,7 +36,7 @@ function ShareBlogHeader() {
                 >
                   <div style={{ width: "30%" }}>
                     <img
-                      src="./nahoor home page/Ellipse 76.png"
+                      src="/nahoor home page/Ellipse 76.png"
                       width="100%"
                       alt=""
                     />
@@ -49,7 +49,7 @@ function ShareBlogHeader() {
                   <div style={{ paddingRight: "8px", width: "20%" }}>
                     <img
                       width="100%"
-                      src="./nahoor home page/Share Blogs page/Icons/Time/clock.png"
+                      src="/nahoor home page/Share Blogs page/Icons/Time/clock.png"
                       alt=""
                     />
                   </div>
@@ -61,7 +61,7 @@ function ShareBlogHeader() {
                   <div style={{ width: "20%" }}>
                     <img
                       width="100%"
-                      src="./nahoor home page/Share Blogs page/Icons/Business/calender.svg"
+                      src="/nahoor home page/Share Blogs page/Icons/Business/calender.svg"
                       alt=""
                     />
                   </div>
@@ -72,23 +72,23 @@ function ShareBlogHeader() {
               </div>
               <div className="shareBlog-content-main-left">
                 <img
-                  src="./nahoor home page/Share Blogs page/Icons/Outline/Brands/Facebook.svg"
+                  src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Facebook.svg"
                   alt=""
                 />
                 <img
-                  src="./nahoor home page/Share Blogs page/Icons/Outline/Brands/Linkedin.svg"
+                  src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Linkedin.svg"
                   alt=""
                 />
                 <img
-                  src="./nahoor home page/Share Blogs page/Icons/Outline/Brands/Twitter.svg"
+                  src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Twitter.svg"
                   alt=""
                 />
                 <img
-                  src="./nahoor home page/Share Blogs page/Icons/Outline/Files/Copy.svg"
+                  src="/nahoor home page/Share Blogs page/Icons/Outline/Files/Copy.svg"
                   alt=""
                 />
                 <img
-                  src="./nahoor home page/Share Blogs page/Icons/Outline/Communication/Share.svg"
+                  src="/nahoor home page/Share Blogs page/Icons/Outline/Communication/Share.svg"
                   alt=""
                 />
               </div>
