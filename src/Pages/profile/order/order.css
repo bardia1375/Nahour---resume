@@ -1,0 +1,22 @@
+.ProfileOrder-receive {
+  color: #029494;
+  display: flex;
+  align-items: center;
+}
+.ProfileOrder-receive p:first-child {
+  margin-left: 8px;
+}
+.ProfileOrder-header p {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.ProfileOrder-actives {
+  border-left: 2px solid rgba(146, 146, 146, 0.34);
+  padding-left: 250px;
+}
+.ProfileOrder-activess{
+    border-bottom: 2px solid red
+}

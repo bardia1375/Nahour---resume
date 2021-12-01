@@ -1,0 +1,112 @@
+.ProfileOrder-container {
+  width: 65vw;
+}
+.ProfileOrder-header {
+  width: 65vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.18);
+  border-radius: 0px 0px 7px 7px;
+  padding: 16px 0px;
+}
+.ProfileOrder-active {
+  border-left: 2px solid rgba(146, 146, 146, 0.34);
+
+
+}
+.ProfileOrder-products {
+  display: flex;
+}
+.ProfileOrder-content {
+  background: #ffffff;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+  margin-top: 32px;
+  padding: 8px 32px;
+}
+.ProfileOrder-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ProfileOrder-codeOrder {
+  display: flex;
+}
+.ProfileOrder-codeOrder p:first-child {
+  font-weight: 500;
+  margin-left: 40px;
+  color: #959595;
+}
+.ProfileOrder-codeOrder p:nth-child(2) {
+  font-weight: 600;
+}
+.ProfileOrder-mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ProfileOrder-wait {
+  display: flex;
+  align-items: center;
+  color: rgba(225, 0, 0, 0.93);
+}
+.ProfileOrder-wait p:first-child {
+  margin-left: 8px;
+}
+.ProfileOrder-times {
+  display: flex;
+  align-items: center;
+}
+.ProfileOrder-time,
+.ProfileOrder-calender {
+  display: flex;
+  align-items: center;
+  color: #808080;
+}
+.ProfileOrder-time {
+  margin-right: 32px;
+}
+.ProfileOrder-time img,
+.ProfileOrder-calender img {
+  margin-left: 8px;
+}
+.ProfileOrder-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 24px;
+}
+.ProfileOrder-buttonOrder {
+  background: #6b006d;
+  border-radius: 50px;
+  color: #fff;
+  width: 100%;
+  padding: 8px;
+  font-family: IRANSans;
+  font-size: 14px;
+}
+
+.ProfileOrder-buttonFactor {
+  background: #ffffff;
+  border: 1px solid #6b006d;
+  border-radius: 50px;
+  width: 100%;
+  margin-right: 20px;
+  color: #6b006d;
+  padding: 8px;
+  font-family: IRANSans;
+  font-size: 14px;
+}
+.ProfileOrder-buttonOrder:hover {
+  background: #ff9900;
+  border: 2px solid #ff9900;
+  color: #6b006d;
+}
+.ProfileOrder-buttonFactor:hover {
+  background: #ff9900;
+  color: #6b006d;
+  border: none;
+}

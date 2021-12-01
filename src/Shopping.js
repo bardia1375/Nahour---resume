@@ -12,6 +12,10 @@ import Support from "./Pages/profile/support/support";
 import ConditionNahor from "./Pages/profile/conditionNahor/ConditionNahor";
 import Call from "./Pages/profile/call/call";
 import AboutUs from "./Pages/profile/aboutUs/aboutUs";
+// import Cart from "./Pages/profile/cart/cart";
+import OrderActive from "./Pages/profile/order/orderActive";
+import OrderPrevious from "./Pages/profile/order/orderPrevious";
+import Order from "./Pages/profile/order/order";
 export const Shopping = () => {
   return (
     <div className="Shopping-Container">
@@ -21,9 +25,11 @@ export const Shopping = () => {
         <Route path="/" element={<Store />} />
         <Route path="/listFactor/:id" element={<ProductOfFactor />} />
         <Route path="listFactor" element={<FactorList />} />
+        
         <Route path="/profile/*" element={<Profile />} >
           <Route path="info" element={<Information/>}/>
-          {/* <Route path="order" element={<Order/>}/> */}
+          <Route path="order" element={<Order/>}/>
+          <Route path="order" element={<OrderPrevious/>}/>
           <Route path="call" element={<Call/>}/>
           <Route path="aboutUs" element={<AboutUs/>}/>
           <Route path="support" element={<Support/>}/>
