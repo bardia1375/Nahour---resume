@@ -2,16 +2,14 @@
   color: #000;
   background: #ffffff;
   border-radius: 5px;
-  margin:16px 24px 16px 0px;
+  margin: 16px 24px 16px 0px;
   padding: 32px 32px;
-  
 }
 .NahorSuggestionsCard-mid {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: flex-end;
-  
 }
 .NahorSuggestionsCard-Img {
   display: flex;
@@ -24,7 +22,7 @@
   font-weight: 500;
   font-size: 1rem;
   text-align: right;
-  margin-top:16px;
+  margin-top: 16px;
 }
 .NahorSuggestionsCard-Duration {
   font-family: IRANSans;
@@ -34,30 +32,29 @@
   text-align: right;
   margin-right: 8px;
 }
-.NahorSuggestionsCard-TitleBottom{
-    display: flex;
-    justify-content:space-between;
-    width: 100%;
+.NahorSuggestionsCard-TitleBottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-.NahorSuggestionsCard-price{
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-items:space-between;
-     
+.NahorSuggestionsCard-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: space-between;
 }
-.NahorSuggestionsCard-sail{
-    text-align: center;
-    background: #FF9900;
-   border-radius:50px;
-    padding:0 12px;
-    height:20px;
+.NahorSuggestionsCard-sail {
+  text-align: center;
+  background: #ff9900;
+  border-radius: 50px;
+  padding: 0 12px;
+  height: 20px;
 }
-.NahorSuggestionsCard-Rial , .NahorSuggestionsCard-Afghan{
-    display: flex;
-    justify-content: space-between;
-    
+.NahorSuggestionsCard-Rial,
+.NahorSuggestionsCard-Afghan {
+  display: flex;
+  justify-content: space-between;
 }
-.NahorSuggestionsCard-Rial{
-margin-bottom: -24px;
+.NahorSuggestionsCard-Rial {
+  margin-bottom: -24px;
 }

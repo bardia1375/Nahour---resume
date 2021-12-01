@@ -1,14 +1,15 @@
 import React from "react";
 import ProductOfFactorCard from "../../../components/shopping/FactorList/ProductOfFactorCard/ProductOfFactorCard";
 import "./productOfFactor.css";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 const ProductOfFactor = (props) => {
-  const params =useParams()
-  console.log(params.id)
-  console.log(props.match)
+  const params = useParams();
+  console.log(params.id);
+  console.log(props.match);
   const Title = ["محصولات میهن"];
   const cards = [
     {
+      id: "1",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -18,6 +19,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "2",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -27,6 +29,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "3",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -36,6 +39,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "4",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -45,6 +49,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "5",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -54,6 +59,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "6",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -63,6 +69,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "7",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -72,6 +79,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "8",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -81,6 +89,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "9",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -90,6 +99,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "10",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -99,6 +109,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "11",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -108,6 +119,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "12",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -117,6 +129,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "13",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -126,6 +139,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "14",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -135,6 +149,7 @@ const ProductOfFactor = (props) => {
       afghan: "612,000",
     },
     {
+      id: "15",
       imgProduct: "/nahoor home page/productOfFactor/mast.svg",
       starImg: "/nahoor home page/productOfFactor/Icon Artwork.svg",
       product: "ماست ست پرچرب میهن",
@@ -238,7 +253,9 @@ const ProductOfFactor = (props) => {
                         </a>
                       </div>
                     </div>
-                    <div className="ProductOfFactorSocialTitle"><h3>شبکه های اجتماعی</h3></div>
+                    <div className="ProductOfFactorSocialTitle">
+                      <h3>شبکه های اجتماعی</h3>
+                    </div>
                   </div>
                 </div>
               </>
@@ -252,6 +269,7 @@ const ProductOfFactor = (props) => {
             return (
               <div>
                 <ProductOfFactorCard
+                  id={card.id}
                   imgProduct={card.imgProduct}
                   product={card.product}
                   paragraph={card.paragraph}

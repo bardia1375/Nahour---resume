@@ -5,7 +5,7 @@ function NahorSuggestionsCard(props) {
     <>
       <div className="NahorSuggestionsCard-container">
         <div style={{ width: "80%" }} className="NahorSuggestionsCard-Img">
-          <img src={props.img} width="100%" />
+          <img src={props.img} width="100%" height="120px" />
         </div>
         <div className="NahorSuggestionsCard-Title">
           <h3>{props.title}</h3>

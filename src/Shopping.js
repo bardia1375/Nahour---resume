@@ -16,6 +16,7 @@ import AboutUs from "./Pages/profile/aboutUs/aboutUs";
 import OrderActive from "./Pages/profile/order/orderActive";
 import OrderPrevious from "./Pages/profile/order/orderPrevious";
 import Order from "./Pages/profile/order/order";
+import Product from "./Pages/Shopping/product/product";
 export const Shopping = () => {
   return (
     <div className="Shopping-Container">
@@ -24,16 +25,17 @@ export const Shopping = () => {
       <Routes>
         <Route path="/" element={<Store />} />
         <Route path="/listFactor/:id" element={<ProductOfFactor />} />
+        <Route path="/listFactor/:id/:id" element={<Product />} />
         <Route path="listFactor" element={<FactorList />} />
-        
-        <Route path="/profile/*" element={<Profile />} >
-          <Route path="info" element={<Information/>}/>
-          <Route path="order" element={<Order/>}/>
-          <Route path="order" element={<OrderPrevious/>}/>
-          <Route path="call" element={<Call/>}/>
-          <Route path="aboutUs" element={<AboutUs/>}/>
-          <Route path="support" element={<Support/>}/>
-          <Route path="conditions" element={<ConditionNahor/>}/>
+         
+        <Route path="/profile/*" element={<Profile />}>
+          <Route path="info" element={<Information />} />
+          <Route path="order" element={<Order />} />
+          <Route path="order" element={<OrderPrevious />} />
+          <Route path="call" element={<Call />} />
+          <Route path="aboutUs" element={<AboutUs />} />
+          <Route path="support" element={<Support />} />
+          <Route path="conditions" element={<ConditionNahor />} />
         </Route>
         {/* <Route path="/listFactor/FactorProduct" element={<ProductOfFactor />} /> */}
       </Routes>

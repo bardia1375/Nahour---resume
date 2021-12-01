@@ -9,13 +9,13 @@ import Product from "./Pages/Shopping/product/product";
 function App() {
   return (
     <div>
-      <Product />
-      {/* <Routes>
+      {/* <Product /> */}
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/store/*" element={<Shopping />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 .products-Container {
-  padding: 0 4vw;
- 
+  padding: 0 6vw;
+  min-width: 1500px;
 }
 .products-main {
   display: flex;
-  flex-direction: column; border: 1px solid red;
+  flex-direction: column;
 }
 .products-top {
   display: flex;
@@ -19,6 +19,36 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: 24px;
+}
+.products-mid h1 {
+  font-family: IRANSans;
+  font-size: 1.2rem;
+  text-align: right;
+  font-weight: 600;
+}
+
+.products-line {
+  border-top: 2px solid #6b006d;
+  width: 100%;
+  margin-top: 24px;
+}
+.product-subTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* margin-top:16px */
+}
+.products-circle {
+  background: #6b006d;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: -24px;
+  margin-left: 8px;
+}
+.products-details {
+  padding: 24px 24px 0 16px;
 }
 .products-left {
   width: 33%;
@@ -26,34 +56,173 @@
 .products-right {
   display: flex;
   flex-direction: column;
-  width: 16%;
-
-  border-radius: 7px;
+  width: 20%;
+  min-width: 330px;
 }
 .products-right-topImg {
   background: #fff3ff;
   width: 100%;
   padding: 50px;
+  border-radius: 7px;
 }
+
 .products-right-bottomImg {
   display: flex;
+  width: 16%;
+  margin-top: 8px;
+}
+.products-right-bottomImg img:first-child,
+.products-right-bottomImg img:last-child {
+  background: #fff3ff;
+  border-radius: 7px;
+  padding: 8px;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+.products-comment {
+  transform: translateY(18px);
 }
 .products-details {
   width: 100%;
 }
 .products-count,
 .products-Weight,
-.products-price {
+.products-prices {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: 22px;
 
   width: 100%;
 }
-.products-left-top {
+.products-prices {
+  background: #fff3ff;
+  border: 0.5px dashed #6b006d;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-price:first-child {
+}
+.products-left-top,
+.products-left-bottom {
   display: flex;
   flex-direction: column;
   background: #f8f8f8;
   border-radius: 7px;
+  padding: 42px;
+  margin-top: 24px;
+}
+.products-left-top h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.products-left-bottom h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.products-seeCart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #1fbfbf;
+  cursor: pointer;
+  margin-top: -32px;
+}
+.products-post {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.products-post p:nth-child(2) {
+  margin-left: -80px;
+}
+.products-post p {
+  font-size: 0.8rem;
+}
+.products-numberBox {
+  background: #f7f7f7;
+  border: 1px solid #6b006d;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(107, 0, 109, 0.07);
+  border-radius: 7px;
+  width: 46%;
+  height: 30px;
+  margin: auto 0;
+  font-size: 0.8rem;
+  font-size: IRANSans;
+}
+.products-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+.products-input button:first-child {
+  background: #6b006d;
+  border-radius: 5px;
+  border: 1px solid #6b006d;
+  width: 100%;
+  color: #fff;
+  padding: 4px 0;
+}
+.products-input button p {
+  font-size: 0.8rem;
+}
+.products-input button:first-child:hover,
+.products-input button:last-child:hover {
+  background: #ff9900;
+  border: 1px solid #ff9900;
+  border-radius: 5px;
+  width: 100%;
+  color: #000;
+}
+.products-input button:last-child {
+  background: #ffffff;
+  border: 1px solid #6b006d;
+  margin-right: 32px;
+  border-radius: 5px;
+  color: #6b006d;
+  width: 100%;
+}
+.products-input button {
+  margin-top: 16px;
+  padding: 4px 0px;
+}
+.products-Container p,
+.products-Container span {
+  padding: 0;
+  margin: 0;
+}
+.line2 {
+  border-bottom: 1px solid rgba(129, 129, 129, 0.61);
+
+  margin: 48px 32px 0px;
+}
+.products-bottom {
+  display: flex;
+  direction: ltr;
+  margin-right: 6vw;
+}
+.products-bottom {
+  width: 92%;
+  min-width: 1500px;
+}
+.products-card{
+  display: flex;
+  flex-direction:column;
+  /* border-left: 1px solid red; */
+  /* align-items: center;
+  justify-content: center; */
 }
