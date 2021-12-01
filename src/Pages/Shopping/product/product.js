@@ -333,7 +333,7 @@ const Product = () => {
                   priceAfterSailAfghan={card.priceAfterSailAfghan}
                   priceBeforeSailAfghan={card.priceBeforeSailAfghan}
                 />
-                <div style={{borderLeft: '1px solid #6B006D', width:"20px",height:"280px" , transform:"translateY(-380px)"}}></div>
+                <div style={{borderLeft: "0.5px solid #6B006D", width:"20px",height:"280px" , marginTop: '-400px'}}></div>
               </div>
             );
           })}
