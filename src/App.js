@@ -6,17 +6,19 @@ import { Shopping } from "./Shopping";
 import { Routes, Route } from "react-router-dom";
 import Product from "./Pages/Shopping/product/product";
 import ShareBlog from "./Pages/ShareBlog/ShareBlog";
+import Login from "./Pages/Login/Login";
 
 function App() {
   return (
     <div>
-      <Routes>
+      <Login/>
+      {/* <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/store/*" element={<Shopping />} />
         <Route path="/store/shareblog" element={<ShareBlog />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
