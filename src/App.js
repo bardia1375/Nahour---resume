@@ -11,14 +11,14 @@ import Login from "./Pages/Login/Login";
 function App() {
   return (
     <div>
-      <Login/>
-      {/* <Routes>
+      
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/store/*" element={<Shopping />} />
         <Route path="/store/shareblog" element={<ShareBlog />} />
-      </Routes> */}
+      </Routes><Login/>
     </div>
   );
 }

@@ -63,7 +63,6 @@ const EditInformation = () => {
             firstName: "",
             lastName: "",
             email: "",
-            story: "",
             cellPhone: "",
             NationalCode: "",
             iban: "",
@@ -91,7 +90,6 @@ const EditInformation = () => {
             cartNumber: Yup.string()
             .max(16, "شما مجاز به استفاده از حداکثر 16 کاراکتر هستید")
             .required("لطفا فیلد را کامل کنید"),
-            story: Yup.string().required("لطفا فیلد را کامل کنید"),
           })}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {

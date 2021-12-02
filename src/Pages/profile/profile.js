@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Support from "./support/support";
 import "./profile.css";
 import Call from "./call/call";
@@ -6,9 +6,13 @@ import ConditionNahor from "./conditionNahor/ConditionNahor";
 import Information from "./information/information";
 import EditInformation from "./editInformation/editInformation";
 import { Outlet } from "react-router";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Profile = () => {
+  const [exite, setExite] = useState(false);
+  const changePicture = () => {
+    return setExite(!exite);
+  };
   const sideBarItems = [
     {
       profileImg: "/nahoor home page/profile/profile photo.svg",
@@ -41,8 +45,15 @@ const Profile = () => {
                 <img src="/nahoor home page/profile/profile photo.svg" />
                 <h3>{sideBarItem.profileName}</h3>
               </div>
-
-              <div className="profile-sideBarItem1">
+              <NavLink
+                onclick={() => changePicture()}
+                className={(navDate) =>
+                  navDate.isActive
+                    ? "profile-sideBarInformationActive"
+                    : "profile-sideBarInformation"
+                }
+                to="info"
+              >
                 <div style={{ width: "8%", marginLeft: "8px" }}>
                   <img
                     src="/nahoor home page/profile/Icons/Icon/non active/اطلاعات کاربر.png"
@@ -50,12 +61,17 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <Link to="info" style={{color:"#000" , textDecoration: "none"}}>
-                  <p>{sideBarItem.information}</p>
-                </Link>
-              </div>
+                <p>{sideBarItem.information}</p>
+              </NavLink>
 
-              <div className="profile-sideBarItem">
+              <NavLink
+                to="order"
+                className={(navDate) =>
+                  navDate.isActive
+                    ? "profile-sideBarInformationActive"
+                    : "profile-sideBarInformation"
+                }
+              >
                 <div style={{ width: "8%", marginLeft: "8px" }}>
                   <img
                     src="/nahoor home page/profile/Icons/Icon/non active/Group 62.png"
@@ -63,12 +79,17 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <Link to="order" style={{color:"#000" , textDecoration: "none"}}>
-                  <p>{sideBarItem.order}</p>
-                </Link>
-              </div>
+                <p>{sideBarItem.order}</p>
+              </NavLink>
 
-              <div className="profile-sideBarItem">
+              <NavLink
+                to="call"
+                className={(navDate) =>
+                  navDate.isActive
+                    ? "profile-sideBarInformationActive"
+                    : "profile-sideBarInformation"
+                }
+              >
                 <div style={{ width: "8%", marginLeft: "8px" }}>
                   <img
                     src="/nahoor home page/profile/Icons/Icon/non active/تماس با ما.png"
@@ -76,12 +97,17 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <Link to="call" style={{color:"#000" , textDecoration: "none"}}>
-                  <p>{sideBarItem.call}</p>
-                </Link>
-              </div>
+                <p>{sideBarItem.call}</p>
+              </NavLink>
 
-              <div className="profile-sideBarItem">
+              <NavLink
+                to="aboutUs"
+                className={(navDate) =>
+                  navDate.isActive
+                    ? "profile-sideBarInformationActive"
+                    : "profile-sideBarInformation"
+                }
+              >
                 <div style={{ width: "8%", marginLeft: "8px" }}>
                   <img
                     src="/nahoor home page/profile/Icons/Icon/non active/about us.png"
@@ -89,12 +115,18 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <Link to="aboutUs" style={{color:"#000" , textDecoration: "none"}}>
-                  <p>{sideBarItem.aboutUs}</p>
-                </Link>
-              </div>
 
-              <div className="profile-sideBarItem">
+                <p>{sideBarItem.aboutUs}</p>
+              </NavLink>
+
+              <NavLink
+                to="support"
+                className={(navDate) =>
+                  navDate.isActive
+                    ? "profile-sideBarInformationActive"
+                    : "profile-sideBarInformation"
+                }
+              >
                 <div style={{ width: "8%", marginLeft: "8px" }}>
                   <img
                     src="/nahoor home page/profile/Icons/Icon/non active/supprt.png"
@@ -102,10 +134,18 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <Link to="support" style={{color:"#000" , textDecoration: "none"}}><p>{sideBarItem.support}</p></Link>
-              </div>
 
-              <div className="profile-sideBarItem">
+                <p>{sideBarItem.support}</p>
+              </NavLink>
+
+              <NavLink
+                to="conditions"
+                className={(navDate) =>
+                  navDate.isActive
+                    ? "profile-sideBarInformationActive"
+                    : "profile-sideBarInformation"
+                }
+              >
                 <div style={{ width: "8%", marginLeft: "8px" }}>
                   <img
                     src="/nahoor home page/profile/Icons/Icon/non active/قوانین و مقررات.png"
@@ -113,26 +153,35 @@ const Profile = () => {
                     width="100%"
                   />
                 </div>
-                <Link to="conditions" style={{color:"#000" , textDecoration: "none"}}><p>{sideBarItem.roll}</p></Link>
-              </div>
+                <p>{sideBarItem.roll}</p>
+              </NavLink>
 
-              <div className="profile-sideBarItem">
-                <div style={{ width: "8%", marginLeft: "8px" }}>
-                  <img
-                    src="/nahoor home page/profile/Icons/Icon/non active/خروج.png"
-                    alt=""
-                    width="100%"
-                  />
-                </div>
-                <p>{sideBarItem.exite}</p>
-              </div>
+              {exite ? (
+                <NavLink
+                  onClick={(e) => exite(e)}
+                  to="exite"
+                  className={(navDate) =>
+                    navDate.isActive
+                      ? "profile-sideBarInformationActive"
+                      : "profile-sideBarInformation"
+                  }
+                >
+                  <div style={{ width: "8%", marginLeft: "8px" }}>
+                    <img
+                      src="/nahoor home page/profile/Icons/Icon/non active/خروج.png"
+                      alt=""
+                      width="100%"
+                    />
+                  </div>
+                  <p>{sideBarItem.exite}</p>
+                </NavLink>
+              ) : null}
             </div>
           );
         })}
       </div>
       <div className="profile-components">
         <Outlet />
-
       </div>
     </div>
   );

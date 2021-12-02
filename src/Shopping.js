@@ -17,6 +17,7 @@ import OrderActive from "./Pages/profile/order/orderActive";
 import OrderPrevious from "./Pages/profile/order/orderPrevious";
 import Order from "./Pages/profile/order/order";
 import Product from "./Pages/Shopping/product/product";
+import EditInformation from "./Pages/profile/editInformation/editInformation";
 export const Shopping = () => {
   return (
     <div className="Shopping-Container">
@@ -29,7 +30,8 @@ export const Shopping = () => {
         <Route path="listFactor" element={<FactorList />} />
          
         <Route path="/profile/*" element={<Profile />}>
-          <Route path="info" element={<Information />} />
+          {/* <Route path="info" element={<Information />} /> */}
+          <Route path="info" element={<EditInformation />} />
           <Route path="order" element={<Order />} />
           <Route path="order" element={<OrderPrevious />} />
           <Route path="call" element={<Call />} />

@@ -40,3 +40,15 @@
 .login-content {
   padding: 40px;
 }
+.login-bottom1{
+  display: flex;
+  color: #6b006d;
+  margin-top: 80px;
+}
+.login-bottom1:first-child{
+ border: 1px solid red
+}
+.login-bottom1:nth-child(3){
+  border: 1px solid red;
+  margin-right: 8px;
+}

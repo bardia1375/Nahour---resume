@@ -1,5 +1,7 @@
 import React from "react";
 import "./Login.css";
+import Step1 from "./step1/step1";
+import Step4 from "./step4/step4";
 const Login = () => {
   const senetnses = [
     {
@@ -8,26 +10,8 @@ const Login = () => {
   ];
   return (
     <div className="login-container">
-      <div className="login-container2">
-        <div style={{width: '50%', margin:"0 auto"}}>
-          <img
-            width="100%"
-            className="NavbarLogo"
-            src="/nahoor home page/logo.svg"
-          />
-        </div>
-        <div className="login-main">
-          {senetnses.map((senetnse) => {
-            return (
-              <div className="login-content">
-                <h2>به ناهور خوش آمدید</h2>
-                <p>{senetnse.matn}</p>
-                <button>ورود</button>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+         {/* <Step4/> */}
+         <Step1/>
     </div>
   );
 };
