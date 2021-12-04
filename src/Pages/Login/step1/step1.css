@@ -1,5 +1,5 @@
 .step1-container {
-  width: 35vw;
+  width: 26vw;
   margin-top: -40px;
   position: relative;
 }
@@ -9,7 +9,10 @@
   border-radius: 5px;
   padding: 0 4vw;
   margin-top: 16px;
+  padding: 8px 40px;
 }
+
+    
 .step1-item {
   margin-top: 16px;
   border: 1px solid #c7bebe;
@@ -22,7 +25,7 @@
   width: 100%;
   background: #6b006d;
   border-radius: 50px;
-  margin: 16px 0px 16px;
+  margin: 16px 0px;
   color: #fff;
   padding: 6px;
 }

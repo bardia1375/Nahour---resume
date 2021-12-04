@@ -43,7 +43,7 @@ const Step4 = () => {
               justifyContent: "center",
             }}
           >
-            3
+            1
           </div>
           <div
             style={{
@@ -77,7 +77,7 @@ const Step4 = () => {
       
             }}
           ></div>
-          <div
+        <div
             style={{
               fontFamily: "IranSans",
               fontWeight: "600",
@@ -90,7 +90,7 @@ const Step4 = () => {
               justifyContent: "center",
             }}
           >
-            1
+            3
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 .step0-main {
   background: #ffffff;
@@ -27,6 +28,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  
 }
 .step0-title h1 {
   font-size: 1.5rem;
@@ -46,7 +50,7 @@
   border-radius: 50px;
   padding: 8px;
 }
-.step0-box button {
+.step0-btn{
   width: 100%;
   background: #6b006d;
   border-radius: 50px;

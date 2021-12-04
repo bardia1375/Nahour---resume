@@ -2,6 +2,7 @@ import React from "react";
 import "./Login.css";
 import Step0 from "./step0/step0";
 import Step1 from "./step1/step1";
+import Step2 from "./step2/step2";
 import Step4 from "./step4/step4";
 const Login = () => {
   const senetnses = [
@@ -11,9 +12,10 @@ const Login = () => {
   ];
   return (
     <div className="login-container">
-         {/* <Step4/> */}
-         {/* <Step1/> */}
-         <Step0/>
+      {/* <Step0/> */}
+       {/* <Step1 />  */}
+      {/* <Step2/> */}
+      {/* <Step4/> */}
     </div>
   );
 };

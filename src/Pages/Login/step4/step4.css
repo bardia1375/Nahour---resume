@@ -9,6 +9,7 @@
   .login-container2{
       width:40%;  
   }
+  
   .login-main {
     background: #ffffff;
     border-radius: 7px;
@@ -43,7 +44,8 @@
   .login-bottom1{
     display: flex;
     color: #6b006d;
-    margin-top: 80px;
+    transform: translateY(100px);
+    justify-content: center;
   }
   .login-bottom1:first-child{
    border: 1px solid red

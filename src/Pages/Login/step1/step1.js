@@ -14,7 +14,7 @@ const Step1 = () => {
           <div className="formik-items">
             <input
               className="text-input1"
-              style={{ border: "2px solid red"  }}
+              style={{ border: "2px solid red" }}
               {...field}
               {...props}
             />
@@ -33,8 +33,9 @@ const Step1 = () => {
   return (
     <div className="step1-container">
       <div className="step1-main">
-        <div className="editInformation-next">
-          <img src="/nahoor home page/profile/Vector.svg" />
+        <div className="step2-title">
+          <img  src="/nahoor home page/profile/Vector.svg" />
+          <h1>ثبت نام</h1>
         </div>
         <div className="editInformation-img"></div>
         <Formik
@@ -84,9 +85,6 @@ const Step1 = () => {
           }}
         >
           <Form className="editInformation-content">
-            <div>
-              <h1>ثبت نام</h1>
-            </div>
             <div className="editInformation-items">
               <MyTextInput2
                 className="step1-item"
@@ -129,12 +127,78 @@ const Step1 = () => {
 
             <div>
               <button type="submit" className="step1-button">
-                ثبت
+                بعدی
               </button>
             </div>
           </Form>
         </Formik>
       </div>
+      <div className="login-bottom1">
+      <div
+            style={{
+              fontFamily: "IranSans",
+              fontWeight: "600",
+              backgroundColor: "white",
+              borderRadius: "50%",
+              width: "24px",
+              height: "24px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            1
+          </div>
+          <div
+            style={{
+              borderTop: "4px solid rgba(255, 255, 255, 0.32)",
+              width: "50px",
+              transform: "translateY(10px)",
+              margin: "0px 8px",
+            }}
+          ></div>
+          <div
+            style={{
+              fontFamily: "IranSans",
+              fontWeight: "600",
+              background:" rgba(255, 255, 255, 0.32)",
+              color: "rgba(255, 255, 255, 0.32)",
+              borderRadius: "50%",
+              width: "24px",
+              height: "24px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            2
+          </div>
+          <div
+            style={{
+              borderTop: "4px solid rgba(255, 255, 255, 0.32)",
+              width: "50px",
+              transform: "translateY(10px)",
+              margin: "0px 8px",
+            }}
+          ></div>
+        
+          <div
+            style={{
+              fontFamily: "IranSans",
+              fontWeight: "600",
+              background:" rgba(255, 255, 255, 0.32)",
+              color: "rgba(255, 255, 255, 0.32)",
+              borderRadius: "50%",
+              width: "24px",
+              height: "24px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            3
+          </div>
+        </div>
     </div>
   );
 };
