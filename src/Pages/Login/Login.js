@@ -1,5 +1,6 @@
 import React from "react";
 import "./Login.css";
+import Step0 from "./step0/step0";
 import Step1 from "./step1/step1";
 import Step4 from "./step4/step4";
 const Login = () => {
@@ -11,7 +12,8 @@ const Login = () => {
   return (
     <div className="login-container">
          {/* <Step4/> */}
-         <Step1/>
+         {/* <Step1/> */}
+         <Step0/>
     </div>
   );
 };

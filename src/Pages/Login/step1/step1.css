@@ -1,9 +1,9 @@
-.editInformation-container {
+.step1-container {
   width: 35vw;
   margin-top: -40px;
   position: relative;
 }
-.editInformation-main {
+.step1-main {
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14);
   border-radius: 5px;

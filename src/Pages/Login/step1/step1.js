@@ -14,7 +14,7 @@ const Step1 = () => {
           <div className="formik-items">
             <input
               className="text-input1"
-              style={{ border: "2px solid red" }}
+              style={{ border: "2px solid red"  }}
               {...field}
               {...props}
             />
@@ -31,8 +31,8 @@ const Step1 = () => {
   };
 
   return (
-    <div className="editInformation-container">
-      <div className="editInformation-main">
+    <div className="step1-container">
+      <div className="step1-main">
         <div className="editInformation-next">
           <img src="/nahoor home page/profile/Vector.svg" />
         </div>
@@ -45,6 +45,13 @@ const Step1 = () => {
             cellPhone: "",
             password: "",
             confirmPassword: "",
+          }}
+          onSubmit={(values, { setSubmitting }) => {
+            setTimeout(() => {
+              alert(JSON.stringify(values, null, 2));
+              setSubmitting(false);
+              console.log(values);
+            }, 100);
           }}
           validationSchema={Yup.object({
             firstName: Yup.string()
