@@ -38,14 +38,13 @@
   padding-right: 52px;
   text-align: right;
 }
-
 .app-paragraph p {
   font-size: 0.7rem;
 }
 .blogSlideSecond-detail {
   display: flex;
   flex-direction: row;
-  width:105%;
+  width: 105%;
   align-items: center;
   justify-content: flex-end;
 }

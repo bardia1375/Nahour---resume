@@ -21,7 +21,7 @@ function BlogSlideSecond() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            paddingRight:"5%" 
+            paddingRight: "5%",
           }}
         >
           {dots.map((item, index) => {
@@ -97,70 +97,68 @@ function BlogSlideSecond() {
     },
   ];
   return (
-   
-      <Slider {...settings}>
-        {explains.map((explain) => {
-          return (
-            <div className="blogSlideSecondSlider">
+    <Slider {...settings}>
+      {explains.map((explain) => {
+        return (
+          <div className="blogSlideSecondSlider">
+            <div>
+              <img
+                className="blogSlideSecondSlider-img"
+                src={explain.img}
+                width="100%"
+                style={{ objectFit: "cover", borderRadius: "7px" }}
+                alt=""
+              />
+            </div>
+            <div className="app-paragraph">
               <div>
-                <img
-                  className="blogSlideSecondSlider-img"
-                  src={explain.img}
-                  width="100%"
-                  style={{ objectFit: "cover", borderRadius: "7px" }}
-                  alt=""
-                />
+                <h2>{explain.title}</h2>
+                <p>{explain.paragraph}</p>
               </div>
-              <div className="app-paragraph">
-                <div>
-                  <h2>{explain.title}</h2>
-                  <p>{explain.paragraph}</p>
-                </div>
-                <div className="blogSlideSecond-detail">
-                  <div className="blogSlideSecond-subDetail">
-                    <div>
-                      <p>{explain.date}</p>
-                    </div>
-                    <div style={{ width: "20%" }}>
-                      <img
-                        src="./nahoor home page/Share Blogs page/Icons/Time/clock.png"
-                        width="100%"
-                        height="100%"
-                        alt=""
-                      />
-                    </div>
+              <div className="blogSlideSecond-detail">
+                <div className="blogSlideSecond-subDetail">
+                  <div>
+                    <p>{explain.date}</p>
                   </div>
-                  <div className="blogSlideSecond-subDetail">
-                    <div>
-                      <p>{explain.duration}</p>
-                    </div>
-                    <div style={{ width: "18%"}}>
+                  <div style={{ width: "20%" }}>
                     <img
-                        src="./nahoor home page/Share Blogs page/Icons/Time/clock.png"
-                        width="100%"
-                        height="100%"
-                      />
-                    </div>
+                      src="./nahoor home page/Share Blogs page/Icons/Time/clock.png"
+                      width="100%"
+                      height="100%"
+                      alt=""
+                    />
                   </div>
-                  <div className="blogSlideSecond-subDetail">
-                    <div>
-                      <p>{explain.name}</p>
-                    </div>
-                    <div style={{ width: "20%" }}>
-                      <img
-                        src="./nahoor home page/Share Blogs page/Icons/Time/clock.png"
-                        width="100%"
-                        height="100%"
-                      />
-                    </div>
+                </div>
+                <div className="blogSlideSecond-subDetail">
+                  <div>
+                    <p>{explain.duration}</p>
+                  </div>
+                  <div style={{ width: "18%" }}>
+                    <img
+                      src="./nahoor home page/Share Blogs page/Icons/Time/clock.png"
+                      width="100%"
+                      height="100%"
+                    />
+                  </div>
+                </div>
+                <div className="blogSlideSecond-subDetail">
+                  <div>
+                    <p>{explain.name}</p>
+                  </div>
+                  <div style={{ width: "20%" }}>
+                    <img
+                      src="./nahoor home page/Share Blogs page/Icons/Time/clock.png"
+                      width="100%"
+                      height="100%"
+                    />
                   </div>
                 </div>
               </div>
             </div>
-          );
-        })}
-      </Slider>
-
+          </div>
+        );
+      })}
+    </Slider>
   );
 }
 
