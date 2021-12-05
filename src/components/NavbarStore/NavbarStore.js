@@ -24,7 +24,7 @@ export const NavbarStore = () => {
             />
           </div>
           <div className="navbarTopStoreLeft">
-            <Link to="/store/profile" className="navbarTopStoreLeftLogoProfile">
+            <Link to="/store/login" className="navbarTopStoreLeftLogoProfile">
               <img src="/nahoor home page/store page/Profile icon.svg" />
               ورود به حساب کاربری
             </Link>

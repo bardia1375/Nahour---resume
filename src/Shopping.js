@@ -28,7 +28,8 @@ export const Shopping = () => {
         <Route path="/listFactor/:id" element={<ProductOfFactor />} />
         <Route path="/listFactor/:id/:id" element={<Product />} />
         <Route path="listFactor" element={<FactorList />} />
-         
+      
+
         <Route path="/profile/*" element={<Profile />}>
           {/* <Route path="info" element={<Information />} /> */}
           <Route path="info" element={<EditInformation />} />

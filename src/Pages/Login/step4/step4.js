@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "./step4.css"
 const Step4 = () => {
     const senetnses = [
@@ -23,7 +24,7 @@ const Step4 = () => {
                 <div className="login-content">
                   <h2>به ناهور خوش آمدید</h2>
                   <p>{senetnse.matn}</p>
-                  <button>ورود</button>
+                  <Link to="profile/"><button>ورود</button></Link>
                 </div>
               );
             })}

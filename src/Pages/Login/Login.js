@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Routes } from "react-router";
 import "./Login.css";
 import Step0 from "./step0/step0";
 import Step1 from "./step1/step1";
@@ -12,6 +13,9 @@ const Login = () => {
   ];
   return (
     <div className="login-container">
+      <Routes>
+        <Route path="/" element={<Step1 />} />
+      </Routes>
       {/* <Step0/> */}
       {/* <Step1 />  */}
       {/* <Step2/> */}

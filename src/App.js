@@ -18,6 +18,7 @@ function App() {
         <Route path="/blogs" element={<Blog />} />
         <Route path="/store/*" element={<Shopping />} />
         <Route path="/store/shareblog" element={<ShareBlog />} />
+        <Route path="/store/login" element={<Login />} />
       </Routes>
     </div>
   );

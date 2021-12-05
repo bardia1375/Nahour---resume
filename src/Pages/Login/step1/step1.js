@@ -2,7 +2,9 @@ import React from "react";
 import { Formik, Form, useField } from "formik";
 import * as Yup from "yup";
 import "./step1.css";
-const Step1 = () => {
+import axios from "axios"
+const Step1 = (props) => {
+
   const MyTextInput2 = ({ label, ...props }) => {
     // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
     // which we can spread on <input>. We can use field meta to show an error
@@ -76,12 +78,21 @@ const Step1 = () => {
               .required("لطفا فیلد را کامل کنید")
               .oneOf([Yup.ref("password")], "رمز عبور مطابقت ندارد"),
           })}
-          onSubmit={(values, { setSubmitting }) => {
-            setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              setSubmitting(false);
+          onSubmit=  {(values, { setSubmitting }) => {
+            setTimeout(async() => {
+              // alert(JSON.stringify(values, null, 2));
+              // setSubmitting(false);
               console.log(values);
-            }, 100);
+              const response = await axios.post("https://reqres.in/api/users" ,values);
+              console.log(props.history);
+         
+              console.log(response)
+              localStorage.setItem("token",response.data.token)
+            console.log(response.data.token);
+                      }, 100);
+
+          
+
           }}
         >
           <Form className="editInformation-content">
