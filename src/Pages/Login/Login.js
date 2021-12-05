@@ -13,8 +13,8 @@ const Login = () => {
   return (
     <div className="login-container">
       {/* <Step0/> */}
-       {/* <Step1 />  */}
-      <Step2/>
+      {/* <Step1 />  */}
+      {/* <Step2/> */}
       {/* <Step4/> */}
     </div>
   );

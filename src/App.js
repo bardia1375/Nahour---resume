@@ -11,7 +11,7 @@ import Login from "./Pages/Login/Login";
 function App() {
   return (
     <div>
-      <Login />
+      {/* <Login /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />

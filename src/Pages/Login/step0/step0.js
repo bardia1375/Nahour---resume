@@ -66,7 +66,7 @@ const Step0 = () => {
               <MyTextInput2
                 className="step1-item"
                 name="cellPhone"
-                type="number"
+                type="tel"
                 placeholder="---- --- --09"
               />
             </Form>
