@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { cartStore } from "../redux/store";
 import "./NavbarStore.css";
-export const NavbarStore = () => {
+export const NavbarStore = (props) => {
+  console.log(props.user);
   const [state, setState] = useState({ count: 0 });
-
+  const [login, setLogin] = useState(true);
   useEffect(() => {
     cartStore.subscribe(() => {
       setState({ count: cartStore.getState().length });
     });
   });
-
   return (
     <>
       <div className="navbarContainerStore">
@@ -24,10 +24,17 @@ export const NavbarStore = () => {
             />
           </div>
           <div className="navbarTopStoreLeft">
-            <Link to="/store/login" className="navbarTopStoreLeftLogoProfile">
-              <img src="/nahoor home page/store page/Profile icon.svg" />
-              ورود به حساب کاربری
-            </Link>
+            {!props.user ? (
+              <Link to="/store/login" className="navbarTopStoreLeftLogoProfile">
+                <img src="/nahoor home page/store page/Profile icon.svg" />
+                ورود به حساب کاربری
+              </Link>
+            ) : (
+              <Link to="/store/login" className="navbarTopStoreLeftLogoProfile">
+                <img src="/nahoor home page/store page/Profile icon.svg" />
+                {props.user}
+              </Link>
+            )}
             <a href="" className="navbarTopStoreLeftLogoCart">
               <img src="/nahoor home page/store page/Cart.svg" />
               {state.count > 0 && (
@@ -100,7 +107,7 @@ export const NavbarStore = () => {
             </li>
             <li>
               <a href="" className="NavbarStoreItem">
-                <img  src="/nahoor home page/store page/icons/Chat/support.svg" />
+                <img src="/nahoor home page/store page/icons/Chat/support.svg" />
                 سوالی دارید؟
               </a>
             </li>

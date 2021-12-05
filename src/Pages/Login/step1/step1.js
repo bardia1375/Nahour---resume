@@ -2,9 +2,10 @@ import React from "react";
 import { Formik, Form, useField } from "formik";
 import * as Yup from "yup";
 import "./step1.css";
-import axios from "axios"
+import axios from "axios";
+import { Link,useNavigate } from "react-router-dom";
 const Step1 = (props) => {
-
+  const Navigate=useNavigate()
   const MyTextInput2 = ({ label, ...props }) => {
     // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
     // which we can spread on <input>. We can use field meta to show an error
@@ -36,7 +37,7 @@ const Step1 = (props) => {
     <div className="step1-container">
       <div className="step1-main">
         <div className="step2-title">
-          <img  src="/nahoor home page/profile/Vector.svg" />
+          <img src="/nahoor home page/profile/Vector.svg" />
           <h1>ثبت نام</h1>
         </div>
         <div className="editInformation-img"></div>
@@ -54,6 +55,7 @@ const Step1 = (props) => {
               alert(JSON.stringify(values, null, 2));
               setSubmitting(false);
               console.log(values);
+             
             }, 100);
           }}
           validationSchema={Yup.object({
@@ -78,21 +80,22 @@ const Step1 = (props) => {
               .required("لطفا فیلد را کامل کنید")
               .oneOf([Yup.ref("password")], "رمز عبور مطابقت ندارد"),
           })}
-          onSubmit=  {(values, { setSubmitting }) => {
-            setTimeout(async() => {
+          onSubmit={(values, { setSubmitting }) => {
+            setTimeout(async () => {
               // alert(JSON.stringify(values, null, 2));
               // setSubmitting(false);
               console.log(values);
-              const response = await axios.post("https://reqres.in/api/users" ,values);
-              console.log(props.history);
-         
-              console.log(response)
-              localStorage.setItem("token",response.data.token)
-            console.log(response.data.token);
-                      }, 100);
+              const response = await axios.post(
+                "https://reqres.in/api/users",
+                values
+              );
+              //اینجا دیگه لینک ندادیم به دکمه باتن و از نویگیت استفاده میکنیم و میگیم برو به ادرس فلان 
+              Navigate("step2")
 
-          
-
+              console.log(response);
+              localStorage.setItem("token", response.data.token);
+              console.log(response.data.token);
+            }, 50);
           }}
         >
           <Form className="editInformation-content">
@@ -137,7 +140,7 @@ const Step1 = (props) => {
             </div>
 
             <div>
-              <button type="submit" className="step1-button">
+              <button type="submit" className="step1-button" >
                 بعدی
               </button>
             </div>
@@ -145,71 +148,71 @@ const Step1 = (props) => {
         </Formik>
       </div>
       <div className="login-bottom1">
-      <div
-            style={{
-              fontFamily: "IranSans",
-              fontWeight: "600",
-              backgroundColor: "white",
-              borderRadius: "50%",
-              width: "24px",
-              height: "24px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            1
-          </div>
-          <div
-            style={{
-              borderTop: "4px solid rgba(255, 255, 255, 0.32)",
-              width: "50px",
-              transform: "translateY(10px)",
-              margin: "0px 8px",
-            }}
-          ></div>
-          <div
-            style={{
-              fontFamily: "IranSans",
-              fontWeight: "600",
-              background:" rgba(255, 255, 255, 0.32)",
-              color: "rgba(255, 255, 255, 0.32)",
-              borderRadius: "50%",
-              width: "24px",
-              height: "24px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            2
-          </div>
-          <div
-            style={{
-              borderTop: "4px solid rgba(255, 255, 255, 0.32)",
-              width: "50px",
-              transform: "translateY(10px)",
-              margin: "0px 8px",
-            }}
-          ></div>
-        
-          <div
-            style={{
-              fontFamily: "IranSans",
-              fontWeight: "600",
-              background:" rgba(255, 255, 255, 0.32)",
-              color: "rgba(255, 255, 255, 0.32)",
-              borderRadius: "50%",
-              width: "24px",
-              height: "24px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            3
-          </div>
+        <div
+          style={{
+            fontFamily: "IranSans",
+            fontWeight: "600",
+            backgroundColor: "white",
+            borderRadius: "50%",
+            width: "24px",
+            height: "24px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          1
         </div>
+        <div
+          style={{
+            borderTop: "4px solid rgba(255, 255, 255, 0.32)",
+            width: "50px",
+            transform: "translateY(10px)",
+            margin: "0px 8px",
+          }}
+        ></div>
+        <div
+          style={{
+            fontFamily: "IranSans",
+            fontWeight: "600",
+            background: " rgba(255, 255, 255, 0.32)",
+            color: "rgba(255, 255, 255, 0.32)",
+            borderRadius: "50%",
+            width: "24px",
+            height: "24px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          2
+        </div>
+        <div
+          style={{
+            borderTop: "4px solid rgba(255, 255, 255, 0.32)",
+            width: "50px",
+            transform: "translateY(10px)",
+            margin: "0px 8px",
+          }}
+        ></div>
+
+        <div
+          style={{
+            fontFamily: "IranSans",
+            fontWeight: "600",
+            background: " rgba(255, 255, 255, 0.32)",
+            color: "rgba(255, 255, 255, 0.32)",
+            borderRadius: "50%",
+            width: "24px",
+            height: "24px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          3
+        </div>
+      </div>
     </div>
   );
 };

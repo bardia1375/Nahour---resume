@@ -3,9 +3,10 @@ import ProductOfFactorCard from "../../../components/shopping/FactorList/Product
 import "./productOfFactor.css";
 import { useParams } from "react-router-dom";
 const ProductOfFactor = (props) => {
+  console.log("props",props)
   const params = useParams();
-  console.log(params.id);
-  console.log(props.match);
+  console.log("id",params);
+  
   const Title = ["محصولات میهن"];
   const cards = [
     {
@@ -269,6 +270,7 @@ const ProductOfFactor = (props) => {
             return (
               <div>
                 <ProductOfFactorCard
+            
                   id={card.id}
                   imgProduct={card.imgProduct}
                   product={card.product}

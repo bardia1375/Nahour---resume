@@ -6,6 +6,7 @@ import { addToCart } from "../../../redux/actions";
 import "./ProductOfFactorCard.css";
 import { Link } from "react-router-dom";
 const ProductOfFactorCard = (props) => {
+
   const [cards, setcards] = useState(true);
   const changeButton = (e) => {
     setcards(!cards);

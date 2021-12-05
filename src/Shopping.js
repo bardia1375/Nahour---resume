@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavbarStore } from "./components/NavbarStore/NavbarStore";
 import Footer from "./Pages/Homepage/footer/footer";
 import FactorList from "./Pages/Shopping/factorList/factorList";
@@ -19,16 +19,42 @@ import Order from "./Pages/profile/order/order";
 import Product from "./Pages/Shopping/product/product";
 import EditInformation from "./Pages/profile/editInformation/editInformation";
 export const Shopping = () => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      setUser(null);
+      return;
+    }
+
+    // const response = await axios.post("reqres.in/api/userbytoken", {token});
+    const response = {
+      data: {
+        user: {
+          name: "mohammad",
+          email: "mohamad@gmail.com",
+        },
+      },
+    };
+    if (!response.data.user) {
+      setUser(null);
+      return;
+    } else {
+      setUser({ user: response.data.user });
+      console.log(user?.user?.name);
+    }
+  },[] );
+  console.log(user?.user?.name);
+  // console.log(user.user.name);
   return (
     <div className="Shopping-Container">
-      <NavbarStore />
-
+      <NavbarStore user={user?.user?.name} />
       <Routes>
         <Route path="/" element={<Store />} />
         <Route path="/listFactor/:id" element={<ProductOfFactor />} />
         <Route path="/listFactor/:id/:id" element={<Product />} />
         <Route path="listFactor" element={<FactorList />} />
-      
 
         <Route path="/profile/*" element={<Profile />}>
           {/* <Route path="info" element={<Information />} /> */}

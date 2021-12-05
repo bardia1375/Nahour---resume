@@ -15,6 +15,8 @@ const Login = () => {
     <div className="login-container">
       <Routes>
         <Route path="/" element={<Step1 />} />
+        <Route path="step2" element={<Step2 />} />
+        <Route path="step4" element={<Step4 />} />
       </Routes>
       {/* <Step0/> */}
       {/* <Step1 />  */}
