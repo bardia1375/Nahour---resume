@@ -2,6 +2,7 @@ import React from "react";
 import "./step0.css";
 import { Formik, Form, useField } from "formik";
 import * as Yup from "yup";
+import { Link } from "react-router-dom";
 
 const Step0 = () => {
   const MyTextInput2 = ({ label, ...props }) => {
@@ -12,7 +13,7 @@ const Step0 = () => {
     return (
       <div className="formik-main-items" style={{}}>
         {meta.touched && meta.error ? (
-          <div >
+          <div>
             <input
               className="text-input1"
               style={{ border: "2px solid red", width: "100%" }}
@@ -23,7 +24,7 @@ const Step0 = () => {
             <div className="formik-error">{meta.error}</div>
           </div>
         ) : (
-          <div >
+          <div>
             <input className="text-input1zZ" {...field} {...props} />
           </div>
         )}
@@ -47,13 +48,11 @@ const Step0 = () => {
             initialValues={{
               cellPhone: "",
             }}
-
             validationSchema={Yup.object({
               cellPhone: Yup.string()
                 .max(15, "شما مجاز به استفاده از حداکثر 15 کاراکتر هستید")
                 .required("لطفا فیلد را کامل کنید"),
             })}
-
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
                 alert(JSON.stringify(values, null, 2));
@@ -62,7 +61,7 @@ const Step0 = () => {
               }, 100);
             }}
           >
-            <Form  style={{width: "100%" }}>
+            <Form style={{ width: "100%" }}>
               <MyTextInput2
                 className="step1-item"
                 name="cellPhone"
@@ -72,9 +71,11 @@ const Step0 = () => {
             </Form>
           </Formik>
           {/* <input type="number" placeholder="---- --- --09" /> */}
-          <button type="submit" className="step0-btn">
-            ورود
-          </button>
+          <Link to="step2" style={{ width: "100%" }}>
+            <button type="submit" className="step0-btn">
+              ورود
+            </button>
+          </Link>
           <p>یا از روش های زیر استفاده کنید</p>
           <div className="step0-logo">
             <div className="step0-google">
@@ -87,7 +88,10 @@ const Step0 = () => {
               <img src="/nahoor home page/Signup/Face book.svg" />
             </div>
           </div>
-          <p>ثبت نام کنید</p>
+          <Link to="step1" style={{ textDecoration: "none", color: "black" }}>
+    
+            <p>ثبت نام کنید</p>
+          </Link>
           <p style={{ marginBottom: "40px" }}>
             با ورود یا ثبت نام در سایت شما{" "}
             <span style={{ color: " #FF9900" }}>شرایط و قوانین </span> استفاده

@@ -1,12 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import "./step4.css"
+
 const Step4 = () => {
     const senetnses = [
         {
           matn: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. ",
         },
       ];
+    
+    const changePage=()=>{
+      window.location="/store/profile"
+    }
     return (
         <div className="login-container">
         <div className="login-container2">
@@ -24,7 +28,7 @@ const Step4 = () => {
                 <div className="login-content">
                   <h2>به ناهور خوش آمدید</h2>
                   <p>{senetnse.matn}</p>
-                  <Link to="profile/"><button>ورود</button></Link>
+                  <button onClick={()=>changePage()}>ورود</button>
                 </div>
               );
             })}
