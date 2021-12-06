@@ -6,7 +6,6 @@ import ButtonComponent from "../../../components/Button/button";
 import "./comminucationForm.css";
 import { Title } from "../../../components/AboutUs/title/Title";
 
-
 const MyTextInput = ({ label, ...props }) => {
   // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
   // which we can spread on <input>. We can use field meta to show an error
@@ -107,7 +106,7 @@ const MyTextArea2 = ({ children, ...props }) => {
       {meta.touched && meta.error ? (
         <div className="formik-textArea-false">
           <div>
-            <label className="formik-lable" for="story" >
+            <label className="formik-lable" for="story">
               پیام متنی / نظرات شما<span style={{ color: "red" }}> *</span>
             </label>
           </div>
@@ -212,17 +211,17 @@ const CommiunicationForm = () => {
   return (
     <div className="formik-container">
       <div>
-      <div className="call-title" style={{width: '30px'}}>
-        <img
-          className="call-imgtitle"
-          width="100%"
-          src="./nahoor home page/About Page/behinde.png"
-          alt=""
-        />
-        <div>
-          <Title title="نظرات" />
+        <div className="call-title" style={{ width: "30px" }}>
+          <img
+            className="call-imgtitle"
+            width="100%"
+            src="./nahoor home page/About Page/behinde.png"
+            alt=""
+          />
+          <div>
+            <Title title="نظرات" />
+          </div>
         </div>
-      </div>          
       </div>
       <div className="formik-container-main">
         <Formik
@@ -256,43 +255,60 @@ const CommiunicationForm = () => {
           }}
         >
           <Form className="formik-main">
-            <div className="formik-top">
-            <div className="formik-top1">
-              <div><MyTextInput2
-                label="نام و نام خانوادگی"
-                name="firstName"
-                type="text"
-                placeholder="پریا باب الحوایجی"
-              /></div>
-              <div><MyTextInput2
-                label="آدرس ایمیل"
-                name="email"
-                type="email"
-                placeholder="jane@formik.com"
-              /></div>
+            <div className="formik-top"  style={{width: "100%" }}>
+              <div className="formik-top1"  >
+                <div>
+                  <MyTextInput2
+                    label="نام و نام خانوادگی"
+                    name="firstName"
+                    type="text"
+                    placeholder="پریا باب الحوایجی"
+                  />
+                </div>
+                <div>
+                  <MyTextInput2
+                    label="آدرس ایمیل"
+                    name="email"
+                    type="email"
+                    placeholder="jane@formik.com"
+                  />
+                </div>
+              </div>
+              <div className="formik-top2">
+                <div>
+                  <MyTextInput2
+                    label="شماره تماس"
+                    name="phone"
+                    type="number"
+                    placeholder="021-88882255"
+                  />
+                </div>
+                <div style={{ width: "100%" }}>
+                  <MySelect label="نوع فعالیت" name="jobType">
+                    <option className="formik-lable" value="">
+                      انتخاب کنید
+                    </option>
+                    <option className="formik-lable" value="designer">
+                      تاجر
+                    </option>
+                    <option className="formik-lable" value="development">
+                      کارخانه‌دار
+                    </option>
+                  </MySelect>
+                </div>
+              </div>
             </div>
-            <div className="formik-top2">
-              <div><MyTextInput2
-                label="شماره تماس"
-                name="phone"
-                type="number"
-                placeholder="021-88882255"
-              /></div>
-              <div style={{width:"100%"}}><MySelect label="نوع فعالیت" name="jobType">
-                <option className="formik-lable" value="">انتخاب کنید</option>
-                <option className="formik-lable" value="designer">تاجر</option>
-                <option className="formik-lable" value="development">کارخانه‌دار</option>
-              </MySelect></div>
-            </div></div>
             <div className="formik-bottom">
-             <div><MyTextArea2
-                placeholder=" پیام مورد نظر خود را برای ما بنویسید :))"
-                id="story"
-                name="story"
-                rows="5"
-                cols="33"
-              ></MyTextArea2>
-            </div></div> 
+              <div>
+                <MyTextArea2
+                  placeholder=" پیام مورد نظر خود را برای ما بنویسید :))"
+                  id="story"
+                  name="story"
+                  rows="5"
+                  cols="33"
+                ></MyTextArea2>
+              </div>
+            </div>
             <div className="formikmain-bottom1">
               <ButtonComponent
                 onSubmit
