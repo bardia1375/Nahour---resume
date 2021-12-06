@@ -115,6 +115,7 @@
 .products-left-bottom {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background: #f8f8f8;
   border-radius: 7px;
   padding: 42px;
@@ -181,12 +182,16 @@
   font-size: 0.8rem;
 }
 .products-input button:first-child:hover,
-.products-input button:last-child:hover {
+
+.buttons-right button:nth-child(2):hover {
   background: #ff9900;
   border: 1px solid #ff9900;
   border-radius: 5px;
   width: 100%;
   color: #000;
+}
+.products-call:hover{
+  background: #fff
 }
 .products-input button:last-child {
   background: #ffffff;
@@ -219,10 +224,83 @@
   width: 92%;
   min-width: 1500px;
 }
-.products-card{
+.products-card {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   /* border-left: 1px solid red; */
   /* align-items: center;
   justify-content: center; */
+}
+.products-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+.buttons-right {
+  display: flex;
+}
+.buttons-right button:first-child {
+  background: #d10410;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 4px 16px;
+}
+.buttons-right button:nth-child(2) {
+  background: #6b006d;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 16px;
+  padding: 0 32px;
+}
+.product-changeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 5s;
+}
+.product-changeBox div:first-child {
+  background: rgba(107, 0, 109, 0.16);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+
+.product-changeBox p {
+  color: #6b006d;
+}
+.product-changeBox button:first-child {
+  background-color: red;
+}
+.btn-continue {
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 24px;
+  padding: 3px 70px;
+}
+.btn-viewCart {
+  background: #6b006d;
+  border-radius: 5px;
+  border: none;
+  margin-top: 16px;
+  padding: 4px 48px;
+  color: #fff;
+}
+.btn-viewCart p{
+  color: #fff;
+}
+.btn-viewCart:hover {
+  background: #ff9900;
+color: #000;
+  border-radius: 5px;
+  
 }

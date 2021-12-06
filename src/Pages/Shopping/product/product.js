@@ -1,9 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import NahorSuggestionsCard from "../../../components/Store/NahorSuggestionsCard/NahorSuggestionsCard";
 import "./product.css";
 import Slider from "react-slick";
+import { cartStore } from "../../../components/redux/store";
+import { addToCart } from "../../../components/redux/actions";
 
-const Product = () => {
+const Product = (props) => {
+  const [order, setOrder] = useState(true);
+  const [box, setBox] = useState(true);
+  const [phone, setPhone] = useState(true);
+  const [input, setInput] = useState(true);
+
+  const onlineOrder = () => {
+    setOrder(!order);
+  };
+  const changeBox = () => {
+    setBox(!box);
+  };
+  const continueShop = () => {
+    setBox(!box);
+    setOrder(!order);
+    setPhone(!phone);
+  };
+  const changePhone = () => {
+    setPhone(!phone);
+  };
+
+  const changeInput = () => {
+    setInput(!input);
+  };
+  //redux
+
+  const addToCartHandler = () => {
+    cartStore.dispatch(addToCart(props));
+    console.log(cartStore.getState());
+  };
+
+  useEffect(() => {
+    let unsubscribe = cartStore.subscribe(() => {
+      console.log(cartStore.getState());
+    });
+
+    return unsubscribe();
+  }, []);
+  //end redux
   const informations = [
     {
       title: "ماست ست پرچرب میهن",
@@ -276,38 +316,118 @@ const Product = () => {
                   </div>
 
                   <div className="products-left-bottom">
-                    <h2>جزییات سفارش</h2>
-                    <div className="products-post">
-                      <p>انتخاب روش سفارش</p>
-                      <p>کامیون اختصاصی</p>
-                      <p>پست عادی</p>
-                    </div>
+                    {box ? (
+                      <>
+                        <h2>جزییات سفارش</h2>
+                        <div className="products-post">
+                          <p>انتخاب روش سفارش</p>
+                          <p style={{ cursor: "pointer"}}>کامیون اختصاصی</p>
+                          <p style={{ cursor: "pointer"}}>پست عادی</p>
+                        </div>
 
-                    <div className="products-post">
-                      <p>انتخاب تعداد کارتون</p>
-                      <select name="countofbox" className="products-numberBox">
-                        <option
-                          selected
-                          disabled
-                          style={{ fontFamily: "IRANSans" }}
+                        <div className="products-post">
+                          <p>انتخاب تعداد کارتون</p>
+                   { input?      <select
+                            name="countofbox"
+                            className="products-numberBox"
+                          >
+                            <option
+                              selected
+                              disabled
+                              style={{ fontFamily: "IRANSans" }}
+                            >
+                              تعداد سفارش را تعیین کنید
+                            </option>
+                            <option value="100">100</option>
+                            <option onClick={()=>changeInput()} value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                            <option value="400">500</option>
+                            <option value="400">600</option>
+                            <option value="400">700</option>
+                            <option value="400">800</option>
+                            <option value="400">900</option>
+                          </select>:"salam:)"}
+                        </div>
+
+                        {order ? (
+                          <div className="products-input">
+                            <button onClick={() => onlineOrder()} type="text">
+                              <p>سفارش آنلاین</p>
+                            </button>
+                            {phone ? (
+                              <button type="text">
+                                <p onClick={() => changePhone()}>
+                                  سفارش با تماس ناهور
+                                </p>
+                              </button>
+                            ) : (
+                              <button type="text" >
+                                <a
+                   
+                                  style={{ textDecoration: "none" }}
+                                  href="tel:021-88254526"
+                                >
+                                  <p
+                           
+                                    style={{ color: "#029494" }}
+                                  >
+                                    021-88254526
+                                  </p>
+                                </a>
+                              </button>
+                            )}
+                          </div>
+                        ) : (
+                          <div className="products-buttons">
+                            <div className="buttons-right">
+                              <button onClick={() => onlineOrder()}>
+                                <p>لغو</p>
+                              </button>
+                              <button>
+                                <div onClick={(e) => addToCartHandler(e)}>
+                                  <p onClick={() => changeBox()}>
+                                    افزودن به سبد خرید
+                                  </p>
+                                </div>
+                              </button>
+                            </div>
+                            <div className="buttons-left">
+                              <p>
+                                IRR :
+                                <span style={{ fontWeight: "300" }}>
+                                  416,000
+                                </span>
+                              </p>
+                              <p>
+                                AFF :
+                                <span style={{ fontWeight: "300" }}>
+                                  612,000
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                        )}
+                      </>
+                    ) : (
+                      <div className="product-changeBox" >
+                        <div>
+                          <img src="/nahoor home page/productPage/done cart.svg" />
+                        </div>
+                        <p style={{ marginTop: "16px" }}>
+                          سبد خرید شما به روزرسانی شد
+                        </p>
+                        <button
+                          className="btn-continue"
+                          onClick={() => continueShop()}
                         >
-                          تعداد سفارش را تعیین کنید
-                        </option>
-                        <option value="100">100</option>
-                        <option value="200">200</option>
-                        <option value="300">300</option>
-                        <option value="400">400</option>
-                      </select>
-                    </div>
-
-                    <div className="products-input">
-                      <button type="text">
-                        <p>سفارش آنلاین</p>
-                      </button>
-                      <button type="text">
-                        <p>سفارش با تماس ناهور</p>
-                      </button>
-                    </div>
+                          <p>ادامه خرید</p>
+                        </button>
+                        <button className="btn-viewCart">
+                          <p>مشاهده سبد خرید</p>
+                        </button>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -320,7 +440,7 @@ const Product = () => {
         <Slider {...settings} style={{ width: "100%" }}>
           {cards.map((card) => {
             return (
-              <div className="products-card" >
+              <div className="products-card">
                 <NahorSuggestionsCard
                   id={card.id}
                   img={card.img}
@@ -333,7 +453,14 @@ const Product = () => {
                   priceAfterSailAfghan={card.priceAfterSailAfghan}
                   priceBeforeSailAfghan={card.priceBeforeSailAfghan}
                 />
-                <div style={{borderLeft: "0.5px solid #6B006D", width:"20px",height:"280px" , marginTop: '-400px'}}></div>
+                <div
+                  style={{
+                    borderLeft: "0.5px solid #6B006D",
+                    width: "20px",
+                    height: "350px",
+                    marginTop: "-400px",
+                  }}
+                ></div>
               </div>
             );
           })}

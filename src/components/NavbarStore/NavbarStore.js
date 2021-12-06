@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { cartStore } from "../redux/store";
 import "./NavbarStore.css";
 export const NavbarStore = (props) => {
-  console.log(props.user);
+
   const [state, setState] = useState({ count: 0 });
   const [login, setLogin] = useState(true);
   useEffect(() => {

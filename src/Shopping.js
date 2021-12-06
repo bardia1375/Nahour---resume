@@ -42,10 +42,10 @@ export const Shopping = () => {
       return;
     } else {
       setUser({ user: response.data.user });
-      console.log(user?.user?.name);
+      
     }
   },[] );
-  console.log(user?.user?.name);
+  // console.log(user?.user?.name);
   // console.log(user.user.name);
   return (
     <div className="Shopping-Container">
