@@ -190,7 +190,7 @@ const Profile = () => {
                       alignItems: "flex-start",
                     }}
                   >
-                    <div style={{ width: "12%" }}>
+                    <div style={{ width: "8%", marginTop: "14px",marginRight: "4px"}}>
                       <img
                         src="/nahoor home page/profile/Icons/Icon/non active/خروج.png"
                         alt=""
@@ -200,16 +200,16 @@ const Profile = () => {
                     <p>آیا میخواهید از حساب خود در ناهور خارج شوید؟</p>
                   </div>
                   <div className="exite-buttons">
-                    <Link style={{ width: "100%" }} to="logOut">
+                    <NavLink  style={{ width: "100%" }} to="logOut">
                       <button className="profile-exite">
                         <p>خروج</p>
                       </button>
-                    </Link>
-                    <Link  onClick={() => changePicture()} style={{ width: "100%" }} to="logOut">
+                    </NavLink>
+                    <NavLink  onClick={() => changePicture()} style={{ width: "100%" }} to="logOut">
                       <button className="profile-Cancel">
                         <p>انصراف</p>
                       </button>
-                    </Link>
+                    </NavLink>
                   </div>
                 </div>
               )}

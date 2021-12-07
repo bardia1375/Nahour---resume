@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState }from "react";
 import ReactDOM from "react-dom";
 import { Formik, Form, useField } from "formik";
 import * as Yup from "yup";
 // import ButtonComponent from "../../../components/Button/button";
 import "./editInformation.css";
 const EditInformation = () => {
+const [ selectedFile,setSelectedFile]=useState(null)
+const fileSelectHandler=(e)=>{
+
+  setSelectedFile({selectedFile:e.target.files[0]})
+}
+
+const fileUploadHandler=()=>{
+  setSelectedFile()
+}
+
   const MyTextInput2 = ({ label, ...props }) => {
     // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
     // which we can spread on <input>. We can use field meta to show an error
@@ -31,11 +41,13 @@ const EditInformation = () => {
       </div>
     );
   };
- const Button=(e)=>{
-     return(
-         <button type="button" className="editInformation-button">ثبت</button>
-     )
- }
+  const Button = (e) => {
+    return (
+      <button type="button" className="editInformation-button">
+        ثبت
+      </button>
+    );
+  };
   return (
     <div className="editInformation-container">
       <div className="editInformation-back">
@@ -47,15 +59,18 @@ const EditInformation = () => {
         <h2>ویرایش اطلاعات حساب کاربری</h2>
       </div>
 
-      <div className="editInformation-main">
+      <div  className="editInformation-main">
         <div className="editInformation-img">
           <img
             className="editInformation-profileImg"
             src="/nahoor home page/profile/profile photo.svg"
           />
-          <div className="editInformation-changePhoto">
+          <div className="editInformation-changePhoto" >
             <img src="/nahoor home page/profile/Group 422.svg" />
-            <h3>تغییر عکس پروفایل</h3>
+            <label for="files" style={{cursor: "pointer",margin:"0 auto"}} >
+              <h3>تغییر عکس پروفایل</h3>
+            </label>
+            <input onClick={(e)=>fileSelectHandler(e)}  id="files" style={{cursor: "pointer",visibility:"hidden"}}type="file" />
           </div>
         </div>
         <Formik
@@ -85,11 +100,11 @@ const EditInformation = () => {
               .email("لطفا ایمیل را درست وارد کنید")
               .required("لطفا فیلد را کامل کنید"),
             iban: Yup.string()
-            .max(22, "شما مجاز به استفاده از حداکثر 24 کاراکتر هستید")
-            .required("لطفا فیلد را کامل کنید"),
+              .max(22, "شما مجاز به استفاده از حداکثر 24 کاراکتر هستید")
+              .required("لطفا فیلد را کامل کنید"),
             cartNumber: Yup.string()
-            .max(16, "شما مجاز به استفاده از حداکثر 16 کاراکتر هستید")
-            .required("لطفا فیلد را کامل کنید"),
+              .max(16, "شما مجاز به استفاده از حداکثر 16 کاراکتر هستید")
+              .required("لطفا فیلد را کامل کنید"),
           })}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
@@ -154,7 +169,9 @@ const EditInformation = () => {
             </div>
             <div>
               {/* <Button  onSubmit /> */}
-              <button type="submit" className="editInformation-button" >ثبت</button>
+              <button type="submit" className="editInformation-button">
+                ثبت
+              </button>
             </div>
             {/* <div className="formikmain-bottom">
               <ButtonComponent

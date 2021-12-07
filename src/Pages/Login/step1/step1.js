@@ -3,9 +3,9 @@ import { Formik, Form, useField } from "formik";
 import * as Yup from "yup";
 import "./step1.css";
 import axios from "axios";
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Step1 = (props) => {
-  const Navigate=useNavigate()
+  const Navigate = useNavigate();
   const MyTextInput2 = ({ label, ...props }) => {
     // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
     // which we can spread on <input>. We can use field meta to show an error
@@ -55,7 +55,6 @@ const Step1 = (props) => {
               alert(JSON.stringify(values, null, 2));
               setSubmitting(false);
               console.log(values);
-             
             }, 100);
           }}
           validationSchema={Yup.object({
@@ -68,7 +67,6 @@ const Step1 = (props) => {
             cellPhone: Yup.string()
               .max(15, "شما مجاز به استفاده از حداکثر 15 کاراکتر هستید")
               .required("لطفا فیلد را کامل کنید"),
-
             email: Yup.string()
               .email("لطفا ایمیل را درست وارد کنید")
               .required("لطفا فیلد را کامل کنید"),
@@ -76,6 +74,7 @@ const Step1 = (props) => {
             password: Yup.string()
               .required("لطفا فیلد را کامل کنید")
               .min(6, "رمز عبوری وارد شده حداقل نیاز به 6 کارکتر دارد"),
+
             confirmPassword: Yup.string()
               .required("لطفا فیلد را کامل کنید")
               .oneOf([Yup.ref("password")], "رمز عبور مطابقت ندارد"),
@@ -89,8 +88,8 @@ const Step1 = (props) => {
                 "https://reqres.in/api/users",
                 values
               );
-              //اینجا دیگه لینک ندادیم به دکمه باتن و از نویگیت استفاده میکنیم و میگیم برو به ادرس فلان 
-              Navigate("step2")
+              //اینجا دیگه لینک ندادیم به دکمه باتن و از نویگیت استفاده میکنیم و میگیم برو به ادرس فلان
+              Navigate("step2");
 
               console.log(response);
               localStorage.setItem("token", response.data.token);
@@ -140,7 +139,7 @@ const Step1 = (props) => {
             </div>
 
             <div>
-              <button type="submit" className="step1-button" >
+              <button type="submit" className="step1-button">
                 بعدی
               </button>
             </div>

@@ -40,6 +40,8 @@
   align-items: center;
   justify-content: center;
   margin-top: 16px;
+
+transform: translateX(-150px);
 }
 .editInformation-profileImg {
   margin-top: 32px;
