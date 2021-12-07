@@ -9,7 +9,7 @@ import { Outlet } from "react-router";
 import { Link, NavLink } from "react-router-dom";
 
 const Profile = () => {
-  const [exite, setExite] = useState(false);
+  const [exite, setExite] = useState(true);
   const changePicture = () => {
     return setExite(!exite);
   };
@@ -49,8 +49,8 @@ const Profile = () => {
                 onclick={() => changePicture()}
                 className={(navDate) =>
                   navDate.isActive
-                    ? "profile-sideBarInformationActive"
-                    : "profile-sideBarInformation"
+                    ? "profile-sideBarInformationActive1"
+                    : "profile-sideBarInformation1"
                 }
                 to="info"
               >
@@ -157,14 +157,10 @@ const Profile = () => {
               </NavLink>
 
               {exite ? (
-                <NavLink
-                  onClick={(e) => exite(e)}
-                  to="exite"
-                  className={(navDate) =>
-                    navDate.isActive
-                      ? "profile-sideBarInformationActive"
-                      : "profile-sideBarInformation"
-                  }
+                <div
+                  className="profile-sideBarInformation"
+                  style={{ display: "flex", cursor: "pointer" }}
+                  onClick={() => changePicture()}
                 >
                   <div style={{ width: "8%", marginLeft: "8px" }}>
                     <img
@@ -174,8 +170,49 @@ const Profile = () => {
                     />
                   </div>
                   <p>{sideBarItem.exite}</p>
-                </NavLink>
-              ) : null}
+                </div>
+              ) : (
+                <div
+                  className="profile-sideBarInformation"
+                  style={{
+                    display: "flex",
+                    cursor: "pointer",
+                    flexDirection: "column",
+                  }}
+                >
+                  <div
+                    onClick={() => changePicture()}
+                    style={{
+                      width: "100%",
+                      marginLeft: "8px",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "flex-start",
+                    }}
+                  >
+                    <div style={{ width: "12%" }}>
+                      <img
+                        src="/nahoor home page/profile/Icons/Icon/non active/خروج.png"
+                        alt=""
+                        width="100%"
+                      />
+                    </div>
+                    <p>آیا میخواهید از حساب خود در ناهور خارج شوید؟</p>
+                  </div>
+                  <div className="exite-buttons">
+                    <Link style={{ width: "100%" }} to="logOut">
+                      <button className="profile-exite">
+                        <p>خروج</p>
+                      </button>
+                    </Link>
+                    <Link  onClick={() => changePicture()} style={{ width: "100%" }} to="logOut">
+                      <button className="profile-Cancel">
+                        <p>انصراف</p>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
           );
         })}
@@ -188,3 +225,13 @@ const Profile = () => {
 };
 
 export default Profile;
+
+{
+  /* <div style={{ width: "8%", marginLeft: "8px" }}>
+<img
+  src="/nahoor home page/profile/Icons/Icon/non active/خروج.png"
+  alt=""
+  width="100%"
+/>
+</div>      <p>{sideBarItem.exite}</p> */
+}

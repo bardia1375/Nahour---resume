@@ -18,6 +18,7 @@ import OrderPrevious from "./Pages/profile/order/orderPrevious";
 import Order from "./Pages/profile/order/order";
 import Product from "./Pages/Shopping/product/product";
 import EditInformation from "./Pages/profile/editInformation/editInformation";
+import Logout from "./Pages/profile/Logout/Logout";
 export const Shopping = () => {
   const [user, setUser] = useState(null);
 
@@ -32,7 +33,7 @@ export const Shopping = () => {
     const response = {
       data: {
         user: {
-          name: "mohammad",
+          name: "bardia",
           email: "mohamad@gmail.com",
         },
       },
@@ -65,6 +66,7 @@ export const Shopping = () => {
           <Route path="aboutUs" element={<AboutUs />} />
           <Route path="support" element={<Support />} />
           <Route path="conditions" element={<ConditionNahor />} />
+          <Route path="logout" element={<Logout />} />
         </Route>
         {/* <Route path="/listFactor/FactorProduct" element={<ProductOfFactor />} /> */}
       </Routes>

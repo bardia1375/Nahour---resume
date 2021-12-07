@@ -33,7 +33,7 @@ const Step0 = () => {
   };
   return (
     <div className="step0-container">
-      <div>
+      <div style={{transform:"translateY(8px)"}}>
         <img src="/nahoor home page/Signup/vector.svg" />
       </div>
       <div className="step0-main">

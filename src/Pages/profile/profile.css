@@ -27,6 +27,25 @@
 .profile-photo img {
   object-fit: contain;
 }
+.profile-sideBarInformationActive1 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 1px solid #ff9900;
+  border-radius: 7px;
+  margin-top: 20px;
+  padding: 0 8px;
+}
+.profile-sideBarInformation1 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+  padding: 0 8px;
+}
 .profile-sideBarInformationActive {
   display: flex;
   align-items: center;
@@ -35,6 +54,7 @@
   background-color: white;
   border: 1px solid #ff9900;
   border-radius: 7px;
+  padding: 0 8px;
 }
 .profile-sideBarInformation {
   display: flex;
@@ -42,6 +62,7 @@
   text-decoration: none;
   color: black;
   border-top: 1px solid #c4c4c4;
+  padding: 0 8px;
 }
 
 .profile-sideBarItem {
@@ -50,13 +71,29 @@
   justify-content: flex-start;
   border-top: 1px solid #c4c4c4;
 }
-.bardiaaa {
-  text-decoration: none;
-  background-color: white;
-  border: 1px solid #ff9900;
-  color: black;
+
+.exite-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.barboddd {
-  text-decoration: none;
-  color: black;
+.profile-exite {
+  width: 90%;
+  background: #6b006d;
+  border-radius: 5px;
+  color: #fff;
+  padding: 4px;
+}
+.profile-Cancel {
+  width: 90%;
+  margin-right: 16px;
+  padding: 4px;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.exite-buttons p {
+  margin: 0;
 }

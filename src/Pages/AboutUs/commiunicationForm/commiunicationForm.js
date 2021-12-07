@@ -153,7 +153,7 @@ const MyTextArea2 = ({ children, ...props }) => {
 const MySelect = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
-    <div className="formik-select">
+    <div className="formik-select" style={{paddingLeft: "4px"}}>
       <div className="formik-select">
         {meta.touched && meta.error ? (
           <>
@@ -254,10 +254,10 @@ const CommiunicationForm = () => {
             }, 100);
           }}
         >
-          <Form className="formik-main">
-            <div className="formik-top"  style={{width: "100%" }}>
-              <div className="formik-top1"  >
-                <div>
+          <Form className="formik-main" >
+            <div className="formik-top3"  style={{width: "100%", paddingLeft:"20px"}}>
+              <div className="formik-top1" style={{width: "100%"}}  >
+                <div style={{width: "100%"}} >
                   <MyTextInput2
                     label="نام و نام خانوادگی"
                     name="firstName"

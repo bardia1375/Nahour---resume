@@ -49,9 +49,9 @@ const Call = () => {
         })}
       </div>
       <div className="callProfile-social">
-        <div ><img className="callProfile-socialItem" src="/nahoor home page/profile/Icons/Icon/instagram.svg" /></div>
-        <div ><img className="callProfile-socialItem" src="/nahoor home page/profile/Icons/Icon/linkedin.svg"/></div>
-        <div ><img className="callProfile-socialItem" src="/nahoor home page/profile/Icons/Icon/twitter.svg"/></div>
+        <div className="callProfile-socialItems"><img className="callProfile-socialItem" src="/nahoor home page/profile/Icons/Icon/instagram.svg" /></div>
+        <div className="callProfile-socialItems"><img className="callProfile-socialItem" src="/nahoor home page/profile/Icons/Icon/linkedin.svg"/></div>
+        <div className="callProfile-socialItems"><img className="callProfile-socialItem" src="/nahoor home page/profile/Icons/Icon/twitter.svg"/></div>
       </div>
     </div>
   );

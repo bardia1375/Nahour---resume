@@ -30,9 +30,9 @@ export const NavbarStore = (props) => {
                 ورود به حساب کاربری
               </Link>
             ) : (
-              <Link to="/store/login" className="navbarTopStoreLeftLogoProfile">
+              <Link to="/store/profile"   className="navbarTopStoreLeftLogoProfile">
                 <img src="/nahoor home page/store page/Profile icon.svg" />
-                {props.user}
+                <div style={{marginRight:"2px", transform: "translateY(2PX"}}>{props.user}</div>
               </Link>
             )}
             <a href="" className="navbarTopStoreLeftLogoCart">
