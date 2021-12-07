@@ -35,6 +35,7 @@
 .productOfFactorCard-price {
   display: flex;
   border: 0.5px dashed #6b006d;
+  border-radius:5px;
   padding: 8px 8px 0px 8px;
   justify-content: space-between;
   align-items: center;

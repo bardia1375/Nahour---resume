@@ -46,9 +46,9 @@ function BlogmainCard(props) {
           </div>
           <div className="BlogmainCard-left">
             <div>
-              <p>بیشتر بخوانید +</p>
+              <p style={{textAlign: "center"}}>بیشتر بخوانید +</p>
             </div>
-            <div style={{ width: "20%" }}>
+            <div style={{ width: "16%" }}>
               <img
                 src={"/nahoor home page/Blogs page/Icons/Bookmark.svg"}
                 width="100%"

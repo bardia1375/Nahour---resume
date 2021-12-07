@@ -141,13 +141,13 @@
 .products-post {
   display: flex;
 
-  flex-direction: row;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: 16px;
 }
 .products-post p:nth-child(2) {
-  margin-left: -80px;
+  /* margin-left: -80px; */
 }
 .products-post p {
   font-size: 0.8rem;
@@ -157,20 +157,21 @@
   border: 1px solid #6b006d;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(107, 0, 109, 0.07);
-  border-radius: 7px;
-  width: 46%;
+  border-radius:5px;
+  /* width: 100%; */
   height: 30px;
   margin: auto 0;
   font-size: 0.8rem;
   font-size: IRANSans;
+  
 }
-.products-input {
+.products-btn {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 16px;
 }
-.products-input button:first-child {
+.products-btn button:first-child {
   background: #6b006d;
   border-radius: 5px;
   border: 1px solid #6b006d;
@@ -178,11 +179,10 @@
   color: #fff;
   padding: 4px 0;
 }
-.products-input button p {
+.products-btn button p {
   font-size: 0.8rem;
 }
-.products-input button:first-child:hover,
-
+.products-btn button:first-child:hover,
 .buttons-right button:nth-child(2):hover {
   background: #ff9900;
   border: 1px solid #ff9900;
@@ -190,10 +190,10 @@
   width: 100%;
   color: #000;
 }
-.products-call:hover{
-  background: #fff
+.products-call:hover {
+  background: #fff;
 }
-.products-input button:last-child {
+.products-btn button:last-child {
   background: #ffffff;
   border: 1px solid #6b006d;
   margin-right: 32px;
@@ -201,7 +201,7 @@
   color: #6b006d;
   width: 100%;
 }
-.products-input button {
+.products-btn button {
   margin-top: 16px;
   padding: 4px 0px;
 }
@@ -295,12 +295,11 @@
   padding: 4px 48px;
   color: #fff;
 }
-.btn-viewCart p{
+.btn-viewCart p {
   color: #fff;
 }
 .btn-viewCart:hover {
   background: #ff9900;
-color: #000;
+  color: #000;
   border-radius: 5px;
-  
 }

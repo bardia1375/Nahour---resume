@@ -14,6 +14,7 @@
     "axios": "^0.24.0",
     "formik": "^2.2.9",
     "material-design-icons": "^3.0.1",
+    "npm": "^8.2.0",
     "react": "^17.0.2",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^17.0.2",

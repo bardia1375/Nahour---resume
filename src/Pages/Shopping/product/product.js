@@ -321,37 +321,44 @@ const Product = (props) => {
                         <h2>جزییات سفارش</h2>
                         <div className="products-post">
                           <p>انتخاب روش سفارش</p>
-                          <p style={{ cursor: "pointer"}}>کامیون اختصاصی</p>
-                          <p style={{ cursor: "pointer"}}>پست عادی</p>
+                          <p style={{ cursor: "pointer" }}>کامیون اختصاصی</p>
+                          <p style={{ cursor: "pointer" }}>پست عادی</p>
                         </div>
 
                         <div className="products-post">
-                          <p>انتخاب تعداد کارتون</p>
-                   { input?      <select
-                            name="countofbox"
-                            className="products-numberBox"
-                          >
-                            <option
-                              selected
-                              disabled
-                              style={{ fontFamily: "IRANSans" }}
+                          <div style={{ width:"100%" }}><p>انتخاب تعداد کارتون</p></div>
+                          {input ? (
+                            <select
+                              name="countofbox"
+                              className="products-numberBox"
+                              style={{width:"100%" ,  marginRight:" 32px"}}
                             >
-                              تعداد سفارش را تعیین کنید
-                            </option>
-                            <option value="100">100</option>
-                            <option onClick={()=>changeInput()} value="200">200</option>
-                            <option value="300">300</option>
-                            <option value="400">400</option>
-                            <option value="400">500</option>
-                            <option value="400">600</option>
-                            <option value="400">700</option>
-                            <option value="400">800</option>
-                            <option value="400">900</option>
-                          </select>:"salam:)"}
+                              <option
+                                selected
+                                disabled
+                                style={{ fontFamily: "IRANSans" ,margin:"0 8px"}}
+                              >
+                                تعداد سفارش را تعیین کنید
+                              </option>
+                              <option value="100">100</option>
+                              <option onClick={() => changeInput()} value="200">
+                                200
+                              </option>
+                              <option value="300">300</option>
+                              <option value="400">400</option>
+                              <option value="400">500</option>
+                              <option value="400">600</option>
+                              <option value="400">700</option>
+                              <option value="400">800</option>
+                              <option value="400">900</option>
+                            </select>
+                          ) : (
+                            "salam:)"
+                          )}
                         </div>
 
                         {order ? (
-                          <div className="products-input">
+                          <div className="products-btn">
                             <button onClick={() => onlineOrder()} type="text">
                               <p>سفارش آنلاین</p>
                             </button>
@@ -362,16 +369,12 @@ const Product = (props) => {
                                 </p>
                               </button>
                             ) : (
-                              <button type="text" >
+                              <button type="text">
                                 <a
-                   
                                   style={{ textDecoration: "none" }}
                                   href="tel:021-88254526"
                                 >
-                                  <p
-                           
-                                    style={{ color: "#029494" }}
-                                  >
+                                  <p style={{ color: "#029494" }}>
                                     021-88254526
                                   </p>
                                 </a>
@@ -410,7 +413,7 @@ const Product = (props) => {
                         )}
                       </>
                     ) : (
-                      <div className="product-changeBox" >
+                      <div className="product-changeBox">
                         <div>
                           <img src="/nahoor home page/productPage/done cart.svg" />
                         </div>

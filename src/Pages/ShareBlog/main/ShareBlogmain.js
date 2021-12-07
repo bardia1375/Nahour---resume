@@ -39,35 +39,35 @@ function ShareBlogmain() {
       <div className="shareBlog-submain-icon">
         <div style={{ width: "30%" }}>
           <img
-            src="./nahoor home page/Share Blogs page/Icons/Outline/Brands/Facebook.svg"
+            src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Facebook.svg"
             alt=""
             width="100%"
           />
         </div>
         <div style={{ width: "30%" }}>
           <img
-            src="./nahoor home page/Share Blogs page/Icons/Outline/Brands/Linkedin.svg"
+            src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Linkedin.svg"
             alt=""
             width="100%"
           />
         </div>
         <div style={{ width: "30%" }}>
           <img
-            src="./nahoor home page/Share Blogs page/Icons/Outline/Brands/Twitter.svg"
+            src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Twitter.svg"
             alt=""
             width="100%"
           />
         </div>
         <div style={{ width: "30%" }}>
           <img
-            src="./nahoor home page/Share Blogs page/Icons/Outline/Files/Copy.svg"
+            src="/nahoor home page/Share Blogs page/Icons/Outline/Files/Copy.svg"
             alt=""
             width="100%"
           />
         </div>
         <div style={{ width: "30%" }}>
           <img
-            src="./nahoor home page/Share Blogs page/Icons/Outline/Communication/Share.svg"
+            src="/nahoor home page/Share Blogs page/Icons/Outline/Communication/Share.svg"
             alt=""
             width="100%"
           />

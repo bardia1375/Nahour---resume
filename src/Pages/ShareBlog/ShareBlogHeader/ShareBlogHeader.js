@@ -72,6 +72,7 @@ function ShareBlogHeader() {
               </div>
               <div className="shareBlog-content-main-left">
                 <img
+                style={{fill:"black"}}
                   src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Facebook.svg"
                   alt=""
                 />

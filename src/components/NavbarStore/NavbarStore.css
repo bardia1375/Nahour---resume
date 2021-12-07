@@ -18,8 +18,8 @@
 .navbarTopStoreLogo {
   display: block;
   background: url("../../img/store/logo.svg") no-repeat center;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   background-size: contain;
   margin-left: 16px;
 }

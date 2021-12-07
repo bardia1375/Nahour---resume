@@ -26,7 +26,7 @@ export const NavbarStore = (props) => {
           <div className="navbarTopStoreLeft">
             {!props.user ? (
               <Link to="/store/login" className="navbarTopStoreLeftLogoProfile">
-                <img src="/nahoor home page/store page/Profile icon.svg" />
+                <img src="/nahoor home page/store page/Profile icon.svg"  />
                 ورود به حساب کاربری
               </Link>
             ) : (
