@@ -29,7 +29,7 @@ const HeaderSlider = () => {
         >
           {dots.map((item, index) => {
             return (
-              <div style={{ margin: "0 8px" }} key={index}>
+              <div style={{ margin: "0 4px" }} key={index}>
                 {item.props.children}
               </div>
             );

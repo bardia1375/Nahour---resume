@@ -6,7 +6,7 @@ import Slider from "react-slick";
 function NahorSuggestions() {
   const cards = [
     {
-      img: "/nahoor home page/store page/image.png",
+      img: "/nahoor home page/store page/پیشنهاد ویژه -ماکارونی.png",
       title: "پوشک مای بی بی آبی سری مهربان با پوست سایز",
       Condition: "موجود در انبار",
       icon: "/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg",
@@ -17,7 +17,7 @@ function NahorSuggestions() {
       priceBeforeSailAfghan: "400,000 تومان",
     },
     {
-      img: "/nahoor home page/store page/image.png",
+      img: "/nahoor home page/store page/کره میهن - پیشنهاد ویژه.png",
       title: "پوشک مای بی بی آبی سری مهربان با پوست سایز",
       Condition: "موجود در انبار",
       icon: "/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg",
@@ -28,7 +28,7 @@ function NahorSuggestions() {
       priceBeforeSailAfghan: "400,000 تومان",
     },
     {
-      img: "/nahoor home page/store page/image.png",
+      img: "/nahoor home page/store page/image-1.png",
       title: "پوشک مای بی بی آبی سری مهربان با پوست سایز",
       Condition: "موجود در انبار",
       icon: "/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg",
@@ -39,7 +39,7 @@ function NahorSuggestions() {
       priceBeforeSailAfghan: "400,000 تومان",
     },
     {
-      img: "/nahoor home page/store page/image.png",
+      img: "/nahoor home page/store page/image-1.png",
       title: "پوشک مای بی بی آبی سری مهربان با پوست سایز",
       Condition: "موجود در انبار",
       icon: "/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg",
@@ -127,6 +127,7 @@ function NahorSuggestions() {
     slidesToScroll: 1,
     prevArrow: <PerviousBtn />,
     nextArrow: <NextBtn />,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1800,

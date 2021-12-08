@@ -15,25 +15,25 @@ function ShareBlog() {
       <NavbarSmall />
       <div className="shareBlog-container">
         <div className="shareBlog-container-icons">
-          <div className="shareBlog-container-icons" width="100%">
+          <div className="shareBlog-container-icon" width="100%">
             <img
               src="/nahoor home page/Share Blogs page/Icons/Outline/Communication/Comment.svg"
               width="100%"
             />
           </div>
-          <div className="shareBlog-container-icons" width="100%">
+          <div className="shareBlog-container-icon" width="100%">
             <img
               src="/nahoor home page/Share Blogs page/Icons/Outline/Communication/like.svg"
               width="100%"
             />
           </div>
-          <div className="shareBlog-container-icons" width="100%">
+          <div className="shareBlog-container-icon" width="100%">
             <img
               src="/nahoor home page/Share Blogs page/Icons/Outline/Status/eye.svg"
               width="100%"
             />
           </div>
-          <div className="shareBlog-container-icons" width="100%">
+          <div className="shareBlog-container-icon" width="100%">
             <img src="/nahoor home page/Share Blogs page/Icons/Outline/Status/eye.svg" />
           </div>
         </div>

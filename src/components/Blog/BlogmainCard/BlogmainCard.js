@@ -27,7 +27,7 @@ function BlogmainCard(props) {
           </div>
         </div>
         <div className="BlogmainCard-main">
-          <h3 className="BlogmainCard-title">{props.mainSubeject}</h3>
+          <h2 className="BlogmainCard-title">{props.mainSubeject}</h2>
           <p className="BlogmainCard-paragraph">{props.paragraph}</p>
         </div>
         <div className="BlogmainCard-footer">
@@ -45,8 +45,8 @@ function BlogmainCard(props) {
             </div>
           </div>
           <div className="BlogmainCard-left">
-            <div>
-              <p style={{textAlign: "center"}}>بیشتر بخوانید +</p>
+            <div >
+              <p >بیشتر بخوانید +</p>
             </div>
             <div style={{ width: "16%" }}>
               <img

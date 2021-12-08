@@ -40,10 +40,10 @@ function Headersecond() {
                 </div>
 
                 <div className="headersecond-iconscard">
+                <img src="./nahoor home page/Blogs page/Icons/Brands/linkedin.svg" />
                   <img src="./nahoor home page/Blogs page/Icons/Brands/instagram.svg" />
-                  <img src="./nahoor home page/Blogs page/Icons/Brands/instagram.svg" />
-                  <img src="./nahoor home page/Blogs page/Icons/Brands/instagram.svg" />
-                  <img src="./nahoor home page/Blogs page/Icons/Brands/instagram.svg" />
+                  <img src="./nahoor home page/Blogs page/Icons/Brands/twitter.svg" />
+                  <img src="./nahoor home page/Blogs page/Icons/Vector.svg" />
                 </div>
               </div>
 

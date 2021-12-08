@@ -10,7 +10,16 @@
   background: transparent;
   transition: all 0.2s ease-in-out;
 }
+.blogSlideSecondNewest{
+  position: absolute;
+  top:8%;
+  right:0;
+  background: #6B006D;
+  color: #fff;
+  width: 24%;
+  border-radius: 50px 0px 0px 50px;
 
+}
 .blogSlideSecondSlider::before {
   content: "";
   position: absolute;
@@ -30,12 +39,12 @@
   align-items: flex-start;
   position: absolute;
   bottom: 0;
-  top: 70%;
+  top: 65%;
   left: 0;
   right: 0;
   color: white;
   z-index: 2;
-  padding-right: 52px;
+  padding:0px 52px;
   text-align: right;
 }
 .app-paragraph p {
@@ -44,7 +53,7 @@
 .blogSlideSecond-detail {
   display: flex;
   flex-direction: row;
-  width: 105%;
+  width: 100%;
   align-items: center;
   justify-content: flex-end;
 }
@@ -52,7 +61,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: -24px;
+
 }
 .blogSlideSecond-subDetail p {
   margin-right: 8px;

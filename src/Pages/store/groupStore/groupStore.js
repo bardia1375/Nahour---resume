@@ -10,20 +10,20 @@ const GroupStore = () => {
       text: "صنایع غذایی",
     },
     {
-      img: "/nahoor home page/store page/sanaye ghazaii.png",
-      text: "صنایع غذایی",
+      img: "/nahoor home page/store page/pooshak.png",
+      text: "پوشاک",
     },
     {
-      img: "/nahoor home page/store page/sanaye ghazaii.png",
-      text: "صنایع غذایی",
+      img: "/nahoor home page/store page/masalaeh sakhtemani.png",
+      text: "مصالح ساختمانی",
     },
     {
-      img: "/nahoor home page/store page/sanaye ghazaii.png",
-      text: "صنایع غذایی",
+      img: "/nahoor home page/store page/petroshimi.png",
+      text: "پتروشیمی",
     },
     {
-      img: "/nahoor home page/store page/sanaye ghazaii.png",
-      text: "صنایع غذایی",
+      img: "/nahoor home page/store page/keshavarzi.png",
+      text: "کشاورزی",
     },
   ];
   return (
@@ -38,10 +38,10 @@ const GroupStore = () => {
               <div className="groupStore-cardsImg" style={{ width: "100%" }}>
                 <img src={card.img} width="100%" />
                 <div className="groupStore-contentImg">
-                  <div>
-                    <div className="groupStore-text"><Link  to="listFactor">{card.text}</Link></div>
+                  <div >
+                    <div  className="groupStore-text"><Link  to="listFactor">{card.text}</Link></div>
                   </div>
-                  <div style={{ width: "16%", margin:"0 8px" }}>
+                  <div style={{ width: "24px", marginRight: "8px"}}>
                     <img src="/nahoor home page/store page/icons/arrow.svg" width="100%" />
                   </div>
                 </div>
