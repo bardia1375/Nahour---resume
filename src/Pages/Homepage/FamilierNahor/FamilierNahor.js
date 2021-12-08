@@ -2,6 +2,8 @@ import React from "react";
 import ButtonComponent from "../../../components/Button/button";
 import Title from "../../../components/home/title/Title";
 import "./FamilierNahor.css";
+import { Link } from "react-router-dom";
+
 const FamilierNahor = () => {
   return (
     <div className="mainFamilier">
@@ -14,7 +16,9 @@ const FamilierNahor = () => {
           />
         </div>
         <div className="contentFamilier">
-        <div style={{marginTop:"50px"}}><Title title=" آشنایی بیشتر با ناهور"/></div>
+          <div style={{ marginTop: "50px" }}>
+            <Title title=" آشنایی بیشتر با ناهور" />
+          </div>
           <p className="textParagraph">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
@@ -37,7 +41,11 @@ const FamilierNahor = () => {
               chevron_right
             </span>
           </button> */}
-          <div style={{ marginBottom:"48px", marginTop:"24px"}}><ButtonComponent title="بیشتر بخوانید"/></div>
+          <Link to="/about" style={{ textDecoration:"none"}}>
+            <div style={{ marginBottom: "48px", marginTop: "24px" }}>
+              <ButtonComponent title="بیشتر بخوانید" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

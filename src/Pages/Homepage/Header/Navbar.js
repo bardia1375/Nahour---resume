@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 function Navbar() {
   return (
     <div className="navbar">
@@ -8,7 +9,7 @@ function Navbar() {
         <ul className="navbarMenu">
           <li className="NavbarLogo">
             <img
-            width="100%"
+              width="100%"
               className="NavbarLogo"
               src="./nahoor home page/logo.svg"
             />
@@ -20,7 +21,7 @@ function Navbar() {
           </li>
           <li className="NavbarItems">
             <Link to="/about" className="NavbarItem" id="NavbarItem" href="#">
-              درباره ناهور
+              ارتباط با ناهور
             </Link>
           </li>
           <li className="NavbarItems">
@@ -32,6 +33,11 @@ function Navbar() {
             <Link to="/store" className="NavbarItem" id="NavbarItem" href="#">
               فروشگاه
             </Link>
+          </li>
+          <li className="NavbarItems">
+            <AnchorLink href="#application" className="NavbarItem" id="NavbarItem" >
+              اپلیکیشن ناهور
+            </AnchorLink>
           </li>
         </ul>
       </div>

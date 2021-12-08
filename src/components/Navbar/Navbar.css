@@ -7,12 +7,13 @@
   );
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 80px;
+  padding:8px 80px;
   font-family: IRANSans;
   font-weight: 300;
   font-size: 1rem;
+
 }
 .navbarSmall-main {
   display: flex;
@@ -21,6 +22,7 @@
   align-items: center;
   text-decoration: none;
   list-style-type: none;
+  margin: auto 0;
 }
 .navbarSmall-main li {
   padding: 0px 20px;
@@ -28,4 +30,11 @@
 .navbarSmall-main li a {
   color: #fff;
   text-decoration: none;
+}
+.navbarSmallEnglish{
+  color:#fff;display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  cursor: pointer;
 }

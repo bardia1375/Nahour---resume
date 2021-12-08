@@ -11,10 +11,10 @@ const BestFactor = () => {
   const [currentIndex, setcurrentIndex] = useState(0);
   const [cards, setCards] = useState([
     {
-      product: "محصولات:شیر-ماست ...",
-      factor: "کارخانه میهن",
-      largPic: "./nahoor home page/میهن.png",
-      shortPic: "./nahoor home page/Mihan LOGO.png",
+      product: "محصولات:چای-برنج ...",
+      factor: "کارخانه طبیعت",
+      largPic: "./nahoor home page/طبیعت.png",
+      shortPic: "./nahoor home page/tabiAt LOGO.png",
     },
     {
       product: "محصولات:شیر-ماست ...",
@@ -25,8 +25,8 @@ const BestFactor = () => {
     {
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
-      largPic: "./nahoor home page/میهن.png",
-      shortPic: "./nahoor home page/Mihan LOGO.png",
+      largPic: "./nahoor home page/دنا.png",
+      shortPic: "/nahoor home page/Dena LOGO.svg",
     },
     {
       product:"محصولات:شیر-ماست ...",
@@ -107,6 +107,7 @@ const BestFactor = () => {
     slidesToScroll: 1,
     prevArrow: <PerviousBtn />,
     nextArrow: <NextBtn />,
+    autoplay: true,
    
     
     responsive: [
