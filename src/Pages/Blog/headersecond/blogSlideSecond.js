@@ -129,10 +129,10 @@ function BlogSlideSecond() {
                   marginTop: "-10px",
                 }}
               >
-                <div className="blogSlideSecond-subDetail">
+                <div className="blogSlideSecond-subDetail1">
                   <div style={{ width: "20%" }}>
                     <img
-                      src="./nahoor home page/Share Blogs page/Icons/Time/clock.png"
+                      src="./nahoor home page/Blogs page/account.svg"
                       width="100%"
                       height="100%"
                     />
@@ -145,7 +145,7 @@ function BlogSlideSecond() {
                   <div style={{ width: "16%" }}>
                     <img
                       width="100%"
-                      src="/nahoor home page/Share Blogs page/Icons/Time/clock.png"
+                      src="./nahoor home page/Blogs page/clock.svg"
                       alt=""
                     />
                   </div>

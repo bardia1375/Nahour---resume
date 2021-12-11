@@ -16,9 +16,7 @@ function ShareBlogHeader() {
       {contents.map((content) => {
         return (
           <div className="shareBlog-main">
-            <div
-              style={{ width: "100%", height: "36vh",marginTop:"36px" }}
-            >
+            <div style={{ width: "100%", height: "36vh", marginTop: "36px" }}>
               <img
                 src={content.img}
                 width="100%"
@@ -27,71 +25,73 @@ function ShareBlogHeader() {
                 style={{ objectFit: "fill" }}
               />
             </div>
-            <h2>{content.title}</h2>
-            <div className="shareBlog-content">
-              <div className="shareBlog-content-main-right">
-                <div
-                  className="shareBlog-content-right"
-                  style={{ width: "30%" }}
-                >
-                  <div style={{ width: "30%" }}>
-                    <img
-                      src="/nahoor home page/Ellipse 76.png"
-                      width="100%"
-                      alt=""
-                    />
+            <div style={{ marginTop:"24px"}}>
+              <h2>{content.title}</h2>
+              <div className="shareBlog-content">
+                <div className="shareBlog-content-main-right">
+                  <div
+                    className="shareBlog-content-right"
+                    style={{ width: "30%" }}
+                  >
+                    <div style={{ width: "30%" }}>
+                      <img
+                        src="/nahoor home page/Ellipse 76.png"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p className="shareBlog-content-name">{content.name}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="shareBlog-content-name">{content.name}</p>
+                  <div className="shareBlog-content-mid">
+                    <div style={{ paddingRight: "8px", width: "20%" }}>
+                      <img
+                        width="100%"
+                        src="/nahoor home page/Share Blogs page/Icons/Time/clock.png"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p style={{ paddingRight: "8px" }}>{content.duration}</p>
+                    </div>
+                  </div>
+                  <div className="shareBlog-content-left">
+                    <div style={{ width: "20%" }}>
+                      <img
+                        width="100%"
+                        src="/nahoor home page/Share Blogs page/Icons/Business/calender.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p>{content.date}</p>
+                    </div>
                   </div>
                 </div>
-                <div className="shareBlog-content-mid">
-                  <div style={{ paddingRight: "8px", width: "20%" }}>
-                    <img
-                      width="100%"
-                      src="/nahoor home page/Share Blogs page/Icons/Time/clock.png"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p style={{ paddingRight: "8px" }}>{content.duration}</p>
-                  </div>
+                <div className="shareBlog-content-main-left">
+                  <img
+                    style={{ fill: "black" }}
+                    src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Facebook.svg"
+                    alt=""
+                  />
+                  <img
+                    src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Linkedin.svg"
+                    alt=""
+                  />
+                  <img
+                    src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Twitter.svg"
+                    alt=""
+                  />
+                  <img
+                    src="/nahoor home page/Share Blogs page/Icons/Outline/Files/Copy.svg"
+                    alt=""
+                  />
+                  <img
+                    src="/nahoor home page/Share Blogs page/Icons/Outline/Communication/Share.svg"
+                    alt=""
+                  />
                 </div>
-                <div className="shareBlog-content-left">
-                  <div style={{ width: "20%" }}>
-                    <img
-                      width="100%"
-                      src="/nahoor home page/Share Blogs page/Icons/Business/calender.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <p>{content.date}</p>
-                  </div>
-                </div>
-              </div>
-              <div className="shareBlog-content-main-left">
-                <img
-                style={{fill:"black"}}
-                  src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Facebook.svg"
-                  alt=""
-                />
-                <img
-                  src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Linkedin.svg"
-                  alt=""
-                />
-                <img
-                  src="/nahoor home page/Share Blogs page/Icons/Outline/Brands/Twitter.svg"
-                  alt=""
-                />
-                <img
-                  src="/nahoor home page/Share Blogs page/Icons/Outline/Files/Copy.svg"
-                  alt=""
-                />
-                <img
-                  src="/nahoor home page/Share Blogs page/Icons/Outline/Communication/Share.svg"
-                  alt=""
-                />
               </div>
             </div>
           </div>

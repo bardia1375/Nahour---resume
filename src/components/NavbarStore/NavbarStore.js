@@ -88,10 +88,10 @@ export const NavbarStore = (props) => {
             </li>
 
             <li style={{ marginRight: "-4px" }}>
-              <a href="" className="NavbarStoreItem">
+              <Link to="./listFactor" className="NavbarStoreItem">
                 <img src="/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg" />
                 کارخانه ها
-              </a>
+              </Link>
             </li>
             <li>
               <a href="" className="NavbarStoreItem">
@@ -100,10 +100,10 @@ export const NavbarStore = (props) => {
               </a>
             </li>
             <li>
-              <a href="" className="NavbarStoreItem">
+              <Link to="bardia" className="NavbarStoreItem">
                 <img src="/nahoor home page/store page/icons/Icon/24×24/Color/Files/File Document.svg" />
                 قوانین و مقررات
-              </a>
+              </Link>
             </li>
             <li>
               <a href="" className="NavbarStoreItem">
