@@ -71,7 +71,7 @@ export const Shopping = () => {
         <Route path="bardia" element={<ConditionNahor />} />
         {/* <Route path="/listFactor/FactorProduct" element={<ProductOfFactor />} /> */}
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

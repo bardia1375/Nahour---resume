@@ -62,7 +62,7 @@ function ShareBlog() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

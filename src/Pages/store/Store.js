@@ -1,5 +1,6 @@
 import React from "react";
 import NavbarStore from "../../components/NavbarStore/NavbarStore";
+import Footer from "../Homepage/footer/footer";
 import Aboutus from "./aboutus/aboutus";
 import BestProductStore from "./bestProductStore/bestProductStore";
 import GroupStore from "./groupStore/groupStore";
@@ -28,6 +29,7 @@ function Store() {
           );
         })}
         <Aboutus />
+        {/* <Footer/> */}
       </div>
     </div>
   );

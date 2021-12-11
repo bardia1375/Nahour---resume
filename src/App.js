@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import Product from "./Pages/Shopping/product/product";
 import ShareBlog from "./Pages/ShareBlog/ShareBlog";
 import Login from "./Pages/Login/Login";
+import Footer from "./Pages/Homepage/footer/footer";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/store/shareblog" element={<ShareBlog />} />
         <Route path="/store/login/*" element={<Login />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

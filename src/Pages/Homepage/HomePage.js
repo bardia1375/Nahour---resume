@@ -23,7 +23,7 @@ const HomePage = () => {
       {/* <CustomizableProduct /> */}
       <CustomerSatisfaction />
       <RegistrationNahor/>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

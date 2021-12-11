@@ -13,6 +13,7 @@ const Blog = () => {
         {/* <HeaderBlog /> */}
         <Headersecond/>
         <BlogMain />
+        
         {/* <PaginatedItems itemsPerPage={4} /> */}
       </div>
     </div>
