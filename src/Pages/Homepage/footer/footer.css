@@ -1,4 +1,3 @@
-
 .Footer-container {
   display: flex;
   flex-direction: column;
@@ -8,7 +7,10 @@
   background: linear-gradient(95.32deg, #6b006d 44.23%, #ff9900 136.19%);
   color: #fff;
   min-width: 700px;
-  padding:0 300px;
+  padding: 0 300px;
+  max-width: 2000px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .Footer-icons {
   margin-top: 40px;
@@ -65,7 +67,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding:8px 300px;
+  padding: 8px 300px;
   background: linear-gradient(
     95.32deg,
     rgba(107, 0, 109, 0.16) 44.23%,
@@ -75,10 +77,9 @@
 .CopyRight-paragraph {
   font-size: 0.8rem;
 }
-.Footer-icons{
+.Footer-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
 }

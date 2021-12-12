@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 16px;
-  
 }
 
 .headerstore-main {
@@ -23,25 +22,68 @@
 }
 .headerstore-right h1 {
   font-family: IRANSans;
- font-size:1.6rem;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 300;
   text-align: center;
-  margin-top:24px;
+  margin-top: 24px;
 }
 .headerstore-right p {
-
   font-style: normal;
   font-weight: 300;
-  font-size:0.8rem;
+  font-size: 0.8rem;
   line-height: 24px;
   text-align: right;
   margin-top: 16px;
-  margin-bottom:24px;
+  margin-bottom: 24px;
 }
 .headerstore-bottom {
   /* display: grid; */
-  /* grid-template-columns: 2fr 2fr; */ 
+  /* grid-template-columns: 2fr 2fr; */
   margin-top: 24px;
-  
+}
+@media (max-width: 1200px) {
+  .headerstore-right h1 {
+    font-size: 1.3rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+  .headerstore-right p {
+    font-size: 0.7rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+}
+@media (max-width: 992px) {
+  .headerstore-right h1 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 768px) {
+  .headerstore-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .headerstore-right h1 {
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid red;
+    margin: 8px auto;
+  }
+  .headerstore-left img {
+    display: none;
+  }
+  .headerstore-right {
+    width: 80%;
+  }
+  .headerstore-right p {
+    display: none;
+  }
 }

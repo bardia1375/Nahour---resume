@@ -8,11 +8,11 @@ import HeaderSlider from "./headerStore/headerSlider";
 import HeaderStore from "./headerStore/headerStore";
 import NahorSuggestions from "./nahorSuggestions/nahorSuggestions";
 import SalesStore from "./salesStore/salesStore";
-
+import "./Store.css"
 function Store() {
   const cards = [{ img: "./nahoor home page/store page/poster lebsa.png" }];
   return (
-    <div>
+    <div className="Store-mainContainer">
       <div style={{ padding: "0 16vw" }}>
         <HeaderStore />
         <GroupStore />
@@ -29,7 +29,6 @@ function Store() {
           );
         })}
         <Aboutus />
-        {/* <Footer/> */}
       </div>
     </div>
   );

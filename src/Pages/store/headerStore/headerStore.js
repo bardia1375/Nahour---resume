@@ -13,13 +13,13 @@ const HeaderStore = () => {
     <div className="headerstore-container">
       <div className="headerstore-main">
         <div className="headerstore-right">
-          <div>
+     
             <h1>
               به وبسایت
               <span style={{ fontWeight: "600" }}> فروشگاهی ناهور</span>خوش
               آمدید
             </h1>
-          </div>
+    
           <div>
             {sentences.map((sentence) => {
               return <p>{sentence.paragraph}</p>;

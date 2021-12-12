@@ -11,7 +11,6 @@ import Login from "./Pages/Login/Login";
 import Footer from "./Pages/Homepage/footer/footer";
 
 function App() {
-
   return (
     <div>
       {/* <Login /> */}
@@ -23,7 +22,8 @@ function App() {
         <Route path="/store/shareblog" element={<ShareBlog />} />
         <Route path="/store/login/*" element={<Login />} />
       </Routes>
-      <Footer/>
+
+      {/* <Footer /> */}
     </div>
   );
 }
