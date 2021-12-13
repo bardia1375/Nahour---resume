@@ -23,7 +23,7 @@ function App() {
         <Route path="/store/login/*" element={<Login />} />
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

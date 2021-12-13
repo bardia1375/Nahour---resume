@@ -1,6 +1,6 @@
 .Applicationmain {
   background-color: #f5f5f5;
-  margin-top:150px;
+  margin-top: 150px;
   scroll-behavior: smooth;
 }
 .Applicationcontainer {
@@ -21,16 +21,14 @@
   align-items: flex-start;
   padding: 0 100px;
 }
-.Application-title{
-
-margin-top:36px
-
+.Application-title {
+  margin-top: 36px;
 }
 .ApplicationParagraph {
   font-family: IRANSans;
   font-style: normal;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 47px;
   text-align: right;
   margin-top: 24px;
@@ -40,9 +38,9 @@ margin-top:36px
   flex-direction: row;
 }
 .ApplicationButton1 {
-  padding:4px;
+  padding: 4px;
   margin-top: 40px;
-  margin-bottom:36px;
+  margin-bottom: 36px;
   outline: none;
   display: flex;
   flex-direction: row;
@@ -59,7 +57,6 @@ margin-top:36px
   cursor: pointer;
   transition: all 0.3s linear;
   margin-left: 16px;
-
 }
 .ApplicationButton1:hover {
   background-color: #ff9900;
@@ -79,33 +76,35 @@ margin-top:36px
 .InnerButton1 {
   font-size: 0.6rem;
 }
-.Application-imageMain{
-width: 50%;
+.Application-imageMain {
+  width: 50%;
 }
 .ApplicationImage1 {
-transform: translate(-80px,0px);
-
+  transform: translate(-80px, 0px);
 }
 .ApplicationImage2 {
-  transform: translate(100px,0px);
+  transform: translate(100px, 0px);
+}
+@media (max-width: 1600px) {
+  .ApplicationParagraph{
+    font-size: 1rem;
 
-  
   }
+}
+
+@media (max-width: 768px) {
+}
 @media only screen and (max-width: 600px) {
-  .ApplicationButton{
-   
-   width:100px;
-   display: flex;
-   flex-direction: column;
-   
+  .ApplicationButton {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
   }
-.ApplicationButton1{
-  margin-bottom:0px;
-
-}
-.Applicationcontainer{
-  display: flex;
-  flex-direction: column;
-}
-
+  .ApplicationButton1 {
+    margin-bottom: 0px;
+  }
+  .Applicationcontainer {
+    display: flex;
+    flex-direction: column;
+  }
 }

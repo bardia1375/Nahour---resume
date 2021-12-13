@@ -13,14 +13,14 @@ function Store() {
   const cards = [{ img: "./nahoor home page/store page/poster lebsa.png" }];
   return (
     <div className="Store-mainContainer">
-      <div style={{ padding: "0 16vw" }}>
+      <div className="Store-firstContainer">
         <HeaderStore />
         <GroupStore />
         <SalesStore />
         <BestProductStore />
       </div>
       <NahorSuggestions />
-      <div style={{ marginTop: "36px",padding: "0 16vw" }}>
+      <div className="Store-seccondContainer" style={{ marginTop: "36px",padding: "0 16vw" }}>
         {cards.map((card) => {
           return (
             <div width="100%">

@@ -63,14 +63,14 @@ const HeaderSlider = () => {
   };
   return (
     <div className="headerSlider-container" style={{ width: "100%" }}>
-      <Slider style={{ width: "66.2%", marginLeft: "16px" }} {...settings}>
+      <Slider className="headerSlider-slider"{...settings}>
         {Imgs.map((Img) => {
           return <img src={Img.img} width="100%" />;
         })}
       </Slider>
 
       <div style={{ width: "100%" }}>
-        <img src="./nahoor home page/store page/POSTER1.svg" width="100%" />
+        <img className="headerSlider-ads" src="./nahoor home page/store page/POSTER1.svg" width="100%" />
       </div>
     </div>
   );

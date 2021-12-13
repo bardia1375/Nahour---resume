@@ -34,7 +34,7 @@ function NavbarHeadBlog() {
         return (
           <ul style={{padding:"10px 40px"}}>
             <li style={{listStyle:"none" }}>
-              <a href= {group.href} style={{color:"black" , textDecoration:"none",fontFamily:"iranSans" , fontWeight: "300" }}>{group.job}</a>
+              <a href= {group.href} style={{color:"black" , textDecoration:"none",fontFamily:"iranSans" , fontWeight: "300" }}><p style={{margin:"0"}}>{group.job}</p></a>
             </li>
           </ul>
         );

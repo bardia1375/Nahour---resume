@@ -74,14 +74,13 @@
   .headerstore-right h1 {
     font-size: 1rem;
     width: 100%;
-    border: 1px solid red;
     margin: 8px auto;
   }
   .headerstore-left img {
     display: none;
   }
   .headerstore-right {
-    width: 80%;
+    width: 100%;
   }
   .headerstore-right p {
     display: none;

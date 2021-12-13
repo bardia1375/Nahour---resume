@@ -16,7 +16,7 @@ const BestfactorCard = (props) => {
           alt={props.factor}
         />
         <div className="image-container">
-          <img src={props.shortPic} alt="" height="50px" width="75px" />
+          <img src={props.shortPic} alt="" height="40px" width="65px" />
         </div>
       </div>
       <div className="lover-container">

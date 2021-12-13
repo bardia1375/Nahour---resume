@@ -8,8 +8,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 24px;
 }
-.groupStore-cards{
-    position: relative;
+.groupStore-cards {
+  position: relative;
 }
 .groupStore-cardsImg {
   display: flex;
@@ -21,9 +21,8 @@
   display: flex;
   justify-content: space-evenly;
   position: absolute;
-  top:1;
+  top: 1;
   color: #fff;
-
 }
 .groupStore-contentImg h3 {
   font-family: IRANSans;
@@ -35,11 +34,39 @@
   align-items: center;
   text-align: center;
 }
-.groupStore-text{
-  font-family:IRANSans;
+.groupStore-text h2 {
   font-size: 1.2rem;
 }
-.groupStore-text a{
+.groupStore-text a {
   text-decoration: none;
   color: #fff;
+}
+.groupStore-arrow {
+  width: 24px;
+  margin-right: 8px;
+}
+.groupStore-arrow img{
+  margin-top:-6px 
+}
+@media (max-width: 1600px){
+  .groupStore-text h2 {
+    font-size: 1rem;
+  }
+  .groupStore-arrow {
+    width: 16px;
+   
+  }
+}
+@media (max-width: 1200px) {
+ 
+  .groupStore-text h2 {
+    font-size: 0.8rem;
+  }
+  .groupStore-arrow {
+    width: 16px;
+    margin-right: 8px;
+  }
+  .groupStore-arrow img{
+    margin-top:-12px 
+  }
 }

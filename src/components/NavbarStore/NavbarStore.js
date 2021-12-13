@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { cartStore } from "../redux/store";
 import "./NavbarStore.css";
 export const NavbarStore = (props) => {
-
   const [state, setState] = useState({ count: 0 });
   const [login, setLogin] = useState(true);
   useEffect(() => {
@@ -26,13 +25,20 @@ export const NavbarStore = (props) => {
           <div className="navbarTopStoreLeft">
             {!props.user ? (
               <Link to="/store/login" className="navbarTopStoreLeftLogoProfile">
-                <img src="/nahoor home page/store page/Profile icon.svg"  />
+                <img src="/nahoor home page/store page/Profile icon.svg" />
                 ورود به حساب کاربری
               </Link>
             ) : (
-              <Link to="/store/profile"   className="navbarTopStoreLeftLogoProfile">
+              <Link
+                to="/store/profile"
+                className="navbarTopStoreLeftLogoProfile"
+              >
                 <img src="/nahoor home page/store page/Profile icon.svg" />
-                <div style={{marginRight:"2px", transform: "translateY(2PX"}}>{props.user}</div>
+                <div
+                  style={{ marginRight: "2px", transform: "translateY(2PX" }}
+                >
+                  {props.user}
+                </div>
               </Link>
             )}
             <a href="" className="navbarTopStoreLeftLogoCart">
@@ -86,37 +92,38 @@ export const NavbarStore = (props) => {
                 </div>
               </div>
             </li>
-
-            <li style={{ marginRight: "-4px" }}>
-              <Link to="./listFactor" className="NavbarStoreItem">
-                <img src="/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg" />
-                کارخانه ها
-              </Link>
-            </li>
-            <li>
-              <a href="" className="NavbarStoreItem">
-                <img src="/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Discount.svg" />
-                تخفیف ها و پیشنهادات
-              </a>
-            </li>
-            <li>
-              <Link to="bardia" className="NavbarStoreItem">
-                <img src="/nahoor home page/store page/icons/Icon/24×24/Color/Files/File Document.svg" />
-                قوانین و مقررات
-              </Link>
-            </li>
-            <li>
-              <a href="" className="NavbarStoreItem">
-                <img src="/nahoor home page/store page/icons/Chat/support.svg" />
-                سوالی دارید؟
-              </a>
-            </li>
-            <li>
-              <Link to="/" className="NavbarStoreItem">
-                <img src="/nahoor home page/store page/back home.svg" />
-                بازگشت به خانه
-              </Link>
-            </li>
+            <div className="NavbarStoreItems" style={{display: 'flex'}}>
+              <li style={{ marginRight: "-4px" }}>
+                <Link to="./listFactor" className="NavbarStoreItem">
+                  <img src="/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg" />
+                  کارخانه ها
+                </Link>
+              </li>
+              <li>
+                <a href="" className="NavbarStoreItem">
+                  <img src="/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Discount.svg" />
+                  تخفیف ها و پیشنهادات
+                </a>
+              </li>
+              <li>
+                <Link to="bardia" className="NavbarStoreItem">
+                  <img src="/nahoor home page/store page/icons/Icon/24×24/Color/Files/File Document.svg" />
+                  قوانین و مقررات
+                </Link>
+              </li>
+              <li>
+                <a href="" className="NavbarStoreItem">
+                  <img src="/nahoor home page/store page/icons/Chat/support.svg" />
+                  سوالی دارید؟
+                </a>
+              </li>
+              <li>
+                <Link to="/" className="NavbarStoreItem">
+                  <img src="/nahoor home page/store page/back home.svg" />
+                  بازگشت به خانه
+                </Link>
+              </li>
+            </div>
           </ul>
         </div>
       </div>

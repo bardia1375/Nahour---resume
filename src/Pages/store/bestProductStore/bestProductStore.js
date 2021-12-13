@@ -5,7 +5,7 @@ const BestProductStore = () => {
   const cards = [
     {
       img: "/nahoor home page/store page/Mihan poster.png",
-      title: "تولید انواع ماکارونی و پاستا",
+      title: "تولید انواع ماست و پنیر",
       brandImg: "/nahoor home page/store page/mihan logo.png",
     },
     {
@@ -15,7 +15,7 @@ const BestProductStore = () => {
     },
     {
       img: "/nahoor home page/store page/Zar makaron poster.png",
-      title: "تولید انواع ماکارونی و پاستا",
+      title: "تولید انواع ماکارونی",
       brandImg: "/nahoor home page/store page/Zar makaron logo.png",
     },
   ];
@@ -29,7 +29,7 @@ const BestProductStore = () => {
           return (
             <div
               className="bestProductStore-cards"
-              style={{ width: "100%", height: "60%"}}
+              style={{ width: "100%", height: "80%"}}
             >
               <img
                 width="100%"
@@ -37,11 +37,11 @@ const BestProductStore = () => {
                 src={card.img}
                 alt=""
               />
-              <div className="bestProductStore-cardsContent">
+              <div className="bestProductStore-cardsContent" >
                 <div width="100%">
-                  <img src={card.brandImg} width="80%" />
+                  <img src={card.brandImg}  />
                 </div>
-                <div><p className="bestProductStore-paragraph">{card.title}</p></div>
+                <div  style={{ width:"100% " , textAlign: "left"}}><p className="bestProductStore-paragraph" width="100%">{card.title}</p></div>
               </div>
             </div>
           );

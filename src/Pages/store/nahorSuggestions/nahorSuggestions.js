@@ -7,7 +7,7 @@ function NahorSuggestions() {
   const cards = [
     {
       img: "/nahoor home page/store page/پیشنهاد ویژه -ماکارونی.png",
-      title: "پوشک مای بی بی آبی سری مهربان با پوست سایز",
+      title: "ماکارونی های مخصوص با طعم بینظیر",
       Condition: "موجود در انبار",
       icon: "/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg",
       sail: "25%",
@@ -18,7 +18,7 @@ function NahorSuggestions() {
     },
     {
       img: "/nahoor home page/store page/کره میهن - پیشنهاد ویژه.png",
-      title: "پوشک مای بی بی آبی سری مهربان با پوست سایز",
+      title: "کره میهن همانکه انتظارشو میکشید",
       Condition: "موجود در انبار",
       icon: "/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg",
       sail: "25%",
@@ -29,7 +29,7 @@ function NahorSuggestions() {
     },
     {
       img: "/nahoor home page/store page/image-1.png",
-      title: "پوشک مای بی بی آبی سری مهربان با پوست سایز",
+      title: "لوازم پزشکی",
       Condition: "موجود در انبار",
       icon: "/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg",
       sail: "25%",
@@ -40,7 +40,7 @@ function NahorSuggestions() {
     },
     {
       img: "/nahoor home page/store page/image-1.png",
-      title: "پوشک مای بی بی آبی سری مهربان با پوست سایز",
+      title: "لوازم پزشکی",
       Condition: "موجود در انبار",
       icon: "/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg",
       sail: "25%",
@@ -139,7 +139,7 @@ function NahorSuggestions() {
         }
       },
       {
-        breakpoint: 1367,
+        breakpoint: 1400,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -147,7 +147,7 @@ function NahorSuggestions() {
         }
       },
       {
-        breakpoint: 1000,
+        breakpoint: 762,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

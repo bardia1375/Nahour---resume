@@ -19,6 +19,7 @@ import Order from "./Pages/profile/order/order";
 import Product from "./Pages/Shopping/product/product";
 import EditInformation from "./Pages/profile/editInformation/editInformation";
 import Logout from "./Pages/profile/Logout/Logout";
+import "./Shopping.css"
 export const Shopping = () => {
   const [user, setUser] = useState(null);
 

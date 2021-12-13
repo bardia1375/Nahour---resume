@@ -16,7 +16,7 @@ const HeaderStore = () => {
      
             <h1>
               به وبسایت
-              <span style={{ fontWeight: "600" }}> فروشگاهی ناهور</span>خوش
+              <span style={{ fontWeight: "600" }}> فروشگاهی ناهور </span>خوش
               آمدید
             </h1>
     

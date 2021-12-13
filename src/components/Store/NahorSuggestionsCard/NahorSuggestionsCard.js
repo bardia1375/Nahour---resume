@@ -5,8 +5,8 @@ function NahorSuggestionsCard(props) {
   return (
     <Link to="/" style={{textDecoration: 'none'}}>
       <div className="NahorSuggestionsCard-container">
-        <div style={{ width: "80%" }} className="NahorSuggestionsCard-Img">
-          <img src={props.img} width="100%" height="140px" />
+        <div style={{ width: "150px" ,height: "150px" }} className="NahorSuggestionsCard-Img">
+          <img src={props.img} width="100%"  />
         </div>
         <div className="NahorSuggestionsCard-Title">
           <h3>{props.title}</h3>

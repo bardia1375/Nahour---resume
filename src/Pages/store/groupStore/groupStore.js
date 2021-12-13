@@ -39,10 +39,10 @@ const GroupStore = () => {
                 <img src={card.img} width="100%" />
                 <div className="groupStore-contentImg">
                   <div >
-                    <div  className="groupStore-text"><Link  to="listFactor">{card.text}</Link></div>
+                    <div  className="groupStore-text"><Link  to="listFactor"><h2>{card.text}</h2></Link></div>
                   </div>
-                  <div style={{ width: "24px", marginRight: "8px"}}>
-                    <img src="/nahoor home page/store page/icons/arrow.svg" width="100%" />
+                  <div className="groupStore-arrow" >
+                    <img src="/nahoor home page/store page/icons/arrow.svg" width="100%"  />
                   </div>
                 </div>
               </div>

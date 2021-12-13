@@ -4,6 +4,7 @@
   border-radius: 5px;
   margin: 16px 24px 16px 0px;
   padding: 32px 32px;
+  height:450px
 }
 .NahorSuggestionsCard-mid {
   display: flex;
@@ -15,6 +16,8 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
+  padding:0 30px;
+  
 }
 .NahorSuggestionsCard-Title h3 {
   font-family: IRANSans;
@@ -58,3 +61,14 @@
 .NahorSuggestionsCard-Rial {
   margin-bottom: -24px;
 }
+
+@media (max-width: 1800px) {
+  .NahorSuggestionsCard-Img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    
+    
+  }
+}
+

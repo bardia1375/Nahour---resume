@@ -1,4 +1,12 @@
-.Store-mainContainer{
-    max-width: 2000px;
-    margin:0 auto
+.Store-mainContainer {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+.Store-firstContainer {
+  padding: 0 16vw;
+}
+@media (max-width: 768px) {
+  .Store-firstContainer {
+    padding: 0 4vw;
+  }
 }

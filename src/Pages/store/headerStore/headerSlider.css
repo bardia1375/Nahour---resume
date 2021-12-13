@@ -1,5 +1,18 @@
-.headerSlider-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.headerSlider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerSlider-slider {
+  width: 66.2%;
+  margin-left: 16px;
+}
+@media (max-width: 768px) {
+  .headerSlider-ads {
+    display: none;
+  }
+  .headerSlider-slider {
+    width: 100%;
+   
+  }
 }

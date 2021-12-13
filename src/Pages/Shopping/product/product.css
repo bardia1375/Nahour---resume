@@ -303,3 +303,7 @@
   color: #000;
   border-radius: 5px;
 }
+.products-card{
+border: 1px solid red;
+margin-top: 16px;
+}

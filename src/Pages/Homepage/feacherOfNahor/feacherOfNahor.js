@@ -29,17 +29,17 @@ function FeacherOfNahor() {
   return (
     <div className="feacherOfNahor">
       {/* <div className="text">ویژگی‌های ناهور</div> */}
-      <div><Title title="ویژگی‌های ناهور"/></div>
+      <div>
+        <Title title="ویژگی‌های ناهور" />
+      </div>
       <div className="feacherOfCart">
         {Carts.map((Cart) => {
           return (
-   
             <CartOfFeachers
               key={Cart.id}
               title={Cart.title}
               Description={Cart.Description}
             />
-
           );
         })}
       </div>

@@ -1,6 +1,6 @@
 .Card {
   width: 20.5vw;
-  height: 28vh;
+  height: 270px;
   background-color: #ffffff;
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -18,8 +18,8 @@
 }
 .image-container {
   background: white;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   position: absolute;
   top: 55.5%;
@@ -48,4 +48,33 @@
   font-weight: 200;
   font-size: 1rem;
 
+}
+@media (max-width: 1600px) {
+  .lover-container1 {
+
+    font-size: 0.8rem;
+  
+
+  }
+  .lover-container2  {
+  
+    font-size: 0.8rem;
+  
+  }
+  .image-container {
+    background: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top: 55.5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-container img{
+    width: 60px;
+    height: 40px;
+  }
 }

@@ -1,23 +1,60 @@
-
-h2{
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
- 
+h2 {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
-h3{
-    font-family: IRANSans;
-    font-style: normal;
-    font-size: 1.2rem;
+h3 {
+  font-family: IRANSans;
+  font-style: normal;
+  font-size: 1.2rem;
 }
-h4{
-    font-family: IRANSans;
-    font-style: normal;
+h4 {
+  font-family: IRANSans;
+  font-style: normal;
+  font-size: 1rem;
+}
+p {
+  font-family: IRANSans;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+@media (max-width: 1600px) {
+    p {
+        font-size: 0.8rem;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+      } 
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 1.3rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+  p {
+    font-size: 0.7rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+  h2 {
+    font-size: 1.3rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+  h3 {
     font-size: 1rem;
-}
-p{
-    font-family: IRANSans;
-    font-style: normal;
-    font-size: 0.9rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
 }

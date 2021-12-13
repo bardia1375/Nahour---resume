@@ -10,7 +10,7 @@ import { Shopping } from "./Shopping";
 // import AboutUs from "./Pages/AboutUs/AboutUs";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/">
     <App />
   </BrowserRouter>,
   document.getElementById("root")

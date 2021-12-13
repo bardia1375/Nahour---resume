@@ -80,13 +80,7 @@ const changePicture=()=>{
           </div>
         </div>
       </div>
-      <img
-        className="header-bottombuttonimg"
-        src="./nahoor home page/Icons/Ellipse.svg"
-        width="150px"
-        height="150px"
-        alt=""
-      />
+    
       <AnchorLink href="#application" className="header-bottombutton">
         <div >
           <span

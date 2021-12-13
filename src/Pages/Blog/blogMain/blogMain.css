@@ -4,6 +4,13 @@ grid-template-columns: repeat(3, 1fr);
 grid-column-gap: 1vw;
 
 }
+@media only screen and (max-width: 1600px) {
+    .BlogMain-container{
+        display:flex;
+        flex-wrap: wrap;
+    }
+  }
+  
 @media only screen and (max-width: 1200px) {
     .BlogMain-container{
         display:flex;
