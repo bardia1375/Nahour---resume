@@ -101,13 +101,13 @@ function BlogSlideSecond() {
     <Slider {...settings}>
       {explains.map((explain) => {
         return (
-          <div className="blogSlideSecondSlider">
+          <div className="blogSlideSecondSlider" style={{border: "1px solid red"}}>
             <div>
               <img
                 className="blogSlideSecondSlider-img"
                 src={explain.img}
                 width="100%"
-                style={{ objectFit: "cover", borderRadius: "7px" }}
+                style={{ objectFit: "cover", borderRadius: "7px" , minWidth: "690px"}}
                 alt=""
               />
               <div className="blogSlideSecondNewest">

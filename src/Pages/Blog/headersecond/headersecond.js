@@ -19,7 +19,7 @@ function Headersecond() {
       {Headers.map((Header) => {
         return (
           <div className="headersecond-container">
-            <div className="headersecond-right">
+            <div className="headersecond-right" > 
               <BlogSlideSecond />
             </div>
 
