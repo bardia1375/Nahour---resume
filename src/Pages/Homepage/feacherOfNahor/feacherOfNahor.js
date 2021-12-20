@@ -8,21 +8,28 @@ function FeacherOfNahor() {
       id: "1",
       title: "کالای نامحدود",
       Description: "نبود محدودیت در نوع کالای مورد سفارش",
+      img:"nahoor home page/pic2.svg"
     },
     {
       id: "2",
       title: "ارتباط انتخابی",
       Description: "قابلیت ارتباط انتخابی با کارخانه‌ی مورد نظر",
+      img:"nahoor home page/pic1.svg"
+
     },
     {
       id: "3",
       title: "امکان رزرو و سفارش",
       Description: "قابلیت ارتباط انتخابی با کارخانه‌ی مورد نظر",
+      img:"nahoor home page/pic3.svg"
+
     },
     {
       id: "4",
       title: "ارسال سریع",
       Description: "قابلیت ارتباط انتخابی با کارخانه‌ی مورد نظر",
+      img:"nahoor home page/pic4.svg"
+
     },
   ];
 
@@ -39,6 +46,7 @@ function FeacherOfNahor() {
               key={Cart.id}
               title={Cart.title}
               Description={Cart.Description}
+              img={Cart.img}
             />
           );
         })}

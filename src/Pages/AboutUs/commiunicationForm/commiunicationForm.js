@@ -6,24 +6,7 @@ import ButtonComponent from "../../../components/Button/button";
 import "./comminucationForm.css";
 import { Title } from "../../../components/AboutUs/title/Title";
 
-const MyTextInput = ({ label, ...props }) => {
-  // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
-  // which we can spread on <input>. We can use field meta to show an error
-  // message if the field is invalid and it has been touched (i.e. visited)
-  const [field, meta] = useField(props);
-  return (
-    <div className="formik-items">
-      <label style={{ fontSize: "0.8rem" }} htmlFor={props.id || props.name}>
-        {label}
-      </label>
 
-      <input className="text-input" {...field} {...props} />
-      {meta.touched && meta.error ? (
-        <div className="formik-error">{meta.error}</div>
-      ) : null}
-    </div>
-  );
-};
 const MyTextInput2 = ({ label, ...props }) => {
   // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
   // which we can spread on <input>. We can use field meta to show an error
@@ -257,7 +240,7 @@ const CommiunicationForm = () => {
           <Form className="formik-main" >
             <div className="formik-top3"  style={{width: "100%", paddingLeft:"20px"}}>
               <div className="formik-top1" style={{width: "100%"}}  >
-                <div style={{width: "100%"}} >
+                <div className="formik-topinput" >
                   <MyTextInput2
                     label="نام و نام خانوادگی"
                     name="firstName"
@@ -265,7 +248,7 @@ const CommiunicationForm = () => {
                     placeholder="پریا باب الحوایجی"
                   />
                 </div>
-                <div>
+                <div className="formik-topinput">
                   <MyTextInput2
                     label="آدرس ایمیل"
                     name="email"
@@ -275,7 +258,7 @@ const CommiunicationForm = () => {
                 </div>
               </div>
               <div className="formik-top2">
-                <div>
+                <div className="formik-topinput">
                   <MyTextInput2
                     label="شماره تماس"
                     name="phone"

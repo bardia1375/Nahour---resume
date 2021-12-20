@@ -7,3 +7,12 @@
   color: #6b006d;
   font-weight: bold;
 }
+@media (max-width: 1200px) {
+  .homePage-title h2 {
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+}

@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top:96px;
+  margin-top:30px;
+  padding: 0 100px;
   /* overflow: hidden; */
-  
 }
 
 .feacherOfCart {
@@ -25,4 +25,18 @@
   font-size: 2.25rem;
   color: #6b006d;
   font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .feacherOfCart {
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+    margin-top: 72px;
+    /* padding:0 224px; */
+  }
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
 }

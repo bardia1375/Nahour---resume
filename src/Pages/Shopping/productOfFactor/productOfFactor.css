@@ -5,6 +5,7 @@
   align-items: center;
   padding: 0px 4vw;
   position: relative;
+
 }
 .ProductOfFactorTitle {
   display: flex;
@@ -23,9 +24,9 @@
 .productOfFactor-sideNavbar {
   position: -webkit-sticky;
   position: sticky;
-  top: 10%;
+  top: 13%;
   width: 24%;
-  max-height: 610px;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -34,8 +35,29 @@
   border-radius: 7px;
   direction: ltr;
   margin-left: 48px;
-
   bottom: 0;
+  
+}
+::-webkit-scrollbar {
+  
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 4px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A7A7A7;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6B006D; 
 }
 .ProductOfFactor-body {
   padding: 8px 16px;
@@ -112,21 +134,55 @@
   width: 80%;
 }
 
+@media (max-width: 1600px) {
+  .productOfFactor-sideNavbar{
+    max-height: 580px;
+  }
+  .ProductOfFactorTitle h1 {
+    font-size:1rem;
+    margin-left: 8px;
+  }
+  .ProductOfFactorAddress p ,.ProductOfFactorPhone p ,.ProductOfFactorEmail p ,.ProductOfFactorParagraph p {
+    font-size:0.7rem;
+  }
+  .ProductOfFactorSocial h3 ,.ProductOfFactorInformation h3{
+    font-size:0.8rem;
+
+  }
+}
 @media (max-width: 1200px) {
   .productOfFactor-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 32px;
-
     width: 80%;
   }
+  .ProductOfFactorTitle h1 {
+    font-size:1rem;
+    margin-left: 8px;
+  }
+  .ProductOfFactorAddress p ,.ProductOfFactorPhone p ,.ProductOfFactorEmail p ,.ProductOfFactorParagraph p {
+    font-size:0.6rem;
+  }
+  .ProductOfFactorSocial h3 ,.ProductOfFactorInformation h3{
+    font-size:0.8rem;
+
+  }
+  
+ 
 }
 @media (max-width: 992px) {
   .productOfFactor-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 32px;
-
     width: 80%;
+  }
+  .productOfFactor-sideNavbar {
+    display: none;
+  }
+  .ProductOfFactorSocial h3 ,.ProductOfFactorInformation h3{
+    font-size:0.8rem;
+
   }
 }

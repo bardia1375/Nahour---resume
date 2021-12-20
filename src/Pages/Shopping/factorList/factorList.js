@@ -1,159 +1,169 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import FactorListCard from "../../../components/shopping/FactorList/FactorListCard";
 import SideBar from "../../../components/shopping/FactorList/SideBar/SideBar";
 import "./factorList.css";
+import axios from "axios"
 const FactorList = () => {
   const Title = ["لیست کارخانه های لبنیات"];
+  let [cardss, setcardss] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://nahoor.af:8080/nahoor/category/")
+
+      .then((response) => console.log(response.data));
+  }, []);
+  
   const cards = [
     {
-      id:"0",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"1",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"2",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"3",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"4",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"5",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"6",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"7",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"8",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"9",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"10",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"11",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"12",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"13",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
     {
-      id:"14",
+      id: "14",
       View: "126",
       product: "محصولات:شیر-ماست ...",
       factor: "کارخانه میهن",
       largPic: "/nahoor home page/میهن.png",
       shortPic: "/nahoor home page/Mihan LOGO.png",
       star: "4.5",
-      imgstar: "",
+      imgstar: "/nahoor home page/productOfFactor/Icon Artwork-white.svg",
     },
   ];
   const sideBarItems = [
@@ -166,16 +176,14 @@ const FactorList = () => {
       subTitle: ["لبنیات", "ماکارونی", "سس های خوراکی ", "رب گوجه فرنگی"],
     },
     {
-        title: "صنایع غذایی",
-        subTitle: ["لبنیات", "ماکارونی", "سس های خوراکی ", "رب گوجه فرنگی"],
-      },
+      title: "صنایع غذایی",
+      subTitle: ["لبنیات", "ماکارونی", "سس های خوراکی ", "رب گوجه فرنگی"],
+    },
   ];
   return (
     <div className="factorList-container">
       <h2 style={{ marginRight: "350px" }}>{Title}</h2>
       <div className="factorList-main">
-
-
         <div className="factorList-sideNavbar">
           <div className="factorListMainTitle">
             <h2>دسته بندی کارخانه ها</h2>
@@ -196,11 +204,12 @@ const FactorList = () => {
             return (
               <div>
                 <FactorListCard
-                id={card.id}
+                  id={card.id}
                   largPic={card.largPic}
                   shortPic={card.shortPic}
                   product={card.product}
                   factor={card.factor}
+                  star={card.imgstar}
                 />
               </div>
             );

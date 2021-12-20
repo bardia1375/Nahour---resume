@@ -7,7 +7,7 @@
   border: 1px solid #d4d4d4;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  height: 100%;
+
   
 }
 .productOfFactorCard-main {
@@ -71,10 +71,23 @@
   text-align: center;
   color: red;
   width:100%;
-  border: 1px solid red;
 }
 
 
 @media (max-width: 1600px) {
-  
+  .productOfFactorCard-title h2 {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  .productOfFactorCard-explain p {
+    font-weight: 300;
+    font-size: 0.6rem;
+  }
+  .productOfFactorCard-price h3 {
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
+    .productOfFactorCard-img{
+      width:38%;
+    }
 }

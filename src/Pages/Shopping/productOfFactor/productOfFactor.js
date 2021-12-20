@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState ,useEffect} from "react";
 import ProductOfFactorCard from "../../../components/shopping/FactorList/ProductOfFactorCard/ProductOfFactorCard";
 import "./productOfFactor.css";
+import axios from "axios";
 import { useParams } from "react-router-dom";
 const ProductOfFactor = (props) => {
-  console.log("props",props)
+  console.log("props", props);
   const params = useParams();
-  console.log("id",params);
-  
+  console.log("id", params);
+
+  const [ state , setState] = useState();
+
+useEffect(()=>{
+ axios.get("")
+},[])
+
   const Title = ["محصولات میهن"];
   const cards = [
     {
@@ -180,8 +187,11 @@ const ProductOfFactor = (props) => {
       subTitle: ["لبنیات", "ماکارونی", "سس های خوراکی ", "رب گوجه فرنگی"],
     },
   ];
+
+
   return (
     <div className="productOfFactor-container">
+  
       <h2 style={{ marginRight: "350px" }}>{Title}</h2>
       <div className="productOfFactor-main">
         <div
@@ -270,7 +280,6 @@ const ProductOfFactor = (props) => {
             return (
               <div>
                 <ProductOfFactorCard
-            
                   id={card.id}
                   imgProduct={card.imgProduct}
                   product={card.product}

@@ -28,7 +28,8 @@
     width: 100%;
   }
   .formik-items {
-    display: flex;
+    display: flex;    
+
     flex-direction: column;
     justify-content: center;
     text-align: right;
@@ -53,6 +54,9 @@
   grid-template-columns: 1fr 1fr;
   grid-gap:100px;
     padding-left:24px;
+  }
+  .formik-topinput{
+    width: 100%;
   }
   .formik-mid {
     display: flex;
@@ -130,3 +134,8 @@
   width:100%;
   
   }
+  @media (max-width: 1200px) {
+    .formik-topinput{
+      width: 80%;
+    }
+}

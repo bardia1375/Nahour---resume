@@ -53,7 +53,12 @@ transform: translateY(410px)
   
 } */
 .textParagraph {
-
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:10; /* number of lines to show */
+  line-clamp: 10;
+  -webkit-box-orient: vertical;
  margin-top:24px;
 
   line-height: 24px;
@@ -70,7 +75,7 @@ transform: translateY(410px)
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translateY(430px)
+    transform: translateY(410px)
     }
 }
 @media (max-width: 1200px) {
@@ -80,7 +85,7 @@ transform: translateY(410px)
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translateY(440px)
+    transform: translateY(420px)
     }
 }
 

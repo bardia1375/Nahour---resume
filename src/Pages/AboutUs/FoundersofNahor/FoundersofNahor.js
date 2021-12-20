@@ -5,7 +5,7 @@ const FoundersofNahor = () => {
   const founders = [
     {
       img: "./nahoor home page/About Page/image 3.png",
-      name: "شکیبا رحمانی",
+      name: "علی رحمانی",
       job: "ایده پرداز و مدیر فنی",
       linkdin: "./nahoor home page/About Page/Solid/Brands/Linkedin.png",
       facebook: "./nahoor home page/About Page/Solid/Brands/Facebook.png",

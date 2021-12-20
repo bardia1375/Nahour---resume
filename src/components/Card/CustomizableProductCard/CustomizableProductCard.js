@@ -18,19 +18,6 @@ const CustomizableProductCard = (props) => {
           </div>
         );
       })}
-      {/* <div className="Customizable-products">
-        <h4 className="Customizable-h4">لبنیات</h4>
-      </div>
-      <div className="Customizable-products">
-        <h4 className="Customizable-h4">ماکارونی</h4>
-      </div>
-      <div className="Customizable-products">
-        <h4 className="Customizable-h4">رب گوجه فرنگی</h4>
-      </div>
-      <div className="Customizable-products">
-        <h4 className="Customizable-h4">سس های گوجه فرنگی</h4>
-      </div> */}
-
       <button className="Customizable-button">
         مشاهده همه
         <span class="material-icons" style={{ transform: "rotate(180deg)" }}>

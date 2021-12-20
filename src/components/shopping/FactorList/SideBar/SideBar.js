@@ -30,7 +30,6 @@ let btn_class = isBlack ? "black" : "red";
                   {subtitl}
                 </p>
               </NavLink>
-              
             </div>
           );
         })}

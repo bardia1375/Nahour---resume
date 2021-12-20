@@ -77,7 +77,6 @@ const ProductOfFactorCard = (props) => {
           </button>
         ) : (
           <div className="productOfFactorCard-count">
-            {" "}
             با موفقیت به سبد خرید اضافه شد
           </div>
         )}

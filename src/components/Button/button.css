@@ -30,7 +30,19 @@
   font-family: IRANSans;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-right: 8px;
+  
 
 }
+
+@media (max-width: 1600px) {
+ 
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+

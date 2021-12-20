@@ -1,9 +1,11 @@
+.header-link {
+  min-height: 800px;
+}
 .HeaderContainer {
   position: relative;
-  width: 100vw;
 
-
-  min-height: 900px;
+  /* overflow: hidden; */
+  min-height: 840px;
   color: #fff;
   font-size: 16px;
   background: url("../../../nahoorHomePage/BG (2).png") center center/cover
@@ -21,7 +23,6 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 100px;
-  
 }
 .HeaderNav {
 }
@@ -33,7 +34,6 @@
   margin-top: 10px;
 }
 .HeaderMainTitle2 {
-
   margin-top: 30px;
 
   /* identical to box height */
@@ -100,7 +100,6 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
-
 }
 .header-bottombuttonimg {
   position: absolute;
@@ -126,12 +125,27 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1600px) {
+  .HeaderContainer {
 
-@media (max-width: 1200px) {
-  
+    min-height: 750px;
+
+  }
+  .header-bottombutton {
+    bottom: 75px;
+  }
 }
 
+@media (max-width: 1200px) {
+  .HeaderMainExplain {
+    font-size: 0.7rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+}
+@media (max-width: 992px) {
+}
 @media (max-width: 768px) {
-  
-  
 }

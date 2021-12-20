@@ -23,7 +23,7 @@ function NahorSuggestionsCard(props) {
         <div className="NahorSuggestionsCard-bottom">
           <div className="NahorSuggestionsCard-TitleBottom">
             <p className="NahorSuggestionsCard-sail">{props.sail}</p>
-            <div>
+            <div className="NahorSuggestionsPriceBox">
               <p>قیمت هر کارتون</p>
             </div>
           </div>

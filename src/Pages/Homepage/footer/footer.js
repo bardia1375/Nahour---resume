@@ -7,21 +7,17 @@ const Footer = () => {
     <div className="Footer">
       <div className="Footer-container">
         <div className="Footer-icons">
-          <img
-            src="/nahoor home page/Footer/line.png"
-            width="24%"
-            style={{ marginLeft: "32px" }}
-            alt=""
-          />
+        <div style={{width:"200px", height:"0px", border: "1px solid #fff" , marginLeft: "50px"}}></div>
+
           <a>
             <img
               src="/nahoor home page/Footer/facebook.svg"
               alt=""
               style={{ cursor: "pointer" }}
-            />{" "}
+            />
           </a>
           <a>
-            {" "}
+       
             <img
               src="/nahoor home page/Footer/google.svg"
               alt=""
@@ -33,7 +29,7 @@ const Footer = () => {
             />
           </a>
           <a>
-            {" "}
+
             <img
               src="/nahoor home page/Footer/telegram.svg"
               alt=""
@@ -42,10 +38,10 @@ const Footer = () => {
                 cursor: "pointer",
                 marginRight: "16px",
               }}
-            />{" "}
+            />
           </a>
           <a>
-            {" "}
+ 
             <img
               src="/nahoor home page/Footer/whatsapp.svg"
               alt=""
@@ -54,14 +50,9 @@ const Footer = () => {
                 cursor: "pointer",
                 marginRight: "16px",
               }}
-            />{" "}
+            />
           </a>
-          <img
-            src="/nahoor home page/Footer/line.png"
-            alt=""
-            width="24%"
-            style={{ marginRight: "32px" }}
-          />
+          <div style={{width:"200px", height:"0px", border: "1px solid #fff" , marginRight: "50px"}}></div>
         </div>
         <div className="Footer-items">
           <div className="Footer-culomn">
@@ -93,12 +84,12 @@ const Footer = () => {
             <h3 className="Footer-phoneH3">
               <img
                 src="/nahoor home page/Icons/Phone.svg"
-                style={{ marginLeft: "8px" }}
+                style={{ marginLeft: "8px" ,transform: "rotateX(20px)"}}
               />
               تلفن تماس :
             </h3>
             <div className="Footer-phone">
-              <p className="Footer-phone">021-81816578</p>
+              <p className="Footer-phone" style={{ width: "100%" }}>021-81816578</p>
             </div>
           </div>
           <div className="Footer-culomn">

@@ -13,7 +13,7 @@ import { RegistrationNahor } from "./registrationNahor/registrationNahor";
 import "./HomePage.css"
 const HomePage = () => {
   return (
-    <div>
+    <div style={{maxWidth:"2000px", margin:"0 auto"}}>
       {/* <Header /> */}
       <HeaderSample />
       <FeacherOfNahor />

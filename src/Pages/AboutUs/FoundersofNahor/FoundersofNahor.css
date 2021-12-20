@@ -9,55 +9,9 @@
   justify-content: center;
   margin-top: 40px;
 }
-/* .Founders-content{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   
-}
-.Founders-imgtext{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-   width: 100%;
-}
-.Founders-textImg{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.Founders-left{
-    display:flex;
-    flex-direction: column; text-align: center;
-}
-.Founders-name{
-    font-size:0.8rem;
-}
-.Founders-job{
-    font-size:0.8rem; 
-} */
-/* .Founders-img {
-  position: relative;
-  width: 24%;
-  height:40%;
-  background: transparent;
-  border-radius: 7px;
-}
-.Founders-img::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 200%;
-  background: rgba(0, 0, 0, 0.5);
-  
 
- 
-} */
 .Founders-img {
-  /* background: url("../../../img/AboutUs/image2.png") center center/contain
-    no-repeat; */
+
   width: 190px;
   height: 40vh;
   position: relative;

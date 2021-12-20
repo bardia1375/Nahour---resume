@@ -19,12 +19,32 @@
 .registrationNahorRight h3 , p{
     margin-top:16px
 }
-.registrationNahorRightparagraph{
-    font-size:2px
-}
+
 .registrationNahorRightTitle{
     margin-top:24px
 }
 .registrationNahorButton{
-    margin-bottom: 24px;
+    margin-bottom: 24px; margin-top:16px
 }
+.registrationNahor-paragraph{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* number of lines to show */
+    line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+@media (max-width: 1200px) {
+    .registrationNahorContainer{
+        border-top: 1px solid red;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background: #F5F5F5;
+        padding:0 180px;
+        margin-top:120px;
+      
+    }
+  }

@@ -4,14 +4,13 @@
 }
 .FactorListCard {
     width:100%;
-    height: 20vh;
+    height: 180px;
     background-color: #ffffff;
     border-radius: 7px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative;
     min-width: 280px;
     overflow: hidden;
-    
   }
   .FactorListupperContainer {
     display: flex;
@@ -49,6 +48,12 @@ display: flex;
      padding: 0 8px;
      color: #fff;
      font-weight: 300;
+     display: flex;align-items: center;
+     justify-content: center;
+
+  }
+  .FactorListLoverLeft2 img{
+    transform: translate(2px,-1px)
   }
    .FactorListLoverLeft1{
       margin-left: 8px;
