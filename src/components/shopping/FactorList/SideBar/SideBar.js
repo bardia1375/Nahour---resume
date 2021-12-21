@@ -5,8 +5,8 @@ const SideBar = (props) => {
   const [textColor, setTextColor] = useState("black");
   const [isBlack, setIsBlack] = useState(true);
 
-  const changeGrope = (e,id) => {
-    setTextColor("red")
+  const changeGrope = (subtitl) => {
+    console.log(subtitl)
 }
 let btn_class = isBlack ? "black" : "red";
   return (
@@ -25,8 +25,8 @@ let btn_class = isBlack ? "black" : "red";
           console.log(subtitl)
           return (
             <div>
-              <NavLink className={(navData) => navData.isActive ?"changeHover":''} to="">
-                <p className={btn_class} style={{ color: textColor }} onclick={(e) => changeGrope(e,id)}>
+              <NavLink className={(navData) => navData.isActive ?"changeHover":''} to="" onClick={() => changeGrope(subtitl)}>
+                <p className={btn_class} style={{ color: textColor }} >
                   {subtitl}
                 </p>
               </NavLink>
