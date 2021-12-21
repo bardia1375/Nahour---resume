@@ -1,14 +1,47 @@
-import React, { useState } from "react";
-import {  NavLink } from "react-router-dom";
-import "./SideBar.css"
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import "./SideBar.css";
+import axios from "axios";
+import FactorListCard from "../FactorListCard";
+import FactorList from "../../../../Pages/Shopping/factorList/factorList";
+
 const SideBar = (props) => {
-  const [textColor, setTextColor] = useState("black");
-  const [isBlack, setIsBlack] = useState(true);
+  let [cardss, setcardss] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://nahoor.af:8080/nahoor/category/")
+
+      .then((response) => setcardss(response.data));
+  }, []);
+
+  /////////////////////////////////////////////////////////////////
 
   const changeGrope = (subtitl) => {
-    console.log(subtitl)
-}
-let btn_class = isBlack ? "black" : "red";
+    const updatedItems = cardss
+      .filter((cards) => {
+        return cards.name === subtitl;
+      })
+      .map((updatedItem) => {
+        return updatedItem.company_set;
+      });
+
+    console.log("updatedItems", updatedItems[0]);
+    //  این قسمت پایین در صورت درست شدن سرور یعنی مثلا پاک شدن دوبلیکیت لبنیات باید پاک شود
+    const factorFilter = updatedItems[0].map((fac) => {
+      return fac.name;
+    });
+    console.log(factorFilter[0]);
+    console.log(subtitl);
+    return (
+      <div>
+        <FactorList Title={factorFilter[0]} />
+      </div>
+    );
+  };
+
+  ////////////////////////////////////////////////////////////////
+
   return (
     <>
       <div className="factorListSideNavbarTitle">
@@ -21,14 +54,16 @@ let btn_class = isBlack ? "black" : "red";
       </div>
 
       <div className="factorListSideNavbarItems">
-        {props.subTitle.map((subtitl,id) => {
-          console.log(subtitl)
+        {props.subTitle.map((subtitl, id) => {
+          console.log(subtitl);
           return (
             <div>
-              <NavLink className={(navData) => navData.isActive ?"changeHover":''} to="" onClick={() => changeGrope(subtitl)}>
-                <p className={btn_class} style={{ color: textColor }} >
-                  {subtitl}
-                </p>
+              <NavLink
+                className={(navData) => (navData.isActive ? "changeHover" : "")}
+                to=""
+                onClick={() => changeGrope(subtitl)}
+              >
+                <p>{subtitl}</p>
               </NavLink>
             </div>
           );

@@ -3,17 +3,22 @@ import FactorListCard from "../../../components/shopping/FactorList/FactorListCa
 import SideBar from "../../../components/shopping/FactorList/SideBar/SideBar";
 import "./factorList.css";
 import axios from "axios"
-const FactorList = () => {
+const FactorList = (props) => {
   const Title = ["لیست کارخانه های لبنیات"];
-  let [cardss, setcardss] = useState([]);
+  // let [cardss, setcardss] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("http://nahoor.af:8080/nahoor/category/")
+  // useEffect(() => {
+  //   axios
+  //     .get("http://nahoor.af:8080/nahoor/category/")
 
-      .then((response) => console.log(response.data));
-  }, []);
-  
+  //     .then((response) => setcardss(response.data));
+  // },[]);
+  // cardss.map((cards)=>{
+  //   console.log(cards)
+  //   // const bardia = cards.company_set
+
+  //    })
+     
   const cards = [
     {
       id: "14",
@@ -180,6 +185,7 @@ const FactorList = () => {
       subTitle: ["لبنیات", "ماکارونی", "سس های خوراکی ", "رب گوجه فرنگی"],
     },
   ];
+
   return (
     <div className="factorList-container">
       <h2 style={{ marginRight: "350px" }}>{Title}</h2>
