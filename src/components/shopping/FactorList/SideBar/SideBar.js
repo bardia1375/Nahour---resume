@@ -7,7 +7,7 @@ import FactorList from "../../../../Pages/Shopping/factorList/factorList";
 
 const SideBar = (props) => {
   ///////////////////////////////////////////////////////////////////////////////////////////////////
-  let [cardss, setcardss] = useState([]);
+  let [cardss, setcardss] = useState("salam");
 
   useEffect(() => {
     axios
@@ -15,7 +15,7 @@ const SideBar = (props) => {
 
       .then((response) => setcardss(response.data));
   }, []);
-
+  
   /////////////////////////////////////////////////////////////////
 
   const changeGrope = (subtitl) => {
@@ -28,19 +28,16 @@ const SideBar = (props) => {
       });
 
     console.log("updatedItems", updatedItems[0]);
+      return setcardss(updatedItems[0])
     //  این قسمت پایین در صورت درست شدن سرور یعنی مثلا پاک شدن دوبلیکیت لبنیات باید پاک شود
-    const factorFilter = updatedItems[0].map((fac) => {
-      return fac;
-    });
-    console.log(factorFilter[0]);
+    // const factorFilter = updatedItems[0].map((fac) => {
+    //   return fac;
+    // });
+    // console.log(factorFilter);
     console.log(subtitl);
-    return (
-      <div>
-        <FactorList Title={cardss} />
-      </div>
-    );
+    
   };
-
+console.log("salam ",cardss )
     ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 

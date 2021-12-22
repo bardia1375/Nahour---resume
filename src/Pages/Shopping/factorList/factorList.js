@@ -3,17 +3,19 @@ import FactorListCard from "../../../components/shopping/FactorList/FactorListCa
 import SideBar from "../../../components/shopping/FactorList/SideBar/SideBar";
 import "./factorList.css";
 import axios from "axios";
+import {cardss} from "../../../components/shopping/FactorList/SideBar/SideBar"
 const FactorList = (props) => {
+
   console.log("state",props)
   const Title = ["لیست کارخانه های لبنیات"];
-  let [cardss, setcardss] = useState([]);
+  // let [cardss, setcardss] = useState(cardss);
 
-  useEffect(() => {
-    axios
-      .get("http://nahoor.af:8080/nahoor/category/")
+  // useEffect(() => {
+  //   axios
+  //     .get("http://nahoor.af:8080/nahoor/category/")
 
-      .then((response) => setcardss(response.data));
-  }, []);
+  //     .then((response) => setcardss(response.data));
+  // }, []);
   // cardss.map((cards)=>{
   //   console.log(cards)
   //   // const bardia = cards.company_set
