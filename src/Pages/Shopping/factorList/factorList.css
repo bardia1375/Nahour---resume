@@ -74,6 +74,12 @@
 .factorListSideNavbarItems a {
   text-decoration: none;
 }
+.hover{
+  color:black
+}
+.changeHover{
+  color:#FF9900
+}
 @media (max-width: 1600px) {
   .factorListSideNavbarTitle h3 {
     font-size: 1rem;

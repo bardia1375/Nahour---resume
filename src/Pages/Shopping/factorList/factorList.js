@@ -205,12 +205,12 @@ const FactorList = () => {
       ],
     },
     {
-      title: "صنایع غذایی",
+      title: "صنایع ساختمانی",
       subTitle: [
-        { id: "1", name: "لبنیات" },
-        { id: "2", name: "ماکارونی" },
-        { id: "3", name: "رب گوجه فرنگی " },
-        { id: "4", name: "سس های خوراکی" },
+        { id: "5", name: "کاشی" },
+        { id: "6", name: "اره" },
+        { id: "7", name: "سنگ " },
+        { id: "8", name: "آجر" },
       ],
     },
     {
@@ -260,9 +260,9 @@ const FactorList = () => {
                       <div>
                         <NavLink
                           className={(navData) =>
-                            navData.isActive ? "changeHover" : ""
+                            navData.isActive ? "changeHover" : "hover"
                           }
-                          to=""
+                          to={subtitl.id}
                           onClick={() => changeGrope(subtitl.id)}
                         >
                           <p>{subtitl.name}</p>

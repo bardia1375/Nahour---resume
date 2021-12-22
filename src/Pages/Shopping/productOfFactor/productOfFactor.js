@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import ProductOfFactorCard from "../../../components/shopping/FactorList/ProductOfFactorCard/ProductOfFactorCard";
 import "./productOfFactor.css";
 import axios from "axios";
@@ -7,12 +7,6 @@ const ProductOfFactor = (props) => {
   console.log("props", props);
   const params = useParams();
   console.log("id", params);
-
-  const [ state , setState] = useState();
-
-useEffect(()=>{
- axios.get("")
-},[])
 
   const Title = ["محصولات میهن"];
   const cards = [
@@ -188,10 +182,8 @@ useEffect(()=>{
     },
   ];
 
-
   return (
     <div className="productOfFactor-container">
-  
       <h2 style={{ marginRight: "350px" }}>{Title}</h2>
       <div className="productOfFactor-main">
         <div

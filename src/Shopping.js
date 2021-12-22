@@ -19,7 +19,8 @@ import Order from "./Pages/profile/order/order";
 import Product from "./Pages/Shopping/product/product";
 import EditInformation from "./Pages/profile/editInformation/editInformation";
 import Logout from "./Pages/profile/Logout/Logout";
-import "./Shopping.css"
+import "./Shopping.css";
+import FactorListCard from "./components/shopping/FactorList/FactorListCard";
 export const Shopping = () => {
   const [user, setUser] = useState(null);
 
@@ -44,9 +45,8 @@ export const Shopping = () => {
       return;
     } else {
       setUser({ user: response.data.user });
-      
     }
-  },[] );
+  }, []);
   // console.log(user?.user?.name);
   // console.log(user.user.name);
   return (
@@ -54,9 +54,10 @@ export const Shopping = () => {
       <NavbarStore user={user?.user?.name} />
       <Routes>
         <Route path="/" element={<Store />} />
-        <Route path="/listFactor/:id" element={<ProductOfFactor />} />
-        <Route path="/listFactor/:id/:id" element={<Product />} />
-        <Route path="listFactor" element={<FactorList />} />
+        <Route path="/listFactor/product/:id" element={<ProductOfFactor />} />
+        {/* <Route path="/listFactor/:id/:id" element={<Product />} /> */}
+        <Route path="listFactor/*" element={<FactorList />} />
+        <Route path="/" element={<FactorListCard />} />
 
         <Route path="/profile/*" element={<Profile />}>
           {/* <Route path="info" element={<Information />} /> */}
