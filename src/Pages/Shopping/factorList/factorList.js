@@ -2,23 +2,24 @@ import React, { useEffect, useState } from "react";
 import FactorListCard from "../../../components/shopping/FactorList/FactorListCard";
 import SideBar from "../../../components/shopping/FactorList/SideBar/SideBar";
 import "./factorList.css";
-import axios from "axios"
+import axios from "axios";
 const FactorList = (props) => {
+  console.log("state",props)
   const Title = ["لیست کارخانه های لبنیات"];
-  // let [cardss, setcardss] = useState([]);
+  let [cardss, setcardss] = useState([]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://nahoor.af:8080/nahoor/category/")
+  useEffect(() => {
+    axios
+      .get("http://nahoor.af:8080/nahoor/category/")
 
-  //     .then((response) => setcardss(response.data));
-  // },[]);
+      .then((response) => setcardss(response.data));
+  }, []);
   // cardss.map((cards)=>{
   //   console.log(cards)
   //   // const bardia = cards.company_set
 
   //    })
-     
+
   const cards = [
     {
       id: "14",
@@ -210,6 +211,7 @@ const FactorList = (props) => {
             return (
               <div>
                 <FactorListCard
+                  cards={card}
                   id={card.id}
                   largPic={card.largPic}
                   shortPic={card.shortPic}

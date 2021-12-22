@@ -83,7 +83,7 @@
 .InnerButton1 {
   font-size: 0.6rem;
 }
-.ApplicationImage{
+.ApplicationImage {
   display: flex;
 }
 .ApplicationImage1 {
@@ -116,18 +116,20 @@
   }
 }
 @media (max-width: 1200px) {
-  .ApplicationImage {
-    display: none;
-  }
   .Applicationcontainer {
     display: flex;
     flex-direction: row;
     /* به هیچ عنوان */
     /* margin-right: 224px;
     margin-left: 224px; */
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding: 0 100px;
+  }
+}
+@media (max-width: 992px) {
+  .ApplicationImage {
+    display: none;
   }
 }
 

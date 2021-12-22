@@ -36,7 +36,6 @@
 }
 @media (max-width: 1200px) {
     .registrationNahorContainer{
-        border-top: 1px solid red;
         width:100%;
         display: flex;
         flex-direction: column;

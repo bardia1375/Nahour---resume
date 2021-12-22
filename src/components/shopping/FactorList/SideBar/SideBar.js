@@ -6,6 +6,7 @@ import FactorListCard from "../FactorListCard";
 import FactorList from "../../../../Pages/Shopping/factorList/factorList";
 
 const SideBar = (props) => {
+  ///////////////////////////////////////////////////////////////////////////////////////////////////
   let [cardss, setcardss] = useState([]);
 
   useEffect(() => {
@@ -29,18 +30,19 @@ const SideBar = (props) => {
     console.log("updatedItems", updatedItems[0]);
     //  این قسمت پایین در صورت درست شدن سرور یعنی مثلا پاک شدن دوبلیکیت لبنیات باید پاک شود
     const factorFilter = updatedItems[0].map((fac) => {
-      return fac.name;
+      return fac;
     });
     console.log(factorFilter[0]);
     console.log(subtitl);
     return (
       <div>
-        <FactorList Title={factorFilter[0]} />
+        <FactorList Title={cardss} />
       </div>
     );
   };
 
-  ////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+
 
   return (
     <>
@@ -55,7 +57,7 @@ const SideBar = (props) => {
 
       <div className="factorListSideNavbarItems">
         {props.subTitle.map((subtitl, id) => {
-          console.log(subtitl);
+          // console.log(subtitl);
           return (
             <div>
               <NavLink

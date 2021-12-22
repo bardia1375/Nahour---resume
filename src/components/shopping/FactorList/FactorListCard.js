@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./FactorListCard.css";
 const FactorListCard = (props) => {
+
   console.log(props.id)
   return (
     <Link  to={`${props.id}`} style={{textDecoration:"none" , color: "black"}}>
