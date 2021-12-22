@@ -1,10 +1,17 @@
 
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BlogmainCard from "../../../components/Blog/BlogmainCard/BlogmainCard";
 import "./blogMain.css";
 import NavbarHeadBlog from "./navbar";
+import axios from "axios";
+
 function BlogMain() {
+  const [postss, setPostss] = useState([])
+
+  useEffect(()=>{
+    axios.get("http://nahoor.af:8080/nahoor/industry/") .then((response) => console.log(response.data));
+  })
   const [posts, setPosts] = useState([
     {
       Largimg: "/nahoor home page/Blogs page/green pic.png",

@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./SideBar.css";
 import axios from "axios";
-import FactorListCard from "../FactorListCard";
-import FactorList from "../../../../Pages/Shopping/factorList/factorList";
+
 
 const SideBar = (props) => {
   ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -13,11 +12,11 @@ const SideBar = (props) => {
     axios
       .get("http://nahoor.af:8080/nahoor/category/")
 
-      .then((response) => setcardss(response.data));
+      .then((response) =>setcardss(response.data));
+   
   }, []);
   
   /////////////////////////////////////////////////////////////////
-
   const changeGrope = (subtitl) => {
     const updatedItems = cardss
       .filter((cards) => {
@@ -28,14 +27,13 @@ const SideBar = (props) => {
       });
 
     console.log("updatedItems", updatedItems[0]);
-      return setcardss(updatedItems[0])
+   setcardss(updatedItems[0])
     //  این قسمت پایین در صورت درست شدن سرور یعنی مثلا پاک شدن دوبلیکیت لبنیات باید پاک شود
     // const factorFilter = updatedItems[0].map((fac) => {
     //   return fac;
     // });
     // console.log(factorFilter);
     console.log(subtitl);
-    
   };
 console.log("salam ",cardss )
     ///////////////////////////////////////////////////////////////////////////////////////////////////

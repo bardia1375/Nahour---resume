@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./FactorListCard.css";
 const FactorListCard = (props) => {
 
-  console.log(props.id)
+  // console.log(props.id)
   return (
     <Link  to={`${props.id}`} style={{textDecoration:"none" , color: "black"}}>
     <div className="FactorListCard">
@@ -30,7 +30,7 @@ const FactorListCard = (props) => {
         </div>
         <div className="FactorListLoverLeft">
           <div><p className="FactorListLoverLeft1">(126)</p></div>
-          <div><p className="FactorListLoverLeft2"><img src={props.star} style={{display:"flex"}} /> 4.5</p></div>
+          <div><p className="FactorListLoverLeft2"><img src="/nahoor home page/productOfFactor/Icon Artwork-white.svg" style={{display:"flex"}} /> 4.5</p></div>
         </div>
       </div>
     </div></Link>

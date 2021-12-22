@@ -1,26 +1,46 @@
 import React, { useEffect, useState } from "react";
 import FactorListCard from "../../../components/shopping/FactorList/FactorListCard";
-import SideBar from "../../../components/shopping/FactorList/SideBar/SideBar";
+// import SideBar from "../../../components/shopping/FactorList/SideBar/SideBar";
 import "./factorList.css";
 import axios from "axios";
-import {cardss} from "../../../components/shopping/FactorList/SideBar/SideBar"
-const FactorList = (props) => {
-
-  console.log("state",props)
+import { NavLink } from "react-router-dom";
+const FactorList = () => {
   const Title = ["لیست کارخانه های لبنیات"];
-  // let [cardss, setcardss] = useState(cardss);
+  const [factors, setfactors] = useState([]);
+  const [factorsfilter, setfactorsfilter] = useState([
+    {
+      name: "کارخانه میهن",
+      banner_image: "/nahoor home page/میهن.png",
+      logo_image: "/nahoor home page/Mihan LOGO.png",
+      short_desc: "lpwsdfsdf",
+    },
+  ]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://nahoor.af:8080/nahoor/category/")
+  useEffect(() => {
+    axios
+      .get("http://nahoor.af:8080/nahoor/category/")
 
-  //     .then((response) => setcardss(response.data));
-  // }, []);
-  // cardss.map((cards)=>{
-  //   console.log(cards)
-  //   // const bardia = cards.company_set
+      .then((response) => setfactors(response.data));
+  }, []);
 
-  //    })
+  console.log("first state", factors);
+  console.log("first filter state", factorsfilter);
+
+  const changeGrope = (subtitl) => {
+    const updatedItems = factors
+      .filter((cards) => {
+        return cards.id == subtitl;
+      })
+      .map((updatedItem) => {
+        return updatedItem.company_set;
+      });
+
+    console.log("updatedItemsfilter", updatedItems[0]);
+    setfactorsfilter(updatedItems[0]);
+    console.log(subtitl);
+  };
+  console.log("second state ", factors);
+  console.log("second filter state", factorsfilter);
 
   const cards = [
     {
@@ -177,15 +197,30 @@ const FactorList = (props) => {
   const sideBarItems = [
     {
       title: "صنایع غذایی",
-      subTitle: ["لبنیات", "ماکارونی", "سس های خوراکی ", "رب گوجه فرنگی"],
+      subTitle: [
+        { id: "1", name: "لبنیات" },
+        { id: "2", name: "ماکارونی" },
+        { id: "3", name: "رب گوجه فرنگی " },
+        { id: "4", name: "سس های خوراکی" },
+      ],
     },
     {
       title: "صنایع غذایی",
-      subTitle: ["لبنیات", "ماکارونی", "سس های خوراکی ", "رب گوجه فرنگی"],
+      subTitle: [
+        { id: "1", name: "لبنیات" },
+        { id: "2", name: "ماکارونی" },
+        { id: "3", name: "رب گوجه فرنگی " },
+        { id: "4", name: "سس های خوراکی" },
+      ],
     },
     {
       title: "صنایع غذایی",
-      subTitle: ["لبنیات", "ماکارونی", "سس های خوراکی ", "رب گوجه فرنگی"],
+      subTitle: [
+        { id: "1", name: "لبنیات" },
+        { id: "2", name: "ماکارونی" },
+        { id: "3", name: "رب گوجه فرنگی " },
+        { id: "4", name: "سس های خوراکی" },
+      ],
     },
   ];
 
@@ -197,19 +232,69 @@ const FactorList = (props) => {
           <div className="factorListMainTitle">
             <h2>دسته بندی کارخانه ها</h2>
           </div>
+
+          {/* start sideBar */}
           {sideBarItems.map((sideBarItem) => {
             return (
-              <SideBar
-                title={sideBarItem.title}
-                subTitle={sideBarItem.subTitle}
-              />
+              // <SideBar
+              //   title={sideBarItem.title}
+              //   subTitle={sideBarItem.subTitle}
+              // />
+              <>
+                <div className="factorListSideNavbarTitle">
+                  <div>
+                    <h3>{sideBarItem.title}</h3>
+                  </div>
+                  <div style={{ width: "12%" }}>
+                    <img
+                      src="/nahoor home page/About Page/behinde.svg "
+                      width="100%"
+                    />
+                  </div>
+                </div>
+
+                <div className="factorListSideNavbarItems">
+                  {sideBarItem.subTitle.map((subtitl) => {
+                    // console.log(subtitl);
+                    return (
+                      <div>
+                        <NavLink
+                          className={(navData) =>
+                            navData.isActive ? "changeHover" : ""
+                          }
+                          to=""
+                          onClick={() => changeGrope(subtitl.id)}
+                        >
+                          <p>{subtitl.name}</p>
+                        </NavLink>
+                      </div>
+                    );
+                  })}
+                  {/* <Link to="" ><p>صنایع غذایی</p></Link> */}
+                </div>
+              </>
             );
           })}
         </div>
+        {/* end sideBar */}
 
-        {/* //end navbar */}
         <div className="factorList-cards">
-          {cards.map((card) => {
+          {factorsfilter.map((factor) => {
+            console.log(" این مهمه", factor);
+            return (
+              <div>
+                <FactorListCard
+                     id={factor.id}
+                  factor={factor.name}
+                  largPic={factor.banner_image}
+                  shortPic={factor.logo_image}
+                  product={factor.short_desc.substring(0, 22)}
+                />
+              </div>
+            );
+          })}
+
+          {/* {cards.map((card) => {
             return (
               <div>
                 <FactorListCard
@@ -223,7 +308,7 @@ const FactorList = (props) => {
                 />
               </div>
             );
-          })}
+          })} */}
         </div>
       </div>
     </div>
