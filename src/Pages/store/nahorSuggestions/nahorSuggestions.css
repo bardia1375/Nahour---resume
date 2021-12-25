@@ -8,7 +8,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 .NahorSuggestions-right {
   display: flex;
@@ -16,9 +15,10 @@
   justify-content: space-around;
   align-items: flex-start;
   justify-content: space-around;
-  width: 20%;
-padding:16px 0px;
+  width: 100%;
+  padding: 16px 0px;
   text-align: center;
+  border: 1px solid red;
 }
 .NahorSuggestions-title {
   display: flex;
@@ -55,28 +55,24 @@ padding:16px 0px;
   transform:scale(2,1.5); */
 }
 .NahorSuggestions-paragraph {
- margin-top: 70px;
-display: flex;
-justify-content: center;
-align-items:center;
-
-
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.NahorSuggestions-paragraph a{
+.NahorSuggestions-paragraph a {
   color: #fff;
   text-decoration: none;
   display: flex;
   justify-content: center;
-  align-items:center;
-  
+  align-items: center;
 }
 .NahorSuggestions-left {
   width: 80%;
-padding:16px 0px;
+  padding: 16px 0px;
 }
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
-
   /* width: 86px;
   height: 104px; */
   display: flex;
@@ -84,21 +80,20 @@ padding:16px 0px;
   justify-content: center;
   z-index: 1;
 }
-.slick-arrow.slick-prev{
-  padding:46px;
-
+.slick-arrow.slick-prev {
+  padding: 46px;
 }
-.slick-arrow.slick-next{
-padding:24px;
+.slick-arrow.slick-next {
+  padding: 24px;
 }
-.slick-prev{
+.slick-prev {
   left: 0;
-   /* transform: rotate(180deg); */
+  /* transform: rotate(180deg); */
 }
-.slick-next{
- right: 0;
-
+.slick-next {
+  right: 0;
 }
-.slick-prev::before, .slick-next::before {
+.slick-prev::before,
+.slick-next::before {
   display: none;
 }

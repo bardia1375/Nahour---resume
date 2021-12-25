@@ -19,8 +19,8 @@ function Store() {
         <SalesStore />
         <BestProductStore />
       </div>
-      <NahorSuggestions />
-      <div className="Store-seccondContainer" style={{ marginTop: "36px",padding: "0 16vw" }}>
+      <div className="Store-suggestion"><NahorSuggestions /></div>
+      <div className="Store-seccondContainer" >
         {cards.map((card) => {
           return (
             <div width="100%">

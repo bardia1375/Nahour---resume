@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  
+  white-space: nowrap;
 }
 .navbarTopStore {
   padding: 4px 40px;

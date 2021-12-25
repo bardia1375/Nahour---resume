@@ -5,8 +5,14 @@
 .Store-firstContainer {
   padding: 0 16vw;
 }
+.Store-seccondContainer{
+  padding: 0 16vw;
+  margin-top: 36px;
+}
+
 @media (max-width: 768px) {
   .Store-firstContainer {
     padding: 0 4vw;
   }
+
 }

@@ -135,39 +135,33 @@ function NahorSuggestions() {
           slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 1600,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 762,
         settings: {
+          prevArrow: false,
+          nextArrow: false,
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="NahorSuggestions-container">
       <div className="NahorSuggestions-main" style={{ padding: "0 16vw" }}>
         <div className="NahorSuggestions-right">
-          {/* <div className="NahorSuggestions-titlefirst">
-            <h2 style={{ fontStretch: "200%" }}>پیشنهادات</h2>
-            <h2
-              className="NahorSuggestions-titlesecond"
-              style={{ marginTop: "16px" }}
-            >
-              ناهور
-            </h2>
-          </div> */}
+    
           <div style={{ width: "100%" }}>
             <img
               src="/nahoor home page/store page/Group 451.png"
