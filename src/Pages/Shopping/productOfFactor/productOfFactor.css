@@ -5,7 +5,6 @@
   align-items: center;
   padding: 0px 4vw;
   position: relative;
-
 }
 .ProductOfFactorTitle {
   display: flex;
@@ -22,10 +21,11 @@
   width: 100%;
 }
 .productOfFactor-sideNavbar {
+  margin-top: 50px;
   position: -webkit-sticky;
   position: sticky;
   top: 13%;
-  width: 24%;
+  width: 30%;
   max-height: 600px;
   display: flex;
   flex-direction: column;
@@ -36,28 +36,26 @@
   direction: ltr;
   margin-left: 48px;
   bottom: 0;
-  
 }
 ::-webkit-scrollbar {
-  
   width: 14px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 4px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #A7A7A7;
+  background: #a7a7a7;
   border-radius: 4px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #6B006D; 
+  background: #6b006d;
 }
 .ProductOfFactor-body {
   padding: 8px 16px;
@@ -65,6 +63,8 @@
 .ProductOfFactorParagraph p {
   font-size: 0.8rem;
   line-height: 22.5px;
+  text-align: justify;
+  direction: rtl;
 }
 .ProductOfFactorInformation {
   padding-top: 16px;
@@ -91,6 +91,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  transform: translateY(-8px);
 }
 .ProductOfFactorPhone p {
   font-size: 0.8rem;
@@ -131,23 +132,37 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
   /* padding:0 100px; */
-  width: 80%;
+  width: 100%;
+  margin-top: 16px;
 }
-
+.centeralTitleProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 32px;
+}
+.FactorListImage-containers {
+  display:none
+}
 @media (max-width: 1600px) {
-  .productOfFactor-sideNavbar{
+  .productOfFactor-sideNavbar {
     max-height: 580px;
   }
   .ProductOfFactorTitle h1 {
-    font-size:1rem;
+    font-size: 1rem;
     margin-left: 8px;
   }
-  .ProductOfFactorAddress p ,.ProductOfFactorPhone p ,.ProductOfFactorEmail p ,.ProductOfFactorParagraph p {
-    font-size:0.7rem;
+  .ProductOfFactorAddress p,
+  .ProductOfFactorPhone p,
+  .ProductOfFactorEmail p,
+  .ProductOfFactorParagraph p {
+    font-size: 0.7rem;
   }
-  .ProductOfFactorSocial h3 ,.ProductOfFactorInformation h3{
-    font-size:0.8rem;
-
+  .ProductOfFactorSocial h3,
+  .ProductOfFactorInformation h3 {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 1200px) {
@@ -155,34 +170,80 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 32px;
-    width: 80%;
+  }
+  .productOfFactor-sideNavbar {
+    width: 40%;
   }
   .ProductOfFactorTitle h1 {
-    font-size:1rem;
+    font-size: 1rem;
     margin-left: 8px;
   }
-  .ProductOfFactorAddress p ,.ProductOfFactorPhone p ,.ProductOfFactorEmail p ,.ProductOfFactorParagraph p {
-    font-size:0.6rem;
+  .ProductOfFactorAddress p,
+  .ProductOfFactorPhone p,
+  .ProductOfFactorEmail p,
+  .ProductOfFactorParagraph p {
+    font-size: 0.6rem;
   }
-  .ProductOfFactorSocial h3 ,.ProductOfFactorInformation h3{
-    font-size:0.8rem;
-
+  .ProductOfFactorSocial h3,
+  .ProductOfFactorInformation h3 {
+    font-size: 0.8rem;
   }
-  
- 
 }
 @media (max-width: 992px) {
+  .ProductOfFactorTitle {
+    display: none;
+  }
   .productOfFactor-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 32px;
-    width: 80%;
+    width: 100%;
+  }
+  .productOfFactor-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .productOfFactor-sideNavbar {
-    display: none;
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 7px;
+    direction: ltr;
   }
-  .ProductOfFactorSocial h3 ,.ProductOfFactorInformation h3{
-    font-size:0.8rem;
+  .ProductOfFactorSocial h3,
+  .ProductOfFactorInformation h3 {
+    font-size: 0.8rem;
+  }
+  .FactorListImage-containers {
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left:42%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none
+  }
+}
+@media (max-width: 786px) {
+  .productOfFactor-cards {
+    width: 100%;
+  }
+  .productOfFactor-sideNavbar {
+    width: 100%;
+  }
+}
+@media (max-width: 786px) {
 
-  }
 }

@@ -226,7 +226,6 @@ const FactorList = () => {
 
   return (
     <div className="factorList-container">
-      <h2 style={{ marginRight: "350px" }}>{Title}</h2>
       <div className="factorList-main">
         <div className="factorList-sideNavbar">
           <div className="factorListMainTitle">
@@ -277,9 +276,10 @@ const FactorList = () => {
           })}
         </div>
         {/* end sideBar */}
-
-        <div className="factorList-cards">
-          {factorsfilter.map((factor) => {
+        <div className="centeralTitle">
+          <h2>{Title}</h2>
+          <div className="factorList-cards">
+            {/* {factorsfilter.map((factor) => {
             console.log(" این مهمه", factor);
             return (
               <div>
@@ -292,23 +292,23 @@ const FactorList = () => {
                 />
               </div>
             );
-          })}
-
-          {/* {cards.map((card) => {
-            return (
-              <div>
-                <FactorListCard
-                  cards={card}
-                  id={card.id}
-                  largPic={card.largPic}
-                  shortPic={card.shortPic}
-                  product={card.product}
-                  factor={card.factor}
-                  star={card.imgstar}
-                />
-              </div>
-            );
           })} */}
+            {cards.map((card) => {
+              return (
+                <div>
+                  <FactorListCard
+                    cards={card}
+                    id={card.id}
+                    largPic={card.largPic}
+                    shortPic={card.shortPic}
+                    product={card.product}
+                    factor={card.factor}
+                    star={card.imgstar}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

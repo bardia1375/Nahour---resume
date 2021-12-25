@@ -34,7 +34,7 @@ const GroupStore = () => {
       <div className="groupStore-main">
         {cards.map((card) => {
           return (
-            <div className="groupStore-cards">
+            <div className="groupStore-cards" >
               <div className="groupStore-cardsImg" style={{ width: "100%" }}>
                 <img src={card.img} width="100%" />
                 <div className="groupStore-contentImg">

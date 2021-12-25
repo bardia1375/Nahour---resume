@@ -34,7 +34,7 @@ const ProductOfFactorCard = (props) => {
         to={`${props.id}`}
         style={{ textDecoration: "none", color: "black" }}
       >
-        {" "}
+  
         <div className="productOfFactorCard-main">
           <div className="productOfFactorCard-img">
             <img src={props.imgProduct} />

@@ -8,6 +8,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 16vw;
 }
 .NahorSuggestions-right {
   display: flex;
@@ -18,7 +19,6 @@
   width: 100%;
   padding: 16px 0px;
   text-align: center;
-  border: 1px solid red;
 }
 .NahorSuggestions-title {
   display: flex;
@@ -96,4 +96,13 @@
 .slick-prev::before,
 .slick-next::before {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .NahorSuggestions-main {
+    padding: 0 4vw;
+  }
+  .NahorSuggestions-left {
+    width: 60%;
+  }
 }

@@ -8,7 +8,7 @@ import HeaderSlider from "./headerStore/headerSlider";
 import HeaderStore from "./headerStore/headerStore";
 import NahorSuggestions from "./nahorSuggestions/nahorSuggestions";
 import SalesStore from "./salesStore/salesStore";
-import "./Store.css"
+import "./Store.css";
 function Store() {
   const cards = [{ img: "./nahoor home page/store page/poster lebsa.png" }];
   return (
@@ -19,12 +19,14 @@ function Store() {
         <SalesStore />
         <BestProductStore />
       </div>
-      <div className="Store-suggestion"><NahorSuggestions /></div>
-      <div className="Store-seccondContainer" >
+      <div className="Store-suggestion">
+        <NahorSuggestions />
+      </div>
+      <div className="Store-seccondContainer">
         {cards.map((card) => {
           return (
             <div width="100%">
-              <img src={card.img} width="100%" />
+              <img src={card.img} width="100%" height="auto" />
             </div>
           );
         })}

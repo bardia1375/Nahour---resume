@@ -184,7 +184,6 @@ const ProductOfFactor = (props) => {
 
   return (
     <div className="productOfFactor-container">
-      <h2 style={{ marginRight: "350px" }}>{Title}</h2>
       <div className="productOfFactor-main">
         <div
           className="productOfFactor-sideNavbar"
@@ -200,8 +199,16 @@ const ProductOfFactor = (props) => {
                   <h1>{sideBarItem.title}</h1>
                 </div>
 
-                <div className="ProductOfFactorImg">
-                  <img src={sideBarItem.mainImg} width="100%" />
+                <div className="ProductOfFactorImg" style={{width: "100%" }}>
+                  <img src={sideBarItem.mainImg} width="100%" style={{objectFit: "contain"}} />
+                  <div className="FactorListImage-containers">
+                    <img
+                      src={props.shortPic}
+                      alt=""
+                      height="40px"
+                      width="65px"
+                    />
+                  </div>
                 </div>
                 <div className="ProductOfFactor-body">
                   <div className="ProductOfFactorParagraph">
@@ -267,23 +274,26 @@ const ProductOfFactor = (props) => {
         </div>
 
         {/* //end navbar */}
-        <div className="productOfFactor-cards">
-          {cards.map((card) => {
-            return (
-              <div>
-                <ProductOfFactorCard
-                  id={card.id}
-                  imgProduct={card.imgProduct}
-                  product={card.product}
-                  paragraph={card.paragraph}
-                  factor={card.factor}
-                  star={card.star}
-                  Rial={card.Rial}
-                  afghan={card.afghan}
-                />
-              </div>
-            );
-          })}
+        <div className="centeralTitleProduct">
+          <h2>{Title}</h2>
+          <div className="productOfFactor-cards">
+            {cards.map((card) => {
+              return (
+                <div>
+                  <ProductOfFactorCard
+                    id={card.id}
+                    imgProduct={card.imgProduct}
+                    product={card.product}
+                    paragraph={card.paragraph}
+                    factor={card.factor}
+                    star={card.star}
+                    Rial={card.Rial}
+                    afghan={card.afghan}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

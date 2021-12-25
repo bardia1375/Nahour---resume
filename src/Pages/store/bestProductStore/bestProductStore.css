@@ -1,5 +1,7 @@
 .bestProductStore-container {
+  /* display: flex; */
   margin-top: 36px;
+ white-space: nowrap
 }
 .bestProductStore-main {
   display: grid;
@@ -64,9 +66,30 @@ margin-right: 16px;
   }
 
 }
-/* @media (max-width: 992px) {
-  .bestProductStore-cardsContent {
-  
-    padding:0px
+/* @media (max-width:768px) {
+
+  .bestProductStore-main {
+    min-width: 800px;
   }
+
+} */
+/* @media (max-width: 768px) {
+
+  .bestProductStore-main {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+     
+  }
+  .bestProductStore-cards {
+    position: relative;
+    display: inline-block;
+    flex: 1 0 auto;
+   border: 1px solid red;
+   width: 100px;
+   height: 100px;
+  }
+
 } */

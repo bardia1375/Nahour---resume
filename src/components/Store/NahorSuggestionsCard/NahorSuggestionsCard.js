@@ -1,10 +1,10 @@
+import { border } from "@mui/system";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./NahorSuggestionsCard.css";
 function NahorSuggestionsCard(props) {
   return (
-    <Link to="/" style={{textDecoration: 'none'}}>
-      <div className="NahorSuggestionsCard-container">
+      <div className="NahorSuggestionsCard-container" >
         <div style={{ width: "150px" ,height: "150px" }} className="NahorSuggestionsCard-Img">
           <img src={props.img} width="100%"  />
         </div>
@@ -48,7 +48,7 @@ function NahorSuggestionsCard(props) {
           </div>
         </div>
       </div>
-    </Link>
+
   );
 }
 

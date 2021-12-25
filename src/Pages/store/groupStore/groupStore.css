@@ -7,9 +7,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 24px;
+  
 }
 .groupStore-cards {
   position: relative;
+  display: inline-block;
 }
 .groupStore-cardsImg {
   display: flex;
@@ -45,20 +47,18 @@
   width: 24px;
   margin-right: 8px;
 }
-.groupStore-arrow img{
-  margin-top:-6px 
+.groupStore-arrow img {
+  margin-top: -6px;
 }
-@media (max-width: 1600px){
+@media (max-width: 1600px) {
   .groupStore-text h2 {
     font-size: 1rem;
   }
   .groupStore-arrow {
     width: 16px;
-   
   }
 }
 @media (max-width: 1200px) {
- 
   .groupStore-text h2 {
     font-size: 0.8rem;
   }
@@ -66,7 +66,24 @@
     width: 16px;
     margin-right: 8px;
   }
-  .groupStore-arrow img{
-    margin-top:-12px 
+  .groupStore-arrow img {
+    margin-top: -12px;
   }
+}
+@media (max-width: 768px) {
+
+  .groupStore-main {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  .groupStore-cards {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    flex: 1 0 auto;
+  }
+
 }

@@ -159,7 +159,7 @@ function NahorSuggestions() {
   };
   return (
     <div className="NahorSuggestions-container">
-      <div className="NahorSuggestions-main" style={{ padding: "0 16vw" }}>
+      <div className="NahorSuggestions-main" >
         <div className="NahorSuggestions-right">
     
           <div style={{ width: "100%" }}>
@@ -170,7 +170,7 @@ function NahorSuggestions() {
           </div>
           <div className="NahorSuggestions-paragraph">
             <a href="#">
-              <h3>مشاهده همه</h3>
+              <h3 style={{whiteSpace: "nowrap"}}>مشاهده همه</h3>
               <span
                 class="material-icons"
                 style={{ transform: "rotate(180deg)", marginBottom: "8px" }}
