@@ -32,6 +32,7 @@
   height: 350px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: white;
+
 }
 .Cardmain-item:first-of-type {
   grid-column: 2 / span 2;
@@ -66,6 +67,7 @@
   font-family: IRANSans;
   font-style: normal;
 }
+
 @media (max-width: 1400px) {
   .cardTitle {
     font-size: 1.1rem;
@@ -92,6 +94,7 @@
   }
   .feacherOfImg {
     margin-bottom: -50px;
+    
   }
   .cardTitle {
     transform: translateY(-70px);
@@ -102,21 +105,31 @@
 }
 @media (max-width: 992px) {
 
+
 }
 @media (max-width: 480px) {
   .cardTitle {
-    transform: translateY(-30px);
+  
+    font-size:1em;
+
   }
   .cardDescription {
-    transform: translateY(-30px);
+    font-size:0.8rem;
+
+  }
+  .cardTitle {
+    transform: translateY(-10px);
+  }
+  .cardDescription {
+    transform: translateY(-20px);
   }
   .feacherOfbox {
     min-width: 140px;
-    height: 300px;
+    height: 200px;
   }
 
   .feacherOfImg {
-    height: 300px;
+    height: 250px;
     margin-bottom: -90px;
   }
 }
