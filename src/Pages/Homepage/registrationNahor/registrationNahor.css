@@ -26,24 +26,37 @@
 .registrationNahorButton{
     margin-bottom: 24px; margin-top:16px
 }
-.registrationNahor-paragraph{
+.registrationNahor-paragraph p{
+
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 8; /* number of lines to show */
-    line-clamp: 8;
     -webkit-box-orient: vertical;
+    text-align:justify
+}
+.registrationNahorLeft{
+    margin-Right:90px; min-Width:300px
 }
 @media (max-width: 1200px) {
+    .registrationNahor-paragraph p{
+        font-size:0.7rem;
+        
+    }
     .registrationNahorContainer{
         width:100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         background: #F5F5F5;
-        padding:0 180px;
+        padding:16px;
         margin-top:120px;
       
     }
+    .registrationNahorLeft{
+        margin-Right:0px; min-Width:150px
+    }
   }
+  @media (max-width: 986px){
+    .registrationNahorLeft{
+        margin-Right:0px; min-Width:150px
+    }
+  } 

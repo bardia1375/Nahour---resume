@@ -30,7 +30,6 @@
   font-family: IRANSans;
   font-style: normal;
   font-weight: 600;
-  font-size: 50px;
   margin-top: 10px;
 }
 .HeaderMainTitle2 {
@@ -50,7 +49,7 @@
 }
 .HeaderMainRight {
   width: 50%;
-  min-width: 400px;
+  min-width: 250px;
 }
 .HeaderMainLeft {
   display: flex;
@@ -128,9 +127,7 @@
 }
 @media (max-width: 1600px) {
   .HeaderContainer {
-
     min-height: 700px;
-
   }
   .header-bottombutton {
     bottom: 120px;
@@ -147,6 +144,94 @@
   }
 }
 @media (max-width: 992px) {
+  .HeaderContainer {
+    padding-right: 0px;
+  }
+  .HeaderContainer {
+    position: relative;
+
+    /* overflow: hidden; */
+    min-height: 840px;
+    color: #fff;
+    font-size: 16px;
+    background: url("../../../nahoorHomePage/header.png") center center/cover
+      no-repeat;
+  }
+  .HeaderContainer {
+    height: 700px;
+  }
+  .HeaderMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .HeaderMainRight {
+    width: 100%;
+    padding: 16px;
+  }
+  .HeaderMainLeft {
+    margin-top: 80px;
+  }
+  .HeaderMainLeft1 {
+    width: 180px;
+    height: auto;
+    transform: translate(-23vw, -100px);
+  }
+
+  .HeaderMainLeft2 {
+    width: 180px;
+    height: auto;
+    transform: translate(-18vw, -180px);
+  }
+  .header-link {
+    min-height: 800px;
+  }
+  .header-bottombutton {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
+  .HeaderMainLeft1 {
+    width: 150px;
+    height: auto;
+    transform: translate(-23vw, -120px);
+  }
+
+  .HeaderMainLeft2 {
+    width: 150px;
+    height: auto;
+    transform: translate(-15vw, -240px);
+  }
+}
+
+@media (max-width: 600px) {
+  .HeaderMainLeft1 {
+    width: 150px;
+    height: auto;
+    transform: translate(-23vw, -120px);
+  }
+
+  .HeaderMainLeft2 {
+    width: 150px;
+    height: auto;
+    transform: translate(-3vw, -240px);
+  }
+}
+@media (max-width: 440px) {
+  .HeaderMainLeft {
+    display: none;
+  }
+  .HeaderMainLeft1 {
+    width: 150px;
+    height: auto;
+    transform: translate(-23vw, -90px);
+  }
+
+  .HeaderMainLeft2 {
+    width: 150px;
+    height: auto;
+    transform: translate(5vw, -180px);
+  }
 }

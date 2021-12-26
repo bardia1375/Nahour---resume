@@ -92,6 +92,33 @@ const CustomerSatisfaction = () => {
         </div>
       );
     },
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
   };
  
   return (
@@ -101,7 +128,7 @@ const CustomerSatisfaction = () => {
       <Slider className="Customer-slider" {...settings}>
         {cards.map((card) => {
           return (
-            <div>
+       
               <CustomerSatisfactionCard
                 logo={card.logo}
                 paragraph={card.paragraph}
@@ -109,7 +136,7 @@ const CustomerSatisfaction = () => {
                 name={card.name}
                 job={card.job}
               />
-            </div>
+
           );
         })}
       </Slider>

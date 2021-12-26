@@ -13,15 +13,15 @@ import { RegistrationNahor } from "./registrationNahor/registrationNahor";
 import "./HomePage.css"
 const HomePage = () => {
   return (
-    <div style={{maxWidth:"2000px", margin:"0 auto"}}>
+    <div style={{maxWidth:"2000px", margin:"0 auto", overflow:"hidden"}}>
       {/* <Header /> */}
       <HeaderSample />
       <FeacherOfNahor />
       <FamilierNahor />
-      <BestFactor />
-      <Application  />
+      {/* <BestFactor /> */}
+      {/* <Application  /> */}
       {/* <CustomizableProduct /> */}
-      <CustomerSatisfaction />
+      {/* <CustomerSatisfaction /> */}
       <RegistrationNahor/>
       {/* <Footer /> */}
     </div>

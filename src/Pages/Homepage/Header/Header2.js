@@ -1,21 +1,19 @@
 import React, { useState } from "react";
 import "./Header2.css";
 import Navbar from "./Navbar";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const HeaderSample = () => {
-const [picture,setPicture]= useState(true)
-const changePicture=()=>{
-  setPicture(!picture)
-}
+  const [picture, setPicture] = useState(true);
+  const changePicture = () => {
+    setPicture(!picture);
+  };
   return (
     <div className="header-link">
       <div className="HeaderContainer">
         <div className="HeaderItems">
           <div className="HeaderNav">
             <Navbar />
-       
-            
           </div>
           <div className="HeaderMain">
             <div className="HeaderMainRight">
@@ -46,43 +44,56 @@ const changePicture=()=>{
                 </span>
               </button>
             </div>
-           {picture? <div className="HeaderMainLeft">
-              <div  onClick={()=>changePicture()} className="HeaderMainLeft1">
-                <img
-                  className="HeaderMainLeft1"
-                  src="./nahoor home page/iPhone 12 Pro 6.1_ Mockup.png"
-                  alt=""
-                />
-              </div>
-              <div className="HeaderMainLeft">
-                <img
-                  className="HeaderMainLeft2"
-                  src="./nahoor home page/iPhone 12 Pro 6.1_ Mockup.png"
-                  alt=""
-                />
-              </div>
-            </div>:<div className="HeaderMainLeft">
-              <div style={{zIndex:"100"}} onClick={()=>changePicture()} className="HeaderMainLeft1">
-                <img
-                  className="HeaderMainLeft1"
-                  src="./nahoor home page/iPhone 12 Pro 6.1_ Mockup.png"
-                  alt=""
-                />
-              </div>
-              <div  className="HeaderMainLeft">
-                <img
-                  className="HeaderMainLeft2"
-                  src="./nahoor home page/iPhone 12 Pro 6.1_ Mockup.png"
-                  alt=""
-                />
-              </div>
-            </div>}
+            <div>
+              {picture ? (
+                <div className="HeaderMainLeft">
+                  <div
+                    onClick={() => changePicture()}
+                    className="HeaderMainLeft1"
+                  >
+                    <img
+                      className="HeaderMainLeft1"
+                      src="./nahoor home page/iPhone 12 Pro 6.1_ Mockup.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="HeaderMainLeft">
+                    <img
+                      className="HeaderMainLeft2"
+                      src="./nahoor home page/iPhone 12 Pro 6.1_ Mockup.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              ) : (
+                <div className="HeaderMainLeft">
+                  <div
+                    style={{ zIndex: "100" }}
+                    onClick={() => changePicture()}
+                    className="HeaderMainLeft1"
+                  >
+                    <img
+                      className="HeaderMainLeft1"
+                      src="./nahoor home page/iPhone 12 Pro 6.1_ Mockup.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="HeaderMainLeft">
+                    <img
+                      className="HeaderMainLeft2"
+                      src="./nahoor home page/iPhone 12 Pro 6.1_ Mockup.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-    
+
       <AnchorLink href="#application" className="header-bottombutton">
-        <div >
+        <div>
           <span
             class="material-icons"
             style={{

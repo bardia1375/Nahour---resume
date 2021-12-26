@@ -4,13 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   /* padding: 0 36px; */
 }
 .NavbarLogo {
-transform:translateY(-4px);
-cursor: pointer;
-
+  transform: translateY(-4px);
+  cursor: pointer;
 }
 .navbarMenu {
   display: flex;
@@ -36,7 +35,8 @@ cursor: pointer;
   font-style: normal;
   font-weight: 500;
 }
-.NavbarItem::after , .navbarEnglish:after{
+.NavbarItem::after,
+.navbarEnglish:after {
   content: "";
   height: 2px;
   background: #fbffff;
@@ -57,15 +57,38 @@ cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(-7PX);
+  transform: translateY(-7px);
   cursor: pointer;
   font-family: IRANSans;
   font-style: normal;
   font-weight: 500;
 }
-.NavbarItem:hover::after, .navbarEnglish:hover::after {
+.NavbarItem:hover::after,
+.navbarEnglish:hover::after {
   transform: scaleX(1);
 }
-.NavbarItem:hover{
-  color:#fff
+.NavbarItem:hover {
+  color: #fff;
+}
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .navbar {
+    justify-content: center;
+  }
+  .navbarMenu {
+    /* اینو جواست باشه نخواستی حذف کن */
+    padding-right: 20px;
+  }
+  .NavbarItems {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
 }

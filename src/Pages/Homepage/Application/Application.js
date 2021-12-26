@@ -18,10 +18,10 @@ const Application = () => {
           </div>
           <h3 className="ApplicationParagraph">
             نسخه اندروید و آی او اس
-            <span style={{ color: "#6B006D", fontWeight: "600" }}>ناهور</span>
-            در اپل استور ، گوگل پلی و به صورت مستقیم از وبسایت
+            <span style={{ color: "#6B006D", fontWeight: "600" }}> ناهور </span>
+            در اپل استور ، گوگل پلی و به صورت مستقیم از طریق - 
             <span style={{ color: "#6B006D", fontWeight: "600" }}>
-              وب سایت ناهور
+               وب سایت ناهور-  
             </span>
             قابل دانلود است.
           </h3>

@@ -1,5 +1,6 @@
 .Customer-slider {
-  width: 70%;
+  width: 100%;
+  padding: 0 200px;
 }
 .Customer-main {
   display: flex;

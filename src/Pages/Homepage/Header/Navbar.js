@@ -41,12 +41,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <div className="navbarEnglish">
-        <span class="material-icons" style={{ transform: "rotate(90deg)" }}>
-          chevron_right
-        </span>
-        EN
-      </div>
+    
     </div>
   );
 }

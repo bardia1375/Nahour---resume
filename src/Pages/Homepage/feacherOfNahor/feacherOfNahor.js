@@ -19,7 +19,7 @@ function FeacherOfNahor() {
     },
     {
       id: "3",
-      title: "امکان رزرو و سفارش",
+      title: "امکان رزرو ",
       Description: "قابلیت ارتباط انتخابی با کارخانه‌ی مورد نظر",
       img:"nahoor home page/pic3.svg"
 

@@ -32,7 +32,7 @@ export const RegistrationNahor = () => {
       })}
 
       <div  className="registrationNahorLeft">
-        <img width="100%" src="./nahoor home page/partnership.svg" style={{marginRight:"90px", minWidth:"200px"}} />
+        <img width="100%" src="./nahoor home page/partnership.svg"  />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ const CartOfFeachers = (props) => {
           className="feacherOfImg"
           src={props.img}
           width="100%"
-          height="auto"
+         
         />
         <div><h2 className="cardTitle">{props.title}</h2></div>
         <div><p className="cardDescription">{props.Description}</p></div>
