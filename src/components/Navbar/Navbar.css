@@ -4,16 +4,17 @@
     #6b006d 38.27%,
     #ff9900 181.4%,
     #f69007 181.4%
+
   );
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding:8px 80px;
+  padding: 8px 80px;
   font-family: IRANSans;
   font-weight: 300;
   font-size: 1rem;
-
+  white-space: nowrap;
 }
 .navbarSmall-main {
   display: flex;
@@ -31,10 +32,17 @@
   color: #fff;
   text-decoration: none;
 }
-.navbarSmallEnglish{
-  color:#fff;display: flex;
+.navbarSmallEnglish {
+  color: #fff;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 400;
   cursor: pointer;
+}
+@media(max-width: 786px) {
+.NavbarItems{
+  display: none;
+  
+}
 }

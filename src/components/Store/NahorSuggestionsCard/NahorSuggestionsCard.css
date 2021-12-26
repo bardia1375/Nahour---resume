@@ -84,3 +84,12 @@
     padding: 0 8px;
   }
 }
+@media (max-width: 786px) {
+  .NahorSuggestionsCard-container {
+
+  margin: 16px 24px 16px 0px;
+  padding: 8px 32px;
+  height: 380px;
+  box-sizing: border-box;
+}}
+

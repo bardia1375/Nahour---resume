@@ -1,18 +1,19 @@
 .bestProductStore-container {
   /* display: flex; */
   margin-top: 36px;
- white-space: nowrap
+  white-space: nowrap;
 }
 .bestProductStore-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 24px;
 }
-.bestProductStore-cards{
-position: relative;
-border-radius: 4px;
-overflow: hidden;
-
+.bestProductStore-cards {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
 }
 .bestProductStore-cardsContent {
   display: flex;
@@ -21,50 +22,45 @@ overflow: hidden;
   background: rgba(0, 0, 0, 0.61);
   color: #fff;
   position: absolute;
-  top:8%;
+  top: 8%;
   width: 100%;
   height: 24%;
   backdrop-filter: blur(4px);
-  padding:0 8px
+  padding: 0 8px;
 }
-.bestProductStore-paragraph::after{
-content: ">";
-margin-right: 16px;
+.bestProductStore-paragraph::after {
+  content: ">";
+  margin-right: 16px;
 }
-.bestProductStore-cardsContent img{
-  width:80%
+.bestProductStore-cardsContent img {
+  width: 80%;
 }
-@media (max-width: 1600px){
+@media (max-width: 1600px) {
   .bestProductStore-cardsContent {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    
   }
-  .bestProductStore-paragraph{
-    font-size:0.8rem
+  .bestProductStore-paragraph {
+    font-size: 0.8rem;
   }
-  .bestProductStore-cardsContent img{
-    width:80%
+  .bestProductStore-cardsContent img {
+    width: 80%;
   }
 }
 @media (max-width: 1300px) {
-
   .bestProductStore-cardsContent {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
- 
   }
-  .bestProductStore-paragraph{
-    font-size:0.6rem;
+  .bestProductStore-paragraph {
+    font-size: 0.6rem;
     width: 100%;
   }
-  .bestProductStore-cardsContent img{
-    width:80%;
-    
+  .bestProductStore-cardsContent img {
+    width: 80%;
   }
-
 }
 /* @media (max-width:768px) {
 
@@ -73,23 +69,29 @@ margin-right: 16px;
   }
 
 } */
-/* @media (max-width: 768px) {
-
+@media (max-width: 768px) {
   .bestProductStore-main {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
-     
   }
   .bestProductStore-cards {
     position: relative;
     display: inline-block;
     flex: 1 0 auto;
-   border: 1px solid red;
-   width: 100px;
-   height: 100px;
+    width: 50%;
+    height: 150px;
   }
+}
+@media (max-width: 486px) {
 
-} */
+  .bestProductStore-cards {
+    position: relative;
+    display: inline-block;
+    flex: 1 0 auto;
+    width:60%;
+    height: 180px;
+  }
+}

@@ -1,7 +1,9 @@
 .NahorSuggestions-container {
   background: #6b006d;
   color: #ffffff;
-  margin-top: -20px;
+  margin-top: 40px;
+  height:auto;
+  
 }
 .NahorSuggestions-main {
   display: flex;
@@ -99,10 +101,28 @@
 }
 
 @media (max-width: 768px) {
+  .NahorSuggestions-right{
+    width: 100%;
+    padding: 16px 0px;
+  }
   .NahorSuggestions-main {
     padding: 0 4vw;
   }
   .NahorSuggestions-left {
     width: 60%;
+  }
+}
+@media (max-width: 480px) {
+  .NahorSuggestions-right{
+    width: 100%;
+    padding: 0px;
+  }
+  .NahorSuggestions-main {
+    padding: 0 4vw;
+  }
+
+  .NahorSuggestions-left {
+    width: 70%;
+    padding: 0px ;
   }
 }

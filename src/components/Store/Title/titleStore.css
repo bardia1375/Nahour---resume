@@ -1,11 +1,15 @@
 .titleStore-container {
-  font-family: IRAN Sans;
-  margin-bottom:16px;
+  font-family: IRANSans;
+  margin-bottom: 16px;
   font-style: normal;
   font-weight: bold;
-  font-size: 2rem;
-
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .titleStore-container {
+    font-size: 1.2rem;
+  }
 }

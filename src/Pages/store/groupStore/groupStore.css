@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 48px;
+  white-space: nowrap;
 }
 .groupStore-main {
   display: grid;
@@ -75,15 +76,18 @@
   .groupStore-main {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
+    border: 1px solid red;
   }
   .groupStore-cards {
     position: relative;
+    overflow:hidden;
+    overflow-x: auto;
     display: inline-block;
-    width: 150px;
+    width: 130px;
     flex: 1 0 auto;
   }
-
+  .groupStore-main::-webkit-scrollbar { width: 0 !important }
 }

@@ -29,7 +29,7 @@ const BestProductStore = () => {
           return (
             <div
               className="bestProductStore-cards"
-              style={{ width: "100%", height: "80%"}}
+            
             >
               <img
                 width="100%"

@@ -147,6 +147,14 @@ function NahorSuggestions() {
         },
       },
       {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
         breakpoint: 762,
         settings: {
           prevArrow: false,

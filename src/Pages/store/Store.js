@@ -26,7 +26,7 @@ function Store() {
         {cards.map((card) => {
           return (
             <div width="100%">
-              <img src={card.img} width="100%" height="auto" />
+              <img src={card.img} width="100%" height="150px" />
             </div>
           );
         })}
