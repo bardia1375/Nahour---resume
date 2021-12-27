@@ -4,6 +4,7 @@
   justify-content: space-around;
   align-items: space-between;
   font-family: BYekan, "BYekan", tahoma;
+  text-align: justify;
 }
 .About-title {
   display: flex;
@@ -17,7 +18,13 @@
 }
 .AboutUs-right {
   display: flex;
+  align-items: center;
+  justify-content: flex-start
 }
+.AboutUsLogo-title{
+ font-Weight: bold
+}
+ 
 .About-content {
   display: flex;
   justify-content: space-evenly;
@@ -33,4 +40,41 @@
   min-width: 500px;
   padding-right: 100px;
   transform: translateY(-170px);
+}
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1200px) {
+  .About-title {
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .About-title {
+    display: flex;
+    margin-right: 2vw;
+    margin-top: 50px;
+  
+    /* margin-right: 5vw; */
+  }
+  .About-img-bottom img{
+    display: none
+  }
+  .explain-container {
+    margin-top: 0px;
+  }
+  .About-content {
+    padding:8px ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .About-paragraph {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
 }

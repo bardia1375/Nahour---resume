@@ -1,20 +1,20 @@
-h2 {
+h2 {text-align: justify;
   font-family: IRANSans;
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
 }
-h3 {
+h3 {text-align: justify;
   font-family: IRANSans;
   font-style: normal;
   font-size: 1.2rem;
 }
-h4 {
+h4 {text-align: justify;
   font-family: IRANSans;
   font-style: normal;
   font-size: 1rem;
 }
-p {
+p {text-align: justify;
   font-family: IRANSans;
   font-style: normal;
   font-size: 0.9rem;
@@ -75,14 +75,14 @@ p {
     -webkit-transition: all 0.5s ease-in-out;
   }
   h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
   }
   h3 {
-    font-size: 1rem;
+    font-size:0.9rem;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;

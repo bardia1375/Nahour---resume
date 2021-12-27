@@ -16,10 +16,10 @@ const AboutUs = () => {
      <NavbarSmall/>
       <Header />
       <Explain />
-      <GoalsOfNahour />
-      <FoundersofNahor />
-      <CallOfNahor />
-      <div style={{padding:"0 23vw"}}><CommiunicationForm /></div>
+      {/* <GoalsOfNahour /> */}
+      {/* <FoundersofNahor /> */}
+      {/* <CallOfNahor /> */}
+      {/* <div style={{padding:"0 23vw"}}><CommiunicationForm /></div> */}
       <NahorJobPositions />
            {/* <Footer /> */}
     </div>

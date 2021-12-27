@@ -1,18 +1,33 @@
-  .nahorJobPositions-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-     align-content: space-around;
-      margin-top: 50px;
-      padding:0 8vw;
-  }
+.nahorJobPositions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-around;
+  margin-top: 50px;
+  padding: 0 8vw;
+}
 
-.nahorJobPositions-paragraph{
+.nahorJobPositions-paragraph {
   font-family: IRANSans;
   font-style: normal;
   font-weight: 300;
 }
-.nahorJobPositions-title{
+.nahorJobPositions-title {
   display: flex;
-  
+}
+@media (max-width: 1600px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  .nahorJobPositions-container {
+ 
+    padding: 0 16px;
+  }
+  .btn-nahorJobPositions ,.nahorJobPositions-title{
+    width: 100%;
+    display: flex;
+   text-align: center;
+   justify-content:center;
+  }
 }

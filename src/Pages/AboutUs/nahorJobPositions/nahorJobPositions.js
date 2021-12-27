@@ -21,8 +21,8 @@ const NahorJobPositions = () => {
             alt=""
           />
         </div>
-        <div style={{ marginRight: "16px" }}>
-          <Title title="بنیان گذاران ناهور" />
+        <div className="title-nahorJobPositions" style={{ marginRight: "16px" }}>
+          <Title title="موقعیت های شغلی ناهور" />
         </div>
       </div>
       {sentenses.map((sentense) => {
@@ -32,7 +32,7 @@ const NahorJobPositions = () => {
           </div>
         );
       })}
-      <ButtonComponent title="موقعیت های شغلی مناسب شما" />
+      <div className="btn-nahorJobPositions"><ButtonComponent title="موقعیت های شغلی مناسب شما" /></div>
     </div>
   );
 };

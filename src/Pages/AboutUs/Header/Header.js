@@ -13,7 +13,7 @@ const Header = () => {
       <div className="About-container">
         <div className="About-title">
           <div className="AboutUs-right">
-            <div>
+            <div style={{width: '5%'}}>
               <img
                 className="AboutUs-Logo"
                 width="100%"
@@ -23,7 +23,7 @@ const Header = () => {
             </div>
             <div>
               <h1
-                style={{ fontSize: "2.5rem", fontWeight: "bold" }}
+              
                 className="AboutUsLogo-title"
               >
                 درباره ناهور
@@ -31,15 +31,16 @@ const Header = () => {
             </div>
           </div>
         </div>
-
-        {sentenses.map((sentense) => {
-          return (
-            <div className="About-content">
-              <h2>{sentense.title}</h2>
-              <p className="About-paragraph">{sentense.paragraph}</p>
-            </div>
-          );
-        })}
+        <div className="About-content"> 
+          {sentenses.map((sentense) => {
+            return (
+              <div className="About-content">
+                <h2>{sentense.title}</h2>
+                <p className="About-paragraph">{sentense.paragraph}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div className="About-img-bottom" >
         <img
