@@ -73,7 +73,9 @@
 }
 @media only screen and (max-width: 992px) {
   .Founders-container {
-    margin-top: -520px;
+    margin-top: -550px;
+    border: 1px solid red;
+    width: 100%;
   }
   .Founders-img {
     width: 120px;

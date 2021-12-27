@@ -9,6 +9,7 @@
   margin-top: 10px;
   margin-bottom: 20px;
   min-width: 200px;
+
 }
 .Satisfaction-container p {
   display: flex;
@@ -43,4 +44,51 @@
 }
 .Satisfaction-titleJob{
   margin-bottom: 20px;
+}
+@media (max-width: 1600px) {
+ .Satisfaction-container {
+  display: flex;
+
+  min-width: 200px;
+
+}
+}
+@media (max-width: 1200px) {
+  .Satisfaction-container {
+    width: 30vw;
+    min-width:0px;
+
+  }
+}
+@media (max-width: 900px) {
+  .Satisfaction-container {
+ 
+    width:40vw;
+    min-width:0px;
+
+  }
+}
+/* @media (max-width: 700px) {
+  .Satisfaction-container {
+ 
+    width:50vw;
+    min-width:0px;
+
+  }
+} */
+@media (max-width: 600px) {
+  .Satisfaction-container {
+ 
+    width: 80vw;
+    min-width:0px;
+
+  }
+}
+@media (max-width: 480px) {
+  .Satisfaction-container {
+ 
+    width: 70vw;
+    min-width:0px;
+
+  }
 }

@@ -112,6 +112,8 @@ const BestFactor = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+
+    rtl: true,
     prevArrow: <PerviousBtn />,
     nextArrow: <NextBtn />,
     // autoplay: true,
@@ -127,7 +129,7 @@ const BestFactor = () => {
         },
       },
       {
-        breakpoint: 900,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -137,9 +139,60 @@ const BestFactor = () => {
       {
         breakpoint: 700,
         settings: {
+          centerMode: true,
+          // centerPadding: "60px",
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
+          prevArrow: false,
+          nextArrow: false,
+          dots: true,
+          beforeChange: (prev, next) => {
+            setcurrentIndex(next);
+          },
+          appendDots: (dots) => {
+            return (
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  paddingRight: "5%",
+                }}
+              >
+                {dots.map((item, index) => {
+                  return (
+                    <div style={{ padding: "0 4px" }} key={index}>
+                      {item.props.children}
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          },
+          customPaging: (index) => {
+            return (
+              <div
+                style={
+                  index === currentIndex
+                    ? {
+                        width: "30px",
+                        height: "10px",
+                        background: "#6B006D",
+                        borderRadius: "50px",
+                      }
+                    : {
+                        width: "10px",
+                        height: "10px",
+                        background: "#C4C4C4",
+                        borderRadius: "50px",
+                      }
+                }
+              >
+                {}
+              </div>
+            );
+          },
         },
       },
     ],
@@ -152,8 +205,7 @@ const BestFactor = () => {
         <div>
           <Title title="برترین کارخانه هایی که با ناهور کار میکنند" />
         </div>
-       
-       
+
         <Slider className="Bestfactor-slider" ref={slider} {...settings}>
           {bestFactors.map((card) => {
             return (
@@ -168,7 +220,7 @@ const BestFactor = () => {
             );
           })}
         </Slider>
- {console.log("salas",bestFactors)}
+        {console.log("salas", bestFactors)}
         {/* <button
           className="arrow-customize"
           onClick={() => slider?.current?.slickPrev()}

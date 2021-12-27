@@ -21,8 +21,8 @@ const FoundersofNahor = () => {
       img: "./nahoor home page/About Page/image2.png",
       name: "رضا کاظمی",
       job: "بازاریاب",
-      linkdin: "./nahoor home page/About Page/Solid/Brands/Linkedin.png",
-      facebook: "./nahoor home page/About Page/Solid/Brands/Facebook.png",
+      linkdin: "./nahoor home page/About Page/Linkedin.svg",
+      facebook: "./nahoor home page/About Page/Facebook.svg",
     },
   ];
   return (
@@ -50,6 +50,8 @@ const FoundersofNahor = () => {
                     <div className="Founders-img2-job">{founder.job}</div>
                   </div>
                   <div className="Founders-img2-social">
+                  {/* <div style={{width: '60%'}}><img src={founder.linkdin} width="100%"/></div>
+                    <div style={{width: '70%'}}><img src={founder.facebook} width="100%"/></div> */}
                     <div>in</div>
                     <div>f</div>
                   </div>

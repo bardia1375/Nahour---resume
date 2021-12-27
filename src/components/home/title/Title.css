@@ -16,3 +16,12 @@ white-space: nowrap;
     -webkit-transition: all 0.5s ease-in-out;
   }
 }
+@media (max-width: 768px) {
+  .homePage-title h2 {
+    font-size: 1.2rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+}

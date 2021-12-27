@@ -18,10 +18,10 @@ const HomePage = () => {
       <HeaderSample />
       <FeacherOfNahor />
       <FamilierNahor />
-      {/* <BestFactor /> */}
-      {/* <Application  /> */}
+      <BestFactor />
+      <Application  />
       {/* <CustomizableProduct /> */}
-      {/* <CustomerSatisfaction /> */}
+      <CustomerSatisfaction />
       <RegistrationNahor/>
       {/* <Footer /> */}
     </div>

@@ -1,6 +1,6 @@
 .Customer-slider {
-  width: 100%;
-  padding: 0 200px;
+  width: 70%;
+  /* padding: 0 200px; */
 }
 .Customer-main {
   display: flex;
@@ -11,6 +11,18 @@
 }
 .Customer-main h2 {
   color: #6b006d;
-  font-size: 2rem;
+
   margin-bottom: 80px;
+}
+@media (max-width: 900px) {
+  .Customer-slider {
+    width:100%;
+    /* padding: 0 200px; */
+  }
+}
+@media (max-width: 600px) {
+
+}
+@media (max-width: 480px) {
+
 }

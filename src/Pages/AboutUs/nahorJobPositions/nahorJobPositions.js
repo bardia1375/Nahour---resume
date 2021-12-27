@@ -13,7 +13,7 @@ const NahorJobPositions = () => {
   return (
     <div className="nahorJobPositions-container">
       <div className="nahorJobPositions-title">
-        <div style={{ width: "2%" }}>
+        <div style={{ width: "12px" }}>
           <img
             className="nahorJobPositions-img"
             width="100%"
