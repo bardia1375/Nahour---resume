@@ -12,17 +12,20 @@ import NahorJobPositions from "./nahorJobPositions/nahorJobPositions";
 
 const AboutUs = () => {
   return (
-    <div >
-     <NavbarSmall/>
+    <>
+      <NavbarSmall />
       <Header />
       <Explain />
-      {/* <GoalsOfNahour /> */}
-      {/* <FoundersofNahor /> */}
-      {/* <CallOfNahor /> */}
-      {/* <div style={{padding:"0 23vw"}}><CommiunicationForm /></div> */}
+      <div style={{ padding: "0 10vw"}}>
+        <GoalsOfNahour />
+        <FoundersofNahor />
+        
+        {/* <CommiunicationForm /> */}
+
+        {/* <Footer /> */}
+      </div>{" "}<CallOfNahor />
       <NahorJobPositions />
-           {/* <Footer /> */}
-    </div>
+    </>
   );
 };
 

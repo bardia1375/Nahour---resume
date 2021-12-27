@@ -6,7 +6,6 @@ import ButtonComponent from "../../../components/Button/button";
 import "./comminucationForm.css";
 import { Title } from "../../../components/AboutUs/title/Title";
 
-
 const MyTextInput2 = ({ label, ...props }) => {
   // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
   // which we can spread on <input>. We can use field meta to show an error
@@ -46,34 +45,6 @@ const MyTextInput2 = ({ label, ...props }) => {
           <input className="text-input" {...field} {...props} />
         </div>
       )}
-    </div>
-  );
-};
-const MyTextArea = ({ children, ...props }) => {
-  // React treats radios and checkbox inputs differently other input types, select, and textarea.
-  // Formik does this too! When you specify `type` to useField(), it will
-  // return the correct bag of props for you -- a `checked` prop will be included
-  // in `field` alongside `name`, `value`, `onChange`, and `onBlur`
-  const [field, meta] = useField({ ...props, type: "text" });
-  return (
-    <div className="formik-textArea">
-      <label className="formik-lable" for="story">
-        پیام متنی / نظرات شما
-      </label>
-      <textarea
-        className="textareaInput"
-        style={{ borderRadius: "20px", border: "2px solid #C9C9C9" }}
-        type="text"
-        {...field}
-        {...props}
-      >
-        {children}
-      </textarea>
-      {meta.touched && meta.error ? (
-        <div className="formik-error" style={{ textAlign: "right" }}>
-          {meta.error}
-        </div>
-      ) : null}
     </div>
   );
 };
@@ -136,7 +107,7 @@ const MyTextArea2 = ({ children, ...props }) => {
 const MySelect = ({ label, ...props }) => {
   const [field, meta] = useField(props);
   return (
-    <div className="formik-select" style={{paddingLeft: "4px"}}>
+    <div className="formik-select" style={{ paddingLeft: "4px" }}>
       <div className="formik-select">
         {meta.touched && meta.error ? (
           <>
@@ -192,118 +163,120 @@ const MySelect = ({ label, ...props }) => {
 // And now we can use these
 const CommiunicationForm = () => {
   return (
-    <div className="formik-container">
-      <div>
-        <div className="call-title" style={{ width: "30px" }}>
-          <img
-            className="call-imgtitle"
-            width="100%"
-            src="./nahoor home page/About Page/behinde.png"
-            alt=""
-          />
-          <div>
-            <Title title="نظرات" />
+    <div className="formik-container" style={{border: "1px solid red" }}>
+      <div className="formik-test" style={{border: "1px solid red" }}>
+        <div>
+          <div className="call-title">
+            <img
+              className="call-imgtitle"
+              width="100%"
+              src="./nahoor home page/About Page/behinde.png"
+              alt=""
+            />
+            <div>
+              <Title title="نظرات" />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="formik-container-main">
-        <Formik
-          initialValues={{
-            firstName: "",
-            email: "",
-            story: "",
-            phone: "",
-            jobType: "",
-          }}
-          validationSchema={Yup.object({
-            firstName: Yup.string()
-              .max(25, "شما مجاز به استفاده از حداکثر 15 کاراکتر هستید")
-              .required("لطفا فیلد را کامل کنید"),
-            phone: Yup.string()
-              .max(25, "شما مجاز به استفاده از حداکثر 15 کاراکتر هستید")
-              .required("لطفا فیلد را کامل کنید"),
-            email: Yup.string()
-              .email("لطفا ایمیل را درست وارد کنید")
-              .required("لطفا فیلد را کامل کنید"),
-            story: Yup.string().required("لطفا فیلد را کامل کنید"),
-            jobType: Yup.string()
-              .oneOf(["designer", "development"], "Invalid Job Type")
-              .required("لطفا فیلد را کامل کنید"),
-          })}
-          onSubmit={(values, { setSubmitting }) => {
-            setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              setSubmitting(false);
-            }, 100);
-          }}
-        >
-          <Form className="formik-main" >
-            <div className="formik-top3"  style={{width: "100%", paddingLeft:"20px"}}>
-              <div className="formik-top1" style={{width: "100%"}}  >
-                <div className="formik-topinput" >
-                  <MyTextInput2
-                    label="نام و نام خانوادگی"
-                    name="firstName"
-                    type="text"
-                    placeholder="پریا باب الحوایجی"
-                  />
+        <div className="formik-container-main" style={{border: "1px solid red"  ,margin:" 0 auto"}}>
+          <Formik
+            initialValues={{
+              firstName: "",
+              email: "",
+              story: "",
+              phone: "",
+              jobType: "",
+            }}
+            validationSchema={Yup.object({
+              firstName: Yup.string()
+                .max(25, "شما مجاز به استفاده از حداکثر 15 کاراکتر هستید")
+                .required("لطفا فیلد را کامل کنید"),
+              phone: Yup.string()
+                .max(25, "شما مجاز به استفاده از حداکثر 15 کاراکتر هستید")
+                .required("لطفا فیلد را کامل کنید"),
+              email: Yup.string()
+                .email("لطفا ایمیل را درست وارد کنید")
+                .required("لطفا فیلد را کامل کنید"),
+              story: Yup.string().required("لطفا فیلد را کامل کنید"),
+              jobType: Yup.string()
+                .oneOf(["designer", "development"], "Invalid Job Type")
+                .required("لطفا فیلد را کامل کنید"),
+            })}
+            onSubmit={(values, { setSubmitting }) => {
+              setTimeout(() => {
+                alert(JSON.stringify(values, null, 2));
+                setSubmitting(false);
+              }, 100);
+            }}
+          >
+            <Form className="formik-main">
+              <div className="formik-top3" >
+                <div className="formik-top1">
+                  <div className="formik-topinput">
+                    <MyTextInput2
+                      label="نام و نام خانوادگی"
+                      name="firstName"
+                      type="text"
+                      placeholder="پریا باب الحوایجی"
+                    />
+                  </div>
+                  <div className="formik-topinput">
+                    <MyTextInput2
+                      label="آدرس ایمیل"
+                      name="email"
+                      type="email"
+                      placeholder="jane@formik.com"
+                    />
+                  </div>
                 </div>
-                <div className="formik-topinput">
-                  <MyTextInput2
-                    label="آدرس ایمیل"
-                    name="email"
-                    type="email"
-                    placeholder="jane@formik.com"
-                  />
+                <div className="formik-top2">
+                  <div className="formik-topinput">
+                    <MyTextInput2
+                      label="شماره تماس"
+                      name="phone"
+                      type="number"
+                      placeholder="021-88882255"
+                    />
+                  </div>
+                  <div style={{ width: "100%" }}>
+                    <MySelect label="نوع فعالیت" name="jobType">
+                      <option className="formik-lable" value="">
+                        انتخاب کنید
+                      </option>
+                      <option className="formik-lable" value="designer">
+                        تاجر
+                      </option>
+                      <option className="formik-lable" value="development">
+                        کارخانه‌دار
+                      </option>
+                    </MySelect>
+                  </div>
                 </div>
               </div>
-              <div className="formik-top2">
-                <div className="formik-topinput">
-                  <MyTextInput2
-                    label="شماره تماس"
-                    name="phone"
-                    type="number"
-                    placeholder="021-88882255"
-                  />
-                </div>
-                <div style={{ width: "100%" }}>
-                  <MySelect label="نوع فعالیت" name="jobType">
-                    <option className="formik-lable" value="">
-                      انتخاب کنید
-                    </option>
-                    <option className="formik-lable" value="designer">
-                      تاجر
-                    </option>
-                    <option className="formik-lable" value="development">
-                      کارخانه‌دار
-                    </option>
-                  </MySelect>
+              <div className="formik-bottom">
+                <div>
+                  <MyTextArea2
+                    placeholder=" پیام مورد نظر خود را برای ما بنویسید :))"
+                    id="story"
+                    name="story"
+                    rows="5"
+                    cols="33"
+                  ></MyTextArea2>
                 </div>
               </div>
-            </div>
-            <div className="formik-bottom">
-              <div>
-                <MyTextArea2
-                  placeholder=" پیام مورد نظر خود را برای ما بنویسید :))"
-                  id="story"
-                  name="story"
-                  rows="5"
-                  cols="33"
-                ></MyTextArea2>
-              </div>
-            </div>
-            <div className="formikmain-bottom1">
-              <ButtonComponent
-                onSubmit
-                className="formik-button"
-                title="ارسال نظر"
-              />
-              {/* <button onSubmit className="formik-button" type="submit">
+              <div className="formikmain-bottom1">
+                <ButtonComponent
+                  onSubmit
+                  className="formik-button"
+                  title="ارسال نظر"
+                />
+                {/* <button onSubmit className="formik-button" type="submit">
                 ارسال نظر
               </button> */}
-            </div>
-          </Form>
-        </Formik>
+              </div>
+            </Form>
+          </Formik>
+        </div>
       </div>
     </div>
   );

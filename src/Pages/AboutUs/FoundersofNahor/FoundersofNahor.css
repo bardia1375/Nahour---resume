@@ -1,6 +1,5 @@
 .Founders-container {
   margin-top: -100px;
- 
 }
 .Founders-main {
   display: flex;
@@ -12,9 +11,8 @@
 }
 
 .Founders-img {
-
   width: 190px;
-  height: 40vh;
+  height: 30vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -23,8 +21,10 @@
   margin: 0 50px;
   position: relative;
 }
+.call-imgtitle{
+  width:30px
+}
 .Founders-box {
-
   color: #fff;
   position: relative;
   background-color: transparent;
@@ -63,7 +63,7 @@
   font-weight: 500;
   font-size: 12px;
 }
-.Founders-img2-in {
+.Founders-img2-social {
   margin-left: 16px;
   margin-bottom: 8px;
   display: flex;
@@ -71,14 +71,43 @@
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 400px) {
-  .Founders-img{
-    width: 150px;
-    height: 30vh;
+@media only screen and (max-width: 992px) {
+  .Founders-container {
+    margin-top: -520px;
   }
-  .Founders-box{
-    transform: translateY(88px);
+  .Founders-img {
+    width: 120px;
+    height: 200px;
 
+    margin: 0 50px;
   }
-
+  .call-imgtitle{
+    width:15px
+  }
+  .Founders-box {
+    color: #fff;
+    position: relative;
+    background-color: transparent;
+    transform: translateY(-45px);
+  }
+  .Founders-img2-name {
+    font-size: 0.8rem;
+    font-family: IRAN Sans;
+    font-style: normal;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+  .Founders-img2-job {
+    font-size: 0.6rem;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .Founders-img2-social {
+    margin-left: 8px;
+    margin-bottom: 0px;
+  }
 }

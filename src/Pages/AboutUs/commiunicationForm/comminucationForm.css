@@ -1,141 +1,147 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 0.8rem;
-  }
-  
-  .formik-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 98px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.formik-test{
+ width: 100%;
+}
+.formik-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
  
-  }
-  .formik-container-main {
-    width: 100%;
-    margin-top: 24px;
-  }
-  .formik-shairblog-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-  }
-  .formik-main-items {
-    width: 100%;
-  }
-  .formik-items {
-    display: flex;    
+}
+.formik-container-main {
+  width: 100%;
+  margin-top: 24px;
+}
+.formik-shairblog-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.formik-main-items {
+  width: 100%;
+}
+.formik-items {
+  display: flex;
 
-    flex-direction: column;
-    justify-content: center;
-    text-align: right;
-    width: 100%;
-  }
-  /* .formik-top{
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  width: 100%;
+}
+/* .formik-top{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-left: 30px;
   } */
-  .formik-top1 {
-    display: grid;
-    width: 100%;
-    padding-left: 28px;
+.formik-top1 {
+  display: grid;
+  width: 100%;
+  padding-left: 28px;
   grid-template-columns: 1fr 1fr;
-  grid-gap:100px
-  }
-  .formik-top2 {
-    display: grid;
-    
-  grid-template-columns: 1fr 1fr;
-  grid-gap:100px;
-    padding-left:24px;
-  }
-  .formik-topinput{
-    width: 100%;
-  }
-  .formik-mid {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .formik-bottom {
-    display: flex;
-    flex-direction: column;
-    margin-top:16px;
-    width: 100%;
-  }
-  .text-input {
-    border: 2px solid #c9c9c9;
-    border-radius: 50px;
-    padding: 8px 10px;
-  }
-  .textareaInput{
-    padding: 0px 16px;
-  }
-  .text-input:focus {
-    outline: 2px solid #ff9900;
-    border: none;
-  }
-  .formik-paragraph {
-    margin-top: 0px;
-  }
-  .formik-select {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    width: 100%;
-    /* padding-left: 7px; */
-    margin-right: 8px;
-  }
+  grid-gap: 100px;
+}
+.formik-top2 {
+  display: grid;
 
-  .formikmain-bottom1 {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-top:16px;
-    margin-right: -40px;
-  }
-  .formik-error {
-    font-size: 0.8rem;
-    color: red;
-  }
-  .formik-textArea {
-    display: flex;
-    flex-direction: column;
-   padding-left: 20px;
-    margin: 0 16px;
-  }
-  .formik-textArea-true {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .textareaInput {
-    width: 100%;
-  }
-  .textareaInput:focus {
-    outline: 2px solid #ff9900;
-    border: none;
-  }
-  .formik-lable {
-    font-family: IRANSans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 23px;
-    text-align: right;
-  }
-  .formik-select{
-  width:100%;
-  
-  }
-  @media (max-width: 1200px) {
-    .formik-topinput{
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  padding-left: 24px;
+}
+.formik-topinput {
+  width: 100%;
+}
+.formik-mid {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.formik-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  width: 100%;
+}
+.text-input {
+  border: 2px solid #c9c9c9;
+  border-radius: 50px;
+  padding: 8px 10px;
+}
+.textareaInput {
+  padding: 0px 16px;
+}
+.text-input:focus {
+  outline: 2px solid #ff9900;
+  border: none;
+}
+.formik-paragraph {
+  margin-top: 0px;
+}
+.formik-select {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 100%;
+  /* padding-left: 7px; */
+  margin-right: 8px;
+}
+
+.formikmain-bottom1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  margin-right: -40px;
+}
+.formik-error {
+  font-size: 0.8rem;
+  color: red;
+}
+.formik-textArea {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin: 0 16px;
+}
+.formik-textArea-true {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.textareaInput {
+  width: 100%;
+}
+.textareaInput:focus {
+  outline: 2px solid #ff9900;
+  border: none;
+}
+.formik-lable {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 23px;
+  text-align: right;
+}
+.formik-select {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  /* .formik-topinput{
       width: 80%;
+    } */
+    .formik-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0
     }
 }

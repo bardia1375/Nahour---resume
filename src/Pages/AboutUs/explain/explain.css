@@ -28,7 +28,7 @@
 }
 @media (max-width: 768px) {
     .explain-container {
-        height: 12vh;
+        height: 100px;
       }
     
       .explain-properties h2 {

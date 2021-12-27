@@ -40,7 +40,7 @@ const CallOfNahor = () => {
             return (
               <div className="call-rightchild">
                 <div className="call-rightimg">
-                  <img src={call.src} width="100%" />
+                  <img src={call.src}  />
                 </div>
                 <div className="call-phoneRightmain">
                   <div>

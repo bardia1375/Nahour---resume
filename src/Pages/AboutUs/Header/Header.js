@@ -13,7 +13,7 @@ const Header = () => {
       <div className="About-container">
         <div className="About-title">
           <div className="AboutUs-right">
-            <div style={{width: '5%'}}>
+            <div className="AboutUs-behinde">
               <img
                 className="AboutUs-Logo"
                 width="100%"

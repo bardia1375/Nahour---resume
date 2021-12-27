@@ -30,7 +30,7 @@ const FoundersofNahor = () => {
       <div className="call-title">
         <img
           className="call-imgtitle"
-          width="30px"
+     
           src="./nahoor home page/About Page/behinde.png"
           alt=""
         />
@@ -49,7 +49,7 @@ const FoundersofNahor = () => {
                     <div className="Founders-img2-name">{founder.name}</div>
                     <div className="Founders-img2-job">{founder.job}</div>
                   </div>
-                  <div className="Founders-img2-in">
+                  <div className="Founders-img2-social">
                     <div>in</div>
                     <div>f</div>
                   </div>
