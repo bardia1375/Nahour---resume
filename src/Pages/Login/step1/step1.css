@@ -1,7 +1,9 @@
 .step1-container {
-  width: 26vw;
+  width: 500px;
   margin-top: -40px;
   position: relative;
+
+
 }
 .step1-main {
   background: #ffffff;
@@ -39,3 +41,26 @@
     outline: 2px solid #ff9900;
     border: none;
   }
+  .login-bottom1{
+ 
+    margin-top: -32px;
+  }
+
+
+
+  @media (max-width: 768px) {
+
+    .step1-container {
+      width: 80vw;
+      margin-top: -40px;
+      position: relative;
+    
+      min-width: 320px;
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+
+  }
+  

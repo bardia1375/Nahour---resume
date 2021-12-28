@@ -33,8 +33,8 @@ const Step0 = () => {
   };
   return (
     <div className="step0-container">
-      <div style={{transform:"translateY(8px)"}}>
-        <img src="/nahoor home page/Signup/vector.svg" />
+      <div className="step0-topImg" style={{transform:"translateY(10px)"}}>
+        <img src="/nahoor home page/Signup/vector.svg" width="100%" />
       </div>
       <div className="step0-main">
         <div className="step0-box">
@@ -70,6 +70,7 @@ const Step0 = () => {
               />
             </Form>
           </Formik>
+        
           {/* <input type="number" placeholder="---- --- --09" /> */}
           <Link to="step2" style={{ width: "100%" }}>
             <button type="submit" className="step0-btn">
@@ -93,9 +94,9 @@ const Step0 = () => {
             <p>ثبت نام کنید</p>
           </Link>
           <p style={{ marginBottom: "40px" }}>
-            با ورود یا ثبت نام در سایت شما{" "}
+            با ورود یا ثبت نام در سایت شما
             <span style={{ color: " #FF9900" }}>شرایط و قوانین </span> استفاده
-            از ناهور را میپذیرید.{" "}
+            از ناهور را میپذیرید.
           </p>
         </div>
       </div>

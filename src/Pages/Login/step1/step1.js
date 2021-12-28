@@ -103,7 +103,7 @@ const Step1 = (props) => {
                 className="step1-item"
                 name="firstName"
                 type="text"
-                placeholder="نام حود را بنویسید"
+                placeholder="نام خود را بنویسید"
               />
               <MyTextInput2
                 className="step1-item"

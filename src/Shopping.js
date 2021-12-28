@@ -51,7 +51,7 @@ export const Shopping = () => {
   // console.log(user.user.name);
   return (
     <div className="Shopping-Container">
-      {/* <NavbarStore user={user?.user?.name} /> */}
+      <NavbarStore user={user?.user?.name} />
       <Routes>
         <Route path="/" element={<Store />} />
         <Route path="/listFactor/product/:id" element={<ProductOfFactor />} />

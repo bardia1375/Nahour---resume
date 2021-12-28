@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+::placeholder {
+  font-family: IRANSans;
+
+  font-size:0.8rem;
+  color:#959595
+ }

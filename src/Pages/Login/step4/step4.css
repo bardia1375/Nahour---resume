@@ -1,56 +1,80 @@
 .login-container {
-    background-color: #6b006d;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;align-items: center;
+  justify-content: center;
+  background-color: #6b006d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-container2 {
+  width: 500px;
+  min-width: 300px;
+}
+
+.login-main {
+  background: #ffffff;
+  border-radius: 7px;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.login-main h2 {
+  text-align: center;
+}
+
+.login-main button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #6b006d;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  padding: 8px;
+  margin-top: 40px;
+}
+.login-content p{
+
+  line-height: 24px;
+  font-size:0.8rem;
+  margin: 0px;
+}
+.login-main p {
+  margin-top: 0px;
+}
+.login-content {
+  padding: 40px;
+}
+.login-bottom1 {
+  display: flex;
+  color: #6b006d;
+  transform: translateY(100px);
+  justify-content: center;
+}
+.login-bottom1:first-child {
+  border: 1px solid red;
+}
+.login-bottom1:nth-child(3) {
+  border: 1px solid red;
+  margin-right: 8px;
+}
+@media (max-width: 768px) {
+  .login-container2 {
+    width:80vw;
+    min-width: 300px;
   }
-  .login-container2{
-      width:40%;  
+  .login-content p{
+    font-size:0.6rem
   }
-  
-  .login-main {
-    background: #ffffff;
-    border-radius: 7px;
-  
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  
-  .login-main h2 {
-    text-align: center;
-   
-  }
-  .login-main button {
-    width: 100%;
-    background: #6b006d;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    padding: 16px;
-    margin-top: 40px;
-  }
-  .login-main p{
-      margin-top: 40px;
-  
-  }
-  .login-content {
-    padding: 40px;
-  }
-  .login-bottom1{
-    display: flex;
-    color: #6b006d;
-    transform: translateY(100px);
-    justify-content: center;
-  }
-  .login-bottom1:first-child{
-   border: 1px solid red
-  }
-  .login-bottom1:nth-child(3){
-    border: 1px solid red;
-    margin-right: 8px;
-  }
+}
+
+@media (max-width: 480px) {
+
+}
