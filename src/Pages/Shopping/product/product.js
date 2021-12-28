@@ -439,7 +439,7 @@ const Product = (props) => {
           <div className="line2"></div>
         </div>
       </div>
-      <div className="products-bottom">
+      {/* <div className="products-bottom">
         <Slider {...settings} style={{ width: "100%" }}>
           {cards.map((card) => {
             return (
@@ -468,7 +468,7 @@ const Product = (props) => {
             );
           })}
         </Slider>
-      </div>
+      </div> */}
     </>
   );
 };
