@@ -16,7 +16,7 @@ const Support = (props) => {
 
   return (
     <div className="support-container">
-       <div className="support-img">
+      <div className="support-img">
         <div>
           <h2>{Title}</h2>
         </div>
@@ -53,7 +53,10 @@ const Support = (props) => {
         <h2>تماس مستقیم با پشتیبانی</h2>
         <div>
           <div className="support-direct-contact-items">
-          <div><h3>تماس با پشتیبانی</h3></div>             <span
+            <div>
+              <h3>تماس با پشتیبانی</h3>
+            </div>
+            <span
               class="material-icons"
               style={{ transform: "rotate(180deg)" }}
             >
@@ -63,7 +66,9 @@ const Support = (props) => {
         </div>
         <div>
           <div className="support-direct-contact-items">
-           <div><h3>چت با پشتیبانی</h3></div> 
+            <div>
+              <h3>چت با پشتیبانی</h3>
+            </div>
             <span
               class="material-icons"
               style={{ transform: "rotate(180deg)" }}

@@ -1,5 +1,6 @@
 .profile-container {
   display: flex;
+
   padding: 2vw 4vw;
   justify-content: space-between;
   margin-top: 40px;
@@ -8,11 +9,12 @@
   background: #f8f8f8;
   border-radius: 7px;
   width: 20vw;
-  padding: 32px 40px;
+  min-width: 280px;
+  padding: 32px;
   position: sticky;
   top: 10%;
   height: 730px;
-  margin-left: 150px;
+  margin-left: 40px;
 }
 .profile-photo {
   display: flex;
@@ -97,4 +99,31 @@
 }
 .exite-buttons p {
   margin: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .profile-sideBar {
+    min-width: 280px;
+    padding: 16px;
+    position: sticky;
+    top: 10%;
+    height: 730px;
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .profile-sideBar {
+    display: none;
+  }
+  .profile-components {
+    margin-top: 32px;
+ 
+  }
+  .profile-container {
+    display: flex;
+    padding: 2vw 4vw;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-direction: column;
+  }
 }

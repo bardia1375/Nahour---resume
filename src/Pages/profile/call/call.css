@@ -7,7 +7,7 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.14);
   border-radius: 5px;
   padding: 50px 15vw;
-  margin-top:150px;
+  margin-top: 150px;
   position: relative;
 }
 .callProfile-title {
@@ -15,8 +15,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-position:absolute;
-transform: translateY(-250px);
+  position: absolute;
+  transform: translateY(-250px);
 }
 .callProfile-img {
   margin-top: 32px;
@@ -42,27 +42,48 @@ transform: translateY(-250px);
   align-items: center;
   justify-content: center;
 }
-.callProfile-items h2 {
-  font-size:1rem
-}
+
 .callProfile-items img {
   margin-left: 8px;
   transform: translateY(-4px);
 }
-.callProfile-social{
+.callProfile-social {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.callProfile-socialItems{
-    background: #6b006d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius:50px;
-    width:30px;
-    height:30px;
-    margin-top: 60px;
-    margin-right:16px;
-    cursor: pointer;
+.callProfile-socialItems {
+  background: #6b006d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  margin-top: 60px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.callProfile-containers h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+.callProfile-containers p {
+  font-size: 0.8rem;
+
+  margin: 0 5px;
+}
+@media only screen and (max-width: 992px) {
+  .callProfile-containers {
+    width: 100%;
+    margin-top: 180px;
+    flex-direction: column;
+    padding: 50px 2vw;
+  }
+  .callProfile-containers h2 {
+    font-size: 0.8rem;
+  }
+  .callProfile-containers p {
+    font-size: 0.6rem;
+  }
 }

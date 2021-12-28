@@ -1,3 +1,9 @@
+.ProfileOrder-header{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .ProfileOrder-receive {
   color: #029494;
   display: flex;
@@ -13,10 +19,7 @@
   cursor: pointer;
 }
 
-.ProfileOrder-actives {
-  border-left: 2px solid rgba(146, 146, 146, 0.34);
-  padding-left: 250px;
-}
-.ProfileOrder-activess{
-    border-bottom: 2px solid red
+.ProfileOrder-photo{
+  font-family: IRANSans;
+  font-size:1rem
 }

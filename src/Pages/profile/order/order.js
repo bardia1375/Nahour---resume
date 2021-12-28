@@ -20,11 +20,11 @@ const Order = () => {
   return (
     <>
       <header className="ProfileOrder-header">
-        <p onClick={() => ActiveOrder()} className="ProfileOrder-actives">
+       <div> <p onClick={() => ActiveOrder()} className="ProfileOrder-actives">
           سفارش های فعال
-        </p>
-
-        <p onClick={() => previousOrder()}>سفارش های قبلی</p>
+        </p></div>
+      <div style={{backgroundColor:"rgba(146, 146, 146, 0.34)" , height:"32px", width:"2px"}}></div>
+        <div>  <p onClick={() => previousOrder()}>سفارش های قبلی</p></div>
       </header>
       {state ? (
         <section className="ProfileOrder-content">
@@ -42,9 +42,9 @@ const Order = () => {
             <div className="ProfileOrder-products">
               {products.map((product) => {
                 return (
-                  <div>
+                  <div className="ProfileOrder-photo">
                     <img src={product.img} />
-                    عکس از ریداکس استور مرکزی
+             عکس از ریداکس استور مرکزی
                   </div>
                 );
               })}

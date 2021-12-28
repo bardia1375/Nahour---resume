@@ -110,3 +110,9 @@
   color: #6b006d;
   border: none;
 }
+@media only screen and (max-width: 992px) {
+  .ProfileOrder-header {
+    width: 100%;
+ 
+  }
+}

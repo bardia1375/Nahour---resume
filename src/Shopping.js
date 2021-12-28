@@ -55,7 +55,7 @@ export const Shopping = () => {
       <Routes>
         <Route path="/" element={<Store />} />
         <Route path="/listFactor/product/:id" element={<ProductOfFactor />} />
-        {/* <Route path="/listFactor/:id/:id" element={<Product />} /> */}
+        <Route path="/listFactor/:id/:id" element={<Product />} />
         <Route path="listFactor/*" element={<FactorList />} />
         <Route path="/" element={<FactorListCard />} />
 
@@ -73,6 +73,7 @@ export const Shopping = () => {
         <Route path="bardia" element={<ConditionNahor />} />
         {/* <Route path="/listFactor/FactorProduct" element={<ProductOfFactor />} /> */}
       </Routes>
+    
       {/* <Footer /> */}
     </div>
   );

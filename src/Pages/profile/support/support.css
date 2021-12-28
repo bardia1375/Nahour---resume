@@ -57,11 +57,11 @@
 }
 .support-call h2 {
   margin: 16px 0px;
-  font-size: 1.2rem;
+
 }
 .support-direct-contact h2 {
   margin: 8px 0px;
-  font-size: 1.2rem;
+
 }
 .support-call input {
   display: flex;
@@ -97,4 +97,28 @@
 .support-direct-contact-items h3 {
   margin: 0;
   padding: 0;
+}
+.support-container h2{
+  font-size: 1.1rem;
+}
+.support-container h3{
+  font-size: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  
+  .support-container{
+    width: 100%;
+  }
+  .support-container {
+
+    margin-top: 180px;
+    padding: 50px 8vw;
+    
+  }
+  .support-container h2{
+    font-size: 1rem;
+  }
+  .support-container h3{
+    font-size: 0.8rem;
+  }
 }

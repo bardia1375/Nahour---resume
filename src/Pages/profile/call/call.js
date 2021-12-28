@@ -10,17 +10,17 @@ const Call = () => {
         " تهران - کیلومتر 22 جاده تهران ساوه - روبروی شهرک قائمیه-شرکت ناهور",
     },
     {
-      img:"/nahoor home page/profile/Icons/Icon/phone.svg",
+      img: "/nahoor home page/profile/Icons/Icon/phone.svg",
       title: "شماره تماس:",
       paragraph: "021-57524",
     },
     {
-      img:"/nahoor home page/profile/Icons/Icon/website.svg",
+      img: "/nahoor home page/profile/Icons/Icon/website.svg",
       title: "وبسایت:",
       paragraph: "nahoor.ir",
     },
     {
-      img:"/nahoor home page/profile/Icons/Icon/Group 372.svg",
+      img: "/nahoor home page/profile/Icons/Icon/Group 372.svg",
       title: "ایمیل:",
       paragraph: "information-dairly.com",
     },
@@ -49,9 +49,24 @@ const Call = () => {
         })}
       </div>
       <div className="callProfile-social">
-        <div className="callProfile-socialItems"><img className="callProfile-socialItem" src="/nahoor home page/profile/Icons/Icon/instagram.svg" /></div>
-        <div className="callProfile-socialItems"><img className="callProfile-socialItem" src="/nahoor home page/profile/Icons/Icon/linkedin.svg"/></div>
-        <div className="callProfile-socialItems"><img className="callProfile-socialItem" src="/nahoor home page/profile/Icons/Icon/twitter.svg"/></div>
+        <div className="callProfile-socialItems">
+          <img
+            className="callProfile-socialItem"
+            src="/nahoor home page/profile/Icons/Icon/instagram.svg"
+          />
+        </div>
+        <div className="callProfile-socialItems">
+          <img
+            className="callProfile-socialItem"
+            src="/nahoor home page/profile/Icons/Icon/linkedin.svg"
+          />
+        </div>
+        <div className="callProfile-socialItems">
+          <img
+            className="callProfile-socialItem"
+            src="/nahoor home page/profile/Icons/Icon/twitter.svg"
+          />
+        </div>
       </div>
     </div>
   );
