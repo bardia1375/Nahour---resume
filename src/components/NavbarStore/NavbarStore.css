@@ -25,6 +25,7 @@ body {
   height: 70px;
   background-size: contain;
   margin-left: 16px;
+  transform: translateX(20px)
 }
 .navbarTopStoreRight {
   display: flex;

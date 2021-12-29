@@ -12,7 +12,7 @@ import Footer from "./Pages/Homepage/footer/footer";
 
 function App() {
   return (
-    <div>
+    <div style={{overflow: 'hidden'}}>
       {/* <Login /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />

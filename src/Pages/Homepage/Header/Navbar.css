@@ -6,13 +6,10 @@
   justify-content: space-between;
 
   height: 100%;
-position: relative;
- 
+  position: relative;
 }
-.material-icons{
-
+.material-icons {
   cursor: pointer;
-  
 }
 .NavbarLogo {
   transform: translateX(-5px);
@@ -25,7 +22,6 @@ position: relative;
   align-items: center;
   list-style-type: none;
   padding-right: 30px;
-
 }
 
 .navbarMenu2 {
@@ -38,8 +34,8 @@ position: relative;
 .navbar-hamburger {
   z-index: 10000;
   cursor: pointer;
- position: absolute;
- left: 4%;
+  position: absolute;
+  left: 4%;
 }
 .NavbarItemss {
   display: flex;
@@ -114,7 +110,6 @@ position: relative;
     padding: 0 0px;
     align-items: center;
     justify-content: space-evenly;
-    transform: translate(-32px, 24px);
   }
   .navbarMenu {
     display: flex;
@@ -133,12 +128,7 @@ position: relative;
     right: 0;
     z-index: 102;
     display: flex;
-    background: linear-gradient(
-      91.49deg,
-      #6b006d 38.27%,
-      #ff9900 181.4%,
-      #f69007 181.4%
-    );
+    background: #ff9900;
     height: 100vh;
     width: 100vw;
     justify-content: center;
@@ -147,10 +137,10 @@ position: relative;
     padding-right: 0px;
     flex: 1;
     /* display:none; */
-    clip-path: circle(0px at 100% 0%);
-    -webkit-clip-path: circle(0px at 100% 0%);
-    -moz-clip-path: circle(-50px at 90% -10%);
-    -o-clip-path: circle(-50px at 90% -10%);
+    clip-path: circle(0px at 0% 0%);
+    -webkit-clip-path: circle(0px at 0% 0%);
+    -moz-clip-path: circle(0px at 0% -10%);
+    -o-clip-path: circle(0px at 0% -10%);
     transition: all 1s ease-in-out;
   }
 
@@ -161,12 +151,7 @@ position: relative;
     right: 0;
     z-index: 102;
     display: flex;
-    background: linear-gradient(
-      91.49deg,
-      #6b006d 38.27%,
-      #ff9900 181.4%,
-      #f69007 181.4%
-    );
+    background: orange;
     height: 100vh;
     width: 100vw;
     justify-content: center;
