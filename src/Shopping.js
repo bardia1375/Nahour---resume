@@ -50,7 +50,7 @@ export const Shopping = () => {
   // console.log(user?.user?.name);
   // console.log(user.user.name);
   return (
-    <div className="Shopping-Container">
+    <div className="Shopping-Container" style={{overflow: 'hidden'}}>
       <NavbarStore user={user?.user?.name} />
       <Routes>
         <Route path="/" element={<Store />} />

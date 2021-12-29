@@ -6,32 +6,34 @@
   margin-top: 100px;
   background: linear-gradient(95.32deg, #6b006d 44.23%, #ff9900 136.19%);
   color: #fff;
-  min-width: 700px;
-  padding: 0 300px;
+  padding: 0 100px;
   max-width: 2000px;
   margin-right: auto;
   margin-left: auto;
 }
 .Footer-icons {
   margin-top: 40px;
+   /* width: 100%; */
 }
 .Footer-items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 60px;
+  margin-top: 40px;
   width: 100%;
+
   margin-bottom: 40px;
 }
 .Footer-culomn {
   display: flex;
+ 
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 .Footer-culomn p {
-  margin-top: 14px;
+  margin-top: 14px; 
   font-size: 0.8rem;
   line-height: 24px;
 }
@@ -67,7 +69,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 300px;
+  padding: 8px 100px;
   background: linear-gradient(
     95.32deg,
     rgba(107, 0, 109, 0.16) 44.23%,
@@ -82,4 +84,59 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .Footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background: linear-gradient(95.32deg, #6b006d 44.23%, #ff9900 136.19%);
+    color: #fff;
+    padding: 0 30px;
+    max-width: 2000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .Footer-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    width: 100%;
+ 
+    margin-bottom: 40px;
+  }
+  .Footer-culomn {
+    
+    margin-top: 16px;
+  }
+  .Footer-culomn p {
+    margin-top: 14px; 
+    font-size: 0.6rem;
+    line-height: 24px;
+  }
+  .Footer-address,
+  .Footer-explain {
+    width: 100%;
+   
+  }
+  .CopyRight {
+   
+    padding: 8px 30px;
+
+  }
+  .CopyRight-paragraph {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 768px) {}
+@media (max-width: 600px) {
+  .CopyRight-paragraph {
+    font-size: 0.35rem;
+  }
 }

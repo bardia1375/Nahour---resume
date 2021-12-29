@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 .navbarContainerStore {
   margin: 0 auto;
   position: sticky;
@@ -14,7 +17,6 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  
 }
 .navbarTopStoreLogo {
   display: block;
@@ -37,6 +39,9 @@
   padding: 8px 45px 8px 14px;
   width: 70%;
   margin: 8px 0px;
+}
+.navbarbottomStoreInput {
+  display: none;
 }
 .navbarTopStoreInput::placeholder {
   color: #6b006d;
@@ -86,7 +91,7 @@
   transform: translate(30px, -4px);
 }
 .navbarStoreBottom {
-  padding:0px 24px 0px 24px;
+  padding: 0px 24px 0px 24px;
   background: #f8f8f8;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -132,7 +137,6 @@
   z-index: 1;
   border-radius: 0px 0px 7px 7px;
   /* border: 1px solid red; */
-
 }
 .navbarStoreBottomMainGroup:hover .dropdown-content {
   display: flex;
@@ -185,10 +189,55 @@
   width: 20px;
   margin-left: 8px;
 }
-@media (max-width:992px) {
- .NavbarStoreItem{
-   display: none;
- }
+.Navbarbottomleft4 {
+  display: none;
+}
+@media (max-width: 992px) {
+  .NavbarStoreItem,
+  .navbarTopStoreInput,
+  .navbarTopStoreLeft,
+  .navbarStorePopup {
+    display: none;
+  }
+  .navbarStoreBottom {
+    display: flex;
+    align-items: center;
+    padding: 0px 24px;
+    position: relative;
+  }
+  .navbarbottomStoreInput {
+    display: flex;
+    border: 2.5px solid #6b006d;
+    border-radius: 50px;
+    outline: none;
+    padding: 8px 45px 8px 14px;
+    width: 70%;
+    min-width: 200px;
+    margin: 12px 0px 0 0;
+  }
+
+  .Navbarbottomleft4 {
+    display: flex;
+    margin: 0px 0px;
+  }
+}
+@media (max-width: 600px) {
+  .navbarbottomStoreInput {
+    display: flex;
+    border: 2.5px solid #6b006d;
+    border-radius: 50px;
+    outline: none;
+    padding: 8px 45px 8px 14px;
+    width: 100%;
+    min-width: 200px;
+    margin: 12px 0px 0 0;
+  }
+  .Navbarbottomleft4 {
+    position:absolute;
+    left:4%;
+    display: flex;
+    margin: 0px 0px;
+  }
 }
 
 /* .NavbarStoreItem::after{

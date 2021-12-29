@@ -6,6 +6,9 @@ const Footer = () => {
   return (
     <div className="Footer">
       <div className="Footer-container">
+
+
+
         <div className="Footer-icons">
         <div style={{width:"200px", height:"0px", border: "1px solid #fff" , marginLeft: "50px"}}></div>
 
@@ -54,6 +57,11 @@ const Footer = () => {
           </a>
           <div style={{width:"200px", height:"0px", border: "1px solid #fff" , marginRight: "50px"}}></div>
         </div>
+
+
+
+
+
         <div className="Footer-items">
           <div className="Footer-culomn">
             <img

@@ -5,6 +5,10 @@ import "./NavbarStore.css";
 export const NavbarStore = (props) => {
   const [state, setState] = useState({ count: 0 });
   const [login, setLogin] = useState(true);
+  const [hamburger, setHamburger] = useState(true);
+  const Hamburger = () => {
+    setHamburger(!hamburger);
+  };
   useEffect(() => {
     cartStore.subscribe(() => {
       setState({ count: cartStore.getState().length });
@@ -15,13 +19,28 @@ export const NavbarStore = (props) => {
       <div className="navbarContainerStore">
         <div className="navbarTopStore">
           <div className="navbarTopStoreRight">
-            <a className="navbarTopStoreLogo"></a>
+            <a className="navbarTopStoreLogo" href="#"></a>
             <input
               type="text"
               className="navbarTopStoreInput"
               placeholder="جستجو"
             />
           </div>
+          {hamburger ? (
+            <div className="navbar-hamburger" onClick={() => Hamburger()}>
+              <div className="navbar-line"></div>
+              <div className="navbar-line"></div>
+              <div className="navbar-line"></div>
+            </div>
+          ) : (
+            <span
+              onClick={() => Hamburger()}
+              className="material-icons"
+              style={{ fontSize: "2rem", color: "white" }}
+            >
+              close
+            </span>
+          )}
           <div className="navbarTopStoreLeft">
             {!props.user ? (
               <Link to="/store/login" className="navbarTopStoreLeftLogoProfile">
@@ -52,7 +71,13 @@ export const NavbarStore = (props) => {
 
         {/* navbarBottom */}
         <div className="navbarStoreBottom">
+          {/* right bottom navbar */}
           <ul className="navbarStoreBottomMain">
+            <input
+              type="text"
+              className="navbarbottomStoreInput"
+              placeholder="جستجو"
+            />
             <li className="navbarStoreBottomMainGroup">
               <a href="" className="navbarStorePopup">
                 <img src="/nahoor home page/store page/icons/Icon/24×24/Color/Interface/Menu Burger Horizontal.svg" />
@@ -92,7 +117,7 @@ export const NavbarStore = (props) => {
                 </div>
               </div>
             </li>
-            <div className="NavbarStoreItems" style={{display: 'flex'}}>
+            <div className="NavbarStoreItems" style={{ display: "flex" }}>
               <li style={{ marginRight: "-4px" }}>
                 <Link to="./listFactor" className="NavbarStoreItem">
                   <img src="/nahoor home page/store page/icons/Icon/24×24/Color/eCommerce/Store.svg" />
@@ -125,6 +150,21 @@ export const NavbarStore = (props) => {
               </li>
             </div>
           </ul>
+          {/* left bottom navbar */}
+          <div className="Navbarbottomleft4">
+            <Link
+              to="/store/profile"
+              className="navbarBottomStoreLeftLogoProfile"
+            >
+              <img src="/nahoor home page/store page/Profile icon.svg" />
+            </Link>
+            <a href="" className="navbarBottomStoreLeftLogoCart">
+              <img src="/nahoor home page/store page/Cart.svg" />
+              {state.count > 0 && (
+                <span className="countOfProduct">{state.count}</span>
+              )}
+            </a>
+          </div>
         </div>
       </div>
     </>

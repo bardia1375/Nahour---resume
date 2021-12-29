@@ -1,14 +1,21 @@
 .navbar {
-  margin-top: 40px;
+  margin-top: 20px;
   height: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  /* padding: 0 36px; */
+  height: 100%;
+position: relative;
+ 
+}
+.material-icons{
+
+  cursor: pointer;
+  
 }
 .NavbarLogo {
-  transform: translateY(-4px);
+  transform: translateX(-5px);
   cursor: pointer;
 }
 .navbarMenu {
@@ -18,6 +25,26 @@
   align-items: center;
   list-style-type: none;
   padding-right: 30px;
+
+}
+
+.navbarMenu2 {
+  clip-path: circle(-50px at 90% -10%);
+  -webkit-clip-path: circle(-50px at 90% -10%);
+  -moz-clip-path: circle(50px at 90% -10%);
+  -o-clip-path: circle(50px at 90% -10%);
+}
+
+.navbar-hamburger {
+  z-index: 10000;
+  cursor: pointer;
+ position: absolute;
+ left: 4%;
+}
+.NavbarItemss {
+  display: flex;
+  flex-direction: row;
+  margin-right: 32px;
 }
 .NavbarItems {
   display: flex;
@@ -79,12 +106,93 @@
   .navbar {
     justify-content: center;
   }
-  .navbarMenu {
-    /* اینو جواست باشه نخواستی حذف کن */
-    padding-right: 20px;
+
+  .NavbarItemss {
+    height: 100vh;
+    flex-direction: column;
+    z-index: 100;
+    padding: 0 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translate(-32px, 24px);
   }
-  .NavbarItems {
-    display: none;
+  .navbarMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .navbarMenuClose {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    z-index: 102;
+    display: flex;
+    background: linear-gradient(
+      91.49deg,
+      #6b006d 38.27%,
+      #ff9900 181.4%,
+      #f69007 181.4%
+    );
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 0px;
+    flex: 1;
+    /* display:none; */
+    clip-path: circle(0px at 100% 0%);
+    -webkit-clip-path: circle(0px at 100% 0%);
+    -moz-clip-path: circle(-50px at 90% -10%);
+    -o-clip-path: circle(-50px at 90% -10%);
+    transition: all 1s ease-in-out;
+  }
+
+  .navbarMenuOpen {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    z-index: 102;
+    display: flex;
+    background: linear-gradient(
+      91.49deg,
+      #6b006d 38.27%,
+      #ff9900 181.4%,
+      #f69007 181.4%
+    );
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 0px;
+    flex: 1;
+    /* display: none; */
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    -moz-clip-path: circle(1500px at 90% -10%);
+    -o-clip-path: circle(1500px at 90% -10%);
+    transition: all 1s ease-in-out;
+  }
+
+  .NavbarLogo {
+    z-index: 1000;
+  }
+
+  .navbar-line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transform: translateX(-16px);
+    border-radius: 50px;
   }
 }
 @media (max-width: 768px) {

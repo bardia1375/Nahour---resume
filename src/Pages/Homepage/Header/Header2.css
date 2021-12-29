@@ -124,6 +124,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  z-index: 0 ;
 }
 @media (max-width: 1600px) {
   .HeaderContainer {
