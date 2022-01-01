@@ -2,7 +2,7 @@ import React from "react";
 import ButtonComponent from "../../../components/Button/button";
 import Title from "../../../components/home/title/Title";
 import "./registrationNahor.css";
-
+import {Link} from "react-router-dom"
 export const RegistrationNahor = () => {
   const components = [
     {
@@ -26,7 +26,7 @@ export const RegistrationNahor = () => {
             <div className="registrationNahor-paragraph">
               <p>{component.paragraph}</p>
             </div>
-            <div className="registrationNahorButton"><ButtonComponent title="ثبت نام"/></div>
+           <Link to="./store/login" style={{textDecoration: "none"}}> <div className="registrationNahorButton"><ButtonComponent title="ثبت نام"/></div></Link>
           </div>
         );
       })}

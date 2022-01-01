@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 import "./NahorSuggestionsCard.css";
 function NahorSuggestionsCard(props) {
   return (
-      <div className="NahorSuggestionsCard-container" >
-        <div style={{ width: "150px" ,height: "150px" }} className="NahorSuggestionsCard-Img">
-          <img src={props.img} width="100%"  />
+    <div className="NahorSuggestionsCard-container">
+      <Link to="/" style={{textDecoration:"none", color: "black"}}>
+        <div
+          style={{ width: "150px", height: "150px" }}
+          className="NahorSuggestionsCard-Img"
+        >
+          <img src={props.img} width="100%" />
         </div>
         <div className="NahorSuggestionsCard-Title">
           <h3>{props.title}</h3>
@@ -47,8 +51,8 @@ function NahorSuggestionsCard(props) {
             </div>
           </div>
         </div>
-      </div>
-
+      </Link>
+    </div>
   );
 }
 

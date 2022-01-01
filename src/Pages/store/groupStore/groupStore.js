@@ -34,18 +34,25 @@ const GroupStore = () => {
       <div className="groupStore-main">
         {cards.map((card) => {
           return (
-            <div className="groupStore-cards" >
-              <div className="groupStore-cardsImg" style={{ width: "100%" }}>
-                <img src={card.img} width="100%" />
-                <div className="groupStore-contentImg">
-                  <div >
-                    <div  className="groupStore-text"><Link  to="listFactor"><h2>{card.text}</h2></Link></div>
-                  </div>
-                  <div className="groupStore-arrow" >
-                    <img src="/nahoor home page/store page/icons/arrow.svg" width="100%"  />
+            <div className="groupStore-cards">
+              <Link to="listFactor">
+                <div className="groupStore-cardsImg" style={{ width: "100%" }}>
+                  <img src={card.img} width="100%" />
+                  <div className="groupStore-contentImg">
+                    <div>
+                      <div className="groupStore-text">
+                        <h2>{card.text}</h2>
+                      </div>
+                    </div>
+                    <div className="groupStore-arrow">
+                      <img
+                        src="/nahoor home page/store page/icons/arrow.svg"
+                        width="100%"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           );
         })}

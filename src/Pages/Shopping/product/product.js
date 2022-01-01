@@ -233,7 +233,7 @@ const Product = (props) => {
               <div className="products-top">
                 <div className="products-right">
                   <div className="products-right-topImg">
-                    <img src="/nahoor home page/ماست.svg" width="100%" />
+                    <img src="/nahoor home page/ماست.svg" />
                   </div>
                   <div className="products-right-bottomImg">
                     <img src="/nahoor home page/ماست.png" width="100%" />
@@ -251,7 +251,9 @@ const Product = (props) => {
                   <div className="products-details">
                     <div className="product-subTitle">
                       <div className="products-circle"></div>
-                      <p>{information.subTtile1}</p>
+                      <p style={{ fontSize: "0.8rem", fontWeight: "600" }}>
+                        {information.subTtile1}
+                      </p>
                     </div>
 
                     <div className="products-count">
@@ -266,10 +268,12 @@ const Product = (props) => {
                       <p>قیمت هر کارتون</p>
                       <div className="product-price">
                         <p style={{ marginLeft: "20px" }}>
-                          IRR:<span style={{ fontWeight: "300" }}>416,000</span>
+                          IRR:{" "}
+                          <span style={{ fontWeight: "300" }}>416,000</span>
                         </p>
                         <p>
-                          AFF:<span style={{ fontWeight: "300" }}>612,000</span>
+                          AFF:{" "}
+                          <span style={{ fontWeight: "300" }}>612,000</span>
                         </p>
                       </div>
                     </div>
@@ -279,7 +283,9 @@ const Product = (props) => {
                         style={{ marginTop: "62px" }}
                       >
                         <div className="products-circle"></div>
-                        <p>اطلاعات تغذیه در هر سهم</p>
+                        <p style={{ fontSize: "0.8rem", fontWeight: "600" }}>
+                          اطلاعات تغذیه در هر سهم
+                        </p>
                       </div>
                       <div className="products-Weight">
                         <p>درصد چربی</p>
@@ -326,17 +332,23 @@ const Product = (props) => {
                         </div>
 
                         <div className="products-post">
-                          <div style={{ width:"100%" }}><p>انتخاب تعداد کارتون</p></div>
+                          <div style={{ width: "100%" }}>
+                            <p>انتخاب تعداد کارتون</p>
+                          </div>
                           {input ? (
                             <select
                               name="countofbox"
                               className="products-numberBox"
-                              style={{width:"100%" ,  marginRight:" 32px"}}
+                              style={{ width: "100%", marginRight: " 32px" }}
                             >
                               <option
+                                id="op1"
                                 selected
                                 disabled
-                                style={{ fontFamily: "IRANSans" ,margin:"0 8px"}}
+                                style={{
+                                  fontFamily: "IRANSans",
+                                  margin: "0 8px",
+                                }}
                               >
                                 تعداد سفارش را تعیین کنید
                               </option>

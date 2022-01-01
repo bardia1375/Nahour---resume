@@ -34,7 +34,7 @@
 }
 .HeaderMainTitle2 {
   margin-top: 30px;
-
+  line-height: 24px;
   /* identical to box height */
 }
 .HeaderMainExplain {
@@ -124,7 +124,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  z-index: 0 ;
+  z-index: 0;
 }
 @media (max-width: 1600px) {
   .HeaderContainer {
@@ -220,19 +220,32 @@
     transform: translate(-3vw, -240px);
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 500px) {
+  .HeaderContainer {
+    min-height: 600px;
+  }
+  .HeaderMainExplain {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; /* number of lines to show */
+    line-clamp: 10;
+    -webkit-box-orient: vertical;
+  }
   .HeaderMainLeft {
-    display: none;
   }
   .HeaderMainLeft1 {
-    width: 150px;
+    width: 100px;
     height: auto;
-    transform: translate(-23vw, -90px);
+    transform: translate(-23vw, -130px);
   }
 
   .HeaderMainLeft2 {
-    width: 150px;
+    width: 100px;
     height: auto;
-    transform: translate(5vw, -180px);
+    transform: translate(-12vw, -260px);
+  }
+  .button {
+    width: 150px;
   }
 }

@@ -16,7 +16,7 @@ const CallOfNahor = () => {
       src: "nahoor home page/About Page/Solid/Communication/Envelope.svg",
     },
     {
-      maps: "google map",
+      maps: "https://goo.gl/maps/2XtLrGoTWgetCfhe6",
       src: "nahoor home page/About Page/Solid/Navigation/Location.svg",
     },
   ];
@@ -35,14 +35,14 @@ const CallOfNahor = () => {
       </div>
 
       <div className="call-content">
-        <div className="call-right">
+        <div className="call-right" >
           {calls.map((call) => {
             return (
-              <div className="call-rightchild">
-                <div className="call-rightimg">
-                  <img src={call.src}  />
+              <div className="call-rightchild" >
+                <div className="call-rightimg" >
+                  <img src={call.src}  width="100%"/>
                 </div>
-                <div className="call-phoneRightmain">
+                <div className="call-phoneRightmain" >
                   <div>
                     <a className="call-phoneRight" href="tel:66519367">
                       {call.phone}

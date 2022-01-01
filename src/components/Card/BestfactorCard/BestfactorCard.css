@@ -8,6 +8,7 @@
   position: relative;
   min-width: 200px;
   overflow: hidden;
+  
 }
 .upper-container {
   display: flex;

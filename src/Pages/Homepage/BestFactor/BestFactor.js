@@ -211,6 +211,7 @@ const BestFactor = () => {
             return (
               <div>
                 <BestfactorCard
+                  id={card.id}
                   largPic={card.banner_image}
                   shortPic={card.logo_image}
                   product={card.name}

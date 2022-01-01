@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header2.css";
 import Navbar from "./Navbar";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
+import { Link } from "react-router-dom";
 const HeaderSample = () => {
   const [picture, setPicture] = useState(true);
   const changePicture = () => {
@@ -34,15 +34,15 @@ const HeaderSample = () => {
                 وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات
                 پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
               </p>
-              <button className="button" href="#">
-                <span>جزییات بیشتر</span>
+              <Link to="/about" className="button" >
+                <span className="HeaderMainButton"style={{fontFamily:"iranSans" , fontSize:"0.8rem"}}>جزییات بیشتر</span>
                 <span
                   class="material-icons"
                   style={{ transform: "rotate(180deg)" }}
                 >
                   chevron_right
                 </span>
-              </button>
+              </Link>
             </div>
             <div>
               {picture ? (

@@ -35,7 +35,8 @@
   z-index: 10000;
   cursor: pointer;
   position: absolute;
-  left: 4%;
+  left: 6%;
+ 
 }
 .NavbarItemss {
   display: flex;
@@ -102,7 +103,13 @@
   .navbar {
     justify-content: center;
   }
-
+  .navbar-hamburger {
+    z-index: 10000;
+    cursor: pointer;
+    position: absolute;
+    left:3%;
+   
+  }
   .NavbarItemss {
     height: 100vh;
     flex-direction: column;
@@ -181,7 +188,15 @@
   }
 }
 @media (max-width: 768px) {
+
 }
 
 @media (max-width: 480px) {
+  .navbar-hamburger {
+    z-index: 10000;
+    cursor: pointer;
+    position: absolute;
+    left:6%;
+   
+  }
 }

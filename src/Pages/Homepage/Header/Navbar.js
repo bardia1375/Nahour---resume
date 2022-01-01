@@ -67,8 +67,9 @@ function Navbar(props) {
                   فروشگاه
                 </Link>
               </li>
-              <li className="NavbarItems">
+              <li className="NavbarItems"onClick={() => Hamburger()}>
                 <AnchorLink
+                
                   href="#application"
                   className="NavbarItem"
                   id="NavbarItem"
