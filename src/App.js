@@ -12,7 +12,7 @@ import Footer from "./Pages/Homepage/footer/footer";
 
 function App() {
   return (
-    <div style={{ overflow: "hidden" }}>
+    <div style={{overflow: 'hidden'}}>
       {/* <Login /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path="/store/shareblog" element={<ShareBlog />} />
         <Route path="/store/login/*" element={<Login />} />
       </Routes>
-      {/* <Product /> */}
+  {/* <Product /> */}
       <Footer />
     </div>
   );

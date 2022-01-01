@@ -24,8 +24,7 @@
   align-items: center;
   margin-top: 40px;
 }
-.HeaderNav {
-}
+
 .HeaderMainTitle {
   font-family: IRANSans;
   font-style: normal;
@@ -220,6 +219,7 @@
     transform: translate(-3vw, -240px);
   }
 }
+
 @media (max-width: 500px) {
   .HeaderContainer {
     min-height: 600px;
@@ -232,8 +232,9 @@
     line-clamp: 10;
     -webkit-box-orient: vertical;
   }
-  .HeaderMainLeft {
-  }
+}
+
+@media (max-width: 440px) {
   .HeaderMainLeft1 {
     width: 100px;
     height: auto;
