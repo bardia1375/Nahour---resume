@@ -4,9 +4,13 @@ import FactorListCard from "../../../components/shopping/FactorList/FactorListCa
 import "./factorList.css";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
+
 const FactorList = () => {
   const Title = ["لیست کارخانه های لبنیات"];
   const [factors, setfactors] = useState([]);
+  const params = useParams();
+  console.log("id", params.id);
   const [factorsfilter, setfactorsfilter] = useState([
     {
       name: "کارخانه میهن",
@@ -15,31 +19,40 @@ const FactorList = () => {
       short_desc: "lpwsdfsdf",
     },
   ]);
-
+  const [informations, setinformations] = useState([]);
   useEffect(() => {
     axios
       .get("http://nahoor.af:8080/nahoor/category/")
 
       .then((response) => setfactors(response.data));
   }, []);
+  useEffect(() => {
+    axios
+      .get("http://nahoor.af:8080/nahoor/category/1/")
+
+      .then((response) => setfactorsfilter(response.data.company_set));
+  }, []);
 
   console.log("first state", factors);
   console.log("first filter state", factorsfilter);
 
-  const changeGrope = (subtitl) => {
+  const changeGrope = (subtitle) => {
+    // console.log(subtitle)
+    // console.log("second state ", factors);
     const updatedItems = factors
       .filter((cards) => {
-        return cards.id == subtitl;
+        return cards.id == subtitle;
       })
       .map((updatedItem) => {
         return updatedItem.company_set;
       });
 
-    console.log("updatedItemsfilter", updatedItems[0]);
+    // console.log("updatedItemsfilter", updatedItems[0]);
     setfactorsfilter(updatedItems[0]);
-    console.log(subtitl);
+
   };
-  console.log("second state ", factors);
+
+  
   console.log("second filter state", factorsfilter);
 
   const cards = [
@@ -233,6 +246,7 @@ const FactorList = () => {
           </div>
 
           {/* start sideBar */}
+
           {sideBarItems.map((sideBarItem) => {
             return (
               // <SideBar
@@ -244,7 +258,7 @@ const FactorList = () => {
                   <div>
                     <h3>{sideBarItem.title}</h3>
                   </div>
-                  <div style={{ width: "12%" }}>
+                  <div style={{ width: "20px" }}>
                     <img
                       src="/nahoor home page/About Page/behinde.svg "
                       width="100%"
@@ -253,7 +267,7 @@ const FactorList = () => {
                 </div>
 
                 <div className="factorListSideNavbarItems">
-                  {sideBarItem.subTitle.map((subtitl) => {
+                  {sideBarItem.subTitle.map((subtitle) => {
                     // console.log(subtitl);
                     return (
                       <div>
@@ -261,10 +275,10 @@ const FactorList = () => {
                           className={(navData) =>
                             navData.isActive ? "changeHover" : "hover"
                           }
-                          to={subtitl.id}
-                          onClick={() => changeGrope(subtitl.id)}
+                          to={subtitle.id}
+                          onClick={() => changeGrope( subtitle.id)}
                         >
-                          <p>{subtitl.name}</p>
+                          <p>{subtitle.name}</p>
                         </NavLink>
                       </div>
                     );
@@ -276,23 +290,25 @@ const FactorList = () => {
           })}
         </div>
         {/* end sideBar */}
+
         <div className="centeralTitle">
           <h2>{Title}</h2>
           <div className="factorList-cards">
-            {/* {factorsfilter.map((factor) => {
-            console.log(" این مهمه", factor);
-            return (
-              <div>
-                <FactorListCard
-                     id={factor.id}
-                  factor={factor.name}
-                  largPic={factor.banner_image}
-                  shortPic={factor.logo_image}
-                  product={factor.short_desc.substring(0, 22)}
-                />
-              </div>
-            );
-          })} */}
+            {factorsfilter.map((factor) => {
+              console.log(" این مهمه", factor);
+              return (
+                <div>
+                  <FactorListCard
+                    id={factor.id}
+                    factor={factor.name}
+                    largPic={factor.banner_image}
+                    shortPic={factor.logo_image}
+                    product={factor.short_desc.substring(0, 22)}
+                  />
+                </div>
+              );
+            })}
+
             {cards.map((card) => {
               return (
                 <div>

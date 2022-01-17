@@ -6,8 +6,23 @@ import { useParams } from "react-router-dom";
 const ProductOfFactor = (props) => {
   console.log("props", props);
   const params = useParams();
-  console.log("id", params);
+  console.log("id", params.id);
+  const [informations, setinformations] = useState([]);
+  const [factors, setfactors] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://nahoor.af:8080/nahoor/product/")
 
+      .then((response) => setinformations(response.data));
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get(" http://nahoor.af:8080/nahoor/category/"+params.id)
+
+      .then((response) => setfactors(response.data.company_set));
+  
+  }, []);
   const Title = ["محصولات میهن"];
   const cards = [
     {
@@ -189,7 +204,102 @@ const ProductOfFactor = (props) => {
           className="productOfFactor-sideNavbar"
           style={{ textAlign: "right" }}
         >
-          {sideBarItems.map((sideBarItem) => {
+{/* //test */}
+
+        {factors.map((factor)=>{
+          return(
+            <>
+                <div className="ProductOfFactorTitle">
+                  <div>
+                    <img src="/nahoor home page/productOfFactor/Icon Artwork.svg" />
+                  </div>
+                  <h1>{factor.name}</h1>
+                </div>
+
+                <div className="ProductOfFactorImg" style={{ width: "100%" }}>
+                  <img
+                    src={factor.banner_image}
+                    width="100%"
+                    style={{ objectFit: "contain" }}
+                  />
+                  <div className="FactorListImage-containers">
+                    <img
+                      src={props.shortPic}
+                      alt=""
+                      height="40px"
+                      width="65px"
+                    />
+                  </div>
+                </div>
+                <div className="ProductOfFactor-body">
+                  <div className="ProductOfFactorParagraph">
+                    <p>{factor.long_desc}</p>
+                  </div>
+
+                  <div className="ProductOfFactorInformation">
+                    <h3>دفتر مرکزی</h3>
+                    <div className="ProductOfFactorAddress">
+                      <div>
+                        <img src="/nahoor home page/productOfFactor/location.svg" />
+                      </div>
+                      <div>
+                        <p>{factor.address}</p>
+                      </div>
+                    </div>
+
+                    <div className="ProductOfFactorPhone">
+                      <div>
+                        <p>{factor.tel}</p>
+                      </div>
+                      <div>
+                        <img src="/nahoor home page/productOfFactor/phone.svg" />
+                      </div>
+                    </div>
+
+                    <div className="ProductOfFactorEmail">
+                      <div>
+                        <p>{factor.email}</p>
+                      </div>
+                      <div>
+                        <img src="/nahoor home page/productOfFactor/website.svg" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="ProductOfFactorSocial ">
+                    <div className="ProductOfFactorSocialImg ">
+                      <div>
+                        <a href={factor.instagram}>
+                          <img src="/nahoor home page/productOfFactor/instagram.svg" />
+                        </a>
+                      </div>
+                      <div>
+                        <a href={factor.linkedin}>
+                          <img src="/nahoor home page/productOfFactor/linkedin.svg" />
+                        </a>
+                      </div>
+                      <div>
+                        <a href={factor.twitter}>
+                          <img src="/nahoor home page/productOfFactor/twitter.svg" />
+                        </a>
+                      </div>
+                    </div>
+                    <div className="ProductOfFactorSocialTitle">
+                      <h3>شبکه های اجتماعی</h3>
+                    </div>
+                  </div>
+                </div>
+              </>
+
+          )
+        })}
+              
+
+
+{/* //test */}
+
+
+   {sideBarItems.map((sideBarItem) => {
             return (
               <>
                 <div className="ProductOfFactorTitle">
@@ -199,8 +309,12 @@ const ProductOfFactor = (props) => {
                   <h1>{sideBarItem.title}</h1>
                 </div>
 
-                <div className="ProductOfFactorImg" style={{width: "100%" }}>
-                  <img src={sideBarItem.mainImg} width="100%" style={{objectFit: "contain"}} />
+                <div className="ProductOfFactorImg" style={{ width: "100%" }}>
+                  <img
+                    src={sideBarItem.mainImg}
+                    width="100%"
+                    style={{ objectFit: "contain" }}
+                  />
                   <div className="FactorListImage-containers">
                     <img
                       src={props.shortPic}
@@ -219,10 +333,10 @@ const ProductOfFactor = (props) => {
                     <h3>دفتر مرکزی</h3>
                     <div className="ProductOfFactorAddress">
                       <div>
-                        <p>{sideBarItem.address}</p>
+                        <img src={sideBarItem.addressImg} />
                       </div>
                       <div>
-                        <img src={sideBarItem.addressImg} />
+                        <p>{sideBarItem.address}</p>
                       </div>
                     </div>
 
@@ -270,13 +384,29 @@ const ProductOfFactor = (props) => {
                 </div>
               </>
             );
-          })}
+          })} 
         </div>
 
         {/* //end navbar */}
         <div className="centeralTitleProduct">
           <h2>{Title}</h2>
           <div className="productOfFactor-cards">
+            {informations.map((information) => {
+              return (
+                <div>
+                  <ProductOfFactorCard
+                    id={information.id}
+                    imgProduct={information.place_holder_image}
+                    product={information.name}
+                    paragraph={information.desc}
+                    factor={information.factor}
+                    star={information.rating}
+                    Rial={information.price_irt}
+                    afghan={information.price_aff}
+                  />
+                </div>
+              );
+            })}
             {cards.map((card) => {
               return (
                 <div>

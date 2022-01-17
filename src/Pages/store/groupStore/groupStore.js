@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TitleStore from "../../../components/Store/Title/titleStore";
 import "./groupStore.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const GroupStore = () => {
+  const [Industry, setIndustry] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://nahoor.af:8080/nahoor/industry/")
+
+      .then((response) => setIndustry(response.data));
+  }, []);
+
   const cards = [
     {
       img: "/nahoor home page/store page/sanaye ghazaii.png",
@@ -32,7 +41,33 @@ const GroupStore = () => {
         <TitleStore title="دسته بندی ها" />
       </div>
       <div className="groupStore-main">
-        {cards.map((card) => {
+        {Industry.map((card) => {
+          return (
+            <div className="groupStore-cards">
+              <Link to="listFactor">
+                <div className="groupStore-cardsImg" style={{ width: "100%" }}>
+                  <div className="groupStore-image">
+                    <img src={card.cover_image} width="100%" />
+                  </div>
+                  <div className="groupStore-contentImg">
+                    <div>
+                      <div className="groupStore-text">
+                        <h2>{card.name}</h2>
+                      </div>
+                    </div>
+                    <div className="groupStore-arrow">
+                      <img
+                        src="/nahoor home page/store page/icons/arrow.svg"
+                        width="100%"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          );
+        })}
+        {/* {cards.map((card) => {
           return (
             <div className="groupStore-cards">
               <Link to="listFactor">
@@ -55,7 +90,7 @@ const GroupStore = () => {
               </Link>
             </div>
           );
-        })}
+        })} */}
       </div>
     </div>
   );

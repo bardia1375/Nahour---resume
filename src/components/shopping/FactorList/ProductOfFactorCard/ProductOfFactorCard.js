@@ -36,8 +36,8 @@ const ProductOfFactorCard = (props) => {
       >
   
         <div className="productOfFactorCard-main">
-          <div className="productOfFactorCard-img">
-            <img src={props.imgProduct} />
+          <div className="productOfFactorCard-img" width="16px">
+            <img src={props.imgProduct} width="100px"/>
           </div>
           <div className="productOfFactorCard-content">
             <div className="productOfFactorCard-title">
@@ -59,10 +59,10 @@ const ProductOfFactorCard = (props) => {
       <div className="productOfFactorCard-price">
         <h3>قیمت هر کارتون</h3>
         <h3>
-          ARR: <span>612,000</span>
+          ARR: <span>{props.afghan}</span>
         </h3>
         <h3>
-          AEF: <span>416,000</span>
+          AEF: <span>{props.Rial}</span>
         </h3>
       </div>
 

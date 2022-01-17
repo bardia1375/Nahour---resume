@@ -23,6 +23,12 @@
 .productOfFactorCard-explain p {
   font-weight: 300;
   font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
 }
 .productOfFactorCard-star {
   display: flex;

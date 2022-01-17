@@ -4,12 +4,23 @@ import "./product.css";
 import Slider from "react-slick";
 import { cartStore } from "../../../components/redux/store";
 import { addToCart } from "../../../components/redux/actions";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 
 const Product = (props) => {
   const [order, setOrder] = useState(true);
   const [box, setBox] = useState(true);
   const [phone, setPhone] = useState(true);
   const [input, setInput] = useState(true);
+  const [informations, setinformations] = useState([]);
+  const params = useParams();
+  console.log("id", params.id);
+  useEffect(() => {
+    axios
+      .get("http://nahoor.af:8080/nahoor/product/" + params.id)
+
+      .then((response) => setinformations(response.data));
+  }, []);
 
   const onlineOrder = () => {
     setOrder(!order);
@@ -44,7 +55,7 @@ const Product = (props) => {
     return unsubscribe();
   }, []);
   //end redux
-  const informations = [
+  const informationss = [
     {
       title: "ماست ست پرچرب میهن",
       subTtile1: "مشخصات محصول",
@@ -228,226 +239,251 @@ const Product = (props) => {
     <>
       <div className="products-Container">
         <div className="products-main">
-          {informations.map((information) => {
-            return (
-              <div className="products-top">
-                <div className="products-right">
-                  <div className="products-right-topImg">
-                    <img src="/nahoor home page/ماست.svg" />
-                  </div>
-                  <div className="products-right-bottomImg">
-                    <img src="/nahoor home page/ماست.png" width="100%" />
-                    <img src="/nahoor home page/ماست.png" width="100%" />
-                  </div>
-                  <div className="products-comment">
-                    <p>نظرات کاربران را راجع به این محصول بدانید</p>
-                  </div>
-                </div>
-                <div className="products-mid">
-                  <div style={{ width: "100%" }}>
-                    <h1>{information.title}</h1>
-                  </div>
-                  <div className="products-line"></div>
-                  <div className="products-details">
-                    <div className="product-subTitle">
-                      <div className="products-circle"></div>
-                      <p style={{ fontSize: "0.8rem", fontWeight: "600" }}>
-                        {information.subTtile1}
-                      </p>
+          <div className="products-top">
+            <div className="products-right">
+              <div className="products-right-topImg">
+                <img src={informations.place_holder_image} />
+              </div>
+              <div className="products-right-bottomImg">
+                {informations.images?.map((information) => {
+                  return (
+                    <div>
+                      <img
+                        className="products-right-bottomImg1"
+                        src={information.productImage}
+                        alt=""
+                        width="100%"
+                        height="80%"
+                      />
                     </div>
+                  );
+                })}
 
-                    <div className="products-count">
-                      <p>{information.subTtile2}</p>
-                      <p>{information.count}</p>
-                    </div>
-                    <div className="products-Weight">
-                      <p>وزن هر عدد</p>
-                      <p>{information.Weight}</p>
-                    </div>
-                    <div className="products-prices">
-                      <p>قیمت هر کارتون</p>
-                      <div className="product-price">
-                        <p style={{ marginLeft: "20px" }}>
-                          IRR:{" "}
-                          <span style={{ fontWeight: "300" }}>416,000</span>
-                        </p>
-                        <p>
-                          AFF:{" "}
-                          <span style={{ fontWeight: "300" }}>612,000</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div className="product-information">
-                      <div
-                        className="product-subTitle"
-                        style={{ marginTop: "62px" }}
-                      >
-                        <div className="products-circle"></div>
-                        <p style={{ fontSize: "0.8rem", fontWeight: "600" }}>
-                          اطلاعات تغذیه در هر سهم
-                        </p>
-                      </div>
-                      <div className="products-Weight">
-                        <p>درصد چربی</p>
-                        <p>{information.fat}</p>
-                      </div>
-                      <div className="products-Weight">
-                        <p>کربوهیدرات</p>
-                        <p>{information.carbohydrate}</p>
-                      </div>
-                      <div className="products-Weight">
-                        <p>قند</p>
-                        <p>{information.suger}</p>
-                      </div>
-                    </div>
-                  </div>
+                {/* <img src="/nahoor home page/ماست.png" width="100%" />
+                <img src="/nahoor home page/ماست.png" width="100%" /> */}
+              </div>
+              <div className="products-comment">
+                <p>نظرات کاربران را راجع به این محصول بدانید</p>
+              </div>
+            </div>
+            <div className="products-mid">
+              <div style={{ width: "100%" }}>
+                <h1>{informations.name}</h1>
+              </div>
+              <div className="products-line"></div>
+              <div className="products-details">
+                <div className="product-subTitle">
+                  <div className="products-circle"></div>
+                  <p style={{ fontSize: "0.8rem", fontWeight: "600" }}>
+                    مشخصات محصول
+                  </p>
                 </div>
 
-                <div className="products-left">
-                  <div className="products-left-top">
-                    <h2>نگاهی به سبد خرید شما:</h2>
-                    <div className="products-right-bottomImg">
-                      <img src="/nahoor home page/ماست.png" width="100%" />
-                      <img src="/nahoor home page/ماست.png" width="100%" />
-                    </div>
-                    <div className="products-seeCart">
-                      <p style={{ textAlign: "left" }}>مشاهده سبد خرید</p>
-                      <span
-                        class="material-icons"
-                        style={{ transform: "rotate(180deg)" }}
-                      >
-                        chevron_right
+                <div className="products-count">
+                  <p>تعداد موجود در هر کارتون</p>
+                  <p>{informations.count}</p>
+                </div>
+                <div className="products-Weight">
+                  <p>وزن هر عدد</p>
+                  <p>{informations.Weight}</p>
+                </div>
+                <div className="products-prices">
+                  <p>قیمت هر کارتون</p>
+                  <div className="product-price">
+                    <p style={{ marginLeft: "20px" }}>
+                      IRR:
+                      <span style={{ fontWeight: "300" }}>
+                        {informations.price_irt}
                       </span>
-                    </div>
+                    </p>
+                    <p>
+                      AFF:
+                      <span style={{ fontWeight: "300" }}>
+                        {informations.price_aff}
+                      </span>
+                    </p>
                   </div>
-
-                  <div className="products-left-bottom">
-                    {box ? (
-                      <>
-                        <h2>جزییات سفارش</h2>
-                        <div className="products-post">
-                          <p>انتخاب روش سفارش</p>
-                          <p style={{ cursor: "pointer" }}>کامیون اختصاصی</p>
-                          <p style={{ cursor: "pointer" }}>پست عادی</p>
+                </div>
+                <div className="product-information">
+                  <div
+                    className="product-subTitle"
+                    style={{ marginTop: "62px" }}
+                  >
+                    <div className="products-circle"></div>
+                    <p style={{ fontSize: "0.8rem", fontWeight: "600" }}>
+                      اطلاعات تغذیه در هر سهم
+                    </p>
+                  </div>
+                  {informations.nutritionFacts?.map((nutritionFact) => {
+                    return (
+                      <div>
+                        <div className="products-Weight">
+                          <p>{nutritionFact.title}</p>
+                          <p>{nutritionFact.value}</p>
                         </div>
-
-                        <div className="products-post">
-                          <div style={{ width: "100%" }}>
-                            <p>انتخاب تعداد کارتون</p>
-                          </div>
-                          {input ? (
-                            <select
-                              name="countofbox"
-                              className="products-numberBox"
-                              style={{ width: "100%", marginRight: " 32px" }}
-                            >
-                              <option
-                                id="op1"
-                                selected
-                                disabled
-                                style={{
-                                  fontFamily: "IRANSans",
-                                  margin: "0 8px",
-                                }}
-                              >
-                                تعداد سفارش را تعیین کنید
-                              </option>
-                              <option value="100">100</option>
-                              <option onClick={() => changeInput()} value="200">
-                                200
-                              </option>
-                              <option value="300">300</option>
-                              <option value="400">400</option>
-                              <option value="400">500</option>
-                              <option value="400">600</option>
-                              <option value="400">700</option>
-                              <option value="400">800</option>
-                              <option value="400">900</option>
-                            </select>
-                          ) : (
-                            "salam:)"
-                          )}
-                        </div>
-
-                        {order ? (
-                          <div className="products-btn">
-                            <button onClick={() => onlineOrder()} type="text">
-                              <p>سفارش آنلاین</p>
-                            </button>
-                            {phone ? (
-                              <button type="text">
-                                <p onClick={() => changePhone()}>
-                                  سفارش با تماس ناهور
-                                </p>
-                              </button>
-                            ) : (
-                              <button type="text">
-                                <a
-                                  style={{ textDecoration: "none" }}
-                                  href="tel:021-88254526"
-                                >
-                                  <p style={{ color: "#029494" }}>
-                                    021-88254526
-                                  </p>
-                                </a>
-                              </button>
-                            )}
-                          </div>
-                        ) : (
-                          <div className="products-buttons">
-                            <div className="buttons-right">
-                              <button onClick={() => onlineOrder()}>
-                                <p>لغو</p>
-                              </button>
-                              <button>
-                                <div onClick={(e) => addToCartHandler(e)}>
-                                  <p onClick={() => changeBox()}>
-                                    افزودن به سبد خرید
-                                  </p>
-                                </div>
-                              </button>
-                            </div>
-                            <div className="buttons-left">
-                              <p>
-                                IRR :
-                                <span style={{ fontWeight: "300" }}>
-                                  416,000
-                                </span>
-                              </p>
-                              <p>
-                                AFF :
-                                <span style={{ fontWeight: "300" }}>
-                                  612,000
-                                </span>
-                              </p>
-                            </div>
-                          </div>
-                        )}
-                      </>
-                    ) : (
-                      <div className="product-changeBox">
-                        <div>
-                          <img src="/nahoor home page/productPage/done cart.svg" />
-                        </div>
-                        <p style={{ marginTop: "16px" }}>
-                          سبد خرید شما به روزرسانی شد
-                        </p>
-                        <button
-                          className="btn-continue"
-                          onClick={() => continueShop()}
-                        >
-                          <p>ادامه خرید</p>
-                        </button>
-                        <button className="btn-viewCart">
-                          <p>مشاهده سبد خرید</p>
-                        </button>
                       </div>
-                    )}
+                    );
+                  })}
+                  {/* <div className="products-Weight">
+                    <p>درصد چربی</p>
+                    <p>{informations.fat}</p>
                   </div>
+                  <div className="products-Weight">
+                    <p>کربوهیدرات</p>
+                    <p>{informations.carbohydrate}</p>
+                  </div>
+                  <div className="products-Weight">
+                    <p>قند</p>
+                    <p>{informations.suger}</p>
+                  </div> */}
                 </div>
               </div>
-            );
-          })}
+            </div>
+
+            <div className="products-left">
+              <div className="products-left-top">
+                <h2>نگاهی به سبد خرید شما:</h2>
+                <div className="products-left-bottomImg">
+                  <img src="/nahoor home page/ماست.png" width="100%" />
+                  <img src="/nahoor home page/ماست.png" width="100%" />
+                </div>
+                <div className="products-seeCart">
+                  <p style={{ textAlign: "left" }}>مشاهده سبد خرید</p>
+                  <span
+                    class="material-icons"
+                    style={{ transform: "rotate(180deg)" }}
+                  >
+                    chevron_right
+                  </span>
+                </div>
+              </div>
+
+              <div className="products-left-bottom">
+                {box ? (
+                  <>
+                    <h2>جزییات سفارش</h2>
+                    <div className="products-post">
+                      <p>انتخاب روش سفارش</p>
+                      <p style={{ cursor: "pointer" }}>کامیون اختصاصی</p>
+                      <p style={{ cursor: "pointer" }}>پست عادی</p>
+                    </div>
+
+                    <div className="products-post">
+                      <div style={{ width: "100%" }}>
+                        <p>انتخاب تعداد کارتون</p>
+                      </div>
+                      {input ? (
+                        <select
+                          name="countofbox"
+                          className="products-numberBox"
+                          style={{ width: "100%", marginRight: " 32px" }}
+                        >
+                          <option
+                            id="op1"
+                            selected
+                            disabled
+                            style={{
+                              fontFamily: "IRANSans",
+                              margin: "0 8px",
+                            }}
+                          >
+                            تعداد سفارش را تعیین کنید
+                          </option>
+                          <option value="100">100</option>
+                          <option onClick={() => changeInput()} value="200">
+                            200
+                          </option>
+                          <option value="300">300</option>
+                          <option value="400">400</option>
+                          <option value="400">500</option>
+                          <option value="400">600</option>
+                          <option value="400">700</option>
+                          <option value="400">800</option>
+                          <option value="400">900</option>
+                        </select>
+                      ) : (
+                        "salam:)"
+                      )}
+                    </div>
+
+                    {order ? (
+                      <div className="products-btn">
+                        <button onClick={() => onlineOrder()} type="text">
+                          <p>سفارش آنلاین</p>
+                        </button>
+                        {phone ? (
+                          <button type="text">
+                            <p onClick={() => changePhone()}>
+                              سفارش با تماس ناهور
+                            </p>
+                          </button>
+                        ) : (
+                          <button type="text">
+                            <a
+                              style={{ textDecoration: "none" }}
+                              href="tel:021-88254526"
+                            >
+                              <p style={{ color: "#029494" }}>021-88254526</p>
+                            </a>
+                          </button>
+                        )}
+                      </div>
+                    ) : (
+                      <div className="products-buttons">
+                        <div className="buttons-right">
+                          <button onClick={() => onlineOrder()}>
+                            <p>لغو</p>
+                          </button>
+                          <button>
+                            <div onClick={(e) => addToCartHandler(e)}>
+                              <p onClick={() => changeBox()}>
+                                افزودن به سبد خرید
+                              </p>
+                            </div>
+                          </button>
+                        </div>
+                        <div className="buttons-left">
+                          <p>
+                            IRR :
+                            <span style={{ fontWeight: "300" }}>
+                              {" "}
+                              {informations.price_irt}
+                            </span>
+                          </p>
+                          <p>
+                            AFF :
+                            <span style={{ fontWeight: "300" }}>
+                              {" "}
+                              {informations.price_aff}
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <div className="product-changeBox">
+                    <div>
+                      <img src="/nahoor home page/productPage/done cart.svg" />
+                    </div>
+                    <p style={{ marginTop: "16px" }}>
+                      سبد خرید شما به روزرسانی شد
+                    </p>
+                    <button
+                      className="btn-continue"
+                      onClick={() => continueShop()}
+                    >
+                      <p>ادامه خرید</p>
+                    </button>
+                    <button className="btn-viewCart">
+                      <p>مشاهده سبد خرید</p>
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
           <div className="line2"></div>
         </div>
       </div>

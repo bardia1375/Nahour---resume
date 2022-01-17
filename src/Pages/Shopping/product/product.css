@@ -67,18 +67,41 @@
   width: 100%;
 }
 .products-right-bottomImg {
-  display: flex;
-  width: 16%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 8px;
+  width: 80%;
+  margin-top: 20px;
+}
+.products-left-bottomImg {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 16px;
+  width: 80%;
   margin-top: 8px;
 }
 .products-right-bottomImg img:first-child,
 .products-right-bottomImg img:last-child {
   background: #fff3ff;
+  border: 1px solid rgba(107, 0, 109, 0.07);
+  cursor: pointer;
+  border-radius: 5px;
+  border-radius: 7px;
+  padding:12px;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+.products-left-bottomImg img:first-child,
+.products-left-bottomImg img:last-child {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
   border-radius: 7px;
   padding: 8px;
   margin-left: 16px;
   margin-top: 8px;
 }
+
 .products-comment {
   transform: translateY(18px);
 }
@@ -164,17 +187,15 @@
   font-size: 0.8rem;
   font-size: IRANSans;
 }
-select option:first-child
-        {
-          color: red !important;      
-        }
+select option:first-child {
+  color: red !important;
+}
 
 .products-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 16px;
-  
 }
 .products-btn button:first-child {
   background: #6b006d;
@@ -185,7 +206,8 @@ select option:first-child
   padding: 4px 0;
 }
 .products-btn button p {
-  font-size: 0.8rem;text-align: center;
+  font-size: 0.8rem;
+  text-align: center;
 }
 .products-btn button:first-child:hover,
 .buttons-right button:nth-child(2):hover {
@@ -293,6 +315,7 @@ select option:first-child
   padding: 3px 70px;
 }
 .btn-viewCart {
+  border: none;
   background: #6b006d;
   border-radius: 5px;
   border: none;
@@ -312,7 +335,11 @@ select option:first-child
   border: 1px solid red;
   margin-top: 16px;
 }
-
+.buttons-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 @media only screen and (max-width: 1200px) {
   .products-right-topImg img {
     width: 150px;
@@ -327,7 +354,12 @@ select option:first-child
     align-items: center;
     justify-content: center;
   }
+  .products-right-bottomImg {
 
+
+    width: 50%;
+  
+  }
   .products-right {
     width: 100%;
     min-width: 330px;
@@ -358,7 +390,6 @@ select option:first-child
   }
   .products-right-topImg {
     height: 250px;
- 
   }
   .products-left-top,
   .products-left-bottom {
