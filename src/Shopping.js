@@ -50,7 +50,7 @@ export const Shopping = () => {
   // console.log(user?.user?.name);
   // console.log(user.user.name);
   return (
-    <div className="Shopping-Container" style={{overflow: 'hidden'}}>
+    <div className="Shopping-Container" style={{ overflow: "hidden" }}>
       <NavbarStore user={user?.user?.name} />
       <Routes>
         <Route path="/" element={<Store />} />
@@ -73,7 +73,7 @@ export const Shopping = () => {
         <Route path="bardia" element={<ConditionNahor />} />
         {/* <Route path="/listFactor/FactorProduct" element={<ProductOfFactor />} /> */}
       </Routes>
-    
+
       {/* <Footer /> */}
     </div>
   );

@@ -5,7 +5,7 @@ const FactorListCard = (props) => {
 
   // console.log(props.id)
   return (
-    <Link  to={`product/${props.id}`} style={{textDecoration:"none" , color: "black"}}>
+    <Link  to={`product/${props.factor}`} style={{textDecoration:"none" , color: "black"}}>
     <div className="FactorListCard">
       <div className="FactorListupperContainer">
         <img

@@ -6,18 +6,14 @@ import axios from "axios";
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
-const FactorList = () => {
+const FactorList = (props) => {
+  console.log("asdasda",props)
   const Title = ["لیست کارخانه های لبنیات"];
   const [factors, setfactors] = useState([]);
   const params = useParams();
-  console.log("id", params.id);
+  console.log("iddddddddddddddddddddddddd", params.id);
   const [factorsfilter, setfactorsfilter] = useState([
-    {
-      name: "کارخانه میهن",
-      banner_image: "/nahoor home page/میهن.png",
-      logo_image: "/nahoor home page/Mihan LOGO.png",
-      short_desc: "lpwsdfsdf",
-    },
+ 
   ]);
   const [informations, setinformations] = useState([]);
   useEffect(() => {
@@ -28,9 +24,9 @@ const FactorList = () => {
   }, []);
   useEffect(() => {
     axios
-      .get("http://nahoor.af:8080/nahoor/category/1/")
+      .get("http://nahoor.af:8080/nahoor/category/"+params.id)
 
-      .then((response) => setfactorsfilter(response.data.company_set));
+      .then((response) =>setfactorsfilter(response.data.company_set));
   }, []);
 
   console.log("first state", factors);
@@ -47,12 +43,10 @@ const FactorList = () => {
         return updatedItem.company_set;
       });
 
-    // console.log("updatedItemsfilter", updatedItems[0]);
+    console.log("updatedItemsfilter", updatedItems[0]);
     setfactorsfilter(updatedItems[0]);
-
   };
 
-  
   console.log("second filter state", factorsfilter);
 
   const cards = [
@@ -267,20 +261,27 @@ const FactorList = () => {
                 </div>
 
                 <div className="factorListSideNavbarItems">
+                  <hr
+                    style={{
+                      width: "140px",
+                      height: "2px",
+                      color: "black",
+                    }}
+                  ></hr>
                   {sideBarItem.subTitle.map((subtitle) => {
-                    // console.log(subtitl);
+                
                     return (
-                      <div>
+                      <>
                         <NavLink
                           className={(navData) =>
                             navData.isActive ? "changeHover" : "hover"
                           }
-                          to={subtitle.id}
-                          onClick={() => changeGrope( subtitle.id)}
+                          to={`${sideBarItem.title}/${subtitle.id}`}
+                          onClick={() => changeGrope(subtitle.id)}
                         >
                           <p>{subtitle.name}</p>
                         </NavLink>
-                      </div>
+                      </>
                     );
                   })}
                   {/* <Link to="" ><p>صنایع غذایی</p></Link> */}
@@ -309,7 +310,7 @@ const FactorList = () => {
               );
             })}
 
-            {cards.map((card) => {
+            {/* {cards.map((card) => {
               return (
                 <div>
                   <FactorListCard
@@ -323,7 +324,7 @@ const FactorList = () => {
                   />
                 </div>
               );
-            })}
+            })} */}
           </div>
         </div>
       </div>

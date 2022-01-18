@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 const ProductOfFactor = (props) => {
   console.log("props", props);
   const params = useParams();
-  console.log("id", params.id);
+  console.log("idppppppppppppppppppppppppppppp", params.id);
   const [informations, setinformations] = useState([]);
   const [factors, setfactors] = useState([]);
   useEffect(() => {

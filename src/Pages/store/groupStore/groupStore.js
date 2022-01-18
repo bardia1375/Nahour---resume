@@ -3,6 +3,7 @@ import TitleStore from "../../../components/Store/Title/titleStore";
 import "./groupStore.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import FactorList from "../../Shopping/factorList/factorList";
 
 const GroupStore = () => {
   const [Industry, setIndustry] = useState([]);
@@ -12,7 +13,10 @@ const GroupStore = () => {
 
       .then((response) => setIndustry(response.data));
   }, []);
-
+  const Gotofactor = (e) => {
+    console.log("abc", e);
+    return <FactorList salam={e} />;
+  };
   const cards = [
     {
       img: "/nahoor home page/store page/sanaye ghazaii.png",
@@ -44,7 +48,10 @@ const GroupStore = () => {
         {Industry.map((card) => {
           return (
             <div className="groupStore-cards">
-              <Link to="listFactor">
+              <Link
+                to={`listFactor/${card.name}`}
+                onClick={() => Gotofactor(card.name)}
+              >
                 <div className="groupStore-cardsImg" style={{ width: "100%" }}>
                   <div className="groupStore-image">
                     <img src={card.cover_image} width="100%" />
