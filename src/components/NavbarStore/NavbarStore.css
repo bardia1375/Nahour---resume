@@ -126,11 +126,11 @@ body {
 }
 
 .dropdown-content {
-  display: flex;
+
   flex-direction: row;
-  display: none;
+  display: flex;
   position: absolute;
-  top: 140%;
+  top: -1250%;
   right: -8%;
   background: #f8f8f8;
   min-width: 500px;
@@ -138,10 +138,13 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   z-index: 1;
   border-radius: 0px 0px 7px 7px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
   /* border: 1px solid red; */
 }
 .navbarStoreBottomMainGroup:hover .dropdown-content {
-  display: flex;
+  top: 140%;
+  opacity: 1;
 }
 .dropdown-content a {
   color: black;

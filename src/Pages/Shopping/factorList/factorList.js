@@ -16,7 +16,7 @@ const FactorList = (props) => {
   const [Title, setTitle] = useState([]);
   const [loading, setLoading] = useState(false);
   const params = useParams();
-  console.log(params);
+  console.log(params,"params");
 
   useEffect(() => {
     axios
@@ -25,19 +25,21 @@ const FactorList = (props) => {
       .then((response) => setfactors(response.data));
     setLoading(true);
   }, []);
-  useEffect(() => {
-    axios
-      .get("http://nahoor.af:8080/nahoor/category/" + params.id)
-      .then((response) => {
-        setfactorsfilter(response.data.company_set);
-        setLoading(true);
-      });
-  }, []);
 
   useEffect(() => {
     axios
       .get("http://nahoor.af:8080/nahoor/industry/")
       .then((response) => setSidebar(response.data));
+  }, []);
+  
+
+  useEffect(() => {
+    axios
+      .get("http://nahoor.af:8080/nahoor/category/1" )
+      .then((response) => {
+        setfactorsfilter(response.data.company_set);
+        setLoading(true);
+      });
   }, []);
 
   console.log("first state", factors);
@@ -282,6 +284,8 @@ const FactorList = (props) => {
           <div className="centeralTitle">
             <h2>{Title}</h2>
             <div className="factorList-cards">
+              {" "}
+              {console.log("vay", factorsfilter)}
               {factorsfilter.map((factor) => {
                 console.log(" این مهمه", factor);
                 return (
@@ -296,7 +300,6 @@ const FactorList = (props) => {
                   </div>
                 );
               })}
-
               {/* {cards.map((card) => {
                 return (
                   <div>

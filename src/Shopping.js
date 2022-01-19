@@ -60,7 +60,7 @@ export const Shopping = () => {
         <Route path="/" element={<FactorListCard />} />
 
         <Route path="/profile/*" element={<Profile />}>
-          {/* <Route path="info" element={<Information />} /> */}
+          <Route path="info" element={<Information />} />
           <Route path="info" element={<EditInformation />} />
           <Route path="order" element={<Order />} />
           <Route path="order" element={<OrderPrevious />} />
@@ -73,8 +73,8 @@ export const Shopping = () => {
         <Route path="bardia" element={<ConditionNahor />} />
         {/* <Route path="/listFactor/FactorProduct" element={<ProductOfFactor />} /> */}
       </Routes>
-
-      {/* <Footer /> */}
+{/* 
+      <Footer /> */}
     </div>
   );
 };
