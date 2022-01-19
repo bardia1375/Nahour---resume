@@ -6,6 +6,7 @@ import { cartStore } from "../../../components/redux/store";
 import { addToCart } from "../../../components/redux/actions";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import Loading from "../../../components/Loading/Loading";
 
 const Product = (props) => {
   const [order, setOrder] = useState(true);
@@ -13,13 +14,18 @@ const Product = (props) => {
   const [phone, setPhone] = useState(true);
   const [input, setInput] = useState(true);
   const [informations, setinformations] = useState([]);
+  const [loading, setLoading] = useState(false);
+
   const params = useParams();
   console.log("id", params.id);
   useEffect(() => {
     axios
       .get("http://nahoor.af:8080/nahoor/product/" + params.id)
 
-      .then((response) => setinformations(response.data));
+      .then((response) => {
+        setinformations(response.data);
+        setLoading(true);
+      });
   }, []);
 
   const onlineOrder = () => {
@@ -237,7 +243,7 @@ const Product = (props) => {
   };
   return (
     <>
-      <div className="products-Container">
+     {loading? <div className="products-Container">
         <div className="products-main">
           <div className="products-top">
             <div className="products-right">
@@ -486,7 +492,7 @@ const Product = (props) => {
 
           <div className="line2"></div>
         </div>
-      </div>
+      </div>:<Loading/>}
       {/* <div className="products-bottom">
         <Slider {...settings} style={{ width: "100%" }}>
           {cards.map((card) => {

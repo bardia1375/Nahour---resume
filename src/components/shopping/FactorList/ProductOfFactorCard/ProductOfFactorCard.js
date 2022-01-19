@@ -6,7 +6,6 @@ import { addToCart } from "../../../redux/actions";
 import "./ProductOfFactorCard.css";
 import { Link } from "react-router-dom";
 const ProductOfFactorCard = (props) => {
-
   const [cards, setcards] = useState(true);
   const changeButton = (e) => {
     setcards(!cards);
@@ -32,12 +31,11 @@ const ProductOfFactorCard = (props) => {
     <div className="productOfFactorCard-container">
       <Link
         to={`${props.id}`}
-        style={{ textDecoration: "none", color: "black" }}
+        style={{ textDecoration: "none", color: "black"}}
       >
-  
         <div className="productOfFactorCard-main">
           <div className="productOfFactorCard-img" width="16px">
-            <img src={props.imgProduct} width="100px"/>
+            <img src={props.imgProduct} width="100px" />
           </div>
           <div className="productOfFactorCard-content">
             <div className="productOfFactorCard-title">

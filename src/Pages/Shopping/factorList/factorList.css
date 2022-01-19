@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
 }
 
 .factorList-cards {
@@ -87,7 +88,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
 }
 @media (max-width: 1600px) {

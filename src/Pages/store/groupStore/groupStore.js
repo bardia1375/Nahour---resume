@@ -49,7 +49,7 @@ const GroupStore = () => {
           return (
             <div className="groupStore-cards">
               <Link
-                to={`listFactor/${card.name}`}
+                to={`listFactor/${card.name.replace(/\s/g, '')}`}
                 onClick={() => Gotofactor(card.name)}
               >
                 <div className="groupStore-cardsImg" style={{ width: "100%" }}>
