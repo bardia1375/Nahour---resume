@@ -55,7 +55,7 @@ const FactorList = (props) => {
       .map((updatedItem) => {
         return updatedItem.company_set;
       });
-    setTitle(`لیست کارخانه‌های ${name}`);
+    setTitle(name);
     console.log("updatedItemsfilter", updatedItems[0]);
     setfactorsfilter(updatedItems[0]);
     setLoading(true);
@@ -282,7 +282,7 @@ const FactorList = (props) => {
           {/* end sideBar */}
 
           <div className="centeralTitle">
-            <h2>{Title}</h2>
+            <h2>لیست کارخانه های {Title}</h2>
             <div className="factorList-cards">
               {" "}
               {console.log("vay", factorsfilter)}

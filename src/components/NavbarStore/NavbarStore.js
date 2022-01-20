@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { cartStore } from "../redux/store";
+import DropdownMenu from "../shopping/DropdownMenu/DropdownMenu";
 import "./NavbarStore.css";
 export const NavbarStore = (props) => {
   const [state, setState] = useState({ count: 0 });
   const [login, setLogin] = useState(true);
   const [hamburger, setHamburger] = useState(true);
+
   const Hamburger = () => {
     setHamburger(!hamburger);
   };
@@ -79,43 +81,7 @@ export const NavbarStore = (props) => {
               placeholder="جستجو"
             />
             <li className="navbarStoreBottomMainGroup">
-              <a href="" className="navbarStorePopup">
-                <img src="/nahoor home page/store page/icons/Icon/24×24/Color/Interface/Menu Burger Horizontal.svg" />
-                دسته بندی
-              </a>
-              <div className="dropdown-content">
-                <div id="myDropdown" className="dropdown-content-item">
-                  <p>صنایع غذایی</p>
-                  <a href="#home">لبنیات</a>
-                  <a href="#about">ماکارونی</a>
-                  <a href="#contact">سس های خوراکی</a>
-                  <a href="#contact">رب گوجه فرنگی</a>
-                </div>
-                <div class="vl"></div>
-                <div id="myDropdown" className="dropdown-content-item">
-                  <p>صنایع غذایی</p>
-                  <a href="#home">لبنیات</a>
-                  <a href="#about">ماکارونی</a>
-                  <a href="#contact">سس های خوراکی</a>
-                  <a href="#contact">رب گوجه فرنگی</a>
-                </div>
-                <div class="vl"></div>
-                <div id="myDropdown" className="dropdown-content-item">
-                  <p>صنایع غذایی</p>
-                  <a href="#home">لبنیات</a>
-                  <a href="#about">ماکارونی</a>
-                  <a href="#contact">سس های خوراکی</a>
-                  <a href="#contact">رب گوجه فرنگی</a>
-                </div>
-                <div class="vl"></div>
-                <div id="myDropdown" className="dropdown-content-item1">
-                  <p>صنایع غذایی</p>
-                  <a href="#home">لبنیات</a>
-                  <a href="#about">ماکارونی</a>
-                  <a href="#contact">سس های خوراکی</a>
-                  <a href="#contact">رب گوجه فرنگی</a>
-                </div>
-              </div>
+                  <DropdownMenu/>       
             </li>
             <div className="NavbarStoreItems" style={{ display: "flex" }}>
               <li style={{ marginRight: "-4px" }}>
