@@ -7,38 +7,51 @@ import FactorList from "../../Shopping/factorList/factorList";
 
 const GroupStore = () => {
   const [Industry, setIndustry] = useState([]);
+  const [new1, setnew] = useState([1, 2]);
   useEffect(() => {
     axios
       .get("http://nahoor.af:8080/nahoor/industry/")
 
       .then((response) => setIndustry(response.data));
   }, []);
+  console.log("123123123123123123", Industry);
+
+  //find index
   const Gotofactor = (e) => {
-    console.log("abc", e);
-    return <FactorList salam={e} />;
+    const Index = Industry.filter((filter) => {
+      return filter.name == e;
+    }).map((index) => {
+      return index.category_set;
+    });
+    console.log(Index[0][0])
+    setIndustry(Index[0][0])
+    setnew(Index[0][0])
+    console.log("Industry", Industry);
+    console.log("new1", new1);
   };
-  const cards = [
-    {
-      img: "/nahoor home page/store page/sanaye ghazaii.png",
-      text: "صنایع غذایی",
-    },
-    {
-      img: "/nahoor home page/store page/pooshak.png",
-      text: "پوشاک",
-    },
-    {
-      img: "/nahoor home page/store page/masalaeh sakhtemani.png",
-      text: "مصالح ساختمانی",
-    },
-    {
-      img: "/nahoor home page/store page/petroshimi.png",
-      text: "پتروشیمی",
-    },
-    {
-      img: "/nahoor home page/store page/keshavarzi.png",
-      text: "کشاورزی",
-    },
-  ];
+  console.log("Industry", Industry);
+  // const cards = [
+  //   {
+  //     img: "/nahoor home page/store page/sanaye ghazaii.png",
+  //     text: "صنایع غذایی",
+  //   },
+  //   {
+  //     img: "/nahoor home page/store page/pooshak.png",
+  //     text: "پوشاک",
+  //   },
+  //   {
+  //     img: "/nahoor home page/store page/masalaeh sakhtemani.png",
+  //     text: "مصالح ساختمانی",
+  //   },
+  //   {
+  //     img: "/nahoor home page/store page/petroshimi.png",
+  //     text: "پتروشیمی",
+  //   },
+  //   {
+  //     img: "/nahoor home page/store page/keshavarzi.png",
+  //     text: "کشاورزی",
+  //   },
+  // ];
   return (
     <div className="groupStore-container">
       <div>
@@ -47,11 +60,12 @@ const GroupStore = () => {
       <div className="groupStore-main">
         {Industry.map((card) => {
           return (
-            <div className="groupStore-cards">
-              <Link
-                to={`listFactor/1`}
-                onClick={() => Gotofactor(card.name)}
-              >
+            <div
+              className="groupStore-cards"
+              onClick={() => Gotofactor(card.name)}
+            >
+              {console.log("ccccccccccaaaaaaaaaaaa", card.category_set[0])}
+              <Link to={`listFactor/${card.id}`}>
                 <div className="groupStore-cardsImg" style={{ width: "100%" }}>
                   <div className="groupStore-image">
                     <img src={card.cover_image} width="100%" />
