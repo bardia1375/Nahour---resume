@@ -16,7 +16,7 @@ const FactorList = (props) => {
   const [Title, setTitle] = useState([]);
   const [loading, setLoading] = useState(false);
   const params = useParams();
-  console.log(params,"params");
+  console.log(params, "params");
 
   useEffect(() => {
     axios
@@ -31,15 +31,12 @@ const FactorList = (props) => {
       .get("http://nahoor.af:8080/nahoor/industry/")
       .then((response) => setSidebar(response.data));
   }, []);
-  
 
   useEffect(() => {
-    axios
-      .get("http://nahoor.af:8080/nahoor/category/1" )
-      .then((response) => {
-        setfactorsfilter(response.data.company_set);
-        setLoading(true);
-      });
+    axios.get("http://nahoor.af:8080/nahoor/category/1").then((response) => {
+      setfactorsfilter(response.data.company_set);
+      setLoading(true);
+    });
   }, []);
 
   console.log("first state", factors);
@@ -235,7 +232,7 @@ const FactorList = (props) => {
                 //   title={sideBarItem.title}
                 //   subTitle={sideBarItem.subTitle}
                 // />
-                <>
+                <div >
                   <div className="factorListSideNavbarTitle">
                     <div>
                       <h3>{sideBarItem.name}</h3>
@@ -256,6 +253,7 @@ const FactorList = (props) => {
                         color: "black",
                       }}
                     ></hr>
+           
                     {sideBarItem.category_set?.map((subtitle) => {
                       return (
                         <>
@@ -275,7 +273,7 @@ const FactorList = (props) => {
                     })}
                     {/* <Link to="" ><p>صنایع غذایی</p></Link> */}
                   </div>
-                </>
+                </div>
               );
             })}
           </div>
@@ -284,10 +282,8 @@ const FactorList = (props) => {
           <div className="centeralTitle">
             <h2>لیست کارخانه های {Title}</h2>
             <div className="factorList-cards">
-              {" "}
-              {console.log("vay", factorsfilter)}
+   
               {factorsfilter.map((factor) => {
-                console.log(" این مهمه", factor);
                 return (
                   <div>
                     <FactorListCard

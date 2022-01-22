@@ -12,6 +12,7 @@
   justify-content: space-between;
   width: 100%;
 
+
 }
 
 .factorList-cards {
@@ -63,7 +64,7 @@
 .factorListSideNavbarTitle {
   display: flex;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 16px;align-items: center;justify-content: flex-end;
   /* justify-content: flex-end;  */
   padding: 0px 24px;
 }
@@ -121,8 +122,24 @@
     width: 100%;
   }
 }
+
 @media (max-width: 768px) {
-  .factorList-sideNavbar {
+/* .factorList-sideNavbar{
     display: none;
+  } */
+  .factorList-sideNavbar{
+    width: 100%;
+    height:400px;
+  }
+  .factorList-main {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .centeralTitle{
+    margin-top: 32px;
   }
 }
+  

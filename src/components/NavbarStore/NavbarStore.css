@@ -7,7 +7,6 @@ body {
   top: 0;
   z-index: 100;
   white-space: nowrap;
-
 }
 .navbarTopStore {
   padding: 4px 40px;
@@ -26,7 +25,7 @@ body {
   height: 70px;
   background-size: contain;
   margin-left: 16px;
-  transform: translateX(20px)
+  transform: translateX(20px);
 }
 .navbarTopStoreRight {
   display: flex;
@@ -126,27 +125,28 @@ body {
 }
 
 .dropdown-content {
-
   flex-direction: row;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  /* border: 5px solid red; */
   position: absolute;
-  top: 140%;
-  right: -500%;
+  /* top: 140%;
+  right: -500%; */
+  top: 150%;
+  right: 0;
   background: #f8f8f8;
-  min-width: 500px;
-  overflow: auto;
+
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   z-index: 1;
   border-radius: 0px 0px 7px 7px;
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
-  /* border: 1px solid red; */
 }
-.navbarStoreBottomMainGroup:hover .dropdown-content {
-
+/* .navbarStoreBottomMainGroup:hover .dropdown-content {
+border: 5px solid black;
   right: 10%;
   opacity: 1;
-}
+} */
+
 .dropdown-content a {
   color: black;
   padding: 8px 0px;
@@ -160,19 +160,20 @@ body {
 .dropdown-content-item {
   display: flex;
   font-size: 20px;
-
+  border-left: 1px solid #cfcfcf;
   flex-direction: column;
   text-align: right;
   justify-content: flex-start;
   align-items: flex-start;
   /* border-left: 1px solid gray; */
-  padding-right: 18px;
-  padding-left: 28px;
+  padding: 0 32px;
+  margin: 16px 0;
 }
+
 .vl {
   border: 1px solid #cfcfcf;
-  height: 180px;
-  margin: 24px 0px;
+  height: auto;
+  margin: 0;
 }
 .dropdown-content-item1 {
   display: flex;
@@ -198,6 +199,24 @@ body {
 .Navbarbottomleft4 {
   display: none;
 }
+.NavbarStoreItem {
+
+}
+/* .NavbarStoreItem::after {
+  content: "";
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  transform: scaleX(0);
+}
+.NavbarStoreItem:hover::after {
+  transform: scaleX(1);
+} */
 @media (max-width: 992px) {
   .NavbarStoreItem,
   .navbarTopStoreInput,
@@ -239,8 +258,8 @@ body {
     margin: 12px 0px 0 0;
   }
   .Navbarbottomleft4 {
-    position:absolute;
-    left:4%;
+    position: absolute;
+    left: 4%;
     display: flex;
     margin: 0px 0px;
   }

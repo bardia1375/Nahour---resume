@@ -81,7 +81,7 @@ export const NavbarStore = (props) => {
               placeholder="جستجو"
             />
             <li className="navbarStoreBottomMainGroup">
-                  <DropdownMenu/>       
+              <DropdownMenu />
             </li>
             <div className="NavbarStoreItems" style={{ display: "flex" }}>
               <li style={{ marginRight: "-4px" }}>
