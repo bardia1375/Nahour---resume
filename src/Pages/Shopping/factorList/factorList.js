@@ -23,7 +23,7 @@ const FactorList = (props) => {
       .get("http://nahoor.af:8080/nahoor/category/")
 
       .then((response) => setfactors(response.data));
-    setLoading(true);
+ 
   }, []);
 
   useEffect(() => {
@@ -224,7 +224,7 @@ const FactorList = (props) => {
             </div>
 
             {/* start sideBar */}
-
+<div>
             {sideBar?.map((sideBarItem) => {
               console.log("1", sideBarItem);
               return (
@@ -253,7 +253,7 @@ const FactorList = (props) => {
                         color: "black",
                       }}
                     ></hr>
-           
+                    {console.log("1111111111112", sideBarItem.category_set)}
                     {sideBarItem.category_set?.map((subtitle) => {
                       return (
                         <>
@@ -276,7 +276,7 @@ const FactorList = (props) => {
                 </div>
               );
             })}
-          </div>
+          </div></div>
           {/* end sideBar */}
 
           <div className="centeralTitle">
