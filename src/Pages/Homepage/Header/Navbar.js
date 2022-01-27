@@ -47,7 +47,7 @@ function Navbar(props) {
                   ارتباط با ناهور
                 </Link>
               </li>
-              <li className="NavbarItems">
+              {/* <li className="NavbarItems">
                 <Link
                   to="/blogs"
                   className="NavbarItem"
@@ -56,7 +56,7 @@ function Navbar(props) {
                 >
                   بلاگ
                 </Link>
-              </li>
+              </li> */}
               <li className="NavbarItems">
                 <Link
                   to="/store"

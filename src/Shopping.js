@@ -56,11 +56,10 @@ export const Shopping = () => {
         <Route path="/" element={<Store />} />
         <Route path="/listFactor/product/:id" element={<ProductOfFactor />} />
         <Route path="/listFactor/product/:id/:id" element={<Product />} />
-        <Route path="listFactor/*" element={<FactorList />} />
+        <Route path="listFactor/*" element={<FactorList/>} />
         <Route path="/" element={<FactorListCard />} />
-
         <Route path="/profile/*" element={<Profile />}>
-          <Route path="info" element={<Information />} />
+          <Route index element={<Information />} />
           <Route path="info" element={<EditInformation />} />
           <Route path="order" element={<Order />} />
           <Route path="order" element={<OrderPrevious />} />

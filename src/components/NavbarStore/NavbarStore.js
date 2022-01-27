@@ -21,7 +21,7 @@ export const NavbarStore = (props) => {
       <div className="navbarContainerStore">
         <div className="navbarTopStore">
           <div className="navbarTopStoreRight">
-            <a className="navbarTopStoreLogo" href="#"></a>
+            <Link className="navbarTopStoreLogo" to="/"></Link>
             <input
               type="text"
               className="navbarTopStoreInput"

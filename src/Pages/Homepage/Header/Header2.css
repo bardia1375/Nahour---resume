@@ -219,7 +219,7 @@
     transform: translate(-3vw, -240px);
   }
 }
-
+/* 
 @media (max-width: 500px) {
   .HeaderContainer {
     min-height: 600px;
@@ -228,13 +228,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 10; /* number of lines to show */
+    -webkit-line-clamp: 10;
     line-clamp: 10;
     -webkit-box-orient: vertical;
   }
-}
+} */
 
-@media (max-width: 440px) {
+@media (max-width: 500px) {
   .HeaderMainLeft1 {
     width: 100px;
     height: auto;

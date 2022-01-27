@@ -1,6 +1,7 @@
 .infoProfile-item {
   display: flex;
   justify-content: space-between;
+
 }
 .infoProfile-item {
   display: flex;
@@ -33,4 +34,12 @@
   font-family: IRANSans;
   font-size: 1.2rem;position: absolute;
   top: -30%;
+}
+@media only screen and (max-width: 992px) {
+.infoProfile-container{
+  width: 100%;
+}
+.infoProfile-item {
+  margin-top:8px
+}
 }

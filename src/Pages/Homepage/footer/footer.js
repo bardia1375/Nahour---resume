@@ -114,13 +114,13 @@ const Footer = () => {
       </div>
       <div className="CopyRight">
         <div>
-          <p className="CopyRight-paragraph">
+          <p className="CopyRight-paragraph1">
             کلیه حقوق این سایت متعلق به ناهور و شرکت نرم افزاری پیشگامان داده و
             فناوری ویرا می ‌باشد.
           </p>
         </div>
         <div>
-          <p className="CopyRight-paragraph">Nahoor.com - 2021 Copyright</p>
+          <p className="CopyRight-paragraph2">Nahoor.com - 2021 Copyright</p>
         </div>
       </div>
     </div>

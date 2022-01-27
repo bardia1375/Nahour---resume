@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import FactorList from "../../Shopping/factorList/factorList";
 
-const GroupStore = () => {
+const GroupStore = (props) => {
   const [Industry, setIndustry] = useState([]);
   const [new1, setnew] = useState([1, 2]);
   useEffect(() => {
@@ -23,13 +23,11 @@ const GroupStore = () => {
     }).map((index) => {
       return index.category_set;
     });
-    console.log(Index[0][0])
-    setIndustry(Index[0][0])
-    setnew(Index[0][0])
-    console.log("Industry", Industry);
-    console.log("new1", new1);
+    console.log(Index);
+
   };
-  console.log("Industry", Industry);
+  
+
   // const cards = [
   //   {
   //     img: "/nahoor home page/store page/sanaye ghazaii.png",

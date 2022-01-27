@@ -441,9 +441,9 @@ const Product = (props) => {
                             <button onClick={() => onlineOrder()}>
                               <p>لغو</p>
                             </button>
-                            <button>
-                              <div onClick={(e) => addToCartHandler(e)}>
-                                <p onClick={() => changeBox()}>
+                            <button style={{border: "none"}}>
+                              <div onClick={(e) => addToCartHandler(e)} >
+                                <p onClick={() => changeBox()} >
                                   افزودن به سبد خرید
                                 </p>
                               </div>

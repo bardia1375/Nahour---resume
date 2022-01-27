@@ -11,11 +11,17 @@ import SalesStore from "./salesStore/salesStore";
 import "./Store.css";
 function Store() {
   const cards = [{ img: "./nahoor home page/store page/poster lebsa.png" }];
+  
+  
+  const pull_data = (data) => {
+    console.log(data); // LOGS DATA FROM CHILD (My name is Dean Winchester... &)
+  }
+  
   return (
     <div className="Store-mainContainer">
       <div className="Store-firstContainer">
         <HeaderStore />
-        <GroupStore />
+        <GroupStore func={pull_data}/>
         <SalesStore />
         <BestProductStore />
       </div>

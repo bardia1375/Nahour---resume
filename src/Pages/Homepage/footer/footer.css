@@ -130,13 +130,15 @@
     padding: 8px 30px;
 
   }
-  .CopyRight-paragraph {
+  .CopyRight-paragraph1,  .CopyRight-paragraph2 {
     font-size: 0.6rem;
   }
 }
-@media (max-width: 768px) {}
 @media (max-width: 600px) {
-  .CopyRight-paragraph {
-    font-size: 0.35rem;
+  .CopyRight-paragraph1 {
+    font-size: 0.5rem;
+  }
+  .CopyRight-paragraph2{
+    display: none
   }
 }

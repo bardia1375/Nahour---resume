@@ -23,7 +23,6 @@ const FactorList = (props) => {
       .get("http://nahoor.af:8080/nahoor/category/")
 
       .then((response) => setfactors(response.data));
- 
   }, []);
 
   useEffect(() => {
@@ -224,65 +223,65 @@ const FactorList = (props) => {
             </div>
 
             {/* start sideBar */}
-<div>
-            {sideBar?.map((sideBarItem) => {
-              console.log("1", sideBarItem);
-              return (
-                // <SideBar
-                //   title={sideBarItem.title}
-                //   subTitle={sideBarItem.subTitle}
-                // />
-                <div >
-                  <div className="factorListSideNavbarTitle">
-                    <div>
-                      <h3>{sideBarItem.name}</h3>
+            <div>
+              {sideBar?.map((sideBarItem) => {
+                console.log("1", sideBarItem);
+                return (
+                  // <SideBar
+                  //   title={sideBarItem.title}
+                  //   subTitle={sideBarItem.subTitle}
+                  // />
+                  <div>
+                    <div className="factorListSideNavbarTitle">
+                      <div>
+                        <h3>{sideBarItem.name}</h3>
+                      </div>
+                      <div style={{ width: "20px" }}>
+                        <img
+                          src="/nahoor home page/About Page/behinde.svg "
+                          width="100%"
+                        />
+                      </div>
                     </div>
-                    <div style={{ width: "20px" }}>
-                      <img
-                        src="/nahoor home page/About Page/behinde.svg "
-                        width="100%"
-                      />
-                    </div>
-                  </div>
 
-                  <div className="factorListSideNavbarItems">
-                    <hr
-                      style={{
-                        width: "140px",
-                        height: "2px",
-                        color: "black",
-                      }}
-                    ></hr>
-                    {console.log("1111111111112", sideBarItem.category_set)}
-                    {sideBarItem.category_set?.map((subtitle) => {
-                      return (
-                        <>
-                          <NavLink
-                            className={(navData) =>
-                              navData.isActive ? "changeHover" : "hover"
-                            }
-                            to={`${subtitle.id}`}
-                            onClick={() =>
-                              changeGrope(subtitle.id, subtitle.name)
-                            }
-                          >
-                            <p>{subtitle.name}</p>
-                          </NavLink>
-                        </>
-                      );
-                    })}
-                    {/* <Link to="" ><p>صنایع غذایی</p></Link> */}
+                    <div className="factorListSideNavbarItems">
+                      <hr
+                        style={{
+                          width: "140px",
+                          height: "2px",
+                          color: "black",
+                        }}
+                      ></hr>
+                      {console.log("1111111111112", sideBarItem.category_set)}
+                      {sideBarItem.category_set?.map((subtitle) => {
+                        return (
+                          <>
+                            <NavLink
+                              className={(navData) =>
+                                navData.isActive ? "changeHover" : "hover"
+                              }
+                              to={`${subtitle.id}`}
+                              onClick={() =>
+                                changeGrope(subtitle.id, subtitle.name)
+                              }
+                            >
+                              <p>{subtitle.name}</p>
+                            </NavLink>
+                          </>
+                        );
+                      })}
+                      {/* <Link to="" ><p>صنایع غذایی</p></Link> */}
+                    </div>
                   </div>
-                </div>
-              );
-            })}
-          </div></div>
+                );
+              })}
+            </div>
+          </div>
           {/* end sideBar */}
 
           <div className="centeralTitle">
             <h2>لیست کارخانه های {Title}</h2>
             <div className="factorList-cards">
-   
               {factorsfilter.map((factor) => {
                 return (
                   <div>
