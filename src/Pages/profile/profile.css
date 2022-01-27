@@ -3,7 +3,12 @@
 
   padding: 2vw 4vw;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 40px;}
+  .profile-container1{
+    display: flex;
+    }
+.profile-container2{
+display: none;
 }
 .profile-sideBar {
   background: #f8f8f8;
@@ -118,6 +123,7 @@
   .profile-components {
     margin-top: 32px;
   }
+
   .profile-container {
     display: flex;
     padding: 2vw 4vw;
@@ -125,4 +131,11 @@
     margin-top: 40px;
     flex-direction: column;
   }
+  .profile-container1{
+    display: none;
+    }
+.profile-container2{
+display: flex;
+flex-direction: column;
+}
 }

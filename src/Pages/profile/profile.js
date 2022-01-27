@@ -11,8 +11,17 @@ import SideBar from "./sideBar/sideBar";
 const Profile = () => {
   const [hide, setHide] = useState(true);
   return (
-    <div className="profile-container">
-      {  hide ? (
+   <div className="profile-container">
+    <div className="profile-container1">
+        <div>
+          <SideBar setHide={setHide}/>
+        </div>
+        <div className="profile-components">
+          <Outlet />
+        </div>
+    </div>
+    <div className="profile-container2">
+       {  hide ? (
         <div>
           <SideBar setHide={setHide}/>
         </div>
@@ -22,6 +31,7 @@ const Profile = () => {
           <Outlet />
         </div>
       )}
+    </div> 
     </div>
   );
 };
