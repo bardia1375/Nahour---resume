@@ -23,7 +23,7 @@ const Product = (props) => {
       .get("http://nahoor.af:8080/nahoor/product/" + params.id)
 
       .then((response) => {
-        setinformations(response.data);
+        console.log(response.data);
         setLoading(true);
       });
   }, []);

@@ -13,6 +13,7 @@
 }
 .HeaderContainer {
   padding-right: 30px;
+  width: 100%;
 }
 .HeaderItems {
   display: flex;

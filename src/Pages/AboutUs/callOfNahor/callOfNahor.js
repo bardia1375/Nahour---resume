@@ -4,15 +4,15 @@ import "./callOfNahor.css";
 const CallOfNahor = () => {
   const calls = [
     {
-      phone: "021-88255946",
+      phone: "989194622170+",
       src: "nahoor home page/About Page/Solid/Communication/Phone.svg",
     },
     {
-      cell: "09121111111",
+      cell: "989194622170+",
       src: "nahoor home page/About Page/Solid/Devices/Mobile-phone.svg",
     },
     {
-      email: "reza@gmail.com",
+      email: "info@nahoor.af",
       src: "nahoor home page/About Page/Solid/Communication/Envelope.svg",
     },
     {
@@ -44,12 +44,12 @@ const CallOfNahor = () => {
                 </div>
                 <div className="call-phoneRightmain" >
                   <div>
-                    <a className="call-phoneRight" href="tel:66519367">
+                    <a className="call-phoneRight" href="tel:989194622170+">
                       {call.phone}
                     </a>
                   </div>
                   <div>
-                    <a className="call-phoneRight" href="tel:09121111100">
+                    <a className="call-phoneRight" href="tel:989194622170+">
                       {call.cell}
                     </a>
                   </div>

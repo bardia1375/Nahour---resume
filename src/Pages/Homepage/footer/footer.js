@@ -1,16 +1,18 @@
 import React from "react";
 import "./footer.css";
 const Footer = () => {
- 
- 
   return (
     <div className="Footer">
       <div className="Footer-container">
-
-
-
         <div className="Footer-icons">
-        <div style={{width:"200px", height:"0px", border: "1px solid #fff" , marginLeft: "50px"}}></div>
+          <div
+            style={{
+              width: "200px",
+              height: "0px",
+              border: "1px solid #fff",
+              marginLeft: "50px",
+            }}
+          ></div>
 
           <a>
             <img
@@ -20,7 +22,6 @@ const Footer = () => {
             />
           </a>
           <a>
-       
             <img
               src="/nahoor home page/Footer/google.svg"
               alt=""
@@ -32,7 +33,6 @@ const Footer = () => {
             />
           </a>
           <a>
-
             <img
               src="/nahoor home page/Footer/telegram.svg"
               alt=""
@@ -44,7 +44,6 @@ const Footer = () => {
             />
           </a>
           <a>
- 
             <img
               src="/nahoor home page/Footer/whatsapp.svg"
               alt=""
@@ -55,12 +54,15 @@ const Footer = () => {
               }}
             />
           </a>
-          <div style={{width:"200px", height:"0px", border: "1px solid #fff" , marginRight: "50px"}}></div>
+          <div
+            style={{
+              width: "200px",
+              height: "0px",
+              border: "1px solid #fff",
+              marginRight: "50px",
+            }}
+          ></div>
         </div>
-
-
-
-
 
         <div className="Footer-items">
           <div className="Footer-culomn">
@@ -92,12 +94,20 @@ const Footer = () => {
             <h3 className="Footer-phoneH3">
               <img
                 src="/nahoor home page/Icons/Phone.svg"
-                style={{ marginLeft: "8px" ,transform: "rotateX(20px)"}}
+                style={{ marginLeft: "8px", transform: "rotateX(20px)" }}
               />
               تلفن تماس :
             </h3>
             <div className="Footer-phone">
-              <p className="Footer-phone" style={{ width: "100%" }}>021-81816578</p>
+              <a href="tel:989194622170+" style={{ textDecoration: "none" }}>
+                {" "}
+                <p
+                  className="Footer-phone"
+                  style={{ width: "100%", color: "white" }}
+                >
+                  989194622170+
+                </p>
+              </a>
             </div>
           </div>
           <div className="Footer-culomn">
@@ -108,7 +118,7 @@ const Footer = () => {
               />
               ایمیل :
             </h3>
-            <p>nahoor@info.com</p>
+            <p> info@nahoor.af</p>
           </div>
         </div>
       </div>

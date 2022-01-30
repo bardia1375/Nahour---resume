@@ -5,22 +5,16 @@ const FoundersofNahor = () => {
   const founders = [
     {
       img: "./nahoor home page/About Page/image 3.png",
-      name: "علی رحمانی",
-      job: "ایده پرداز و مدیر فنی",
+      name: "الیاس عطایی",
+      job: "بنیان‌گذار ناهور",
       linkdin: "./nahoor home page/About Page/Solid/Brands/Linkedin.png",
       facebook: "./nahoor home page/About Page/Solid/Brands/Facebook.png",
     },
-    {
-      img: "./nahoor home page/About Page/image 1.png",
-      name: "زهرا رحمانی",
-      job: " دیجیتال مارکتینگ",
-      linkdin: "./nahoor home page/About Page/Solid/Brands/Linkedin.png",
-      facebook: "./nahoor home page/About Page/Solid/Brands/Facebook.png",
-    },
+ 
     {
       img: "./nahoor home page/About Page/image2.png",
-      name: "رضا کاظمی",
-      job: "بازاریاب",
+      name: "محمد انور عطایی",
+      job: "بنیان‌گذار ناهور",
       linkdin: "./nahoor home page/About Page/Linkedin.svg",
       facebook: "./nahoor home page/About Page/Facebook.svg",
     },
