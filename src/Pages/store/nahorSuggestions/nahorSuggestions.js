@@ -127,7 +127,7 @@ function NahorSuggestions() {
     slidesToScroll: 1,
     prevArrow: <PerviousBtn />,
     nextArrow: <NextBtn />,
-    autoplay: true,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 1800,

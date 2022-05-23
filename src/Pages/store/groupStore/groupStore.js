@@ -21,7 +21,7 @@ const GroupStore = (props) => {
     const Index = Industry.filter((filter) => {
       return filter.name == e;
     }).map((index) => {
-      return index.category_set;
+      console.log("salam man bardia hastam" ,index.category_set);
     });
     console.log(Index);
 
@@ -62,8 +62,8 @@ const GroupStore = (props) => {
               className="groupStore-cards"
               onClick={() => Gotofactor(card.name)}
             >
-              {console.log("ccccccccccaaaaaaaaaaaa", card.category_set[0])}
-              <Link to={`listFactor/${card.id}`}>
+              {console.log("ccccccccccaaaaaaaaaaaa", card.category_set[0]?.id)}
+              <Link to={`listFactor/${card.category_set[0]?.id}`}>
                 <div className="groupStore-cardsImg" style={{ width: "100%" }}>
                   <div className="groupStore-image">
                     <img src={card.cover_image} width="100%" />

@@ -280,6 +280,11 @@ const FactorList = (props) => {
           {/* end sideBar */}
 
           <div className="centeralTitle">
+            {console.log("salam man bardia hastam",factors)}
+            {factors.map((factor)=>{
+              console.log(factor.name)
+ return(<div></div>)
+            })}
             <h2>لیست کارخانه های {Title}</h2>
             <div className="factorList-cards">
               {factorsfilter.map((factor) => {
